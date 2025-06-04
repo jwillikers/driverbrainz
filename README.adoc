@@ -51,7 +51,7 @@ cd driverbrainz
 
 . Update the code as necessary with details of the series.
 
-. Run driverbrainz with `just run`.
+. Run DriverBrainz with `just run`.
 
 == Development
 
