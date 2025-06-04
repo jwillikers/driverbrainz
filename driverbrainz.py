@@ -3040,7 +3040,7 @@ if command == "add_bookbrainz_work_series":
             sort_subtitle = SUBTITLES[i][1]["sort"]
 
         translated_work["relationships"] = translated_work["relationships"].copy()
-        translated_edition_id = next(id for index, id in reversed(list(TRANSLATED_EDITIONS.items())) if float(i) > float(index))
+        translated_edition_id = next((id for index, id in reversed(sorted(list(TRANSLATED_EDITIONS.items()), key=lambda pair: float(pair[0]))) if float(i) > float(index)), None)
         if translated_edition_id is not None:
             translated_work["relationships"].append({
                 "role": "edition",
