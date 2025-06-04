@@ -2141,8 +2141,8 @@ def bookbrainz_set_title(driver, index, title):
     name = title["text"].replace("|index|", f"{index}").replace("|subtitle|", subtitle)
     name_text_box.send_keys(name)
     wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(3) .text-danger")))
-    guess_copy_button = driver.find_element(by=By.CSS_SELECTOR, value=".card-body > div:nth-child(1) > .row:nth-child(2) .form-control")
-    sort_copy_button = driver.find_element(by=By.CSS_SELECTOR, value=".btn-primary:nth-child(1)")
+    guess_copy_button = driver.find_element(by=By.XPATH, value="//button[text()='Guess']")
+    sort_copy_button = driver.find_element(by=By.XPATH, value="//button[text()='Copy']")
     sort_name_text_box = driver.find_element(by=By.CSS_SELECTOR, value=".input-group:nth-child(2) > .form-control")
     if title["sort"] == "COPY":
         sort_copy_button.click()
