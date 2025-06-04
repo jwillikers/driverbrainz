@@ -56,6 +56,7 @@
               asciidoctor
               chromedriver
               fish
+              geckodriver
               just
               lychee
               nushell
