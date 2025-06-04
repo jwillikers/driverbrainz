@@ -2141,13 +2141,13 @@ def bookbrainz_set_title(driver, index, title):
     name = title["text"].replace("|index|", f"{index}").replace("|subtitle|", subtitle)
     name_text_box.send_keys(name)
     wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(3) .text-danger")))
-    guess_copy_button = driver.find_element(by=By.XPATH, value="//button[text()='Guess']")
+    sort_guess_button = driver.find_element(by=By.XPATH, value="//button[text()='Guess']")
     sort_copy_button = driver.find_element(by=By.XPATH, value="//button[text()='Copy']")
     sort_name_text_box = driver.find_element(by=By.CSS_SELECTOR, value=".input-group:nth-child(2) > .form-control")
     if title["sort"] == "COPY":
         sort_copy_button.click()
     elif title["sort"] == "GUESS":
-        guess_copy_button.click()
+        sort_guess_button.click()
     else:
         sort_subtitle = ""
         if "sort_subtitle" in title and title["sort_subtitle"]:
