@@ -8,6 +8,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.relative_locator import locate_with
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.firefox.options import Options
 
 import os
 import shutil
@@ -2865,7 +2866,9 @@ TRANSLATED_MUSICBRAINZ_WORK["aliases"] = aliases
 
 geckodriver = shutil.which("geckodriver")
 service = webdriver.FirefoxService(executable_path=geckodriver)
-driver = webdriver.Firefox(service=service)
+options = Options()
+options.headless = True
+driver = webdriver.Firefox(options=options, service=service)
 wait = WebDriverWait(driver, timeout=100)
 
 try:

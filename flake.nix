@@ -54,7 +54,6 @@
             with pkgs;
             [
               asciidoctor
-              chromedriver
               firefox
               fish
               geckodriver
