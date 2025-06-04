@@ -55,6 +55,7 @@
             [
               asciidoctor
               chromedriver
+              firefox
               fish
               geckodriver
               just
@@ -82,9 +83,6 @@
             # + pre-commit.shellHook;
         };
         packages = {
-          default = pkgs.micropython;
-          inherit (pkgs) micropython;
-          pwm-fan-controller = callPackage ./package.nix { };
         };
         formatter = treefmtEval.config.build.wrapper;
       }

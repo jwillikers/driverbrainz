@@ -10,6 +10,7 @@ from selenium.webdriver.support.relative_locator import locate_with
 from selenium.webdriver.common.keys import Keys
 
 import os
+import shutil
 
 APP_NAME = "DriverBrainz"
 CACHE_DIR = platformdirs.user_cache_dir(appname="DriverBrainz", appauthor=False, ensure_exists=True)
@@ -2862,8 +2863,9 @@ if TRANSLATED_MUSICBRAINZ_WORK["title"]["sort"] != "COPY" and TRANSLATED_MUSICBR
                 TRANSLATED_SUBTITLES[index][len(TRANSLATED_WORK_ALIASES)] = subtitle[0].copy()
 TRANSLATED_MUSICBRAINZ_WORK["aliases"] = aliases
 
-# driver = webdriver.Chrome()
-driver = webdriver.Firefox()
+geckodriver = shutil.which("geckodriver")
+service = webdriver.FirefoxService(executable_path=geckodriver)
+driver = webdriver.Firefox(service=service)
 wait = WebDriverWait(driver, timeout=100)
 
 try:
