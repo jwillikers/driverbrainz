@@ -1,13 +1,13 @@
 repository:
   # See https://developer.github.com/v3/repos/#edit for all available settings.
 
-  name: PWM-Fan-Controller-MicroPython
+  name: driverbrainz
   # A short description of the repository that will show up on GitHub
-  description: A simple program for controlling a fan using MicroPython on a microcontroller
+  description: Automates time-consuming tasks contributing metadata to BookBrainz and MusicBrainz
   # A URL with more information about the repository
   # homepage: ""
   # A comma-separated list of topics to set on the repository
-  topics: python, raspberry-pi, microcontroller, nix, micropython, fan-control, pwm, pico, rp2040,
+  topics: automation, bookbrainz, musicbrainz, python, selenium,
   # Either `true` to make the repository private, or `false` to make it public.
   private: false
   # Either `true` to enable issues for this repository, `false` to disable them.
