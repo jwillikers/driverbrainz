@@ -1,0 +1,35 @@
+name: Pyright
+"on":
+  pull_request:
+    branches: ["main"]
+    paths:
+      - '**.nix'
+      - '**.py'
+      - .github/workflows/pyright.yaml
+      - flake.lock
+      - pyproject.toml
+      - requirements-dev.txt
+  push:
+    branches: ["main"]
+    paths:
+      - '**.nix'
+      - '**.py'
+      - .github/workflows/pyright.yaml
+      - flake.lock
+      - pyproject.toml
+      - requirements-dev.txt
+
+jobs:
+  pyright:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@v16
+      - uses: DeterminateSystems/magic-nix-cache-action@v9
+      - name: Cache Python virtual environment
+        uses: actions/cache@v4
+        with:
+          key: venv-${{ runner.os }}-${{ hashFiles('flake.lock') }}-${{ hashFiles('requirements-dev.txt') }}
+          path: .venv
+      - name: Check Python code with Pyright
+        run: nix develop --command pyright --pythonpath .venv/bin/python --warnings

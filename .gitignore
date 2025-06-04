@@ -1,0 +1,27 @@
+# Asciidoctor
+*.html
+
+# Firmware
+*.elf
+*.uf2
+
+# direnv
+.direnv/
+
+# git-hooks.nix
+/.pre-commit-config.yaml
+
+# lychee
+.lycheecache
+
+# Nix
+result
+
+# Python
+__pycache__/
+.mypy_cache
+.pytest_cache/
+.ruff_cache/
+.venv/
+typings/
+venv/
