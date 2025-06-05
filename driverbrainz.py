@@ -2164,64 +2164,42 @@ def bookbrainz_set_title(driver, index, title):
 
 def bookbrainz_add_aliases(driver, aliases):
     wait = WebDriverWait(driver, timeout=100)
-    add_aliases_button = driver.find_element(by=By.CSS_SELECTOR, value=".col-lg-6:nth-child(1) > .btn")
+    add_aliases_button = driver.find_element(by=By.XPATH, value="//button[text()='Add aliases…']")
     add_aliases_button.click()
     wait.until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, ".modal-title"), "Alias Editor"))
     add_alias_button = driver.find_element(by=By.CSS_SELECTOR, value=".offset-lg-9 > .btn")
-    close_button = driver.find_element(by=By.CSS_SELECTOR, value=".modal-footer > .btn")
-    # if len(aliases) == 1:
-    #     # Add an extra alias to force normalized naming of the CSS selectors.
-    #     # The extra, empty alias will be ignored.
-    #     add_alias_button.click()
-    # else:
-    #     for _ in range(len(aliases) - 1):
-    #         add_alias_button.click()
+    close_button = driver.find_element(by=By.XPATH, value="//button[text()='Close']")
     for index, alias in enumerate(aliases):
         one_based_index = index + 1
-        row = f"div:nth-child({one_based_index}) > .row"
-        if one_based_index == 1:
-            row = ".col-lg-4"
-        name_text_box = driver.find_element(by=By.CSS_SELECTOR, value=f"{row} .form-group > .form-control")
-        if one_based_index == 1:
-            name_text_box = driver.find_element(by=By.CSS_SELECTOR, value=f"{row} > .form-group > .form-control")
-        sort_name_text_box = driver.find_element(by=By.CSS_SELECTOR, value=f"{row} .input-group > .form-control")
-        guess_button = driver.find_element(by=By.CSS_SELECTOR, value=f"{row} .btn:nth-child(1)")
-        copy_button = driver.find_element(by=By.CSS_SELECTOR, value=f"{row} .ml-1")
-        language_text_box_locator = locate_with(By.ID, "react-select-language-input").to_right_of({By.CSS_SELECTOR: f"{row} .input-group > .form-control"})
-        language_text_box = driver.find_element(language_text_box_locator)
-        primary_checkbox = None
-        if one_based_index == 1:
-            primary_checkbox = driver.find_element(by=By.CSS_SELECTOR, value=".form-check-input")
-        else:
-            primary_checkbox = driver.find_element(by=By.CSS_SELECTOR, value=f"{row} .form-check-input")
-
+        name_text_box = driver.find_element(by=By.XPATH, value=f"//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/input[@class='form-control'][{one_based_index}]")
+        sort_name_text_box = driver.find_element(by=By.XPATH, value=f"//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/div[@class='input-group']/input[@class='form-control'][{one_based_index}]")
+        guess_button = driver.find_element(by=By.XPATH, value=f"//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/div[@class='input-group']/div[@class='input-group-append']/button[text()='Guess'][{one_based_index}]")
+        copy_button = driver.find_element(by=By.XPATH, value=f"//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/div[@class='input-group']/div[@class='input-group-append']/button[text()='Copy'][{one_based_index}]")
+        # language_text_box_locator = locate_with(By.XPATH, "react-select-language-input").to_right_of({By.CSS_SELECTOR: f"{row} .input-group > .form-control"})
+        # language_text_box = driver.find_element(language_text_box_locator)
+        language_text_box = driver.find_element(by=By.XPATH, value=f"//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/div[starts-with(@class,'Select')]/div[starts-with(@class,'react-select__control')]/div[starts-with(@class,'react-select__value-container')]/div/div[@class='react-select__input']/input[@id='react-select-language-input'][{one_based_index}]")
+        primary_checkbox = driver.find_element(by=By.XPATH, value=f"//div/div[@class='row']/div/div[@class='form-check']/input[@class='form-check-input'][{one_based_index}]")
         name_text_box.send_keys(alias["text"])
-        wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"{row} .text-success")))
+        wait.until(EC.visibility_of_element_located((By.XPATH, f"//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/label[@class='form-label']/span[@class='text-success' and starts-with(text(),'Name')][{one_based_index}]")))
         if alias["sort"] == "COPY":
             copy_button.click()
         elif alias["sort"] == "GUESS":
             guess_button.click()
         else:
             sort_name_text_box.send_keys(alias["sort"])
-        if one_based_index == 1:
-            wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"{row}:nth-child(2) .text-success")))
-        else:
-            wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"{row} > .col-lg-4:nth-child(2) .text-success")))
+        wait.until(EC.visibility_of_element_located((By.XPATH, f"//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/label[@class='form-label']/span[@class='text-success' and starts-with(text(),'Sort Name')][{one_based_index}]")))
         # "css=.react-select__control--is-focused > .react-select__value-container"
         language_text_box.send_keys(alias["language"])
-        wait.until(EC.visibility_of_element_located((By.ID, "react-select-language-option-0")))
-        first_language_option = driver.find_element(by=By.ID, value="react-select-language-option-0")
+        wait.until(EC.visibility_of_element_located((By.XPATH, f"//div[starts-with(@class,'react-select__menu-list')]/div[@id='react-select-language-option-0' and text()='{alias['language']}']")))
+        first_language_option = driver.find_element(by=By.XPATH, value=f"//div[starts-with(@class,'react-select__menu-list')]/div[@id='react-select-language-option-0' and text()='{alias['language']}']")
         first_language_option.click()
-        if one_based_index == 1:
-            wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"{row}:nth-child(3) .text-success")))
-        else:
-            wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"{row} > .col-lg-4:nth-child(3) .text-success")))
+        wait.until(EC.visibility_of_element_located((By.XPATH, f"//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/label[@class='form-label']/span[@class='text-success' and starts-with(text(),'Language')][{one_based_index}]")))
         if alias["primary"]:
             primary_checkbox.click()
             wait.until(EC.element_to_be_selected(primary_checkbox))
         if index < len(aliases) - 1:
             add_alias_button.click()
-            wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"div:nth-child({one_based_index + 1}) > .row .form-group > .form-control")))
+            wait.until(EC.visibility_of_element_located((By.XPATH, f"//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/input[@class='form-control'][{one_based_index + 1}]")))
         else:
             close_button.click()
             # todo Or check title? Waiting for the modal dialog to disappear
