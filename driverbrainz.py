@@ -1863,7 +1863,7 @@ ORIGINAL_WORK_ALIASES = [
     # },
     {
         "text": "[Dai |index| Wa] |subtitle|",
-        "sort": "COPY",
+        "sort": "Dai |index| Wa |subtitle|",
         "language": "Japanese",
         "primary": False,
     },
