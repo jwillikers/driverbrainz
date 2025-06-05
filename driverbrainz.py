@@ -2422,6 +2422,8 @@ def bookbrainz_create_work(driver, work, index):
             sort_subtitle = ""
             if "sort_subtitle" in a and a["sort_subtitle"]:
                 sort_subtitle = a["sort_subtitle"]
+            else:
+                sort_subtitle = subtitle
             aliases.append(
                 {
                     "text": a["text"].replace("|index|", f"{index}").replace("|subtitle|", subtitle),
