@@ -2385,7 +2385,7 @@ def bookbrainz_add_relationship(driver, relationship):
 #     ],
 # }
 def bookbrainz_create_work(driver, work, index):
-    wait = WebDriverWait(driver, timeout=100)
+    wait = WebDriverWait(driver, timeout=200)
 
     # driver.close()
     driver.get(BOOKBRAINZ_CREATE_WORK_URL)
@@ -2462,7 +2462,7 @@ def bookbrainz_create_work(driver, work, index):
                 bookbrainz_add_relationship(driver, relationship)
     submit_button = driver.find_element(by=By.XPATH, value="(//button[@type='submit'])[2]")
     submit_button.click()
-    wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".entity-display-image-box")))
+    wait.until(EC.visibility_of_element_located((By.XPATH, "//a[contains(@class,'btn-success') and contains(text(),'Add Edition')]")))
 
 
 # def musicbrainz_add_series(macropad, series, index):
