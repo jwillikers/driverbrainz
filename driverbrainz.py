@@ -2154,12 +2154,18 @@ def bookbrainz_set_title(driver, index, title):
             sort_subtitle = title["sort_subtitle"]
         sort_name_text_box.send_keys(title["sort"].replace("|index|", f"{index}").replace("|subtitle|", sort_subtitle))
     wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@id='content']/form/div/div/div/div[2]/div/div/label/span")))
-    language_text_box = driver.find_element(by=By.ID, value="react-select-language-input")
+    language_text_box = driver.find_element(by=By.XPATH, value="(//div[@class='form-group']/div[starts-with(@class,'Select')]/div[starts-with(@class,'react-select__control')]/div[starts-with(@class,'react-select__value-container')]/div/div[@class='react-select__input']/input[@id='react-select-language-input'])[1]")
     language_text_box.send_keys(title["language"])
-    wait.until(EC.visibility_of_element_located((By.ID, "react-select-language-option-0")))
-    first_language_option = driver.find_element(by=By.ID, value="react-select-language-option-0")
+    wait.until(EC.visibility_of_element_located((By.XPATH, f"//div[starts-with(@class,'react-select__menu-list')]/div[@id='react-select-language-option-0' and text()='{title['language']}']")))
+    first_language_option = driver.find_element(by=By.XPATH, value=f"//div[starts-with(@class,'react-select__menu-list')]/div[@id='react-select-language-option-0' and text()='{title['language']}']")
     first_language_option.click()
-    wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(4) .text-success")))
+    wait.until(EC.visibility_of_element_located((By.XPATH, "//span[@class='text-success' and text()='Language']")))
+
+    # language_text_box.send_keys(title["language"])
+    # wait.until(EC.visibility_of_element_located((By.ID, "react-select-language-option-0")))
+    # first_language_option = driver.find_element(by=By.ID, value="react-select-language-option-0")
+    # first_language_option.click()
+    # wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(4) .text-success")))
 
 
 def bookbrainz_add_aliases(driver, aliases):
@@ -2425,13 +2431,15 @@ def bookbrainz_create_work(driver, work, index):
         bookbrainz_add_identifiers(driver, work["identifiers"])
     bookbrainz_set_work_type(driver, work["type"])
 
-    work_language_text_box_locator = locate_with(By.ID, "react-select-language-input").below({By.ID: "react-select-workType-input"})
-    work_language_text_box = driver.find_element(work_language_text_box_locator)
+    # work_language_text_box_locator = locate_with(By.ID, "react-select-language-input").below({By.ID: "react-select-workType-input"})
+    # work_language_text_box = driver.find_element(work_language_text_box_locator)
+    work_language_text_box = driver.find_element(by=By.XPATH, value="(//div[@class='form-group']/div[starts-with(@class,'Select')]/div[starts-with(@class,'react-select__control')]/div[starts-with(@class,'react-select__value-container')]/div/div[@class='react-select__input']/input[@id='react-select-language-input'])[2]")
     work_language_text_box.send_keys(work["language"])
-    wait.until(EC.visibility_of_element_located((By.ID, "react-select-language-option-0")))
-    first_work_language_option = driver.find_element(by=By.ID, value="react-select-language-option-0")
+    wait.until(EC.visibility_of_element_located((By.XPATH, f"//div[starts-with(@class,'react-select__menu-list')]/div[@id='react-select-language-option-0' and text()='{work['language']}']")))
+    first_work_language_option = driver.find_element(by=By.XPATH, value=f"//div[starts-with(@class,'react-select__menu-list')]/div[@id='react-select-language-option-0' and text()='{work['language']}']")
     first_work_language_option.click()
-    wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".css-xb97g8")))
+    # wait.until(EC.visibility_of_element_located((By.XPATH, "//span[@class='text-success' and text()='Language']")))
+    wait.until(EC.visibility_of_element_located((By.XPATH, f"//div[contains(@class,'react-select__multi-value__label') and contains(text(),'{work['language']}')]")))
     # select_work_language_element = driver.find_element(By.XPATH, "//div[2]/div/div/div/div/div")
     if "series" in work and work["series"]:
         bookbrainz_add_series(driver, work["series"], index)
