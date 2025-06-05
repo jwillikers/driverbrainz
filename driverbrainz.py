@@ -2394,11 +2394,14 @@ def bookbrainz_create_work(driver, work, index):
         with open(COOKIES_CACHE_FILE, 'w', encoding='utf-8') as f:
             json.dump(cookies, f, ensure_ascii=False, indent=4)
     bookbrainz_set_title(driver, index, work["title"])
-    disambiguation_text_box = driver.find_element(by=By.CSS_SELECTOR, value=".row:nth-child(5) .form-control")
+    # disambiguation_label = driver.find_element(by=By.XPATH, value="//label[@class='form-label' and span/starts-with(text(),'Disambiguation')]")
+    # disambiguation_text_box_locator = driver.find_element(by=By.XPATH, value=".row:nth-child(5) .form-control")
+    disambiguation_text_box_locator = locate_with(By.ID, "react-select-language-input").below({By.XPATH: "//div[@class='form-group']/input[@class='form-control']"})
+    # disambiguation_text_box = driver.find_element(by=By.XPATH, value=".row:nth-child(5) .form-control")
+    disambiguation_text_box = driver.find_element(disambiguation_text_box_locator)
     if "disambiguation" in work and work["disambiguation"]:
         disambiguation_text_box.send_keys(work["disambiguation"])
-        # wait.until(EC.text_to_be_present_in_element_value(disambiguation_text_box, work["disambiguation"]))
-        wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(5) .text-success")))
+        wait.until(EC.visibility_of_element_located((By.XPATH, "//span[@class='text-success' and text()='Disambiguation']")))
 
     if "aliases" in work and work["aliases"]:
         aliases = []
