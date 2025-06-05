@@ -2155,6 +2155,8 @@ def bookbrainz_set_title(driver, index, title):
         sort_subtitle = ""
         if "sort_subtitle" in title and title["sort_subtitle"]:
             sort_subtitle = title["sort_subtitle"]
+        else:
+            sort_subtitle = subtitle
         sort_name_text_box.send_keys(title["sort"].replace("|index|", f"{index}").replace("|subtitle|", sort_subtitle))
     wait.until(EC.visibility_of_element_located((By.XPATH, "//label[@class='form-label']/span[@class='text-success' and text()='Sort Name']")))
     language_text_box = driver.find_element(by=By.XPATH, value="(//div[@class='form-group']/div[starts-with(@class,'Select')]/div[starts-with(@class,'react-select__control')]/div[starts-with(@class,'react-select__value-container')]/div/div[@class='react-select__input']/input[@id='react-select-language-input'])[1]")
