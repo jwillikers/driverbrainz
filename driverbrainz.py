@@ -2134,16 +2134,19 @@ def musicbrainz_log_in(driver, username):
 
 def bookbrainz_set_title(driver, index, title):
     wait = WebDriverWait(driver, timeout=100)
-    name_text_box = driver.find_element(by=By.CSS_SELECTOR, value=".card-body > div:nth-child(1) > .row:nth-child(2) .form-control")
+    # todo Make more accurate by relative to label
+    name_text_box = driver.find_element(by=By.XPATH, value="(//div[@class='form-group']/input[@class='form-control'])[1]")
     subtitle = ""
     if "subtitle" in title and title["subtitle"]:
         subtitle = title["subtitle"]
     name = title["text"].replace("|index|", f"{index}").replace("|subtitle|", subtitle)
     name_text_box.send_keys(name)
-    wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(3) .text-danger")))
+    wait.until(EC.visibility_of_element_located((By.XPATH, "//label[@class='form-label']/span[@class='text-danger' and text()='Sort Name']")))
     sort_guess_button = driver.find_element(by=By.XPATH, value="//button[text()='Guess']")
     sort_copy_button = driver.find_element(by=By.XPATH, value="//button[text()='Copy']")
-    sort_name_text_box = driver.find_element(by=By.CSS_SELECTOR, value=".input-group:nth-child(2) > .form-control")
+    # sort_name_text_box = driver.find_element(by=By.XPATH, value=".input-group:nth-child(2) > .form-control")
+    # todo Make more accurate by relative to label
+    sort_name_text_box = driver.find_element(by=By.XPATH, value="(//div[@class='input-group']/input[@class='form-control'])[2]")
     if title["sort"] == "COPY":
         sort_copy_button.click()
     elif title["sort"] == "GUESS":
@@ -2153,7 +2156,7 @@ def bookbrainz_set_title(driver, index, title):
         if "sort_subtitle" in title and title["sort_subtitle"]:
             sort_subtitle = title["sort_subtitle"]
         sort_name_text_box.send_keys(title["sort"].replace("|index|", f"{index}").replace("|subtitle|", sort_subtitle))
-    wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@id='content']/form/div/div/div/div[2]/div/div/label/span")))
+    wait.until(EC.visibility_of_element_located((By.XPATH, "//label[@class='form-label']/span[@class='text-success' and text()='Sort Name']")))
     language_text_box = driver.find_element(by=By.XPATH, value="(//div[@class='form-group']/div[starts-with(@class,'Select')]/div[starts-with(@class,'react-select__control')]/div[starts-with(@class,'react-select__value-container')]/div/div[@class='react-select__input']/input[@id='react-select-language-input'])[1]")
     language_text_box.send_keys(title["language"])
     wait.until(EC.visibility_of_element_located((By.XPATH, f"//div[starts-with(@class,'react-select__menu-list')]/div[@id='react-select-language-option-0' and text()='{title['language']}']")))
@@ -2402,9 +2405,10 @@ def bookbrainz_create_work(driver, work, index):
     bookbrainz_set_title(driver, index, work["title"])
     # disambiguation_label = driver.find_element(by=By.XPATH, value="//label[@class='form-label' and span/starts-with(text(),'Disambiguation')]")
     # disambiguation_text_box_locator = driver.find_element(by=By.XPATH, value=".row:nth-child(5) .form-control")
-    disambiguation_text_box_locator = locate_with(By.ID, "react-select-language-input").below({By.XPATH: "//div[@class='form-group']/input[@class='form-control']"})
-    # disambiguation_text_box = driver.find_element(by=By.XPATH, value=".row:nth-child(5) .form-control")
-    disambiguation_text_box = driver.find_element(disambiguation_text_box_locator)
+    # disambiguation_text_box_locator = locate_with(By.ID, "react-select-language-input").below({By.XPATH: "//div[@class='form-group']/input[@class='form-control']"})
+    # todo Make more accurate by relative to label
+    disambiguation_text_box = driver.find_element(by=By.XPATH, value="(//div[@class='form-group']/input[@class='form-control'])[2]")
+    # disambiguation_text_box = driver.find_element(disambiguation_text_box_locator)
     if "disambiguation" in work and work["disambiguation"]:
         disambiguation_text_box.send_keys(work["disambiguation"])
         wait.until(EC.visibility_of_element_located((By.XPATH, "//span[@class='text-success' and text()='Disambiguation']")))
