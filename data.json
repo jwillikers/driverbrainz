@@ -1,0 +1,681 @@
+{
+  "range": [
+    1,
+    2
+  ],
+  "original": {
+    "titles": [
+      {
+        "text": "【第|index|話】|subtitle|",
+        "sort": "だい|index|わ |subtitle|",
+        "language": "Japanese"
+      },
+      {
+        "text": "Chapter |index|: |subtitle|",
+        "sort": "COPY",
+        "language": "English",
+        "primary": true
+      },
+      {
+        "text": "[Dai |index| Wa] |subtitle|",
+        "sort": "Dai |index| Wa |subtitle|",
+        "language": "Japanese",
+        "primary": false
+      }
+    ],
+    "subtitles": {
+      "300": {
+        "0": {
+          "title": "魔神王メリオダス",
+          "sort": "まじん おう メリオダス"
+        },
+        "1": {
+          "title": "The Demon Lord Meliodas"
+        },
+        "2": {
+          "title": "Majin‐Ō Meriodasu"
+        }
+      },
+      "301": {
+        "0": {
+          "title": "神と対時する人",
+          "sort": "かみ と つい とき する にん"
+        },
+        "1": {
+          "title": "The One Who Stands Against A God"
+        },
+        "2": {
+          "title": "Kami to taiji suru hito"
+        }
+      },
+      "302": {
+        "0": {
+          "title": "みんながキミを待っている",
+          "sort": "みんなが キミ を て いる"
+        },
+        "1": {
+          "title": "Everyone’s Waiting for You"
+        },
+        "2": {
+          "title": "Minna ga Kimi wo Matte iru"
+        }
+      },
+      "303": {
+        "0": {
+          "title": "みんながキミの力になる",
+          "sort": "みんなが キミ の ちから になる"
+        },
+        "1": {
+          "title": "We’ll All Be Your Strength"
+        },
+        "2": {
+          "title": "Minna ga Kimi no Chikara ni Naru"
+        }
+      },
+      "304": {
+        "0": {
+          "title": "処刑人は願う",
+          "sort": "しょけい にん は ねがう"
+        },
+        "1": {
+          "title": "The Executioner’s Wish"
+        },
+        "2": {
+          "title": "Shokeinin wa Negau"
+        }
+      },
+      "305": {
+        "0": {
+          "title": "断末魔",
+          "sort": "だんまつま"
+        },
+        "1": {
+          "title": "Death Throes"
+        },
+        "2": {
+          "title": "Danmatsuma"
+        }
+      },
+      "306": {
+        "0": {
+          "title": "永き旅の終着",
+          "sort": "ながき たび の しゅうちゃく"
+        },
+        "1": {
+          "title": "The End of a Long Journey"
+        },
+        "2": {
+          "title": "Nagaki Tabi no Shūchaku"
+        }
+      },
+      "307": {
+        "0": {
+          "title": "幸せに包まれる時",
+          "sort": "しあわせ に つつま れる とき"
+        },
+        "1": {
+          "title": "Until We’re Shrouded in Happiness"
+        },
+        "2": {
+          "title": "Shiawase ni tsutsuma reru toki"
+        }
+      },
+      "308": {
+        "0": {
+          "title": "メリオダスが消える",
+          "sort": "メリオダス が きえ る"
+        },
+        "1": {
+          "title": "Meliodas Disappears"
+        },
+        "2": {
+          "title": "Meriodasu ga Kieru"
+        }
+      },
+      "309": {
+        "0": {
+          "title": "れが私の生きる道",
+          "sort": "れが わたし の いき る みち"
+        },
+        "1": {
+          "title": "This is the Path I Live"
+        },
+        "2": {
+          "title": "Rega watashi no ikiru michi"
+        }
+      },
+      "310": {
+        "0": {
+          "title": "さょなら セつの大罪",
+          "sort": "さょなら セ つの たいざい"
+        },
+        "1": {
+          "title": "Farewell, Seven Deadly Sins"
+        },
+        "2": {
+          "title": "Sayonara Nanatsu no Taizai"
+        }
+      },
+      "311": {
+        "0": {
+          "title": "まだ終わらない",
+          "sort": "まだ おわ らない"
+        },
+        "1": {
+          "title": "It’s Not Over Yet"
+        },
+        "2": {
+          "title": "Mada Owaranai"
+        }
+      },
+      "312": {
+        "0": {
+          "title": "開戦",
+          "sort": "かいせん"
+        },
+        "1": {
+          "title": "Outbreak of War"
+        },
+        "2": {
+          "title": "Kaisen"
+        }
+      },
+      "313": {
+        "0": {
+          "title": "宿命の兄弟",
+          "sort": "しゅくめい の きょうだい"
+        },
+        "1": {
+          "title": "Fated Brothers"
+        },
+        "2": {
+          "title": "Shukumei no Kyōdai"
+        }
+      },
+      "314": {
+        "0": {
+          "title": "二人の魔神王",
+          "sort": "ふたり の まじん おう"
+        },
+        "1": {
+          "title": "Their Demon Lord"
+        },
+        "2": {
+          "title": "Futari no Majin‐Ō"
+        }
+      },
+      "315": {
+        "0": {
+          "title": "最終戦争",
+          "sort": "さいしゅうせんそう"
+        },
+        "1": {
+          "title": "The Final Battle"
+        },
+        "2": {
+          "title": "Saishū Sensō"
+        }
+      },
+      "316": {
+        "0": {
+          "title": "主恩のインデュラ",
+          "sort": "しゅ おん の インデュラ"
+        },
+        "1": {
+          "title": "The Lord’s Grace Indura"
+        },
+        "2": {
+          "title": "Shuon no Indura"
+        }
+      },
+      "317": {
+        "0": {
+          "title": "傲慢なる決意",
+          "sort": "ごうまん なる けつい"
+        },
+        "1": {
+          "title": "Proud Determination"
+        },
+        "2": {
+          "title": "Gōman naru Ketsui"
+        }
+      },
+      "318": {
+        "0": {
+          "title": "混迷の戦況",
+          "sort": "こんめい の せんきょう"
+        },
+        "1": {
+          "title": "Ambiguous Fight"
+        },
+        "2": {
+          "title": "Konmei no Senkyō"
+        }
+      },
+      "319": {
+        "0": {
+          "title": "許されざる膠着",
+          "sort": "ゆるさ れざる こうちゃく"
+        },
+        "1": {
+          "title": "Unforgivable Deadlock"
+        },
+        "2": {
+          "title": "Yurusarezaru Kōchaku"
+        }
+      },
+      "320": {
+        "0": {
+          "title": "絶望の兄弟",
+          "sort": "ぜつぼう の きょうだい"
+        },
+        "1": {
+          "title": "Brothers of Despair"
+        },
+        "2": {
+          "title": "Zetsubō no Kyōdai"
+        }
+      },
+      "321": {
+        "0": {
+          "title": "光",
+          "sort": "ひかり"
+        },
+        "1": {
+          "title": "The Light"
+        },
+        "2": {
+          "title": "Hikari"
+        }
+      },
+      "322": {
+        "0": {
+          "title": "キミの名を呼ぶ声",
+          "sort": "キミ の めい を よぶ こえ"
+        },
+        "1": {
+          "title": "The Voice Calling Your Name"
+        },
+        "2": {
+          "title": "Kimi no Na wo Yobu Koe"
+        }
+      },
+      "323": {
+        "0": {
+          "title": "ボクはここにいる",
+          "sort": "ボク はここにいる"
+        },
+        "1": {
+          "title": "I’m Right Here"
+        },
+        "2": {
+          "title": "Boku wa Koko ni Iru"
+        }
+      },
+      "324": {
+        "0": {
+          "title": "兄弟の約束",
+          "sort": "きょうだい の やくそく"
+        },
+        "1": {
+          "title": "A Promise Between Brothers"
+        },
+        "2": {
+          "title": "Kyōdai no Yakusoku"
+        }
+      },
+      "325": {
+        "0": {
+          "title": "抗う者たち",
+          "sort": "あらがう もの たち"
+        },
+        "1": {
+          "title": "The Challengers"
+        },
+        "2": {
+          "title": "Aragau Mono‐tachi"
+        }
+      },
+      "326": {
+        "0": {
+          "title": "＜七つの大罪＞vs.魔神王",
+          "sort": "＜ななつ の たいざい＞vs.まじん おう"
+        },
+        "1": {
+          "title": "The Seven Deadly Sins vs. The Demon Lord"
+        },
+        "2": {
+          "title": "“Nanatsu no Taizai” vs. Majin-Ō"
+        }
+      },
+      "327": {
+        "0": {
+          "title": "エスカノールという男",
+          "sort": "エスカノール という おとこ"
+        },
+        "1": {
+          "title": "The Man Called Escanor"
+        },
+        "2": {
+          "title": "Esukanōru to iu Otoko"
+        }
+      },
+      "328": {
+        "0": {
+          "title": "天上天下唯我独尊の極み",
+          "sort": "てんじょうてんか ゆいがどくそん の きわみ"
+        },
+        "1": {
+          "title": "The One: Ultimate"
+        },
+        "2": {
+          "title": "Za Wan Arutimetto"
+        }
+      },
+      "329": {
+        "0": {
+          "title": "ゼルドリスvs.魔神王",
+          "sort": "ゼルドリス vs. まじん おう"
+        },
+        "1": {
+          "title": "Zeldris vs. The Demon Lord"
+        },
+        "2": {
+          "title": "Zerudorisu vs. Majin‐Ō"
+        }
+      },
+      "330": {
+        "0": {
+          "title": "あがき",
+          "sort": "あがき"
+        },
+        "1": {
+          "title": "The Struggle"
+        },
+        "2": {
+          "title": "Agaki"
+        }
+      },
+      "331": {
+        "0": {
+          "title": "倶に天を戴かず",
+          "sort": "ぐ に てん を いただか ず"
+        },
+        "1": {
+          "title": "Mortal Enemies"
+        },
+        "2": {
+          "title": "Tomo ni Ten wo Itadakazu"
+        }
+      },
+      "332": {
+        "0": {
+          "title": "代償",
+          "sort": "だいしょう"
+        },
+        "1": {
+          "title": "The Price"
+        },
+        "2": {
+          "title": "Daishō"
+        }
+      },
+      "333": {
+        "0": {
+          "title": "傲慢と暴食と傷跡",
+          "sort": "ごうまん と ぼうしょく と きずあと"
+        },
+        "1": {
+          "title": "Arrogance, Overeating, and Scars"
+        },
+        "2": {
+          "title": "Gōman to Bōshoku to Kizuato"
+        }
+      },
+      "334": {
+        "0": {
+          "title": "一つの時代の終わり",
+          "sort": "ひとつ の じだい の おわり"
+        },
+        "1": {
+          "title": "The End of an Era"
+        },
+        "2": {
+          "title": "Hitotsu no Jidai no Owari"
+        }
+      },
+      "335": {
+        "0": {
+          "title": "魔女が求めつづけたもの",
+          "sort": "まじょ が もとめ つづけたもの"
+        },
+        "1": {
+          "title": "What the Witch Had Always Wanted"
+        },
+        "2": {
+          "title": "Majo ga Motometsuzuketa Mono"
+        }
+      },
+      "336": {
+        "0": {
+          "title": "混沌の王",
+          "sort": "こんとん の おう"
+        },
+        "1": {
+          "title": "The Lord of Chaos"
+        },
+        "2": {
+          "title": "Konton no Ō"
+        }
+      },
+      "337": {
+        "0": {
+          "title": "マーリン",
+          "sort": "マーリン"
+        },
+        "1": {
+          "title": "Merlin"
+        },
+        "2": {
+          "title": "Mārin"
+        }
+      },
+      "338": {
+        "0": {
+          "title": "誕生",
+          "sort": "たんじょう"
+        },
+        "1": {
+          "title": "Birth"
+        },
+        "2": {
+          "title": "Tanjō"
+        }
+      },
+      "339": {
+        "0": {
+          "title": "混沌の一端",
+          "sort": "こんとん の いったん"
+        },
+        "1": {
+          "title": "A Taste of Chaos"
+        },
+        "2": {
+          "title": "Konton no Ittan"
+        }
+      },
+      "340": {
+        "0": {
+          "title": "あなたに会いたくて",
+          "sort": "あなたに あい たくて"
+        },
+        "1": {
+          "title": "I Miss You"
+        },
+        "2": {
+          "title": "Anata ni Aitakute"
+        }
+      },
+      "341": {
+        "0": {
+          "title": "キャス・パリーグ",
+          "sort": "キャス ・ パリーグ"
+        },
+        "1": {
+          "title": "Cath Palug"
+        },
+        "2": {
+          "title": "Kyasu Parīgu"
+        }
+      },
+      "342": {
+        "0": {
+          "title": "勝利の雄叫び",
+          "sort": "しょうり の おす さけび"
+        },
+        "1": {
+          "title": "Victory Cry"
+        },
+        "2": {
+          "title": "Shōri no Otakebi"
+        }
+      },
+      "343": {
+        "0": {
+          "title": "永遠の王国",
+          "sort": "えいえん の おうこく"
+        },
+        "1": {
+          "title": "An Everlasting Kingdom"
+        },
+        "2": {
+          "title": "Eien no Ōkoku"
+        }
+      },
+      "344": {
+        "0": {
+          "title": "未来へ",
+          "sort": "みらい へ"
+        },
+        "1": {
+          "title": "Towards the Future"
+        },
+        "2": {
+          "title": "Mirai e"
+        }
+      },
+      "345": {
+        "0": {
+          "title": "継がれゆくもの",
+          "sort": "つが れゆくもの"
+        },
+        "1": {
+          "title": "Heirs"
+        },
+        "2": {
+          "title": "Tsugareyuku Mono"
+        }
+      },
+      "346": {
+        "0": {
+          "title": "あの空のように",
+          "sort": "あの そら のように"
+        },
+        "1": {
+          "title": "Like That Sky"
+        },
+        "2": {
+          "title": "Ano Sora no Yō ni"
+        }
+      }
+    },
+    "language": "Japanese",
+    "disambiguation": "The Seven Deadly Sins, manga, Japanese",
+    "bookbrainz_work": {
+      "type": "manga",
+      "series": [
+        {
+          "id": "ada8c121-1a2b-459b-add0-ee7f695a75b0",
+          "offset": 0
+        },
+        {
+          "id": "2770aac1-2e00-4e87-b101-3a1223c0c0bc",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "writer",
+          "id": "cfae7528-a044-43f3-966d-3c9165907e1a"
+        },
+        {
+          "role": "illustrator",
+          "id": "cfae7528-a044-43f3-966d-3c9165907e1a"
+        }
+      ],
+      "identifiers": {}
+    }
+  },
+  "translation": {
+    "titles": [],
+    "subtitles": [],
+    "disambiguation": "The Seven Deadly Sins, manga, English",
+    "language": "English",
+    "bookbrainz_work": {
+      "series": [
+        {
+          "id": "ae93bf6b-4e83-4cac-8173-19c1d5d44648",
+          "offset": 0
+        },
+        {
+          "id": "fcaca2f0-4702-4a84-b458-59235df33945",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "translator",
+          "id": "5647f4b8-65b8-442d-8e6d-cfab7fac734e"
+        },
+        {
+          "role": "adapter",
+          "id": null
+        },
+        {
+          "role": "letterer",
+          "id": "1e3cfb9f-b7ec-499a-91d1-1a72e309b57c"
+        }
+      ],
+      "editions": {
+        "114": "71336506-cd5f-44ac-b0c0-d15acfa66a82",
+        "122": "e3a1bae6-1093-42a7-911b-85eac3e46792",
+        "128": "ea431376-98b4-4f6a-8bbd-f54edbf8e141",
+        "136": "349c54c5-5879-4332-a2f1-dc8a4e7abdf2",
+        "145": "8a925b4a-1b05-4ad0-ba02-ad1bb21d37d9",
+        "154": "527bdd4c-47c9-4944-90df-e23d08cc578a",
+        "163": "26f84945-cfa1-480d-85ab-36bcf3ed4b45",
+        "180": "ba8d8ebd-5a3f-4ce3-a1be-78571e20304b",
+        "189": "ba8d8ebd-5a3f-4ce3-a1be-78571e20304b",
+        "198": "24ba3d80-c8ca-47ec-98e8-cc54fac7138d",
+        "207": "71f72273-5e3b-45ef-a901-f0b1cc39761b",
+        "214": "ae51dc4d-6ed6-47d2-96db-cfd89db3b5da",
+        "223": "https://bookbrainz.org/edition/0878e7e2-bee2-4a6d-b96a-59c02990e9b7",
+        "232": "https://bookbrainz.org/edition/6531178b-7707-4023-a6bb-cee0c78fb392",
+        "241": "https://bookbrainz.org/edition/79afaad8-2ea6-4a54-8d26-5abd05aa4e17",
+        "250": "https://bookbrainz.org/edition/4824091f-2d59-483b-86d4-a36e8b72786b",
+        "259": "https://bookbrainz.org/edition/5265f7a8-656f-4e22-81dc-78ec6d9b77cb",
+        "267": "https://bookbrainz.org/edition/a95cc959-cd47-4f8a-8c4b-1bd7bc928646",
+        "276": "https://bookbrainz.org/edition/5faaac44-7ad6-4ed3-83bc-bdabdb76ad6d",
+        "285": "https://bookbrainz.org/edition/f605c35a-cebd-4b88-954e-b96476232e96",
+        "294": "https://bookbrainz.org/edition/2fec94be-3093-483c-ab1e-26691ffb7ddb",
+        "303": "https://bookbrainz.org/edition/b39c0bb2-9a4e-43e9-8e3a-b7844ff34760",
+        "312": "https://bookbrainz.org/edition/00ebe7e5-0ed0-4254-988b-f16c3ad0e76f",
+        "321": "https://bookbrainz.org/edition/2c5f5662-9d42-419c-a130-632c3ec69f2d",
+        "329": "https://bookbrainz.org/edition/dcdcc958-7547-4910-8b5d-b4afbd3f64d1",
+        "338": "https://bookbrainz.org/edition/33eecbd9-fbf9-4942-8ad4-4273bf5dca96"
+      },
+      "identifiers": {}
+    }
+  },
+  "identifiers": {}
+}

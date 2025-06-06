@@ -31,23 +31,18 @@
     mixed-line-endings.enable = true;
     nil.enable = true;
 
-    pip-compile = {
-      enable = true;
-      package = pkgs.python3Packages.pip-tools;
-      entry = "${pkgs.python3Packages.pip-tools}/bin/pip-compile requirements-dev.in";
-      description = "Automatically compile requirements.";
-      name = "pip-compile";
-      files = "^requirements-dev\\.(in|txt)$";
-      pass_filenames = false;
-    };
+    # pip-compile = {
+    #   enable = true;
+    #   package = pkgs.python3Packages.pip-tools;
+    #   entry = "${pkgs.python3Packages.pip-tools}/bin/pip-compile requirements-dev.in";
+    #   description = "Automatically compile requirements.";
+    #   name = "pip-compile";
+    #   files = "^requirements-dev\\.(in|txt)$";
+    #   pass_filenames = false;
+    # };
 
-    pyright = {
-      args = [
-        "--pythonpath"
-        ".venv/bin/python"
-      ];
-      enable = true;
-    };
+    # todo
+    # pyright.enable = true;
     python-debug-statements.enable = true;
     pyupgrade.enable = true;
 

@@ -50,6 +50,7 @@
           inherit (nix-update-scripts.apps.${system}) update-nix-direnv update-nixos-release;
         };
         devShells.default = mkShell {
+          inherit (pre-commit) shellHook;
           nativeBuildInputs =
             with pkgs;
             [
@@ -59,27 +60,16 @@
               geckodriver
               just
               lychee
+              mypy
               nushell
+              pyright
               python3Packages.platformdirs
               python3Packages.python
               python3Packages.selenium
-              # python3Packages.pip-tools
-              # python3Packages.venvShellHook
               treefmtEval.config.build.wrapper
               (builtins.attrValues treefmtEval.config.build.programs)
             ]
             ++ pre-commit.enabledPackages;
-          # venvDir = "./.venv";
-          # postVenvCreation = ''
-          #   pip-sync --python-executable .venv/bin/python requirements-dev.txt
-          # '';
-          # # https://github.com/NixOS/nixpkgs/issues/223151
-          # postShellHook =
-          #   ''
-          #     export LC_ALL="C.UTF-8";
-          #     pip-sync --python-executable .venv/bin/python requirements-dev.txt
-          #   ''
-            # + pre-commit.shellHook;
         };
         packages = {
         };

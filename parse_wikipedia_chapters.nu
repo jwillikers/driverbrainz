@@ -1,6 +1,8 @@
 #!/usr/bin/env nu
 use std log
 
+# todo Add unit tests.
+
 def convert_ascii_to_unicode []: string -> string {
   (
     $in
@@ -155,6 +157,6 @@ def main [
 
   # $chapters | skip $skip | take $take | reduce --fold '' {|chapter, acc|
   $chapters | reduce --fold '' {|chapter, acc|
-    $acc + $"  '($chapter.index)': {\n    0: {'title': '($chapter.title.kanji)', 'sort': '($chapter.title.kana)'},\n    1: {'title': '($chapter.title.english)'},\n    2: {'title': '($chapter.title.hepburn)'},\n  },\n"
+    $acc + $"  \"($chapter.index)\": {\n    \"0\": {\"title\": \"($chapter.title.kanji)\", \"sort\": \"($chapter.title.kana)\"},\n    \"1\": {\"title\": \"($chapter.title.english)\"},\n    \"2\": {\"title\": \"($chapter.title.hepburn)\"}\n  },\n"
   }
 }
