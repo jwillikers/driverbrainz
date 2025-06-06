@@ -58,8 +58,7 @@ git clone https://github.com/jwillikers/driverbrainz.git
 cd driverbrainz
 ----
 
-. Update the code as necessary with details of the series.
-I hope to move this to a JSON input file in the future.
+. Update the `data.json` file with the details for the series.
 
 . Set the environment variable `MUSICBRAINZ_USERNAME` to your user's MusicBrainz username.
 The following demonstrates this for the fish shell.
@@ -78,10 +77,12 @@ set --export --universal MUSICBRAINZ_PASSWORD '****'
 ----
 
 . Run DriverBrainz from the Nix development environment.
+Use `--range-start` and `--range-end` to define a range of integers correlating to each chapter or volume in the series.
+Alternatively, define individual indices in a list using the `range` key in the `data.json` file.
 +
 [,sh]
 ----
-nix develop --command ./driverbrainz.py
+nix develop --command ./driverbrainz.py --range-start 1 --range-end 200
 ----
 
 == Development
