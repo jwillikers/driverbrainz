@@ -54,11 +54,11 @@ def main [
     | get parse.wikitext.*
     | lines --skip-empty
     # | filter {|line| ($line | str starts-with '|{{nihongo|') or ($line | str starts-with '|"')}
-    | filter {|line| $line =~ '^(?:\s*\*[0-9]+\.\s+)|(?:\|)\{\{nihongo\|' or ($line | str starts-with '|"')}
+    | filter {|line| $line =~ '^(?:\s*\*[0-9]+\.\s+)|(?:\|)\{\{[nN]ihongo\|' or ($line | str starts-with '|"')}
     | each {|line|
       log debug $"($line)"
-      if ($line | str contains "{{nihongo") {
-        $line | parse --regex '((?P<index>\s*\*[0-9]+\.\s+)|(?:\|))\{\{nihongo\|"(?P<english>.+)"(?:\|(?P<kanji>.+)\|(?P<hepburn>.+)\}\}){0,1}' | first
+      if ($line | str downcase | str contains "{{nihongo") {
+        $line | parse --regex '((?P<index>\s*\*[0-9]+\.\s+)|(?:\|))\{\{[nN]ihongo\|"(?P<english>.+)"(?:\|(?P<kanji>.+)\|(?P<hepburn>.+)\}\}){0,1}' | first
       } else {
         let title = ($line | str trim --left --char '|' | str trim --char '"')
         let title = $line | parse --regex '(?P<index>\s*\*[0-9]+\.\s+){0,1}"{0,1}(?P<english>.+)"{0,1}' | first
