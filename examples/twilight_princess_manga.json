@@ -1,0 +1,786 @@
+{
+  "original": {
+    "titles": [
+      {
+        "text": "#|index|. |subtitle|",
+        "sort": "|index|. |subtitle|",
+        "language": "Japanese"
+      },
+      {
+        "text": "#|index|. |subtitle|",
+        "sort": "|index|. |subtitle|",
+        "language": "English",
+        "primary": true
+      },
+      {
+        "text": "#|index|. |subtitle|",
+        "sort": "|index|. |subtitle|",
+        "language": "Japanese",
+        "primary": false
+      }
+    ],
+    "subtitles": {
+      "1": {
+        "0": {
+          "title": "光と影【前編】",
+          "sort": "ひかと かげ【ぜんぺん】"
+        },
+        "1": {
+          "title": "Light and Shadow (Part 1)"
+        },
+        "2": {
+          "title": "Hikari to Kage (Zenpen)"
+        }
+      },
+      "2": {
+        "0": {
+          "title": "光と影【後編】",
+          "sort": "ひかと かげ【こうへん】"
+        },
+        "1": {
+          "title": "Light and Shadow (Part 2)"
+        },
+        "2": {
+          "title": "Hikari to Kage (Kōhen)"
+        }
+      },
+      "3": {
+        "0": {
+          "title": "トアル村",
+          "sort": "トアル むら"
+        },
+        "1": {
+          "title": "Ordon Village"
+        },
+        "2": {
+          "title": "Toaru‐mura"
+        }
+      },
+      "4": {
+        "0": {
+          "title": "兆候",
+          "sort": "ちょうこう"
+        },
+        "1": {
+          "title": "Omens"
+        },
+        "2": {
+          "title": "Chōko"
+        }
+      },
+      "5": {
+        "0": {
+          "title": "影より出でる者たち",
+          "sort": "かげ より いで る もの たち"
+        },
+        "1": {
+          "title": "Those Who Come Forth from Shadow"
+        },
+        "2": {
+          "title": "Kage yori Ideru Mono‐tachi"
+        }
+      },
+      "6": {
+        "0": {
+          "title": "リンクの過去",
+          "sort": "リンク の かこ"
+        },
+        "1": {
+          "title": "Link’s Past"
+        },
+        "2": {
+          "title": "Rinku no Kako"
+        }
+      },
+      "7": {
+        "0": {
+          "title": "恐怖を食う化け物",
+          "sort": "きょうふ を くう ばけもの"
+        },
+        "1": {
+          "title": "The Monster Who Devours Fear"
+        },
+        "2": {
+          "title": "Kyōfu o Kū Bakemono"
+        }
+      },
+      "8": {
+        "0": {
+          "title": "黄昏へ",
+          "sort": "たそがれ へ"
+        },
+        "1": {
+          "title": "Into Twilight"
+        },
+        "2": {
+          "title": "Towairaito e"
+        }
+      },
+      "9": {
+        "0": {
+          "title": "邪悪なるものの処刑",
+          "sort": "じゃあく なるものの しょけい"
+        },
+        "1": {
+          "title": "The Wicked One’s Execution"
+        },
+        "2": {
+          "title": "Jaaku naru Mono no Shokei"
+        }
+      },
+      "10": {
+        "0": {
+          "title": "ミドナ",
+          "sort": "ミドナ"
+        },
+        "1": {
+          "title": "Midna"
+        },
+        "2": {
+          "title": "Midona"
+        }
+      },
+      "11": {
+        "0": {
+          "title": "幽閉塔",
+          "sort": "ゆうへい とう"
+        },
+        "1": {
+          "title": "Locked in a Tower"
+        },
+        "2": {
+          "title": "Yūheitō"
+        }
+      },
+      "12": {
+        "0": {
+          "title": "ウルフリンク覚醒",
+          "sort": "ウルフリンク かくせい"
+        },
+        "1": {
+          "title": "Wolf Link’s Awakening"
+        },
+        "2": {
+          "title": "Urufu Rinku Kakusei"
+        }
+      },
+      "13": {
+        "0": {
+          "title": "それぞれの生きる道",
+          "sort": "それぞれの いき る みち"
+        },
+        "1": {
+          "title": "Different Ways of Life"
+        },
+        "2": {
+          "title": "Sorezore no Ikiru Michi"
+        }
+      },
+      "14": {
+        "0": {
+          "title": "フィローネの森へ",
+          "sort": "フィローネ の もり へ"
+        },
+        "1": {
+          "title": "To Faron Woods"
+        },
+        "2": {
+          "title": "Firōne no Mori e"
+        }
+      },
+      "15": {
+        "0": {
+          "title": "影の視力",
+          "sort": "かげ の しりょく"
+        },
+        "1": {
+          "title": "Twilight Sense"
+        },
+        "2": {
+          "title": "Kage no Shiryoku"
+        }
+      },
+      "16": {
+        "0": {
+          "title": "緑衣の勇者",
+          "sort": "みどり ころも の ゆうしゃ"
+        },
+        "1": {
+          "title": "The Hero in Green"
+        },
+        "2": {
+          "title": "Ryokui no Yūsha"
+        }
+      },
+      "17": {
+        "0": {
+          "title": "戸惑い",
+          "sort": "とまどい"
+        },
+        "1": {
+          "title": "Bewilderment"
+        },
+        "2": {
+          "title": "Tomadoi"
+        }
+      },
+      "18": {
+        "0": {
+          "title": "静かなる決意",
+          "sort": "しずか なる けつい"
+        },
+        "1": {
+          "title": "Quiet Determination"
+        },
+        "2": {
+          "title": "Shizuka naru Ketsui"
+        }
+      },
+      "19": {
+        "0": {
+          "title": "カカリコ村",
+          "sort": "カカリコ むら"
+        },
+        "1": {
+          "title": "Kakariko Village"
+        },
+        "2": {
+          "title": "Kakariko‐mura"
+        }
+      },
+      "20": {
+        "0": {
+          "title": "再び黄昏の領域へ",
+          "sort": "ふたたび たそがれ の りょういき へ"
+        },
+        "1": {
+          "title": "Into Twilight Once More"
+        },
+        "2": {
+          "title": "Futatabi Towairaito e"
+        }
+      },
+      "21": {
+        "0": {
+          "title": "金色の狼再び",
+          "sort": "きんいろ の おおかみ ふたたび"
+        },
+        "1": {
+          "title": "The Golden Wolf Again"
+        },
+        "2": {
+          "title": "Kin’iro no Ōkami Futatabi"
+        }
+      },
+      "22": {
+        "0": {
+          "title": "生と死と",
+          "sort": "なま と し と"
+        },
+        "1": {
+          "title": "Life and Death"
+        },
+        "2": {
+          "title": "Sei to Shi to"
+        }
+      },
+      "23": {
+        "0": {
+          "title": "真の勇気",
+          "sort": "まこと の ゆうき"
+        },
+        "1": {
+          "title": "True Bravery"
+        },
+        "2": {
+          "title": "Shin no Yūki"
+        }
+      },
+      "24": {
+        "0": {
+          "title": "誰がための激闘",
+          "sort": "だれが ための げきとう"
+        },
+        "1": {
+          "title": "A Fierce Battle for Someone"
+        },
+        "2": {
+          "title": "Ta ga Tame no Gekitō"
+        }
+      },
+      "25": {
+        "0": {
+          "title": "オルディン大橋の一騎打ち",
+          "sort": "オルディン おおはし の いっきうち ち"
+        },
+        "1": {
+          "title": "Duel Atop the Bridge of Eldin"
+        },
+        "2": {
+          "title": "Orudin Ōhachi no Ikkiuchi"
+        }
+      },
+      "26": {
+        "0": {
+          "title": "逆転",
+          "sort": "ぎゃくてん"
+        },
+        "1": {
+          "title": "Reversal"
+        },
+        "2": {
+          "title": "Gyakuten"
+        }
+      },
+      "27": {
+        "0": {
+          "title": "ゴロン族",
+          "sort": "ゴロン ぞく"
+        },
+        "1": {
+          "title": "The Goron Tribe"
+        },
+        "2": {
+          "title": "Goron‐zoku"
+        }
+      },
+      "28": {
+        "0": {
+          "title": "最後の黄昏",
+          "sort": "さいご の たそがれ"
+        },
+        "1": {
+          "title": "The Final Twilight"
+        },
+        "2": {
+          "title": "Saigo no Towairaito"
+        }
+      },
+      "29": {
+        "0": {
+          "title": "記憶の轍",
+          "sort": "きおく の わだち"
+        },
+        "1": {
+          "title": "Memory Tracks"
+        },
+        "2": {
+          "title": "Kioku no Wadachi"
+        }
+      },
+      "30": {
+        "0": {
+          "title": "湖底の神殿",
+          "sort": "こてい の しんでん"
+        },
+        "1": {
+          "title": "Lakebed Temple"
+        },
+        "2": {
+          "title": "Kotei no Shinden"
+        }
+      },
+      "31": {
+        "0": {
+          "title": "傷だらけのミドナ",
+          "sort": "きず だらけの ミドナ"
+        },
+        "1": {
+          "title": "Midna Covered in Wounds"
+        },
+        "2": {
+          "title": "Kizudarake no Midona"
+        }
+      },
+      "32": {
+        "0": {
+          "title": "マスターソード",
+          "sort": "マスターソード"
+        },
+        "1": {
+          "title": "The Master Sword"
+        },
+        "2": {
+          "title": "Masutā Sōdo"
+        }
+      },
+      "33": {
+        "0": {
+          "title": "レジスタンス",
+          "sort": "レジスタンス"
+        },
+        "1": {
+          "title": "The Resistance"
+        },
+        "2": {
+          "title": "Rejisutansu"
+        }
+      },
+      "34": {
+        "0": {
+          "title": "砂漠の処刑場",
+          "sort": "さばく の しょけい ば"
+        },
+        "1": {
+          "title": "Desert Arbiter’s Grounds"
+        },
+        "2": {
+          "title": "Sabaku no Shokeijō"
+        }
+      },
+      "35": {
+        "0": {
+          "title": "雪山の廃墟",
+          "sort": "ゆき やま の はいきょ"
+        },
+        "1": {
+          "title": "Snowpeak Ruins"
+        },
+        "2": {
+          "title": "Yukiyama no Haikyo"
+        }
+      },
+      "36": {
+        "0": {
+          "title": "狂気の暗転",
+          "sort": "きょうき の あんてん"
+        },
+        "1": {
+          "title": "Darkening of Madness"
+        },
+        "2": {
+          "title": "Kyōki no Anten"
+        }
+      },
+      "37": {
+        "0": {
+          "title": "復活への誘い",
+          "sort": "ふっかつ への さそい"
+        },
+        "1": {
+          "title": "Invitation to Rebirth"
+        },
+        "2": {
+          "title": "Fukkatsu e no Izanai"
+        }
+      },
+      "38": {
+        "0": {
+          "title": "再びの旅立ち",
+          "sort": "ふたたび の たびだち"
+        },
+        "1": {
+          "title": "Setting Out on a Journey Again"
+        },
+        "2": {
+          "title": "Futatabi no Tabidachi"
+        }
+      },
+      "39": {
+        "0": {
+          "title": "トライフォースの宿命",
+          "sort": "トライフォース の しゅくめい"
+        },
+        "1": {
+          "title": "Destiny of the Triforce"
+        },
+        "2": {
+          "title": "Toraifōsu no Shukumei"
+        }
+      },
+      "40": {
+        "0": {
+          "title": "時の眠る神殿",
+          "sort": "ときの ねむる しんでん"
+        },
+        "1": {
+          "title": "The Temple Where Time Sleeps"
+        },
+        "2": {
+          "title": "Toki no Nemuru Shinden"
+        }
+      },
+      "41": {
+        "0": {
+          "title": "時の眠る神殿2",
+          "sort": "ときの ねむる しんでん 2"
+        },
+        "1": {
+          "title": "The Temple Where Time Sleeps, Part 2"
+        },
+        "2": {
+          "title": "Toki no Nemuru Shinden 2"
+        }
+      },
+      "42": {
+        "0": {
+          "title": "時の眠る神殿3",
+          "sort": "ときの ねむる しんでん 3"
+        },
+        "1": {
+          "title": "The Temple Where Time Sleeps, Part 3"
+        },
+        "2": {
+          "title": "Toki no Nemuru Shinden 3"
+        }
+      },
+      "43": {
+        "0": {
+          "title": "襲撃",
+          "sort": "しゅうげき"
+        },
+        "1": {
+          "title": "Attack"
+        },
+        "2": {
+          "title": "Shūgeki"
+        }
+      },
+      "44": {
+        "0": {
+          "title": "天空都市",
+          "sort": "てんくう とし"
+        },
+        "1": {
+          "title": "City in the Sky"
+        },
+        "2": {
+          "title": "Tenkū Toshi"
+        }
+      },
+      "45": {
+        "0": {
+          "title": "影の世界へ1",
+          "sort": "かげ の せかい へ1"
+        },
+        "1": {
+          "title": "To the Twilight Realm, Part 1"
+        },
+        "2": {
+          "title": "Kage no Sekai e 1"
+        }
+      },
+      "46": {
+        "0": {
+          "title": "影の世界へ2",
+          "sort": "かげ の せかい へ2"
+        },
+        "1": {
+          "title": "To the Twilight Realm, Part 2"
+        },
+        "2": {
+          "title": "Kage no Sekai e 2"
+        }
+      },
+      "47": {
+        "0": {
+          "title": "僭王ザント",
+          "sort": "せん おう ザント"
+        },
+        "1": {
+          "title": "Zant the Usurper King"
+        },
+        "2": {
+          "title": "Sen’ō Zanto"
+        }
+      },
+      "48": {
+        "0": {
+          "title": "隔たり",
+          "sort": "へだた り"
+        },
+        "1": {
+          "title": "Difference"
+        },
+        "2": {
+          "title": "Hedatari"
+        }
+      },
+      "49": {
+        "0": {
+          "title": "影の力",
+          "sort": "かげ の ちから"
+        },
+        "1": {
+          "title": "The Power of Shadow"
+        },
+        "2": {
+          "title": "Kage no Chikara"
+        }
+      },
+      "50": {
+        "0": {
+          "title": "王の広間1",
+          "sort": "おう の ひろま1"
+        },
+        "1": {
+          "title": "The Lord’s Hall, Part 1"
+        },
+        "2": {
+          "title": "Ō no Hiroma 1"
+        }
+      },
+      "51": {
+        "0": {
+          "title": "王の広間2",
+          "sort": "おう の ひろま2"
+        },
+        "1": {
+          "title": "The Lord’s Hall, Part 2"
+        },
+        "2": {
+          "title": "Ō no Hiroma 2"
+        }
+      },
+      "52": {
+        "0": {
+          "title": "王の広間3",
+          "sort": "おう の ひろま3"
+        },
+        "1": {
+          "title": "The Lord’s Hall, Part 3"
+        },
+        "2": {
+          "title": "Ō no Hiroma 3"
+        }
+      },
+      "53": {
+        "0": {
+          "title": "王の広間4",
+          "sort": "おう の ひろま4"
+        },
+        "1": {
+          "title": "The Lord’s Hall, Part 4"
+        },
+        "2": {
+          "title": "Ō no Hiroma 4"
+        }
+      },
+      "54": {
+        "0": {
+          "title": "一騎打ち1",
+          "sort": "いっきうち ち1"
+        },
+        "1": {
+          "title": "Single Combat, Part 1"
+        },
+        "2": {
+          "title": "Ikkiuchi 1"
+        }
+      },
+      "55": {
+        "0": {
+          "title": "一騎打ち2",
+          "sort": "いっきうち ち2"
+        },
+        "1": {
+          "title": "Single Combat, Part 2"
+        },
+        "2": {
+          "title": "Ikkiuchi 2"
+        }
+      },
+      "56": {
+        "0": {
+          "title": "一騎打ち3",
+          "sort": "いっきうち ち3"
+        },
+        "1": {
+          "title": "Single Combat, Part 3"
+        },
+        "2": {
+          "title": "Ikkiuchi 3"
+        }
+      },
+      "57": {
+        "0": {
+          "title": "一騎打ち4",
+          "sort": "いっきうち ち4"
+        },
+        "1": {
+          "title": "Single Combat, Part 4"
+        },
+        "2": {
+          "title": "Ikkiuchi 4"
+        }
+      },
+      "58": {
+        "0": {
+          "title": "新たなる旅立ち",
+          "sort": "あらた なる たびだち"
+        },
+        "1": {
+          "title": "A New Departure"
+        },
+        "2": {
+          "title": "Arata naru Tabidachi"
+        }
+      }
+    },
+    "language": "Japanese",
+    "disambiguation": "The Legend of Zelda: Twilight Princess, manga, Japanese",
+    "bookbrainz_work": {
+      "type": "manga",
+      "series": [
+        {
+          "id": "aef0f16e-45f3-4bb6-82d2-1a9ee4a0b03c",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "writer",
+          "id": "5e15aaa7-8054-4bb0-acb4-4b2a0d2e61a7"
+        },
+        {
+          "role": "illustrator",
+          "id": "5e15aaa7-8054-4bb0-acb4-4b2a0d2e61a7"
+        }
+      ],
+      "identifiers": {}
+    }
+  },
+  "translation": {
+    "titles": [],
+    "subtitles": {},
+    "disambiguation": "The Legend of Zelda: Twilight Princess, manga, English",
+    "language": "English",
+    "bookbrainz_work": {
+      "series": [
+        {
+          "id": "71b5cc5b-f325-4917-a93c-516d026d2341",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "translator",
+          "id": "3e37e9ca-f854-4c72-b242-9da63ad1a897"
+        },
+        {
+          "role": "adapter",
+          "id": "52ad9163-2131-4c4e-aa71-509843f5a128"
+        },
+        {
+          "role": "letterer",
+          "id": "9a3867dc-ff56-49e3-8b9c-3424350e68cf"
+        }
+      ],
+      "editions": {
+        "1": "a9a85a19-58f0-419a-bdeb-32c2a64acee1",
+        "9": "0584397c-6694-40df-8632-7680c664aeaf",
+        "18": "04b2e2fb-163f-4b8c-808c-547e19836fb8",
+        "27": "e9d96b7c-5eb1-4bbe-b9e1-2ef4c41010f7",
+        "31": "f5b83a7a-d1e9-4e81-a343-ec57d2992bdb",
+        "35": "16f225ea-5c42-4d05-994d-b88fda7bcc09",
+        "37": "bdd2f89b-74e9-45b6-9079-87521ff395bd",
+        "41": "1cf9842b-573a-4cce-a057-9be37fe4160f",
+        "46": "200f28fa-b9c8-4a05-b198-50d80334ad06",
+        "49": "0d119626-3c02-43d5-b7db-d64f3141c675",
+        "53": "42bd211d-b966-43da-bcb3-c113670d615c"
+      },
+      "identifiers": {}
+    }
+  },
+  "identifiers": {}
+}
