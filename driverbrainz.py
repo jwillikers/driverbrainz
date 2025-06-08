@@ -724,10 +724,13 @@ def bookbrainz_create_work(driver, work, index, username=None):
         for series in work["series"]:
             if "id" in series and series["id"]:
                 if "offset" in series and series["offset"]:
+                    offset_index = float(index) + series["offset"]
+                    if offset_index.is_integer():
+                        offset_index = int(offset_index)
                     bookbrainz_add_series(
                         driver,
                         series["id"],
-                        str(float(index) + series["offset"]),
+                        str(offset_index),
                     )
                 else:
                     bookbrainz_add_series(driver, series["id"], index)

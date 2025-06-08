@@ -2,6 +2,8 @@
 use std log
 
 # todo Add unit tests.
+# todo Handle bonus chapters.
+# todo Output as JSON.
 
 def convert_ascii_to_unicode []: string -> string {
   (
@@ -35,6 +37,26 @@ def kanji_into_kana []: any -> string {
   }
 }
 
+# Parse the line containing a chapter title and its translations
+export def parse_nihongo_line []: string -> record<chapter_part: string, english: string, kanji: string, hepburn: string> {
+  let line = $in
+  let parsed = $line | parse --regex '(?:(?:\s*\*\s*(?P<chapter_part>[0-9a-zA-Z\s_-]+)\s*\.\s+)|(?:\|))\{\{[nN]ihongo\|"(?P<english>.+)"(?:\|(?P<kanji>.+)\|(?P<hepburn>.+)\}\}){0,1}'
+  if ($parsed | is-empty) {
+    return null
+  }
+  $parsed | first
+}
+
+export def is_chapter_line []: string -> bool {
+  let line = $in
+  $line =~ '^(?:\s*\*\s*[0-9a-zA-Z\s_-]+\s*\.\s+)|(?:\|)\{\{[nN]ihongo\|' or ($line | str starts-with '|"')
+}
+
+export def is_nihongo_line []: string -> bool {
+  let line = $in
+  $line | str downcase | str contains "{{nihongo"
+}
+
 # Example volume lines:
 # VolumeNumber    = 1
 
@@ -54,13 +76,14 @@ def main [
     | get parse.wikitext.*
     | lines --skip-empty
     # | filter {|line| ($line | str starts-with '|{{nihongo|') or ($line | str starts-with '|"')}
-    | filter {|line| $line =~ '^(?:\s*\*[0-9]+\.\s+)|(?:\|)\{\{[nN]ihongo\|' or ($line | str starts-with '|"')}
+    | filter {|line| $line | is_chapter_line}
     | each {|line|
       log debug $"($line)"
-      if ($line | str downcase | str contains "{{nihongo") {
-        $line | parse --regex '((?P<index>\s*\*[0-9]+\.\s+)|(?:\|))\{\{[nN]ihongo\|"(?P<english>.+)"(?:\|(?P<kanji>.+)\|(?P<hepburn>.+)\}\}){0,1}' | first
+      if ($line | is_nihongo_line) {
+        $line | parse_nihongo_line
       } else {
         let title = ($line | str trim --left --char '|' | str trim --char '"')
+        # todo Special chapter handling here like for parse_nihongo_line
         let title = $line | parse --regex '(?P<index>\s*\*[0-9]+\.\s+){0,1}"{0,1}(?P<english>.+)"{0,1}' | first
         let chapter = {
           english: ($title.english | str trim --char '"')
@@ -72,6 +95,17 @@ def main [
         } else {
           $chapter
         }
+      }
+    }
+  )
+  let chapters = (
+    $chapters | each {|chapter|
+    # todo Parse chapter part into title and index
+      if "chapter_part" in $chapter and ($chapter.chapter_part | is-not-empty) {
+        # determine if it looks like an int
+        $chapter | update index ($chapter.chapter_part | str trim | into int)
+      } else {
+        $chapter
       }
     }
   )
