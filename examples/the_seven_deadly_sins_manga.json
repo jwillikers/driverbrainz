@@ -1,0 +1,4913 @@
+{
+  "range": [
+    "121.5"
+  ],
+  "original": {
+    "titles": [
+      {
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
+        "language": "Japanese"
+      },
+      {
+        "text": "|subtitle|",
+        "sort": "COPY",
+        "language": "English",
+        "primary": true
+      },
+      {
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
+        "language": "Japanese",
+        "primary": false
+      }
+    ],
+    "subtitles": {
+      "1": {
+        "0": {
+          "title": "【第|index|話】七つの大罪",
+          "sort": "だい|index|わ ななつ の たいざい"
+        },
+        "1": {
+          "title": "Chapter |index|: The Seven Deadly Sins"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Nanatsu no Taizai",
+          "sort": "Dai |index| Wa Nanatsu no Taizai"
+        }
+      },
+      "2": {
+        "0": {
+          "title": "【第|index|話】聖騎士の剣",
+          "sort": "だい|index|わ せいきし の つるぎ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Holy Knight's Sword"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seikishi no Ken",
+          "sort": "Dai |index| Wa Seikishi no Ken"
+        }
+      },
+      "3": {
+        "0": {
+          "title": "【第|index|話】自分がやるべきこと",
+          "sort": "だい|index|わ じぶん がやるべきこと"
+        },
+        "1": {
+          "title": "Chapter |index|: What One Must Do"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Jibun ga Yarubeki koto",
+          "sort": "Dai |index| Wa Jibun ga Yarubeki koto"
+        }
+      },
+      "4": {
+        "0": {
+          "title": "【第|index|話】眠れる森の罪",
+          "sort": "だい|index|わ ねむれ る もり の つみ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Sin in the Sleeping Forest"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Nemureru Mori no Tsumi",
+          "sort": "Dai |index| Wa Nemureru Mori no Tsumi"
+        }
+      },
+      "5": {
+        "0": {
+          "title": "【第|index|話】暗闇の記憶",
+          "sort": "だい|index|わ くらやみ の きおく"
+        },
+        "1": {
+          "title": "Chapter |index|: Dark Memories"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kurayami no Kioku",
+          "sort": "Dai |index| Wa Kurayami no Kioku"
+        }
+      },
+      "6": {
+        "0": {
+          "title": "【第|index|話】聖騎士ギルサンダー",
+          "sort": "だい|index|わ せいきし ぎるさんだー"
+        },
+        "1": {
+          "title": "Chapter |index|: The Holy Knight Gilthunder"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seikishi Girusandā",
+          "sort": "Dai |index| Wa Seikishi Girusandā"
+        }
+      },
+      "7": {
+        "0": {
+          "title": "【第|index|話】暗闇の虜囚",
+          "sort": "だい|index|わ くらやみ の りょしゅう"
+        },
+        "1": {
+          "title": "Chapter |index|: Dark Prisoner"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kurayami no Ryoshū",
+          "sort": "Dai |index| Wa Kurayami no Ryoshū"
+        }
+      },
+      "8": {
+        "0": {
+          "title": "【第|index|話】少女の夢",
+          "sort": "だい|index|わ しょうじょ の ゆめ"
+        },
+        "1": {
+          "title": "Chapter |index|: A Girl's Dream"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shoujo no Yume",
+          "sort": "Dai |index| Wa Shoujo no Yume"
+        }
+      },
+      "9": {
+        "0": {
+          "title": "【第|index|話】触れてはならない",
+          "sort": "だい|index|わ ふれて はならない"
+        },
+        "1": {
+          "title": "Chapter |index|: No Touching"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Furete wa Naranai",
+          "sort": "Dai |index| Wa Furete wa Naranai"
+        }
+      },
+      "10": {
+        "0": {
+          "title": "【第|index|話】見えざる悪意",
+          "sort": "だい|index|わ みえ ざる あくい"
+        },
+        "1": {
+          "title": "Chapter |index|: An Unseen Malice"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Miezaru Akui",
+          "sort": "Dai |index| Wa Miezaru Akui"
+        }
+      },
+      "11": {
+        "0": {
+          "title": "【第|index|話】たとえあなたが死んでも",
+          "sort": "だい|index|わ たとえあなたが しん でも"
+        },
+        "1": {
+          "title": "Chapter |index|: Even If You Died"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tatoe Anata ga Shindemo",
+          "sort": "Dai |index| Wa Tatoe Anata ga Shindemo"
+        }
+      },
+      "12": {
+        "0": {
+          "title": "【第|index|話】混沌の宴",
+          "sort": "だい|index|わ こんとん の うたげ"
+        },
+        "1": {
+          "title": "Chapter |index|: A Chaotic Party"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Konton no Utage",
+          "sort": "Dai |index| Wa Konton no Utage"
+        }
+      },
+      "13": {
+        "0": {
+          "title": "【第|index|話】捧げる覚悟",
+          "sort": "だい|index|わ ささげ る かくご"
+        },
+        "1": {
+          "title": "Chapter |index|: Ready To Sacrifice"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sasageru Kakugo",
+          "sort": "Dai |index| Wa Sasageru Kakugo"
+        }
+      },
+      "14": {
+        "0": {
+          "title": "【第|index|話】エクスプロージョン",
+          "sort": "だい|index|わ えくすぷろーじょん"
+        },
+        "1": {
+          "title": "Chapter |index|: Explosion"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ekusupurōjon",
+          "sort": "Dai |index| Wa Ekusupurōjon"
+        }
+      },
+      "15": {
+        "0": {
+          "title": "【第|index|話】再会のとばっちり",
+          "sort": "だい|index|わ さいかい のとばっちり"
+        },
+        "1": {
+          "title": "Chapter |index|: Caught In the Reunion"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Saikai no Tobacchiri",
+          "sort": "Dai |index| Wa Saikai no Tobacchiri"
+        }
+      },
+      "16": {
+        "0": {
+          "title": "【第|index|話】はじまりの詩",
+          "sort": "だい|index|わ はじまりの し"
+        },
+        "1": {
+          "title": "Chapter |index|: The Poem of Beginnings"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hajimari no Uta",
+          "sort": "Dai |index| Wa Hajimari no Uta"
+        }
+      },
+      "17": {
+        "0": {
+          "title": "【第|index|話】嵐の予感",
+          "sort": "だい|index|わ あらし の よかん"
+        },
+        "1": {
+          "title": "Chapter |index|: Storm's Brewing"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Arashi no Yokan",
+          "sort": "Dai |index| Wa Arashi no Yokan"
+        }
+      },
+      "18": {
+        "0": {
+          "title": "【第|index|話】感動の再会",
+          "sort": "だい|index|わ かんどう の さいかい"
+        },
+        "1": {
+          "title": "Chapter |index|: A Touching Reunion"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kandō no Saikai",
+          "sort": "Dai |index| Wa Kandō no Saikai"
+        }
+      },
+      "19": {
+        "0": {
+          "title": "【第|index|話】強欲の罪",
+          "sort": "だい|index|わ ごうよく の つみ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Sin of Greed"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Gōyoku no Tsumi",
+          "sort": "Dai |index| Wa Gōyoku no Tsumi"
+        }
+      },
+      "20": {
+        "0": {
+          "title": "【第|index|話】二つの道",
+          "sort": "だい|index|わ ふたつ の みち"
+        },
+        "1": {
+          "title": "Chapter |index|: Two Paths"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Futatsu no Michi",
+          "sort": "Dai |index| Wa Futatsu no Michi"
+        }
+      },
+      "21": {
+        "0": {
+          "title": "【第|index|話】リベンジ • ナイト",
+          "sort": "だい|index|わ りべんじ   •   ないと"
+        },
+        "1": {
+          "title": "Chapter |index|: Revenge Knight"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ribenji • Naito",
+          "sort": "Dai |index| Wa Ribenji • Naito"
+        }
+      },
+      "22": {
+        "0": {
+          "title": "【第|index|話】恐るべき追跡者",
+          "sort": "だい|index|わ おそる べき ついせき もの"
+        },
+        "1": {
+          "title": "Chapter |index|: A Pursuer to Fear"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Osorubeki Tsuiseki-sha",
+          "sort": "Dai |index| Wa Osorubeki Tsuiseki-sha"
+        }
+      },
+      "22.5": {
+        "0": {
+          "title": "【番外編】無駄なものなんて何一つ",
+          "sort": "ばんがいへん むだ なものなんて なに ひとつ"
+        },
+        "1": {
+          "title": "Bonus Chapter: Nothing Wasted"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Muda na Mono Nante Nani hitotsu",
+          "sort": "Bangai‐hen Muda na Mono Nante Nani hitotsu"
+        }
+      },
+      "23": {
+        "0": {
+          "title": "【第|index|話】いつか必ず",
+          "sort": "だい|index|わ いつか かならず"
+        },
+        "1": {
+          "title": "Chapter |index|: Someday, I Swear"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Itsuka kanarazu",
+          "sort": "Dai |index| Wa Itsuka kanarazu"
+        }
+      },
+      "24": {
+        "0": {
+          "title": "【第|index|話】追いつめられる伝説たち",
+          "sort": "だい|index|わ おい つめられる でんせつ たち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Pursued Legends"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Oitsumerareru Densetsu-tachi",
+          "sort": "Dai |index| Wa Oitsumerareru Densetsu-tachi"
+        }
+      },
+      "25": {
+        "0": {
+          "title": "【第|index|話】よろしければ四対一で",
+          "sort": "だい|index|わ よろしければ し たいいち で"
+        },
+        "1": {
+          "title": "Chapter |index|: Four-On-One, If It's All Right"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yoroshikereba 4 Tai 1 de",
+          "sort": "Dai |index| Wa Yoroshikereba 4 Tai 1 de"
+        }
+      },
+      "26": {
+        "0": {
+          "title": "【第|index|話】死者たちとの別れ",
+          "sort": "だい|index|わ ししゃ たちとの わかれ"
+        },
+        "1": {
+          "title": "Chapter |index|: Farewell to the Deceased"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shisha-tachi to no Wakare",
+          "sort": "Dai |index| Wa Shisha-tachi to no Wakare"
+        }
+      },
+      "27": {
+        "0": {
+          "title": "【第|index|話】無情の雨",
+          "sort": "だい|index|わ むじょう の あめ"
+        },
+        "1": {
+          "title": "Chapter |index|: Cruel Rain"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mujō no Ame",
+          "sort": "Dai |index| Wa Mujō no Ame"
+        }
+      },
+      "28": {
+        "0": {
+          "title": "【第|index|話】キケンなオトコ",
+          "sort": "だい|index|わ きけん な おとこ"
+        },
+        "1": {
+          "title": "Chapter |index|: A Dangerous Man"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kiken na Otoko",
+          "sort": "Dai |index| Wa Kiken na Otoko"
+        }
+      },
+      "29": {
+        "0": {
+          "title": "【第|index|話】暗黒の脈動",
+          "sort": "だい|index|わ あんこく の みゃくどう"
+        },
+        "1": {
+          "title": "Chapter |index|: Dark Pulse"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ankoku no Myakudō",
+          "sort": "Dai |index| Wa Ankoku no Myakudō"
+        }
+      },
+      "29.5": {
+        "0": {
+          "title": "【外伝】バンデット・バン",
+          "sort": "がいでん ばんでっと・ばん"
+        },
+        "1": {
+          "title": "Side Story: Ban the Bandit"
+        },
+        "2": {
+          "title": "[Gaiden] Bandetto Ban",
+          "sort": "Gaiden Bandetto Ban"
+        }
+      },
+      "30": {
+        "0": {
+          "title": "【第|index|話】集まれ！お祭り野郎共 Atsumare!",
+          "sort": "だい|index|わ あつまれ ！ お まつり やろう とも  Atsumare !"
+        },
+        "1": {
+          "title": "Chapter |index|: Gather, You Festival Bastards!"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Omatsuri yarō-domo",
+          "sort": "Dai |index| Wa Omatsuri yarō-domo"
+        }
+      },
+      "31": {
+        "0": {
+          "title": "【第|index|話】バイゼル喧嘩祭り",
+          "sort": "だい|index|わ ばいぜる けんか まつり"
+        },
+        "1": {
+          "title": "Chapter |index|: The Vaizel Fighting Festival"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Baizeru Kenka Matsuri",
+          "sort": "Dai |index| Wa Baizeru Kenka Matsuri"
+        }
+      },
+      "32": {
+        "0": {
+          "title": "【第|index|話】強者そろいぶみ",
+          "sort": "だい|index|わ つわもの そろいぶみ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Lineup of Strong Men"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tsuwamono Soroibumi",
+          "sort": "Dai |index| Wa Tsuwamono Soroibumi"
+        }
+      },
+      "33": {
+        "0": {
+          "title": "【第|index|話】大荒れ模様",
+          "sort": "だい|index|わ おおあれ もよう"
+        },
+        "1": {
+          "title": "Chapter |index|: Signs of a Great Chaos"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ōare Moyō",
+          "sort": "Dai |index| Wa Ōare Moyō"
+        }
+      },
+      "34": {
+        "0": {
+          "title": "【第|index|話】メリオダフ対バーン",
+          "sort": "だい|index|わ めりおだふ つい ばーん"
+        },
+        "1": {
+          "title": "Chapter |index|: Meliodaf vs. Bain"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Meriodafu tai Bān",
+          "sort": "Dai |index| Wa Meriodafu tai Bān"
+        }
+      },
+      "35": {
+        "0": {
+          "title": "【第|index|話】奪われたメリオダス",
+          "sort": "だい|index|わ うばわ れた めりおだす"
+        },
+        "1": {
+          "title": "Chapter |index|: Robbed Meliodas"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ubawareta Meriodasu",
+          "sort": "Dai |index| Wa Ubawareta Meriodasu"
+        }
+      },
+      "36": {
+        "0": {
+          "title": "【第|index|話】瞬きするその刹那 Mabataki",
+          "sort": "だい|index|わ またたき するその せつな  Mabataki"
+        },
+        "1": {
+          "title": "Chapter |index|: That Blinking Moment"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Suru Sono Setsuna",
+          "sort": "Dai |index| Wa Suru Sono Setsuna"
+        }
+      },
+      "37": {
+        "0": {
+          "title": "【第|index|話】近づく邂逅",
+          "sort": "だい|index|わ ちかづ く かいこう"
+        },
+        "1": {
+          "title": "Chapter |index|: Approaching Chance Encounter"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Chikazuku Kaikō",
+          "sort": "Dai |index| Wa Chikazuku Kaikō"
+        }
+      },
+      "37.5": {
+        "0": {
+          "title": "【外伝】彼女の正義",
+          "sort": "がいでん かのじょ の せいぎ"
+        },
+        "1": {
+          "title": "Side Story: Her Justice"
+        },
+        "2": {
+          "title": "[Gaiden] Kanojo no Seigi",
+          "sort": "Gaiden Kanojo no Seigi"
+        }
+      },
+      "38": {
+        "0": {
+          "title": "【第|index|話】偶然と必然",
+          "sort": "だい|index|わ ぐうぜん と ひつぜん"
+        },
+        "1": {
+          "title": "Chapter |index|: Chance & Necessity"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Gūzen to Hitsuzen",
+          "sort": "Dai |index| Wa Gūzen to Hitsuzen"
+        }
+      },
+      "39": {
+        "0": {
+          "title": "【第|index|話】積年の思い",
+          "sort": "だい|index|わ せきねん の おもい"
+        },
+        "1": {
+          "title": "Chapter |index|: A Longstanding Grudge"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sekinen no Omoi",
+          "sort": "Dai |index| Wa Sekinen no Omoi"
+        }
+      },
+      "40": {
+        "0": {
+          "title": "【第|index|話】バイゼル喧嘩祭り決勝戦",
+          "sort": "だい|index|わ ばいぜる けんか まつり けっしょうせん"
+        },
+        "1": {
+          "title": "Chapter |index|: Vaizel's Fighting Festival Finals"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Baizeru Kenka Matsuri Kesshōsen",
+          "sort": "Dai |index| Wa Baizeru Kenka Matsuri Kesshōsen"
+        }
+      },
+      "41": {
+        "0": {
+          "title": "【第|index|話】戦慄のカノン",
+          "sort": "だい|index|わ せんりつ の かのん"
+        },
+        "1": {
+          "title": "Chapter |index|: Hair-Raising Canon"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Senritsu no Kanon",
+          "sort": "Dai |index| Wa Senritsu no Kanon"
+        }
+      },
+      "42": {
+        "0": {
+          "title": "【第|index|話】デーモン・リアクター",
+          "sort": "だい|index|わ でーもん・りあくたー"
+        },
+        "1": {
+          "title": "Chapter |index|: Demon Reactor"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Dēmon Riakutā",
+          "sort": "Dai |index| Wa Dēmon Riakutā"
+        }
+      },
+      "43": {
+        "0": {
+          "title": "【第|index|話】危険な賭け",
+          "sort": "だい|index|わ きけん な かけ"
+        },
+        "1": {
+          "title": "Chapter |index|: A Dangerous Bet"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kiken na Kake",
+          "sort": "Dai |index| Wa Kiken na Kake"
+        }
+      },
+      "44": {
+        "0": {
+          "title": "【第|index|話】絶望へのカウントダウン",
+          "sort": "だい|index|わ ぜつぼう への かうんとだうん"
+        },
+        "1": {
+          "title": "Chapter |index|: Countdown to Despair"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zetsubō e no Kauntodaun",
+          "sort": "Dai |index| Wa Zetsubō e no Kauntodaun"
+        }
+      },
+      "45": {
+        "0": {
+          "title": "【第|index|話】暴虐のカーニバル",
+          "sort": "だい|index|わ ぼうぎゃく の かーにばる"
+        },
+        "1": {
+          "title": "Chapter |index|: Carnival of Atrocity"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Bōgyaku no Kānibaru",
+          "sort": "Dai |index| Wa Bōgyaku no Kānibaru"
+        }
+      },
+      "46": {
+        "0": {
+          "title": "【第|index|話】姉妹だもんね",
+          "sort": "だい|index|わ しまい だもんね"
+        },
+        "1": {
+          "title": "Chapter |index|: Because We're Sisters"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shimai da mon ne",
+          "sort": "Dai |index| Wa Shimai da mon ne"
+        }
+      },
+      "47": {
+        "0": {
+          "title": "【第|index|話】破壊の使徒",
+          "sort": "だい|index|わ はかい の しと"
+        },
+        "1": {
+          "title": "Chapter |index|: Apostle of Destruction"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hakai no Shito",
+          "sort": "Dai |index| Wa Hakai no Shito"
+        }
+      },
+      "48": {
+        "0": {
+          "title": "【第|index|話】めでたく全滅",
+          "sort": "だい|index|わ めでたく ぜんめつ"
+        },
+        "1": {
+          "title": "Chapter |index|: Happy Annihilation"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Medetaku Zenmetsu",
+          "sort": "Dai |index| Wa Medetaku Zenmetsu"
+        }
+      },
+      "49": {
+        "0": {
+          "title": "【第|index|話】余儀なき敗走",
+          "sort": "だい|index|わ よぎな き はいそう"
+        },
+        "1": {
+          "title": "Chapter |index|: Unavoidable Retreat"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yoginaki Haisō",
+          "sort": "Dai |index| Wa Yoginaki Haisō"
+        }
+      },
+      "50": {
+        "0": {
+          "title": "【第|index|話】祭りのあとの",
+          "sort": "だい|index|わ まつり のあとの"
+        },
+        "1": {
+          "title": "Chapter |index|: After the Festival"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Matsuri no Ato no",
+          "sort": "Dai |index| Wa Matsuri no Ato no"
+        }
+      },
+      "51": {
+        "0": {
+          "title": "【第|index|話】胸の奥",
+          "sort": "だい|index|わ むね の おく"
+        },
+        "1": {
+          "title": "Chapter |index|: In the Depths of the Heart"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mune no Oku",
+          "sort": "Dai |index| Wa Mune no Oku"
+        }
+      },
+      "52": {
+        "0": {
+          "title": "【第|index|話】噂の真相",
+          "sort": "だい|index|わ うわさ の しんそう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Truth Behind the Rumors"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Uwasa no Shinsō",
+          "sort": "Dai |index| Wa Uwasa no Shinsō"
+        }
+      },
+      "53": {
+        "0": {
+          "title": "【第|index|話】鎧巨人 対 暁闇の咆哮 Āmā",
+          "sort": "だい|index|わ よろい きょじん   つい   あかつきやみ の ほうこう     m   m"
+        },
+        "1": {
+          "title": "Chapter |index|: The Armor Giant vs. The Roars of Dawn"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Jaianto tai Dōn Roā",
+          "sort": "Dai |index| Wa Jaianto tai Dōn Roā"
+        }
+      },
+      "54": {
+        "0": {
+          "title": "【第|index|話】動かなかった男",
+          "sort": "だい|index|わ うごか なかった おとこ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Man Who Didn't Move"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ugokanakatta Otoko",
+          "sort": "Dai |index| Wa Ugokanakatta Otoko"
+        }
+      },
+      "55": {
+        "0": {
+          "title": "【第|index|話】その男、無情につき",
+          "sort": "だい|index|わ その おとこ 、 むじょう につき"
+        },
+        "1": {
+          "title": "Chapter |index|: That Man, and His Heartlessness"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sono Otoko, Mujō Ni Tsuki",
+          "sort": "Dai |index| Wa Sono Otoko, Mujō Ni Tsuki"
+        }
+      },
+      "56": {
+        "0": {
+          "title": "【第|index|話】アンホーリィ・ナイト",
+          "sort": "だい|index|わ あんほーりぃ・ないと"
+        },
+        "1": {
+          "title": "Chapter |index|: Unholy Knight"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Anhōrii·Naito",
+          "sort": "Dai |index| Wa Anhōrii·Naito"
+        }
+      },
+      "57": {
+        "0": {
+          "title": "【第|index|話】遠き日の風景",
+          "sort": "だい|index|わ とおき にち の ふうけい"
+        },
+        "1": {
+          "title": "Chapter |index|: The Scene of a Far-Off Day"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tōki Hi No Fūkei",
+          "sort": "Dai |index| Wa Tōki Hi No Fūkei"
+        }
+      },
+      "58": {
+        "0": {
+          "title": "【第|index|話】背負う覚悟",
+          "sort": "だい|index|わ せおう かくご"
+        },
+        "1": {
+          "title": "Chapter |index|: Assumed Readiness"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seou Kakugo",
+          "sort": "Dai |index| Wa Seou Kakugo"
+        }
+      },
+      "59": {
+        "0": {
+          "title": "【第|index|話】読めない男 参入",
+          "sort": "だい|index|わ よめ ない おとこ   さんにゅう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Unreadable Man"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yomenai Otoko Sannyū",
+          "sort": "Dai |index| Wa Yomenai Otoko Sannyū"
+        }
+      },
+      "60": {
+        "0": {
+          "title": "【第|index|話】にじみ出す混沌",
+          "sort": "だい|index|わ にじみ だす こんとん"
+        },
+        "1": {
+          "title": "Chapter |index|: A Creeping Chaos"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Nijimidasu Konton",
+          "sort": "Dai |index| Wa Nijimidasu Konton"
+        }
+      },
+      "61": {
+        "0": {
+          "title": "【第|index|話】駆りたてられる伝説たち",
+          "sort": "だい|index|わ かり たてられる でんせつ たち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Legends Get Stirred Up"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Karitaterareru Densetsu-tachi",
+          "sort": "Dai |index| Wa Karitaterareru Densetsu-tachi"
+        }
+      },
+      "62": {
+        "0": {
+          "title": "【第|index|話】悪党は止まらない",
+          "sort": "だい|index|わ あくとう は とま らない"
+        },
+        "1": {
+          "title": "Chapter |index|: The Devil Won't Stop"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Akutō Wa Tomaranai",
+          "sort": "Dai |index| Wa Akutō Wa Tomaranai"
+        }
+      },
+      "62.5": {
+        "0": {
+          "title": "【番外編】彼の居場所",
+          "sort": "ばんがいへん かの いばしょ"
+        },
+        "1": {
+          "title": "Bonus Chapter: Where He Belongs"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Kare no Ibasho",
+          "sort": "Bangai‐hen Kare no Ibasho"
+        }
+      },
+      "63": {
+        "0": {
+          "title": "【第|index|話】アーサー・ペンドラゴン",
+          "sort": "だい|index|わ あーさー・ぺんどらごん"
+        },
+        "1": {
+          "title": "Chapter |index|: Arthur Pendragon"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Āsā Pendoragon",
+          "sort": "Dai |index| Wa Āsā Pendoragon"
+        }
+      },
+      "64": {
+        "0": {
+          "title": "【第|index|話】王国侵入作戦！！",
+          "sort": "だい|index|わ おうこく しんにゅう さくせん ！ ！"
+        },
+        "1": {
+          "title": "Chapter |index|: Strategy To Invade The Kingdom"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ōkoku Shin'nyū Sakusen!!",
+          "sort": "Dai |index| Wa Ōkoku Shin'nyū Sakusen!!"
+        }
+      },
+      "65": {
+        "0": {
+          "title": "【第|index|話】回避しえぬ衝突",
+          "sort": "だい|index|わ かいひ しえぬ しょうとつ"
+        },
+        "1": {
+          "title": "Chapter |index|: Inescapable Collision"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kaihi Shienu Shōtotsu",
+          "sort": "Dai |index| Wa Kaihi Shienu Shōtotsu"
+        }
+      },
+      "66": {
+        "0": {
+          "title": "【第|index|話】最初の犠牲",
+          "sort": "だい|index|わ さいしょ の ぎせい"
+        },
+        "1": {
+          "title": "Chapter |index|: First Sacrifice"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Saisho no Gisei",
+          "sort": "Dai |index| Wa Saisho no Gisei"
+        }
+      },
+      "67": {
+        "0": {
+          "title": "【第|index|話】亀裂",
+          "sort": "だい|index|わ きれつ"
+        },
+        "1": {
+          "title": "Chapter |index|: Crack"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kiretsu",
+          "sort": "Dai |index| Wa Kiretsu"
+        }
+      },
+      "68": {
+        "0": {
+          "title": "【第|index|話】圧倒的戦力差",
+          "sort": "だい|index|わ あっとうてき せんりょく さ"
+        },
+        "1": {
+          "title": "Chapter |index|: Overwhelming Gap In Fighting Strength"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Attōteki Senryoku-sa",
+          "sort": "Dai |index| Wa Attōteki Senryoku-sa"
+        }
+      },
+      "69": {
+        "0": {
+          "title": "【第|index|話】初体験は誰にでもある",
+          "sort": "だい|index|わ しょたいけん は だれ にでもある"
+        },
+        "1": {
+          "title": "Chapter |index|: There's A First Time For Everything"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hatsu Taiken wa Dare ni demo aru",
+          "sort": "Dai |index| Wa Hatsu Taiken wa Dare ni demo aru"
+        }
+      },
+      "70": {
+        "0": {
+          "title": "【第|index|話】業火の聖騎士長",
+          "sort": "だい|index|わ ごうか の せいきし ちょう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Hellfire Captain of the Holy Knights"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Gōka no Seikishi-chō",
+          "sort": "Dai |index| Wa Gōka no Seikishi-chō"
+        }
+      },
+      "71": {
+        "0": {
+          "title": "【第|index|話】闇に在るもの",
+          "sort": "だい|index|わ やみ に ある もの"
+        },
+        "1": {
+          "title": "Chapter |index|: What Lies In The Shadows"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yami ni aru Mono",
+          "sort": "Dai |index| Wa Yami ni aru Mono"
+        }
+      },
+      "72": {
+        "0": {
+          "title": "【第|index|話】遅すぎた男",
+          "sort": "だい|index|わ おそす ぎた おとこ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Man That Was Too Late"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Oso Sugita Otoko",
+          "sort": "Dai |index| Wa Oso Sugita Otoko"
+        }
+      },
+      "73": {
+        "0": {
+          "title": "【第|index|話】この命にかえても",
+          "sort": "だい|index|わ この いのち にかえても"
+        },
+        "1": {
+          "title": "Chapter |index|: If it Kills Me"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kono Inochi ni Kaete mo",
+          "sort": "Dai |index| Wa Kono Inochi ni Kaete mo"
+        }
+      },
+      "73.5": {
+        "0": {
+          "title": "【外伝】まちぼうけの妖精王",
+          "sort": "がいでん まちぼうけの ようせい おう"
+        },
+        "1": {
+          "title": "Side Story: The Fairy King Who Waited In Vain"
+        },
+        "2": {
+          "title": "[Gaiden] Machibōke no Yōsei-ō",
+          "sort": "Gaiden Machibōke no Yōsei-ō"
+        }
+      },
+      "74": {
+        "0": {
+          "title": "【第|index|話】果たされる約束",
+          "sort": "だい|index|わ はた される やくそく"
+        },
+        "1": {
+          "title": "Chapter |index|: Fulfilled Promise"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hatasareru Yakusoku",
+          "sort": "Dai |index| Wa Hatasareru Yakusoku"
+        }
+      },
+      "75": {
+        "0": {
+          "title": "【第|index|話】王たる所似",
+          "sort": "だい|index|わ おう たる ところ じ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Reason to be King"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ō taru Yuen",
+          "sort": "Dai |index| Wa Ō taru Yuen"
+        }
+      },
+      "76": {
+        "0": {
+          "title": "【第|index|話】王女たちの想い",
+          "sort": "だい|index|わ おうじょ たちの おもい"
+        },
+        "1": {
+          "title": "Chapter |index|: The Princesses' Feelings"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ōjo-tachi no Omoi",
+          "sort": "Dai |index| Wa Ōjo-tachi no Omoi"
+        }
+      },
+      "77": {
+        "0": {
+          "title": "【第|index|話】あのコへの想い",
+          "sort": "だい|index|わ あの こ への おもい"
+        },
+        "1": {
+          "title": "Chapter |index|: Feelings Toward Her"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ano Ko e no Omoi",
+          "sort": "Dai |index| Wa Ano Ko e no Omoi"
+        }
+      },
+      "78": {
+        "0": {
+          "title": "【第|index|話】命と引きかえに",
+          "sort": "だい|index|わ いのち と ひき かえに"
+        },
+        "1": {
+          "title": "Chapter |index|: In Exchange For My Life"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Inochi To Hikikae Ni",
+          "sort": "Dai |index| Wa Inochi To Hikikae Ni"
+        }
+      },
+      "79": {
+        "0": {
+          "title": "【第|index|話】今一度",
+          "sort": "だい|index|わ いまいちど"
+        },
+        "1": {
+          "title": "Chapter |index|: Once More"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ima Ichido",
+          "sort": "Dai |index| Wa Ima Ichido"
+        }
+      },
+      "80": {
+        "0": {
+          "title": "【第|index|話】怒涛の逆転劇",
+          "sort": "だい|index|わ どとう の ぎゃくてんげき"
+        },
+        "1": {
+          "title": "Chapter |index|: A Dramatic Surge of Reversal"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Dotō no Gyakuten Geki",
+          "sort": "Dai |index| Wa Dotō no Gyakuten Geki"
+        }
+      },
+      "81": {
+        "0": {
+          "title": "【第|index|話】メリオダスの一撃",
+          "sort": "だい|index|わ めりおだす の いちげき"
+        },
+        "1": {
+          "title": "Chapter |index|: Meliodas' Strike"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Meriodasu no Ichigeki",
+          "sort": "Dai |index| Wa Meriodasu no Ichigeki"
+        }
+      },
+      "82": {
+        "0": {
+          "title": "【第|index|話】勇気のまじない",
+          "sort": "だい|index|わ ゆうき のまじない"
+        },
+        "1": {
+          "title": "Chapter |index|: The Incantation of Bravery"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yūki no Majinai",
+          "sort": "Dai |index| Wa Yūki no Majinai"
+        }
+      },
+      "83": {
+        "0": {
+          "title": "【第|index|話】紅蓮の豚",
+          "sort": "だい|index|わ ぐれん の ぶた"
+        },
+        "1": {
+          "title": "Chapter |index|: Blazing Boar"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Guren no Buta",
+          "sort": "Dai |index| Wa Guren no Buta"
+        }
+      },
+      "84": {
+        "0": {
+          "title": "【第|index|話】一件落着",
+          "sort": "だい|index|わ いっけんらくちゃく"
+        },
+        "1": {
+          "title": "Chapter |index|: The Matter is Settled"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ikken Rakuchaku",
+          "sort": "Dai |index| Wa Ikken Rakuchaku"
+        }
+      },
+      "85": {
+        "0": {
+          "title": "【第|index|話】宴の始まり",
+          "sort": "だい|index|わ うたげ の はじまり"
+        },
+        "1": {
+          "title": "Chapter |index|: The Party Begins"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Utage no Hajimari",
+          "sort": "Dai |index| Wa Utage no Hajimari"
+        }
+      },
+      "86": {
+        "0": {
+          "title": "【第|index|話】今そこに迫る脅威",
+          "sort": "だい|index|わ いまそ こに せまる きょうい"
+        },
+        "1": {
+          "title": "Chapter |index|: The Threat Now Closing In"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ima soko ni Semaru Kyōi",
+          "sort": "Dai |index| Wa Ima soko ni Semaru Kyōi"
+        }
+      },
+      "86.5": {
+        "0": {
+          "title": "【外伝】永遠の刹那",
+          "sort": "がいでん えいえん の せつな"
+        },
+        "1": {
+          "title": "Side Story: Eternal Moment"
+        },
+        "2": {
+          "title": "[Gaiden] Eien no Setsuna",
+          "sort": "Gaiden Eien no Setsuna"
+        }
+      },
+      "87": {
+        "0": {
+          "title": "【第|index|話】<憤怒>と<強欲>",
+          "sort": "だい|index|わ < ふんど > と < ごうよく >"
+        },
+        "1": {
+          "title": "Chapter |index|: Wrath & Greed"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Funnu to Gōyoku",
+          "sort": "Dai |index| Wa Funnu to Gōyoku"
+        }
+      },
+      "88": {
+        "0": {
+          "title": "【第|index|話】この世の地獄",
+          "sort": "だい|index|わ この よの じごく"
+        },
+        "1": {
+          "title": "Chapter |index|: Hell on Earth"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kono Yo no Jigoku",
+          "sort": "Dai |index| Wa Kono Yo no Jigoku"
+        }
+      },
+      "89": {
+        "0": {
+          "title": "【第|index|話】切なる願い",
+          "sort": "だい|index|わ せつな る ねがい"
+        },
+        "1": {
+          "title": "Chapter |index|: Earnest Hope"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Setsunaru Negai",
+          "sort": "Dai |index| Wa Setsunaru Negai"
+        }
+      },
+      "90": {
+        "0": {
+          "title": "【第|index|話】君のためにできること",
+          "sort": "だい|index|わ くん のためにできること"
+        },
+        "1": {
+          "title": "Chapter |index|: What I Can Do For You"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kimi no Tame ni Dekiru koto",
+          "sort": "Dai |index| Wa Kimi no Tame ni Dekiru koto"
+        }
+      },
+      "91": {
+        "0": {
+          "title": "【第|index|話】忌むべき存在",
+          "sort": "だい|index|わ いむ べき そんざい"
+        },
+        "1": {
+          "title": "Chapter |index|: A Loathsome Existence"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Imubeki Sonzai",
+          "sort": "Dai |index| Wa Imubeki Sonzai"
+        }
+      },
+      "92": {
+        "0": {
+          "title": "【第|index|話】最終決戦開始",
+          "sort": "だい|index|わ さいしゅうけっせん かいし"
+        },
+        "1": {
+          "title": "Chapter |index|: The Final Decisive Battle Begins"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Saishū Kessen Kaishi",
+          "sort": "Dai |index| Wa Saishū Kessen Kaishi"
+        }
+      },
+      "93": {
+        "0": {
+          "title": "【第|index|話】赤と灰",
+          "sort": "だい|index|わ あか と はい"
+        },
+        "1": {
+          "title": "Chapter |index|: Red & Ashes"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Aka to Hai",
+          "sort": "Dai |index| Wa Aka to Hai"
+        }
+      },
+      "94": {
+        "0": {
+          "title": "【第|index|話】絶望降臨",
+          "sort": "だい|index|わ ぜつぼう こうりん"
+        },
+        "1": {
+          "title": "Chapter |index|: The Advent of Despair"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zetsubō Kōrin",
+          "sort": "Dai |index| Wa Zetsubō Kōrin"
+        }
+      },
+      "95": {
+        "0": {
+          "title": "【第|index|話】潰える希望",
+          "sort": "だい|index|わ ついえ る きぼう"
+        },
+        "1": {
+          "title": "Chapter |index|: Defeated Hope"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tsuieru Kibō",
+          "sort": "Dai |index| Wa Tsuieru Kibō"
+        }
+      },
+      "95.5": {
+        "0": {
+          "title": "【番外編】相棒",
+          "sort": "ばんがいへん あいぼう"
+        },
+        "1": {
+          "title": "Bonus Chapter: Partners"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Aibō",
+          "sort": "Bangai‐hen Aibō"
+        }
+      },
+      "96": {
+        "0": {
+          "title": "【第|index|話】ホーク",
+          "sort": "だい|index|わ ほーく"
+        },
+        "1": {
+          "title": "Chapter |index|: Hawk"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hōku",
+          "sort": "Dai |index| Wa Hōku"
+        }
+      },
+      "97": {
+        "0": {
+          "title": "【第|index|話】エリザベス",
+          "sort": "だい|index|わ えりざべす"
+        },
+        "1": {
+          "title": "Chapter |index|: Elizabeth"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Erizabesu",
+          "sort": "Dai |index| Wa Erizabesu"
+        }
+      },
+      "98": {
+        "0": {
+          "title": "【第|index|話】祈り",
+          "sort": "だい|index|わ いのり"
+        },
+        "1": {
+          "title": "Chapter |index|: Prayer"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Inori",
+          "sort": "Dai |index| Wa Inori"
+        }
+      },
+      "99": {
+        "0": {
+          "title": "【第|index|話】決着",
+          "sort": "だい|index|わ けっちゃく"
+        },
+        "1": {
+          "title": "Chapter |index|: Resolution"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kecchaku",
+          "sort": "Dai |index| Wa Kecchaku"
+        }
+      },
+      "100": {
+        "0": {
+          "title": "【第|index|話】英雄たち",
+          "sort": "だい|index|わ えいゆう たち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Heroes"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Eiyū-tachi",
+          "sort": "Dai |index| Wa Eiyū-tachi"
+        }
+      },
+      "101": {
+        "0": {
+          "title": "【第|index|話】愛の力",
+          "sort": "だい|index|わ あい の ちから"
+        },
+        "1": {
+          "title": "Chapter |index|: The Power of Love"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ai no Chikara",
+          "sort": "Dai |index| Wa Ai no Chikara"
+        }
+      },
+      "102": {
+        "0": {
+          "title": "【第|index|話】別れの予感",
+          "sort": "だい|index|わ わかれ の よかん"
+        },
+        "1": {
+          "title": "Chapter |index|: Premonition of Parting"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Wakare no Yokan",
+          "sort": "Dai |index| Wa Wakare no Yokan"
+        }
+      },
+      "103": {
+        "0": {
+          "title": "【第|index|話】新たなる旅立ち",
+          "sort": "だい|index|わ あらた なる たびだち"
+        },
+        "1": {
+          "title": "Chapter |index|: A New Journey"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Aratanaru Tabidachi",
+          "sort": "Dai |index| Wa Aratanaru Tabidachi"
+        }
+      },
+      "104": {
+        "0": {
+          "title": "【第|index|話】妖精王の帰還",
+          "sort": "だい|index|わ ようせい おう の きかん"
+        },
+        "1": {
+          "title": "Chapter |index|: The Fairy King's Return"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yōsei-Ō no Kikan",
+          "sort": "Dai |index| Wa Yōsei-Ō no Kikan"
+        }
+      },
+      "104.5": {
+        "0": {
+          "title": "【番外編】一変する世界",
+          "sort": "ばんがいへん いっぺん する せかい"
+        },
+        "1": {
+          "title": "Bonus Chapter: A Completely Changed World"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Ippen suru Sekai",
+          "sort": "Bangai‐hen Ippen suru Sekai"
+        }
+      },
+      "105": {
+        "0": {
+          "title": "【第|index|話】何者でもない",
+          "sort": "だい|index|わ なにもの でもない"
+        },
+        "1": {
+          "title": "Chapter |index|: The Nobody"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Nanimono demo nai",
+          "sort": "Dai |index| Wa Nanimono demo nai"
+        }
+      },
+      "106": {
+        "0": {
+          "title": "【第|index|話】バロールの魔眼",
+          "sort": "だい|index|わ ばろーる の まがん"
+        },
+        "1": {
+          "title": "Chapter |index|: Barol's Evil Eye"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Barōru no Magan",
+          "sort": "Dai |index| Wa Barōru no Magan"
+        }
+      },
+      "107": {
+        "0": {
+          "title": "【第|index|話】真実を求めて",
+          "sort": "だい|index|わ しんじつ を もとめ て"
+        },
+        "1": {
+          "title": "Chapter |index|: Seek the Truth"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shinjitsu o Motomete",
+          "sort": "Dai |index| Wa Shinjitsu o Motomete"
+        }
+      },
+      "108": {
+        "0": {
+          "title": "【第|index|話】優しい目覚め",
+          "sort": "だい|index|わ やさしい めざめ"
+        },
+        "1": {
+          "title": "Chapter |index|: Gentle Awakening"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yasashii Mezame",
+          "sort": "Dai |index| Wa Yasashii Mezame"
+        }
+      },
+      "109": {
+        "0": {
+          "title": "【第|index|話】激震",
+          "sort": "だい|index|わ げきしん"
+        },
+        "1": {
+          "title": "Chapter |index|: Earthquake"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Gekishin",
+          "sort": "Dai |index| Wa Gekishin"
+        }
+      },
+      "110": {
+        "0": {
+          "title": "【第|index|話】告白",
+          "sort": "だい|index|わ こくはく"
+        },
+        "1": {
+          "title": "Chapter |index|: Confession"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kokuhaku",
+          "sort": "Dai |index| Wa Kokuhaku"
+        }
+      },
+      "111": {
+        "0": {
+          "title": "【第|index|話】男の言い分",
+          "sort": "だい|index|わ おとこ の いいぶん"
+        },
+        "1": {
+          "title": "Chapter |index|: The Man Has His Say"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Otoko no Iibun",
+          "sort": "Dai |index| Wa Otoko no Iibun"
+        }
+      },
+      "112": {
+        "0": {
+          "title": "【第|index|話】存在と証明",
+          "sort": "だい|index|わ そんざい と しょうめい"
+        },
+        "1": {
+          "title": "Chapter |index|: Existence & Proof"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sonzai to Shōmei",
+          "sort": "Dai |index| Wa Sonzai to Shōmei"
+        }
+      },
+      "113": {
+        "0": {
+          "title": "【第|index|話】啓示",
+          "sort": "だい|index|わ けいじ"
+        },
+        "1": {
+          "title": "Chapter |index|: Revelation"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Keiji",
+          "sort": "Dai |index| Wa Keiji"
+        }
+      },
+      "114": {
+        "0": {
+          "title": "【第|index|話】とまどう英雄たち",
+          "sort": "だい|index|わ とまどう えいゆう たち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Lost Heroes"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tomadō Eiyū-tachi",
+          "sort": "Dai |index| Wa Tomadō Eiyū-tachi"
+        }
+      },
+      "115": {
+        "0": {
+          "title": "【第|index|話】悪夢ふたたび",
+          "sort": "だい|index|わ あくむ ふたたび"
+        },
+        "1": {
+          "title": "Chapter |index|: Nightmare Take Two"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Akumu Futatabi",
+          "sort": "Dai |index| Wa Akumu Futatabi"
+        }
+      },
+      "116": {
+        "0": {
+          "title": "【第|index|話】神器ロストヴェイン",
+          "sort": "だい|index|わ しんき ろすとゔぇいん"
+        },
+        "1": {
+          "title": "Chapter |index|: The Sacred Treasure Lostvayne"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Jingi Rosutovein",
+          "sort": "Dai |index| Wa Jingi Rosutovein"
+        }
+      },
+      "117": {
+        "0": {
+          "title": "【第|index|話】二人の妖精王",
+          "sort": "だい|index|わ ふたり の ようせい おう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Two Fairy Kings"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Futari no Yōsei-ō",
+          "sort": "Dai |index| Wa Futari no Yōsei-ō"
+        }
+      },
+      "118": {
+        "0": {
+          "title": "【第|index|話】激突！！妖精王の森",
+          "sort": "だい|index|わ げきとつ ！ ！ ようせい おう の もり"
+        },
+        "1": {
+          "title": "Chapter |index|: Clash!! The Fairy King's Forest"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Gekitotsu!! Yōsei-ō no Mori",
+          "sort": "Dai |index| Wa Gekitotsu!! Yōsei-ō no Mori"
+        }
+      },
+      "119": {
+        "0": {
+          "title": "【第|index|話】十戒始動",
+          "sort": "だい|index|わ じゅっかい しどう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Ten Commandments on the Move"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Jikkai Shidō",
+          "sort": "Dai |index| Wa Jikkai Shidō"
+        }
+      },
+      "120": {
+        "0": {
+          "title": "【第|index|話】圧倒的暴力",
+          "sort": "だい|index|わ あっとうてき ぼうりょく"
+        },
+        "1": {
+          "title": "Chapter |index|: Overwhelming Violence"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Attō-teki Bōryoku",
+          "sort": "Dai |index| Wa Attō-teki Bōryoku"
+        }
+      },
+      "121": {
+        "0": {
+          "title": "【第|index|話】予測不能",
+          "sort": "だい|index|わ よそくふのう"
+        },
+        "1": {
+          "title": "Chapter |index|: Unpredictable"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yosoku Funō",
+          "sort": "Dai |index| Wa Yosoku Funō"
+        }
+      },
+      "121.5": {
+        "0": {
+          "title": "【番外編】ハーレクインとヘルブラム",
+          "sort": "ばんがいへん はーれくいん と へるぶらむ"
+        },
+        "1": {
+          "title": "Bonus Story: Harlequin & Helbram"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Hārekuin to Heruburamu",
+          "sort": "Bangai‐hen Hārekuin to Heruburamu"
+        }
+      },
+      "122": {
+        "0": {
+          "title": "【第|index|話】魔神族の進攻",
+          "sort": "だい|index|わ まじん ぞく の しんこう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Demon Clan Advances"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Majin-zoku no Shinkō",
+          "sort": "Dai |index| Wa Majin-zoku no Shinkō"
+        }
+      },
+      "123": {
+        "0": {
+          "title": "【第|index|話】償いの聖騎士長",
+          "sort": "だい|index|わ つぐない の せいきし ちょう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Chief Holy Knight Atones For His Sins"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tsugunai no Seikishi-chō",
+          "sort": "Dai |index| Wa Tsugunai no Seikishi-chō"
+        }
+      },
+      "124": {
+        "0": {
+          "title": "【第|index|話】友情がもたらしたもの",
+          "sort": "だい|index|わ ゆうじょう がもたらしたもの"
+        },
+        "1": {
+          "title": "Chapter |index|: What the Friends Brought About"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yūjō ga Motarashita Mono",
+          "sort": "Dai |index| Wa Yūjō ga Motarashita Mono"
+        }
+      },
+      "125": {
+        "0": {
+          "title": "【第|index|話】打倒〈十戒〉",
+          "sort": "だい|index|わ だとう 〈 じゅっかい 〉"
+        },
+        "1": {
+          "title": "Chapter |index|: Down With The Ten Commandments!!"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Datō \"Jikkai\"",
+          "sort": "Dai |index| Wa Datō \"Jikkai\""
+        }
+      },
+      "126": {
+        "0": {
+          "title": "【第|index|話】記憶が目指す場所",
+          "sort": "だい|index|わ きおく が めざす ばしょ"
+        },
+        "1": {
+          "title": "Chapter |index|: Where the Memory Leads"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kioku ga Mezasu Basho",
+          "sort": "Dai |index| Wa Kioku ga Mezasu Basho"
+        }
+      },
+      "126.5": {
+        "0": {
+          "title": "【外伝】少女は叶わぬ夢を見る",
+          "sort": "がいでん しょうじょ は かなわ ぬ ゆめ を みる"
+        },
+        "1": {
+          "title": "Side Story: Girls Have Impossible Dreams"
+        },
+        "2": {
+          "title": "[Gaiden] Shōjo wa Kanawanu Yume wo Miru",
+          "sort": "Gaiden Shōjo wa Kanawanu Yume wo Miru"
+        }
+      },
+      "127": {
+        "0": {
+          "title": "【第|index|話】絶望との再会",
+          "sort": "だい|index|わ ぜつぼう との さいかい"
+        },
+        "1": {
+          "title": "Chapter |index|: A Reunion With Despair"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zetsubō to no Saikai",
+          "sort": "Dai |index| Wa Zetsubō to no Saikai"
+        }
+      },
+      "128": {
+        "0": {
+          "title": "【第|index|話】その存在　傍若無人",
+          "sort": "だい|index|わ その そんざい 　 ぼうじゃくぶじん"
+        },
+        "1": {
+          "title": "Chapter |index|: Their Presence, Outrageous"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sono Sonzai Bōjakubujin",
+          "sort": "Dai |index| Wa Sono Sonzai Bōjakubujin"
+        }
+      },
+      "129": {
+        "0": {
+          "title": "【第|index|話】ドルイドの聖地",
+          "sort": "だい|index|わ どるいど の せいち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Druids' Holy Land"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Doruido no Seichi",
+          "sort": "Dai |index| Wa Doruido no Seichi"
+        }
+      },
+      "130": {
+        "0": {
+          "title": "【第|index|話】やさしく貫く　その痛み",
+          "sort": "だい|index|わ やさしく つらぬく 　 その いたみ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Pain of Being Softly Pierced"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yasashiku Tsuranuku Sono Itami",
+          "sort": "Dai |index| Wa Yasashiku Tsuranuku Sono Itami"
+        }
+      },
+      "131": {
+        "0": {
+          "title": "【第|index|話】愛する者との約束",
+          "sort": "だい|index|わ あいす る もの との やくそく"
+        },
+        "1": {
+          "title": "Chapter |index|: A Promise To A Loved One"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ai suru Mono to no Yakusoku",
+          "sort": "Dai |index| Wa Ai suru Mono to no Yakusoku"
+        }
+      },
+      "132": {
+        "0": {
+          "title": "【第|index|話】僕たちに欠けたもの",
+          "sort": "だい|index|わ ぼく たちに かけ たもの"
+        },
+        "1": {
+          "title": "Chapter |index|: What We Lacked"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Bokutachi ni Kaketa Mono",
+          "sort": "Dai |index| Wa Bokutachi ni Kaketa Mono"
+        }
+      },
+      "133": {
+        "0": {
+          "title": "【第|index|話】焦りと不安",
+          "sort": "だい|index|わ あせり と ふあん"
+        },
+        "1": {
+          "title": "Chapter |index|: Impatience & Anxiety"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Aseri to Fuan",
+          "sort": "Dai |index| Wa Aseri to Fuan"
+        }
+      },
+      "134": {
+        "0": {
+          "title": "【第|index|話】もう団長ではない君へ",
+          "sort": "だい|index|わ もう だんちょう ではない くん へ"
+        },
+        "1": {
+          "title": "Chapter |index|: To You, Who is No Longer Captain"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mō Danchō de wa nai Kimi e",
+          "sort": "Dai |index| Wa Mō Danchō de wa nai Kimi e"
+        }
+      },
+      "135": {
+        "0": {
+          "title": "【第|index|話】ほんの挨拶",
+          "sort": "だい|index|わ ほんの あいさつ"
+        },
+        "1": {
+          "title": "Chapter |index|: A Little Greeting"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Honno Aisatsu",
+          "sort": "Dai |index| Wa Honno Aisatsu"
+        }
+      },
+      "136": {
+        "0": {
+          "title": "【第|index|話】散開する恐怖",
+          "sort": "だい|index|わ さんかい する きょうふ"
+        },
+        "1": {
+          "title": "Chapter |index|: Spreading Fear"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sankai suru Kyōfu",
+          "sort": "Dai |index| Wa Sankai suru Kyōfu"
+        }
+      },
+      "137": {
+        "0": {
+          "title": "【第|index|話】僕と君の間に",
+          "sort": "だい|index|わ ぼく と くん の まに"
+        },
+        "1": {
+          "title": "Chapter |index|: Between You & Me"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Boku to Kimi no Aida ni",
+          "sort": "Dai |index| Wa Boku to Kimi no Aida ni"
+        }
+      },
+      "138": {
+        "0": {
+          "title": "【第|index|話】闇との戦い",
+          "sort": "だい|index|わ やみ との たたかい"
+        },
+        "1": {
+          "title": "Chapter |index|: A Fight with Darkness"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yami to no Tatakai",
+          "sort": "Dai |index| Wa Yami to no Tatakai"
+        }
+      },
+      "139": {
+        "0": {
+          "title": "【第|index|話】昔の話を聞かせて",
+          "sort": "だい|index|わ むかし の はなし を きか せて"
+        },
+        "1": {
+          "title": "Chapter |index|: Tell me About the Past"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mukashi no Hanashi wo Kikasete",
+          "sort": "Dai |index| Wa Mukashi no Hanashi wo Kikasete"
+        }
+      },
+      "140": {
+        "0": {
+          "title": "【第|index|話】盗賊と少年",
+          "sort": "だい|index|わ とうぞく と しょうねん"
+        },
+        "1": {
+          "title": "Chapter |index|: The Thief & The Boy"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tōzoku to Shōnen",
+          "sort": "Dai |index| Wa Tōzoku to Shōnen"
+        }
+      },
+      "141": {
+        "0": {
+          "title": "【第|index|話】父親と息子",
+          "sort": "だい|index|わ ちちおや と むすこ"
+        },
+        "1": {
+          "title": "Chapter |index|: Father & Son"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Chichioya to Musuko",
+          "sort": "Dai |index| Wa Chichioya to Musuko"
+        }
+      },
+      "142": {
+        "0": {
+          "title": "【第|index|話】愛の在り処",
+          "sort": "だい|index|わ あい の あり ところ"
+        },
+        "1": {
+          "title": "Chapter |index|: Where Love is Found"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ai no Arika",
+          "sort": "Dai |index| Wa Ai no Arika"
+        }
+      },
+      "143": {
+        "0": {
+          "title": "【第|index|話】聖女の叫び",
+          "sort": "だい|index|わ せいじょ の さけび"
+        },
+        "1": {
+          "title": "Chapter |index|: The Saint's Shriek"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seijo no Sakebi",
+          "sort": "Dai |index| Wa Seijo no Sakebi"
+        }
+      },
+      "144": {
+        "0": {
+          "title": "【第|index|話】その男〈強欲〉につき",
+          "sort": "だい|index|わ その おとこ 〈 ごうよく 〉 につき"
+        },
+        "1": {
+          "title": "Chapter |index|: That Man Walks the Way of Greed"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sono Otoko 〈Gōyoku〉 ni Tsuki",
+          "sort": "Dai |index| Wa Sono Otoko 〈Gōyoku〉 ni Tsuki"
+        }
+      },
+      "145": {
+        "0": {
+          "title": "【第|index|話】美しき魂",
+          "sort": "だい|index|わ うつくしき たましい"
+        },
+        "1": {
+          "title": "Chapter |index|: Beautiful Soul"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Utsukushiki Tamashii",
+          "sort": "Dai |index| Wa Utsukushiki Tamashii"
+        }
+      },
+      "146": {
+        "0": {
+          "title": "【第|index|話】さらば愛しき盗賊",
+          "sort": "だい|index|わ さらば いとし き とうぞく"
+        },
+        "1": {
+          "title": "Chapter |index|: Farewell, Beloved Thief"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Saraba Itoshiki Tōzoku",
+          "sort": "Dai |index| Wa Saraba Itoshiki Tōzoku"
+        }
+      },
+      "147": {
+        "0": {
+          "title": "【第|index|話】死の猛追",
+          "sort": "だい|index|わ しの もうつい"
+        },
+        "1": {
+          "title": "Chapter |index|: The Chase of Death"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shi no Mōtsui",
+          "sort": "Dai |index| Wa Shi no Mōtsui"
+        }
+      },
+      "148": {
+        "0": {
+          "title": "【第|index|話】ガラン・ゲーム",
+          "sort": "だい|index|わ がらん・げーむ"
+        },
+        "1": {
+          "title": "Chapter |index|: Galland's Game"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Garan Gēmu",
+          "sort": "Dai |index| Wa Garan Gēmu"
+        }
+      },
+      "149": {
+        "0": {
+          "title": "【第|index|話】ガランの魔力",
+          "sort": "だい|index|わ がらん の まりょく"
+        },
+        "1": {
+          "title": "Chapter |index|: Galland's Magic"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Garan no Maryoku",
+          "sort": "Dai |index| Wa Garan no Maryoku"
+        }
+      },
+      "150": {
+        "0": {
+          "title": "【第|index|話】太陽の主",
+          "sort": "だい|index|わ たいよう の しゅ"
+        },
+        "1": {
+          "title": "Chapter |index|: Master of the Sun"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Taiyō no Aruji",
+          "sort": "Dai |index| Wa Taiyō no Aruji"
+        }
+      },
+      "151": {
+        "0": {
+          "title": "【第|index|話】舞台がボクらを待っている",
+          "sort": "だい|index|わ ぶたい が ぼく らを まっ ている"
+        },
+        "1": {
+          "title": "Chapter |index|: The Stage Awaits Us"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Butai ga Bokura wo Matte Iru",
+          "sort": "Dai |index| Wa Butai ga Bokura wo Matte Iru"
+        }
+      },
+      "152": {
+        "0": {
+          "title": "【第|index|話】燭光にさそわれて",
+          "sort": "だい|index|わ しょっこう にさそわれて"
+        },
+        "1": {
+          "title": "Chapter |index|: Attracted by the Candle's Light"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shokkō ni Sasowarete",
+          "sort": "Dai |index| Wa Shokkō ni Sasowarete"
+        }
+      },
+      "153": {
+        "0": {
+          "title": "【第|index|話】戦慄の告白",
+          "sort": "だい|index|わ せんりつ の こくはく"
+        },
+        "1": {
+          "title": "Chapter |index|: A Bloodcurdling Confession"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Senritsu no Kokuhaku",
+          "sort": "Dai |index| Wa Senritsu no Kokuhaku"
+        }
+      },
+      "154": {
+        "0": {
+          "title": "【第|index|話】悪魔は微笑む",
+          "sort": "だい|index|わ あくま は ほほえむ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Demon Smiles"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Akuma wa Hohoemu",
+          "sort": "Dai |index| Wa Akuma wa Hohoemu"
+        }
+      },
+      "155": {
+        "0": {
+          "title": "【第|index|話】死の罠の迷宮",
+          "sort": "だい|index|わ しの わな の めいきゅう"
+        },
+        "1": {
+          "title": "Chapter |index|: Death-Trap Maze"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shi no Wana no Meikyū",
+          "sort": "Dai |index| Wa Shi no Wana no Meikyū"
+        }
+      },
+      "156": {
+        "0": {
+          "title": "【第|index|話】迷宮探索競技",
+          "sort": "だい|index|わ めいきゅう たんさく きょうぎ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Maze Exploration Contest"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Meikyū Tansaku Kyōgi",
+          "sort": "Dai |index| Wa Meikyū Tansaku Kyōgi"
+        }
+      },
+      "157": {
+        "0": {
+          "title": "【第|index|話】乱れ舞い踊る挑戦者たち",
+          "sort": "だい|index|わ みだれ まい おどる ちょうせんしゃ たち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Contenders That Dance a Frenzied Jig"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Midare Maiodoru Chōsenshatachi",
+          "sort": "Dai |index| Wa Midare Maiodoru Chōsenshatachi"
+        }
+      },
+      "158": {
+        "0": {
+          "title": "【第|index|話】狂宴の勇者たち",
+          "sort": "だい|index|わ きょうえん の ゆうしゃ たち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Brave Revelers"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kyōen no Yūsha-tachi",
+          "sort": "Dai |index| Wa Kyōen no Yūsha-tachi"
+        }
+      },
+      "159": {
+        "0": {
+          "title": "【第|index|話】言葉はいらない",
+          "sort": "だい|index|わ ことば はいらない"
+        },
+        "1": {
+          "title": "Chapter |index|: No Words Necessary"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kotoba wa Iranai",
+          "sort": "Dai |index| Wa Kotoba wa Iranai"
+        }
+      },
+      "160": {
+        "0": {
+          "title": "【第|index|話】ゴー！！ブレイクスルー",
+          "sort": "だい|index|わ ごー ！ ！ ぶれいくするー"
+        },
+        "1": {
+          "title": "Chapter |index|: Go!! Break Through!"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Gō!! Bureikusurū",
+          "sort": "Dai |index| Wa Gō!! Bureikusurū"
+        }
+      },
+      "161": {
+        "0": {
+          "title": "【第|index|話】伝承の者共",
+          "sort": "だい|index|わ でんしょう の もの とも"
+        },
+        "1": {
+          "title": "Chapter |index|: Legendary Figures"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Denshō no Monodomo",
+          "sort": "Dai |index| Wa Denshō no Monodomo"
+        }
+      },
+      "162": {
+        "0": {
+          "title": "【第|index|話】運命の共闘者は誰だ！？",
+          "sort": "だい|index|わ うんめい の きょうとう もの は だれ だ ！ ？"
+        },
+        "1": {
+          "title": "Chapter |index|: Who Will Share Their Fate?!"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Unmei no Kyōtō-sha wa Dare da!?",
+          "sort": "Dai |index| Wa Unmei no Kyōtō-sha wa Dare da!?"
+        }
+      },
+      "163": {
+        "0": {
+          "title": "【第|index|話】王女と聖女",
+          "sort": "だい|index|わ おうじょ と せいじょ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Princess and the Holy Maiden"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ōjo to Seijo",
+          "sort": "Dai |index| Wa Ōjo to Seijo"
+        }
+      },
+      "164": {
+        "0": {
+          "title": "【第|index|話】譲らぬ者共",
+          "sort": "だい|index|わ ゆずら ぬ もの とも"
+        },
+        "1": {
+          "title": "Chapter |index|: Those Who Will Never Surrender"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yuzuranu Monodomo",
+          "sort": "Dai |index| Wa Yuzuranu Monodomo"
+        }
+      },
+      "165": {
+        "0": {
+          "title": "【第|index|話】ちぐはぐラバーズ",
+          "sort": "だい|index|わ ちぐはぐ らばーず"
+        },
+        "1": {
+          "title": "Chapter |index|: Incongrous Lovers"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Chiguhagu Rabāzu",
+          "sort": "Dai |index| Wa Chiguhagu Rabāzu"
+        }
+      },
+      "166": {
+        "0": {
+          "title": "【第|index|話】そこに芽吹くもの",
+          "sort": "だい|index|わ そこに め ふく もの"
+        },
+        "1": {
+          "title": "Chapter |index|: What Buds There"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Soko ni Mebuku Mono",
+          "sort": "Dai |index| Wa Soko ni Mebuku Mono"
+        }
+      },
+      "167": {
+        "0": {
+          "title": "【第|index|話】キミの中の大切な",
+          "sort": "だい|index|わ きみ の なかの たいせつ な"
+        },
+        "1": {
+          "title": "Chapter |index|: What's Precious Within You"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kimi no Naka no Taisetsuna",
+          "sort": "Dai |index| Wa Kimi no Naka no Taisetsuna"
+        }
+      },
+      "168": {
+        "0": {
+          "title": "【第|index|話】〈十戒〉殲滅作戦",
+          "sort": "だい|index|わ 〈 じゅっかい 〉 せんめつ さくせん"
+        },
+        "1": {
+          "title": "Chapter |index|: The Ten Commandments Extermination Plan"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] <Jikkai> Senmetsu Sakusen",
+          "sort": "Dai |index| Wa <Jikkai> Senmetsu Sakusen"
+        }
+      },
+      "169": {
+        "0": {
+          "title": "【第|index|話】伝説の最弱聖騎士",
+          "sort": "だい|index|わ でんせつ の さいじゃく せいきし"
+        },
+        "1": {
+          "title": "Chapter |index|: The Legendary Weakest Holy Knight"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Densetsu no Saijaku Seikishi",
+          "sort": "Dai |index| Wa Densetsu no Saijaku Seikishi"
+        }
+      },
+      "170": {
+        "0": {
+          "title": "【第|index|話】その光は誰が為に",
+          "sort": "だい|index|わ その ひかり は だれが ために"
+        },
+        "1": {
+          "title": "Chapter |index|: From Whom That Light Shines"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sono Hikari wa Daregatame ni",
+          "sort": "Dai |index| Wa Sono Hikari wa Daregatame ni"
+        }
+      },
+      "170.5": {
+        "0": {
+          "title": "【番外編】ハダカのココロ",
+          "sort": "ばんがいへん はだか の こころ"
+        },
+        "1": {
+          "title": "Bonus Story: Naked Heart"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Hadaka no Kokoro",
+          "sort": "Bangai‐hen Hadaka no Kokoro"
+        }
+      },
+      "171": {
+        "0": {
+          "title": "【第|index|話】時は来たれり",
+          "sort": "だい|index|わ とき は きた れり"
+        },
+        "1": {
+          "title": "Chapter |index|: The Time Has Come"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Toki wa Kitareri",
+          "sort": "Dai |index| Wa Toki wa Kitareri"
+        }
+      },
+      "172": {
+        "0": {
+          "title": "【第|index|話】かつて友だった お前たちへ",
+          "sort": "だい|index|わ かつて とも だった   お まえ たちへ"
+        },
+        "1": {
+          "title": "Chapter |index|: To You, Who Were Once My Friends"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Katsute Tomodatta Omaetachi e",
+          "sort": "Dai |index| Wa Katsute Tomodatta Omaetachi e"
+        }
+      },
+      "173": {
+        "0": {
+          "title": "【第|index|話】闇は降り立つ",
+          "sort": "だい|index|わ やみ は おり たつ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Darkness Comes Down"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yami wa Oritatsu",
+          "sort": "Dai |index| Wa Yami wa Oritatsu"
+        }
+      },
+      "174": {
+        "0": {
+          "title": "【第|index|話】メリオダス ｖｓ．〈十戒〉",
+          "sort": "だい|index|わ めりおだす   ｖ ｓ ． 〈 じゅっかい 〉"
+        },
+        "1": {
+          "title": "Chapter |index|: Meliodas vs. The Ten Commandments"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Meriodasu vs. <Jikkai>",
+          "sort": "Dai |index| Wa Meriodasu vs. <Jikkai>"
+        }
+      },
+      "175": {
+        "0": {
+          "title": "【第|index|話】大好きなメリオダスへ",
+          "sort": "だい|index|わ だいすき な めりおだす へ"
+        },
+        "1": {
+          "title": "Chapter |index|: To My Beloved Meliodas"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Daisukina Meriodasu e",
+          "sort": "Dai |index| Wa Daisukina Meriodasu e"
+        }
+      },
+      "176": {
+        "0": {
+          "title": "【第|index|話】闇は語る",
+          "sort": "だい|index|わ やみ は かたる"
+        },
+        "1": {
+          "title": "Chapter |index|: The Darkness Speaks"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yami wa Kataru",
+          "sort": "Dai |index| Wa Yami wa Kataru"
+        }
+      },
+      "177": {
+        "0": {
+          "title": "【第|index|話】僕が君にしてあげられること",
+          "sort": "だい|index|わ ぼく が くん にしてあげられること"
+        },
+        "1": {
+          "title": "Chapter |index|: What I Can Do For You"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Boku ga Kimi ni shite Agerareru Koto",
+          "sort": "Dai |index| Wa Boku ga Kimi ni shite Agerareru Koto"
+        }
+      },
+      "178": {
+        "0": {
+          "title": "【第|index|話】暗黒のブリタニア",
+          "sort": "だい|index|わ あんこく の ぶりたにあ"
+        },
+        "1": {
+          "title": "Chapter |index|: Britannia in Darkness"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ankoku no Buritania",
+          "sort": "Dai |index| Wa Ankoku no Buritania"
+        }
+      },
+      "179": {
+        "0": {
+          "title": "【第|index|話】希望を求めて",
+          "sort": "だい|index|わ きぼう を もとめ て"
+        },
+        "1": {
+          "title": "Chapter |index|: Have Hope"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kibō wo Motomete",
+          "sort": "Dai |index| Wa Kibō wo Motomete"
+        }
+      },
+      "180": {
+        "0": {
+          "title": "【第|index|話】さまよえる騎士",
+          "sort": "だい|index|わ さまよえる きし"
+        },
+        "1": {
+          "title": "Chapter |index|: The Wandering Knight"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Samayoeru Kishi",
+          "sort": "Dai |index| Wa Samayoeru Kishi"
+        }
+      },
+      "181": {
+        "0": {
+          "title": "【第|index|話】聖騎士長ザラトラス",
+          "sort": "だい|index|わ せいきし ちょう ざらとらす"
+        },
+        "1": {
+          "title": "Chapter |index|: Chief Holy Knight Zaratras"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seikishi-chō Zaratorasu",
+          "sort": "Dai |index| Wa Seikishi-chō Zaratorasu"
+        }
+      },
+      "182": {
+        "0": {
+          "title": "【第|index|話】たしかなぬくもり",
+          "sort": "だい|index|わ たしかなぬくもり"
+        },
+        "1": {
+          "title": "Chapter |index|: Certain Warmth"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tashikana Nukumori",
+          "sort": "Dai |index| Wa Tashikana Nukumori"
+        }
+      },
+      "183": {
+        "0": {
+          "title": "【第|index|話】デンジャーゾーン",
+          "sort": "だい|index|わ でんじゃーぞーん"
+        },
+        "1": {
+          "title": "Chapter |index|: Danger Zone"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Denjā Zōn",
+          "sort": "Dai |index| Wa Denjā Zōn"
+        }
+      },
+      "184": {
+        "0": {
+          "title": "【第|index|話】超激突！！",
+          "sort": "だい|index|わ ちょう げきとつ ！ ！"
+        },
+        "1": {
+          "title": "Chapter |index|: Mega Clash!!"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Chō-Gekitotsu!!",
+          "sort": "Dai |index| Wa Chō-Gekitotsu!!"
+        }
+      },
+      "185": {
+        "0": {
+          "title": "【第|index|話】〈傲慢〉 ｖｓ．〈慈愛〉",
+          "sort": "だい|index|わ 〈 ごうまん 〉   ｖ ｓ ． 〈 じあい 〉"
+        },
+        "1": {
+          "title": "Chapter |index|: Pride vs. Love"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] <Gōman> vs. <Jiai>",
+          "sort": "Dai |index| Wa <Gōman> vs. <Jiai>"
+        }
+      },
+      "186": {
+        "0": {
+          "title": "【第|index|話】リオネス防衛戦",
+          "sort": "だい|index|わ りおねす ぼうえいせん"
+        },
+        "1": {
+          "title": "Chapter |index|: Defensive War in Liones"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Rionesu Bōei-sen",
+          "sort": "Dai |index| Wa Rionesu Bōei-sen"
+        }
+      },
+      "187": {
+        "0": {
+          "title": "【第|index|話】滅びよ邪悪な者共よ",
+          "sort": "だい|index|わ ほろび よ じゃあく な もの とも よ"
+        },
+        "1": {
+          "title": "Chapter |index|: Die, All You Wicked"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Horobi yo Jaaku na Monodomo yo",
+          "sort": "Dai |index| Wa Horobi yo Jaaku na Monodomo yo"
+        }
+      },
+      "188": {
+        "0": {
+          "title": "【第|index|話】〈罪〉の帰還",
+          "sort": "だい|index|わ 〈 つみ 〉 の きかん"
+        },
+        "1": {
+          "title": "Chapter |index|: Return Of The Sins"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] 〈Tsumi〉 no kikan",
+          "sort": "Dai |index| Wa 〈Tsumi〉 no kikan"
+        }
+      },
+      "189": {
+        "0": {
+          "title": "【第|index|話】英雄 立つ！！",
+          "sort": "だい|index|わ えいゆう   たつ ！ ！"
+        },
+        "1": {
+          "title": "Chapter |index|: The Hero Rises!!"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Eiyū Tatsu!!",
+          "sort": "Dai |index| Wa Eiyū Tatsu!!"
+        }
+      },
+      "190": {
+        "0": {
+          "title": "【第|index|話】魔宴",
+          "sort": "だい|index|わ まえん"
+        },
+        "1": {
+          "title": "Chapter |index|: Demon Party"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Maen",
+          "sort": "Dai |index| Wa Maen"
+        }
+      },
+      "191": {
+        "0": {
+          "title": "【第|index|話】満たされぬ女",
+          "sort": "だい|index|わ みた されぬ おんな"
+        },
+        "1": {
+          "title": "Chapter |index|: Insatiable Woman"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mitasarenu Onna",
+          "sort": "Dai |index| Wa Mitasarenu Onna"
+        }
+      },
+      "192": {
+        "0": {
+          "title": "【第|index|話】ヘンドリクセン vs．フラウドリン",
+          "sort": "だい|index|わ へんどりくせん  vs ． ふらうどりん"
+        },
+        "1": {
+          "title": "Chapter |index|: Hendrickson vs. Fraudrin"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hendorikusen vs. Furaudorin",
+          "sort": "Dai |index| Wa Hendorikusen vs. Furaudorin"
+        }
+      },
+      "193": {
+        "0": {
+          "title": "【第|index|話】覚悟の聖騎士長",
+          "sort": "だい|index|わ かくご の せいきし ちょう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Determined Chief Holy Knight"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kakugo no Seikishi-chō",
+          "sort": "Dai |index| Wa Kakugo no Seikishi-chō"
+        }
+      },
+      "194": {
+        "0": {
+          "title": "【第|index|話】残酷なる希望",
+          "sort": "だい|index|わ ざんこく なる きぼう"
+        },
+        "1": {
+          "title": "Chapter |index|: A Cruel Hope"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zankokunaru Kibō",
+          "sort": "Dai |index| Wa Zankokunaru Kibō"
+        }
+      },
+      "195": {
+        "0": {
+          "title": "【第|index|話】リオネス防衛戦終結！",
+          "sort": "だい|index|わ りおねす ぼうえいせん しゅうけつ ！"
+        },
+        "1": {
+          "title": "Chapter |index|: Liones's Defensive Battle Come to an End!"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Rionesu Bōei-sen Shūketsu!",
+          "sort": "Dai |index| Wa Rionesu Bōei-sen Shūketsu!"
+        }
+      },
+      "196": {
+        "0": {
+          "title": "【第|index|話】君がいるだけで",
+          "sort": "だい|index|わ くん がいるだけで"
+        },
+        "1": {
+          "title": "Chapter |index|: So Long As You're Here"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kimi ga Iru Take de",
+          "sort": "Dai |index| Wa Kimi ga Iru Take de"
+        }
+      },
+      "197": {
+        "0": {
+          "title": "【第|index|話】それぞれの答え",
+          "sort": "だい|index|わ それぞれの こたえ"
+        },
+        "1": {
+          "title": "Chapter |index|: To Each His Own Answer"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sorezore no Kotae",
+          "sort": "Dai |index| Wa Sorezore no Kotae"
+        }
+      },
+      "197.5": {
+        "0": {
+          "title": "【番外編】大罪 Ｖａｃａｔｉｏｎ",
+          "sort": "ばんがいへん たいざい   Ｖ ａ ｃ ａ ｔ ｉ ｏ ｎ"
+        },
+        "1": {
+          "title": "Extra Story: A Deadly Sins Vacation"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Taizai Vacation",
+          "sort": "Bangai‐hen Taizai Vacation"
+        }
+      },
+      "198": {
+        "0": {
+          "title": "【第|index|話】巨人と妖精",
+          "sort": "だい|index|わ きょじん と ようせい"
+        },
+        "1": {
+          "title": "Chapter |index|: The Giant & the Fairy"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kyojin to Yōsei",
+          "sort": "Dai |index| Wa Kyojin to Yōsei"
+        }
+      },
+      "199": {
+        "0": {
+          "title": "【第|index|話】光なき者たち",
+          "sort": "だい|index|わ ひかり なき もの たち"
+        },
+        "1": {
+          "title": "Chapter |index|: Those Without Light"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hikari Nakisha-tachi",
+          "sort": "Dai |index| Wa Hikari Nakisha-tachi"
+        }
+      },
+      "200": {
+        "0": {
+          "title": "【第|index|話】聖戦の記憶",
+          "sort": "だい|index|わ せいせん の きおく"
+        },
+        "1": {
+          "title": "Chapter |index|: Memories of the Holy War"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seisen no Kioku",
+          "sort": "Dai |index| Wa Seisen no Kioku"
+        }
+      },
+      "201": {
+        "0": {
+          "title": "【第|index|話】共闘する者たち",
+          "sort": "だい|index|わ きょうとう する もの たち"
+        },
+        "1": {
+          "title": "Chapter |index|: Those Who Fight in Arms"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kyōtō Suru Mono-tachi",
+          "sort": "Dai |index| Wa Kyōtō Suru Mono-tachi"
+        }
+      },
+      "202": {
+        "0": {
+          "title": "【第|index|話】聖戦の役者たち",
+          "sort": "だい|index|わ せいせん の やくしゃ たち"
+        },
+        "1": {
+          "title": "Chapter |index|: Players in the Holy War"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seisen no Yakusha-tachi",
+          "sort": "Dai |index| Wa Seisen no Yakusha-tachi"
+        }
+      },
+      "203": {
+        "0": {
+          "title": "【第|index|話】リュドシェルの計画",
+          "sort": "だい|index|わ りゅどしぇる の けいかく"
+        },
+        "1": {
+          "title": "Chapter |index|: Ludoshel's Plan"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ryudosheru no Keikaku",
+          "sort": "Dai |index| Wa Ryudosheru no Keikaku"
+        }
+      },
+      "204": {
+        "0": {
+          "title": "【第|index|話】光あれ",
+          "sort": "だい|index|わ ひかり あれ"
+        },
+        "1": {
+          "title": "Chapter |index|: Let There Be Light"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hikari are",
+          "sort": "Dai |index| Wa Hikari are"
+        }
+      },
+      "205": {
+        "0": {
+          "title": "【第|index|話】十戒 ｖｓ．四大天使",
+          "sort": "だい|index|わ じゅっかい   ｖ ｓ ． よんだい てんし"
+        },
+        "1": {
+          "title": "Chapter |index|: The Ten Commandments vs. The Archangels"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Jikkai vs. Yon Daitenshi",
+          "sort": "Dai |index| Wa Jikkai vs. Yon Daitenshi"
+        }
+      },
+      "206": {
+        "0": {
+          "title": "【第|index|話】野獣 吼える",
+          "sort": "だい|index|わ やじゅう   こう える"
+        },
+        "1": {
+          "title": "Chapter |index|: Wild Beasts Howl"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yajū Hoeru",
+          "sort": "Dai |index| Wa Yajū Hoeru"
+        }
+      },
+      "207": {
+        "0": {
+          "title": "【第|index|話】破壊獣インデュラ",
+          "sort": "だい|index|わ はかい けもの いんでゅら"
+        },
+        "1": {
+          "title": "Chapter |index|: Indura, Creature of Destruction"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hakai-jū Indeyura",
+          "sort": "Dai |index| Wa Hakai-jū Indeyura"
+        }
+      },
+      "208": {
+        "0": {
+          "title": "【第|index|話】エリザベス ｖｓ．インデュラ",
+          "sort": "だい|index|わ えりざべす   ｖ ｓ ． いんでゅら"
+        },
+        "1": {
+          "title": "Chapter |index|: Elizabeth vs. Indura"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Erizabesu vs. Indyura",
+          "sort": "Dai |index| Wa Erizabesu vs. Indyura"
+        }
+      },
+      "209": {
+        "0": {
+          "title": "【第|index|話】未来への前進",
+          "sort": "だい|index|わ みらい への ぜんしん"
+        },
+        "1": {
+          "title": "Chapter |index|: Into the Future"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mirai e no Zenshin",
+          "sort": "Dai |index| Wa Mirai e no Zenshin"
+        }
+      },
+      "210": {
+        "0": {
+          "title": "【第|index|話】感情メイルシュトローム",
+          "sort": "だい|index|わ かんじょう めいるしゅとろーむ"
+        },
+        "1": {
+          "title": "Chapter |index|: Emotional Maelstrom"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kanjō Meirushutorōmu",
+          "sort": "Dai |index| Wa Kanjō Meirushutorōmu"
+        }
+      },
+      "211": {
+        "0": {
+          "title": "【第|index|話】さよならを告げる人",
+          "sort": "だい|index|わ さよならを つげ る にん"
+        },
+        "1": {
+          "title": "Chapter |index|: He Who Says Goodbye"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sayonara wo Tsugeru Hito",
+          "sort": "Dai |index| Wa Sayonara wo Tsugeru Hito"
+        }
+      },
+      "211.5": {
+        "0": {
+          "title": "【外伝】人形は愛を乞う",
+          "sort": "がいでん にんぎょう は あい を こう"
+        },
+        "1": {
+          "title": "Side Story: The Doll Seeks Love"
+        },
+        "2": {
+          "title": "[Gaiden] Ningyō wa Ai wo Kou",
+          "sort": "Gaiden Ningyō wa Ai wo Kou"
+        }
+      },
+      "212": {
+        "0": {
+          "title": "【第|index|話】贈り物",
+          "sort": "だい|index|わ おくりもの"
+        },
+        "1": {
+          "title": "Chapter |index|: The Gift"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Okurimono",
+          "sort": "Dai |index| Wa Okurimono"
+        }
+      },
+      "213": {
+        "0": {
+          "title": "【第|index|話】それをボクらは愛と呼ぶ",
+          "sort": "だい|index|わ それを ぼく らは あい と よぶ"
+        },
+        "1": {
+          "title": "Chapter |index|: We Call That Love"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sore wo Boku-ra wa Ai to Yobu",
+          "sort": "Dai |index| Wa Sore wo Boku-ra wa Ai to Yobu"
+        }
+      },
+      "213.1": {
+        "0": {
+          "title": "【番外編】やさしい魔法の解きかた",
+          "sort": "ばんがいへん やさしい まほう の とき かた"
+        },
+        "1": {
+          "title": "Bonus Story: A Gentle Way to Break the Spell"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Yasashii Mahō no Tokikata",
+          "sort": "Bangai‐hen Yasashii Mahō no Tokikata"
+        }
+      },
+      "213.2": {
+        "0": {
+          "title": "【番外編】キミに伝えたいのは",
+          "sort": "ばんがいへん きみ に つたえ たいのは"
+        },
+        "1": {
+          "title": "Bonus Story: What I Want to Tell You"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Kimi ni Tsutaetai no wa",
+          "sort": "Bangai‐hen Kimi ni Tsutaetai no wa"
+        }
+      },
+      "213.3": {
+        "0": {
+          "title": "【番外編】〈物欲〉のホーク",
+          "sort": "ばんがいへん 〈 ぶつよく 〉 の ほーく"
+        },
+        "1": {
+          "title": "Bonus Story: Hawk The Materialist"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Butsuyoku no Hōku",
+          "sort": "Bangai‐hen Butsuyoku no Hōku"
+        }
+      },
+      "214": {
+        "0": {
+          "title": "【第|index|話】あの日の君にはもう届かない",
+          "sort": "だい|index|わ あの にち の くん にはもう とどか ない"
+        },
+        "1": {
+          "title": "Chapter |index|: The Unreachable Past"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ano Hi no Kimi ni Hamou Todokanai",
+          "sort": "Dai |index| Wa Ano Hi no Kimi ni Hamou Todokanai"
+        }
+      },
+      "215": {
+        "0": {
+          "title": "【第|index|話】処刑人ゼルドリス",
+          "sort": "だい|index|わ しょけい にん ぜるどりす"
+        },
+        "1": {
+          "title": "Chapter |index|: Zeldris The Executioner"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shokei hito Zerudorisu",
+          "sort": "Dai |index| Wa Shokei hito Zerudorisu"
+        }
+      },
+      "216": {
+        "0": {
+          "title": "【第|index|話】いざ、大罪集結へ！！",
+          "sort": "だい|index|わ いざ 、 たいざい しゅうけつ へ ！ ！"
+        },
+        "1": {
+          "title": "Chapter |index|: Deadly Sins, Unite!!"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Iza, Taizai Shūketsu e",
+          "sort": "Dai |index| Wa Iza, Taizai Shūketsu e"
+        }
+      },
+      "217": {
+        "0": {
+          "title": "【第|index|話】心の在り処",
+          "sort": "だい|index|わ こころ の あり ところ"
+        },
+        "1": {
+          "title": "Chapter |index|: Where the Heart is"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kokoro no Arika",
+          "sort": "Dai |index| Wa Kokoro no Arika"
+        }
+      },
+      "218": {
+        "0": {
+          "title": "【第|index|話】また会えたね",
+          "sort": "だい|index|わ また あえ たね"
+        },
+        "1": {
+          "title": "Chapter |index|: We Meet Again"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mata Aeta ne",
+          "sort": "Dai |index| Wa Mata Aeta ne"
+        }
+      },
+      "219": {
+        "0": {
+          "title": "【第|index|話】英雄たちの休息",
+          "sort": "だい|index|わ えいゆう たちの きゅうそく"
+        },
+        "1": {
+          "title": "Chapter |index|: The Heroes Take a Break"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Eiyū-tachi no Kyūsoku",
+          "sort": "Dai |index| Wa Eiyū-tachi no Kyūsoku"
+        }
+      },
+      "220": {
+        "0": {
+          "title": "【第|index|話】英雄たちの宴",
+          "sort": "だい|index|わ えいゆう たちの うたげ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Heroes' Feast"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Eiyū-tachi no Utage",
+          "sort": "Dai |index| Wa Eiyū-tachi no Utage"
+        }
+      },
+      "221": {
+        "0": {
+          "title": "【第|index|話】はやる心",
+          "sort": "だい|index|わ はやる こころ"
+        },
+        "1": {
+          "title": "Chapter |index|: It's All I Can Do"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hayaru Kokoro",
+          "sort": "Dai |index| Wa Hayaru Kokoro"
+        }
+      },
+      "222": {
+        "0": {
+          "title": "【第|index|話】呪われし恋人たち",
+          "sort": "だい|index|わ のろわ れし こいびと たち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Cursed Lovers"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Norowareshi Koibito-tachi",
+          "sort": "Dai |index| Wa Norowareshi Koibito-tachi"
+        }
+      },
+      "223": {
+        "0": {
+          "title": "【第|index|話】とまどう恋人たち",
+          "sort": "だい|index|わ とまどう こいびと たち"
+        },
+        "1": {
+          "title": "Chapter |index|: Bewildered Lovers"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tomadō Koibito-tachi",
+          "sort": "Dai |index| Wa Tomadō Koibito-tachi"
+        }
+      },
+      "224": {
+        "0": {
+          "title": "【第|index|話】それが僕らの生きる道",
+          "sort": "だい|index|わ それが ぼくら の いき る みち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Life We Live"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sore ga Bokurano Ikiru Michi",
+          "sort": "Dai |index| Wa Sore ga Bokurano Ikiru Michi"
+        }
+      },
+      "225": {
+        "0": {
+          "title": "【第|index|話】それぞれの葛藤",
+          "sort": "だい|index|わ それぞれの かっとう"
+        },
+        "1": {
+          "title": "Chapter |index|: Troubles Between Us"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sorezore no Kattō",
+          "sort": "Dai |index| Wa Sorezore no Kattō"
+        }
+      },
+      "226": {
+        "0": {
+          "title": "【第|index|話】アラクレ",
+          "sort": "だい|index|わ あらくれ"
+        },
+        "1": {
+          "title": "Chapter |index|: Untamed"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Arakure",
+          "sort": "Dai |index| Wa Arakure"
+        }
+      },
+      "227": {
+        "0": {
+          "title": "【第|index|話】怨念たちは眠らない",
+          "sort": "だい|index|わ おんねん たちは ねむら ない"
+        },
+        "1": {
+          "title": "Chapter |index|: The Hateful Cannot Rest"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Onnen-tachi wa Nemuranai",
+          "sort": "Dai |index| Wa Onnen-tachi wa Nemuranai"
+        }
+      },
+      "228": {
+        "0": {
+          "title": "【第|index|話】女神と聖女",
+          "sort": "だい|index|わ めがみ と せいじょ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Goddess and the Saint"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Megami to Seijo",
+          "sort": "Dai |index| Wa Megami to Seijo"
+        }
+      },
+      "229": {
+        "0": {
+          "title": "【第|index|話】愛は乙女の力",
+          "sort": "だい|index|わ あい は おとめ の ちから"
+        },
+        "1": {
+          "title": "Chapter |index|: Love is a Maiden's Power"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ai wa Otome no Chikara",
+          "sort": "Dai |index| Wa Ai wa Otome no Chikara"
+        }
+      },
+      "230": {
+        "0": {
+          "title": "【第|index|話】メラスキュラの誤算",
+          "sort": "だい|index|わ めらすきゅら の ごさん"
+        },
+        "1": {
+          "title": "Chapter |index|: Melascula's Miscalculation"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Merasukyura no Gosan",
+          "sort": "Dai |index| Wa Merasukyura no Gosan"
+        }
+      },
+      "231": {
+        "0": {
+          "title": "【第|index|話】〈傲慢〉vs.〈憤怒〉",
+          "sort": "だい|index|わ 〈 ごうまん 〉 vs . 〈 ふんど 〉"
+        },
+        "1": {
+          "title": "Chapter |index|: Pride vs. Wrath"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] \"Gōman\" vs.\"Fundo\"",
+          "sort": "Dai |index| Wa \"Gōman\" vs.\"Fundo\""
+        }
+      },
+      "232": {
+        "0": {
+          "title": "【第|index|話】最強 ｖｓ．最凶",
+          "sort": "だい|index|わ さいきょう   ｖ ｓ ． さい きょう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Strongest vs. The Most Wicked"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Saikyō vs. Saikyō",
+          "sort": "Dai |index| Wa Saikyō vs. Saikyō"
+        }
+      },
+      "233": {
+        "0": {
+          "title": "【第|index|話】ダメージ",
+          "sort": "だい|index|わ だめーじ"
+        },
+        "1": {
+          "title": "Chapter |index|: Damage"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Damēji",
+          "sort": "Dai |index| Wa Damēji"
+        }
+      },
+      "234": {
+        "0": {
+          "title": "【第|index|話】未知への扉",
+          "sort": "だい|index|わ みち への とびら"
+        },
+        "1": {
+          "title": "Chapter |index|: The Door to the Unknown"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Michi e no Tobira",
+          "sort": "Dai |index| Wa Michi e no Tobira"
+        }
+      },
+      "235": {
+        "0": {
+          "title": "【第|index|話】新たなる脅威",
+          "sort": "だい|index|わ あらた なる きょうい"
+        },
+        "1": {
+          "title": "Chapter |index|: A New Threat"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Aratanaru Kyōi",
+          "sort": "Dai |index| Wa Aratanaru Kyōi"
+        }
+      },
+      "236": {
+        "0": {
+          "title": "【第|index|話】絶望ランデブー",
+          "sort": "だい|index|わ ぜつぼう らんでぶー"
+        },
+        "1": {
+          "title": "Chapter |index|: Hopeless Rendezvous"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zetsubō Randebū",
+          "sort": "Dai |index| Wa Zetsubō Randebū"
+        }
+      },
+      "237": {
+        "0": {
+          "title": "【第|index|話】おしゃぶりの鬼",
+          "sort": "だい|index|わ おしゃぶりの おに"
+        },
+        "1": {
+          "title": "Chapter |index|: The Pacifier Demon"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Oshaburi no Oni",
+          "sort": "Dai |index| Wa Oshaburi no Oni"
+        }
+      },
+      "238": {
+        "0": {
+          "title": "【第|index|話】生まれた隙",
+          "sort": "だい|index|わ うまれ た げき"
+        },
+        "1": {
+          "title": "Chapter |index|: An Opening Presents Itself"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Umareta Suki",
+          "sort": "Dai |index| Wa Umareta Suki"
+        }
+      },
+      "239": {
+        "0": {
+          "title": "【第|index|話】団長へ",
+          "sort": "だい|index|わ だんちょう へ"
+        },
+        "1": {
+          "title": "Chapter |index|: To The Captain"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Danchō e",
+          "sort": "Dai |index| Wa Danchō e"
+        }
+      },
+      "240": {
+        "0": {
+          "title": "【第|index|話】未来への礎",
+          "sort": "だい|index|わ みらい への いしずえ"
+        },
+        "1": {
+          "title": "Chapter |index|: Cornerstone to the Future"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mirai e no Ishizue",
+          "sort": "Dai |index| Wa Mirai e no Ishizue"
+        }
+      },
+      "240.5": {
+        "0": {
+          "title": "【外伝】呪いの婚約",
+          "sort": "がいでん のろい の こんやく"
+        },
+        "1": {
+          "title": "Side Story: The Cursed Engagement"
+        },
+        "2": {
+          "title": "[Gaiden] Noroi no kon'yaku",
+          "sort": "Gaiden Noroi no kon'yaku"
+        }
+      },
+      "241": {
+        "0": {
+          "title": "【第|index|話】受け継がれる魂",
+          "sort": "だい|index|わ うけつが れる たましい"
+        },
+        "1": {
+          "title": "Chapter |index|: Inheritable Spirit"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Uketsugareru Tamashii",
+          "sort": "Dai |index| Wa Uketsugareru Tamashii"
+        }
+      },
+      "242": {
+        "0": {
+          "title": "【第|index|話】<七つの大罪> 終結",
+          "sort": "だい|index|わ < ななつ の たいざい >  しゅうけつ"
+        },
+        "1": {
+          "title": "Chapter |index|: The End of The Seven Deadly Sins"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] \"Nanatsu no Taizai\" Shūketsu",
+          "sort": "Dai |index| Wa \"Nanatsu no Taizai\" Shūketsu"
+        }
+      },
+      "243": {
+        "0": {
+          "title": "【第|index|話】そして彼は旅に出る",
+          "sort": "だい|index|わ そして かれは たび に でる"
+        },
+        "1": {
+          "title": "Chapter |index|: And  Then He Leaves on a Trip"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Soshite Kare wa Tabi ni Deru",
+          "sort": "Dai |index| Wa Soshite Kare wa Tabi ni Deru"
+        }
+      },
+      "244": {
+        "0": {
+          "title": "【第|index|話】選ばれし王女",
+          "sort": "だい|index|わ えらば れし おうじょ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Chosen Queen"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Erabareshi Ōjo",
+          "sort": "Dai |index| Wa Erabareshi Ōjo"
+        }
+      },
+      "245": {
+        "0": {
+          "title": "【第|index|話】聖者の行進",
+          "sort": "だい|index|わ せいじゃ の こうしん"
+        },
+        "1": {
+          "title": "Chapter |index|: When The Saints Go Marching In"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seija no Kōshin",
+          "sort": "Dai |index| Wa Seija no Kōshin"
+        }
+      },
+      "246": {
+        "0": {
+          "title": "【第|index|話】邂逅",
+          "sort": "だい|index|わ かいこう"
+        },
+        "1": {
+          "title": "Chapter |index|: Chance Meeting"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kaikō",
+          "sort": "Dai |index| Wa Kaikō"
+        }
+      },
+      "247": {
+        "0": {
+          "title": "【第|index|話】回収",
+          "sort": "だい|index|わ かいしゅう"
+        },
+        "1": {
+          "title": "Chapter |index|: Collecting"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kaishū",
+          "sort": "Dai |index| Wa Kaishū"
+        }
+      },
+      "248": {
+        "0": {
+          "title": "【第|index|話】ボクたちの選択",
+          "sort": "だい|index|わ ぼく たちの せんたく"
+        },
+        "1": {
+          "title": "Chapter |index|: Our Choice"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Boku-tachi no Sentaku",
+          "sort": "Dai |index| Wa Boku-tachi no Sentaku"
+        }
+      },
+      "249": {
+        "0": {
+          "title": "【第|index|話】取引",
+          "sort": "だい|index|わ とりひき"
+        },
+        "1": {
+          "title": "Chapter |index|: Deal"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Torihiki",
+          "sort": "Dai |index| Wa Torihiki"
+        }
+      },
+      "250": {
+        "0": {
+          "title": "【第|index|話】王女の覚悟",
+          "sort": "だい|index|わ おうじょ の かくご"
+        },
+        "1": {
+          "title": "Chapter |index|: Her Resolve"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ōjo no Kakugo",
+          "sort": "Dai |index| Wa Ōjo no Kakugo"
+        }
+      },
+      "251": {
+        "0": {
+          "title": "【第|index|話】聖戦協定",
+          "sort": "だい|index|わ せいせん きょうてい"
+        },
+        "1": {
+          "title": "Chapter |index|: The Holy War Accord"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seisen Kyōtei",
+          "sort": "Dai |index| Wa Seisen Kyōtei"
+        }
+      },
+      "252": {
+        "0": {
+          "title": "【第|index|話】宿怨",
+          "sort": "だい|index|わ しゅくえん"
+        },
+        "1": {
+          "title": "Chapter |index|: An Old Grudge"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shukuen",
+          "sort": "Dai |index| Wa Shukuen"
+        }
+      },
+      "253": {
+        "0": {
+          "title": "【第|index|話】失われし恩寵",
+          "sort": "だい|index|わ うしなわ れし おんちょう"
+        },
+        "1": {
+          "title": "Chapter |index|: Lost Grace"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ushinawareshi Onchō",
+          "sort": "Dai |index| Wa Ushinawareshi Onchō"
+        }
+      },
+      "254": {
+        "0": {
+          "title": "【第|index|話】絶望のキャメロット",
+          "sort": "だい|index|わ ぜつぼう の きゃめろっと"
+        },
+        "1": {
+          "title": "Chapter |index|: Camelot in Despair"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zetsubō no Kyamerotto",
+          "sort": "Dai |index| Wa Zetsubō no Kyamerotto"
+        }
+      },
+      "255": {
+        "0": {
+          "title": "【第|index|話】希望の子",
+          "sort": "だい|index|わ きぼう の こ"
+        },
+        "1": {
+          "title": "Chapter |index|: Child of Hope"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kibō no Ko",
+          "sort": "Dai |index| Wa Kibō no Ko"
+        }
+      },
+      "256": {
+        "0": {
+          "title": "【第|index|話】貫く聖剣",
+          "sort": "だい|index|わ つらぬく せいけん"
+        },
+        "1": {
+          "title": "Chapter |index|: The Piercing Sacred Sword"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tsuranuku Seiken",
+          "sort": "Dai |index| Wa Tsuranuku Seiken"
+        }
+      },
+      "257": {
+        "0": {
+          "title": "【第|index|話】出撃の時",
+          "sort": "だい|index|わ しゅつげき の とき"
+        },
+        "1": {
+          "title": "Chapter |index|: Sallying Forth"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shutsugeki no Toki",
+          "sort": "Dai |index| Wa Shutsugeki no Toki"
+        }
+      },
+      "258": {
+        "0": {
+          "title": "【第|index|話】聖戦の幕開け",
+          "sort": "だい|index|わ せいせん の まくあけ"
+        },
+        "1": {
+          "title": "Chapter |index|: Dawn of the Holy War"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seisen no Makuake",
+          "sort": "Dai |index| Wa Seisen no Makuake"
+        }
+      },
+      "259": {
+        "0": {
+          "title": "【第|index|話】戦渦のブリタニア",
+          "sort": "だい|index|わ せんか の ぶりたにあ"
+        },
+        "1": {
+          "title": "Chapter |index|: War-Ravaged Britannia"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Senka no Buritania",
+          "sort": "Dai |index| Wa Senka no Buritania"
+        }
+      },
+      "260": {
+        "0": {
+          "title": "【第|index|話】キミに伝えたいこと",
+          "sort": "だい|index|わ きみ に つたえ たいこと"
+        },
+        "1": {
+          "title": "Chapter |index|: What I Want to Tell You"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kimi ni Tsutaetai Koto",
+          "sort": "Dai |index| Wa Kimi ni Tsutaetai Koto"
+        }
+      },
+      "261": {
+        "0": {
+          "title": "【第|index|話】迷子の猫",
+          "sort": "だい|index|わ まいご の ねこ"
+        },
+        "1": {
+          "title": "Chapter |index|: Lost Cat"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Maigo no Neko",
+          "sort": "Dai |index| Wa Maigo no Neko"
+        }
+      },
+      "262": {
+        "0": {
+          "title": "【第|index|話】闇に歪む者",
+          "sort": "だい|index|わ やみ に ひずむ もの"
+        },
+        "1": {
+          "title": "Chapter |index|: The One Warped by Darkness"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yami ni Yugamu Mono",
+          "sort": "Dai |index| Wa Yami ni Yugamu Mono"
+        }
+      },
+      "263": {
+        "0": {
+          "title": "【第|index|話】闇爆ぜる",
+          "sort": "だい|index|わ やみ はぜ る"
+        },
+        "1": {
+          "title": "Chapter |index|: Splitting Darkness"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yami Hazeru",
+          "sort": "Dai |index| Wa Yami Hazeru"
+        }
+      },
+      "264": {
+        "0": {
+          "title": "【第|index|話】歪み捻じれ壊れる男",
+          "sort": "だい|index|わ ひずみ ねじ れ こわれ る おとこ"
+        },
+        "1": {
+          "title": "Chapter |index|: A Warped, Twisted, and Broken Man"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yugami Nejire Kowareru Otoko",
+          "sort": "Dai |index| Wa Yugami Nejire Kowareru Otoko"
+        }
+      },
+      "265": {
+        "0": {
+          "title": "【第|index|話】暴走する愛",
+          "sort": "だい|index|わ ぼうそう する あい"
+        },
+        "1": {
+          "title": "Chapter |index|: Rampaging Love"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Bōsō suru Ai",
+          "sort": "Dai |index| Wa Bōsō suru Ai"
+        }
+      },
+      "265.5": {
+        "0": {
+          "title": "【番外編】優しい夢",
+          "sort": "ばんがいへん やさしい ゆめ"
+        },
+        "1": {
+          "title": "Bonus Story: Sweet Dreams"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Yasashii Yume",
+          "sort": "Bangai‐hen Yasashii Yume"
+        }
+      },
+      "266": {
+        "0": {
+          "title": "【第|index|話】追う者 追われる者",
+          "sort": "だい|index|わ おう もの   おわ れる もの"
+        },
+        "1": {
+          "title": "Chapter |index|: The Pursuer and the Pursued"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ō Mono Owareru Mono",
+          "sort": "Dai |index| Wa Ō Mono Owareru Mono"
+        }
+      },
+      "266.1": {
+        "0": {
+          "title": "【外伝】戦え！！残飯処理騎士団団長！！",
+          "sort": "がいでん たたかえ！！ざんぱん しょり きしだん だんちょう！！"
+        },
+        "1": {
+          "title": "Side Story: Fight!! Captain of the Knighthood of Scraps Disposal"
+        },
+        "2": {
+          "title": "[Gaiden] Tatakae!! Zanpan Shori Kishi-dan Danchō!!",
+          "sort": "Gaiden Tatakae!! Zanpan Shori Kishi-dan Danchō!!"
+        }
+      },
+      "266.2": {
+        "0": {
+          "title": "【外伝】パンツを求めて",
+          "sort": "がいでん ぱんつ を もとめ て"
+        },
+        "1": {
+          "title": "Side Story: In Search of Panties"
+        },
+        "2": {
+          "title": "[Gaiden] Pantsu wo Motomete",
+          "sort": "Gaiden Pantsu wo Motomete"
+        }
+      },
+      "266.3": {
+        "0": {
+          "title": "【外伝】〈豚の帽子〉亭リニューアルにつきまして",
+          "sort": "がいでん 〈 ぶた の ぼうし 〉 てい りにゅーある につきまして"
+        },
+        "1": {
+          "title": "Side Story: On the Subject of Reopening Boar Hat"
+        },
+        "2": {
+          "title": "[Gaiden] Buta no Bōshi-tei Rinyūaru ni Tsukimashite",
+          "sort": "Gaiden Buta no Bōshi-tei Rinyūaru ni Tsukimashite"
+        }
+      },
+      "267": {
+        "0": {
+          "title": "【第|index|話】天空より",
+          "sort": "だい|index|わ てんくう より"
+        },
+        "1": {
+          "title": "Chapter |index|: From the Skies"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tenkū yori",
+          "sort": "Dai |index| Wa Tenkū yori"
+        }
+      },
+      "268": {
+        "0": {
+          "title": "【第|index|話】煉獄より",
+          "sort": "だい|index|わ れんごく より"
+        },
+        "1": {
+          "title": "Chapter |index|: From Purgatory"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Rengoku yori",
+          "sort": "Dai |index| Wa Rengoku yori"
+        }
+      },
+      "269": {
+        "0": {
+          "title": "【第|index|話】煉獄ライフ",
+          "sort": "だい|index|わ れんごく らいふ"
+        },
+        "1": {
+          "title": "Chapter |index|: Purgatory Life"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Rengoku Raifu",
+          "sort": "Dai |index| Wa Rengoku Raifu"
+        }
+      },
+      "270": {
+        "0": {
+          "title": "【第|index|話】未知との遭遇",
+          "sort": "だい|index|わ みち との そうぐう"
+        },
+        "1": {
+          "title": "Chapter |index|: A Meeting with the Unknown"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Michi to no Sōgū",
+          "sort": "Dai |index| Wa Michi to no Sōgū"
+        }
+      },
+      "271": {
+        "0": {
+          "title": "【第|index|話】一途なる想い",
+          "sort": "だい|index|わ いちず なる おもい"
+        },
+        "1": {
+          "title": "Chapter |index|: A Single-Minded Love"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ichizu naru Omoi",
+          "sort": "Dai |index| Wa Ichizu naru Omoi"
+        }
+      },
+      "272": {
+        "0": {
+          "title": "【第|index|話】永劫する戦い",
+          "sort": "だい|index|わ えいごう する たたかい"
+        },
+        "1": {
+          "title": "Chapter |index|: Eternal Battle"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Eigō suru Tatakai",
+          "sort": "Dai |index| Wa Eigō suru Tatakai"
+        }
+      },
+      "273": {
+        "0": {
+          "title": "【第|index|話】聖戦の犠牲者",
+          "sort": "だい|index|わ せいせん の ぎせいしゃ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Victims of the Holy War"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seisen no Giseisha",
+          "sort": "Dai |index| Wa Seisen no Giseisha"
+        }
+      },
+      "274": {
+        "0": {
+          "title": "【第|index|話】絶望の堕天使マエル",
+          "sort": "だい|index|わ ぜつぼう の だてんし まえる"
+        },
+        "1": {
+          "title": "Chapter |index|: The Despairing Fallen Angel Mael"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zetsubō no Datenshi Maeru",
+          "sort": "Dai |index| Wa Zetsubō no Datenshi Maeru"
+        }
+      },
+      "275": {
+        "0": {
+          "title": "【第|index|話】心を一つに",
+          "sort": "だい|index|わ こころ を ひとつ に"
+        },
+        "1": {
+          "title": "Chapter |index|: Together as One"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kokoro wo Hitotsu ni",
+          "sort": "Dai |index| Wa Kokoro wo Hitotsu ni"
+        }
+      },
+      "276": {
+        "0": {
+          "title": "【第|index|話】悲しき一撃",
+          "sort": "だい|index|わ かなしき いちげき"
+        },
+        "1": {
+          "title": "Chapter |index|: The Tragic Strike"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kanashiki Ichigeki",
+          "sort": "Dai |index| Wa Kanashiki Ichigeki"
+        }
+      },
+      "277": {
+        "0": {
+          "title": "【第|index|話】愛から自由になる術はない",
+          "sort": "だい|index|わ あい から じゆう になる じゅつ はない"
+        },
+        "1": {
+          "title": "Chapter |index|: There's No Way To Free Yourself From Love"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ai kara Jiyū ni naru Sube wa nai",
+          "sort": "Dai |index| Wa Ai kara Jiyū ni naru Sube wa nai"
+        }
+      },
+      "278": {
+        "0": {
+          "title": "【第|index|話】絶望に立ち向かえ!!",
+          "sort": "だい|index|わ ぜつぼう に たち むか え ! !"
+        },
+        "1": {
+          "title": "Chapter |index|: Confront Despair!!"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zetsubō ni Tachimukae!!",
+          "sort": "Dai |index| Wa Zetsubō ni Tachimukae!!"
+        }
+      },
+      "279": {
+        "0": {
+          "title": "【第|index|話】勝利の鐘の音",
+          "sort": "だい|index|わ しょうり の かね の おと"
+        },
+        "1": {
+          "title": "Chapter |index|: The Tolling of the Victory Bell"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shōri no Kane no Ne",
+          "sort": "Dai |index| Wa Shōri no Kane no Ne"
+        }
+      },
+      "280": {
+        "0": {
+          "title": "【第|index|話】崩壊",
+          "sort": "だい|index|わ ほうかい"
+        },
+        "1": {
+          "title": "Chapter |index|: Collapse"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hōkai",
+          "sort": "Dai |index| Wa Hōkai"
+        }
+      },
+      "281": {
+        "0": {
+          "title": "【第|index|話】妖精王vs.死の天使",
+          "sort": "だい|index|わ ようせい おう vs . しの てんし"
+        },
+        "1": {
+          "title": "Chapter |index|: The Fairy Kings vs. The Angel of Death"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yōsei-ō vs. Shi no Tenshi",
+          "sort": "Dai |index| Wa Yōsei-ō vs. Shi no Tenshi"
+        }
+      },
+      "282": {
+        "0": {
+          "title": "【第|index|話】ゴウセルvs.マエル",
+          "sort": "だい|index|わ ごうせる vs . まえる"
+        },
+        "1": {
+          "title": "Chapter |index|: \"Gowther vs. Mael\" "
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Gouseru vs. Maeru",
+          "sort": "Dai |index| Wa Gouseru vs. Maeru"
+        }
+      },
+      "283": {
+        "0": {
+          "title": "【第|index|話】生還への渇望",
+          "sort": "だい|index|わ せいかん への かつぼう"
+        },
+        "1": {
+          "title": "Chapter |index|: A Drive to Survive"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Seikan e no Katsubō",
+          "sort": "Dai |index| Wa Seikan e no Katsubō"
+        }
+      },
+      "284": {
+        "0": {
+          "title": "【第|index|話】希望への扉",
+          "sort": "だい|index|わ きぼう への とびら"
+        },
+        "1": {
+          "title": "Chapter |index|: The Doorway to Hope"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kibō e no tobira",
+          "sort": "Dai |index| Wa Kibō e no tobira"
+        }
+      },
+      "284.5": {
+        "0": {
+          "title": "【番外編】真昼の決闘",
+          "sort": "ばんがいへん まひる の けっとう"
+        },
+        "1": {
+          "title": "Bonus Story: Showdown at High Noon"
+        },
+        "2": {
+          "title": "[Bangai‐hen] Mahiru no Kettō",
+          "sort": "Bangai‐hen Mahiru no Kettō"
+        }
+      },
+      "285": {
+        "0": {
+          "title": "【第|index|話】その先に在るもの",
+          "sort": "だい|index|わ その さきに ある もの"
+        },
+        "1": {
+          "title": "Chapter |index|: What Lies Ahead"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sono saki ni aru mono",
+          "sort": "Dai |index| Wa Sono saki ni aru mono"
+        }
+      },
+      "286": {
+        "0": {
+          "title": "【第|index|話】閃光",
+          "sort": "だい|index|わ せんこう"
+        },
+        "1": {
+          "title": "Chapter |index|: Flash"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Senkō",
+          "sort": "Dai |index| Wa Senkō"
+        }
+      },
+      "287": {
+        "0": {
+          "title": "【第|index|話】暗黒の王子",
+          "sort": "だい|index|わ あんこく の おうじ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Prince of Darkness"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ankoku no Ōji",
+          "sort": "Dai |index| Wa Ankoku no Ōji"
+        }
+      },
+      "288": {
+        "0": {
+          "title": "【第|index|話】凶星雲(オミノス・ネビュラ)",
+          "sort": "だい|index|わ きょうせい くも ( おみのす・ねびゅら )"
+        },
+        "1": {
+          "title": "Chapter |index|: Ominous Nebula"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ominusu Nebyura\"",
+          "sort": "Dai |index| Wa Ominusu Nebyura\""
+        }
+      },
+      "289": {
+        "0": {
+          "title": "【第|index|話】〈傲慢〉ｖｓ.〈敬神〉",
+          "sort": "だい|index|わ 〈 ごうまん 〉 ｖ ｓ . 〈 けいしん 〉"
+        },
+        "1": {
+          "title": "Chapter |index|: Pride vs. Piety"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] <Gōman> vs. <Keishin>",
+          "sort": "Dai |index| Wa <Gōman> vs. <Keishin>"
+        }
+      },
+      "290": {
+        "0": {
+          "title": "【第|index|話】小賢しき蛆虫たち",
+          "sort": "だい|index|わ こざかしき うじむし たち"
+        },
+        "1": {
+          "title": "Chapter |index|: Clever Little Grubs"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kozakashiki Ujimushi-tachi",
+          "sort": "Dai |index| Wa Kozakashiki Ujimushi-tachi"
+        }
+      },
+      "291": {
+        "0": {
+          "title": "【第|index|話】魔女の晩餐",
+          "sort": "だい|index|わ まじょ の ばんさん"
+        },
+        "1": {
+          "title": "Chapter |index|: The Witch's Feast"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Majō no Bansan",
+          "sort": "Dai |index| Wa Majō no Bansan"
+        }
+      },
+      "292": {
+        "0": {
+          "title": "【第|index|話】悪夢の顕現 希望の帰還",
+          "sort": "だい|index|わ あくむ の けんげん   きぼう の きかん"
+        },
+        "1": {
+          "title": "Chapter |index|: The Stuff of Nightmares, The Return of Hope"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Akumu no Kengen Kibō no Kikan",
+          "sort": "Dai |index| Wa Akumu no Kengen Kibō no Kikan"
+        }
+      },
+      "293": {
+        "0": {
+          "title": "【第|index|話】「いつか」が叶う時",
+          "sort": "だい|index|わ 「 いつか 」 が かなう とき"
+        },
+        "1": {
+          "title": "Chapter |index|: When \"Someday\" Comes True"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] \"Itsuka\" ga Kanau Toki",
+          "sort": "Dai |index| Wa \"Itsuka\" ga Kanau Toki"
+        }
+      },
+      "294": {
+        "0": {
+          "title": "【第|index|話】希望と葛藤と絶望",
+          "sort": "だい|index|わ きぼう と かっとう と ぜつぼう"
+        },
+        "1": {
+          "title": "Chapter |index|: Hope, Conflict, and Despair"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kibō to Kattō to Zetsubō",
+          "sort": "Dai |index| Wa Kibō to Kattō to Zetsubō"
+        }
+      },
+      "295": {
+        "0": {
+          "title": "【第|index|話】集結するものたち",
+          "sort": "だい|index|わ しゅうけつ するものたち"
+        },
+        "1": {
+          "title": "Chapter |index|: That Which Gathers"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shūketsu suru Mono-tachi",
+          "sort": "Dai |index| Wa Shūketsu suru Mono-tachi"
+        }
+      },
+      "296": {
+        "0": {
+          "title": "【第|index|話】友として 兄として",
+          "sort": "だい|index|わ とも として   あに として"
+        },
+        "1": {
+          "title": "Chapter |index|: As a Friend, As a Brother"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tomo toshite Ani Toshite",
+          "sort": "Dai |index| Wa Tomo toshite Ani Toshite"
+        }
+      },
+      "297": {
+        "0": {
+          "title": "【第|index|話】太陽の救済",
+          "sort": "だい|index|わ たいよう の きゅうさい"
+        },
+        "1": {
+          "title": "Chapter |index|: The Salvation of the Sun"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Taiyō no Kyūsai",
+          "sort": "Dai |index| Wa Taiyō no Kyūsai"
+        }
+      },
+      "298": {
+        "0": {
+          "title": "【第|index|話】マエルvs.ゼルドリス",
+          "sort": "だい|index|わ まえる vs . ぜるどりす"
+        },
+        "1": {
+          "title": "Chapter |index|: Mael vs. Zeldris"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Maeru vs. Zerudorisu",
+          "sort": "Dai |index| Wa Maeru vs. Zerudorisu"
+        }
+      },
+      "299": {
+        "0": {
+          "title": "【第|index|話】すべてが凍り付く",
+          "sort": "だい|index|わ すべてが こおり つく"
+        },
+        "1": {
+          "title": "Chapter |index|: Everyone Freezes"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Subete ga Kooritsuku",
+          "sort": "Dai |index| Wa Subete ga Kooritsuku"
+        }
+      },
+      "300": {
+        "0": {
+          "title": "【第|index|話】魔神王メリオダス",
+          "sort": "だい|index|わ まじん おう めりおだす"
+        },
+        "1": {
+          "title": "Chapter |index|: The Demon Lord Meliodas"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Majin-Ō Meriodasu",
+          "sort": "Dai |index| Wa Majin-Ō Meriodasu"
+        }
+      },
+      "301": {
+        "0": {
+          "title": "【第|index|話】神と対時する人",
+          "sort": "だい|index|わ かみ と つい とき する にん"
+        },
+        "1": {
+          "title": "Chapter |index|: The One Who Stands Against A God"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kami to taiji suru hito",
+          "sort": "Dai |index| Wa Kami to taiji suru hito"
+        }
+      },
+      "302": {
+        "0": {
+          "title": "【第|index|話】みんながキミを待っている",
+          "sort": "だい|index|わ みんなが きみ を まっ ている"
+        },
+        "1": {
+          "title": "Chapter |index|: Everyone's Waiting for You"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Minna ga Kimi wo Matte iru",
+          "sort": "Dai |index| Wa Minna ga Kimi wo Matte iru"
+        }
+      },
+      "302.5": {
+        "0": {
+          "title": "【番外編】妹よ",
+          "sort": "ばんがいへん いもうと よ"
+        },
+        "1": {
+          "title": "Extra Story: Little Sisters"
+        },
+        "2": {
+          "title": "[Bangai‐hen] And yo",
+          "sort": "Bangai‐hen And yo"
+        }
+      },
+      "303": {
+        "0": {
+          "title": "【第|index|話】みんながキミの力になる",
+          "sort": "だい|index|わ みんなが きみ の ちから になる"
+        },
+        "1": {
+          "title": "Chapter |index|: We'll All Be Your Strength"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Minna ga Kimi no Chikara ni Naru",
+          "sort": "Dai |index| Wa Minna ga Kimi no Chikara ni Naru"
+        }
+      },
+      "304": {
+        "0": {
+          "title": "【第|index|話】処刑人は願う",
+          "sort": "だい|index|わ しょけい にん は ねがう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Executioner's Wish"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shokeinin wa Negau",
+          "sort": "Dai |index| Wa Shokeinin wa Negau"
+        }
+      },
+      "305": {
+        "0": {
+          "title": "【第|index|話】断末魔",
+          "sort": "だい|index|わ だんまつま"
+        },
+        "1": {
+          "title": "Chapter |index|: Death Throes"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Danmatsuma",
+          "sort": "Dai |index| Wa Danmatsuma"
+        }
+      },
+      "306": {
+        "0": {
+          "title": "【第|index|話】永き旅の終着",
+          "sort": "だい|index|わ ながき たび の しゅうちゃく"
+        },
+        "1": {
+          "title": "Chapter |index|: The End of a Long Journey"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Nagaki Tabi no Shūchaku",
+          "sort": "Dai |index| Wa Nagaki Tabi no Shūchaku"
+        }
+      },
+      "307": {
+        "0": {
+          "title": "【第|index|話】幸せに包まれる時",
+          "sort": "だい|index|わ しあわせ に つつま れる とき"
+        },
+        "1": {
+          "title": "Chapter |index|: Until We're Shrouded in Happiness"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shiawase ni tsutsuma reru toki",
+          "sort": "Dai |index| Wa Shiawase ni tsutsuma reru toki"
+        }
+      },
+      "308": {
+        "0": {
+          "title": "【第|index|話】メリオダスが消える",
+          "sort": "だい|index|わ めりおだす が きえ る"
+        },
+        "1": {
+          "title": "Chapter |index|: Meliodas Disappears"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Meriodasu ga Kieru",
+          "sort": "Dai |index| Wa Meriodasu ga Kieru"
+        }
+      },
+      "309": {
+        "0": {
+          "title": "【第|index|話】れが私の生きる道",
+          "sort": "だい|index|わ れが わたし の いき る みち"
+        },
+        "1": {
+          "title": "Chapter |index|: This is the Path I Live"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Rega watashi no ikiru michi",
+          "sort": "Dai |index| Wa Rega watashi no ikiru michi"
+        }
+      },
+      "310": {
+        "0": {
+          "title": "【第|index|話】さょなら セつの大罪",
+          "sort": "だい|index|わ さょなら   せ つの たいざい"
+        },
+        "1": {
+          "title": "Chapter |index|: Farewell, Seven Deadly Sins"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Sayonara Nanatsu no Taizai",
+          "sort": "Dai |index| Wa Sayonara Nanatsu no Taizai"
+        }
+      },
+      "311": {
+        "0": {
+          "title": "【第|index|話】まだ終わらない",
+          "sort": "だい|index|わ まだ おわ らない"
+        },
+        "1": {
+          "title": "Chapter |index|: It's Not Over Yet"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mada Owaranai",
+          "sort": "Dai |index| Wa Mada Owaranai"
+        }
+      },
+      "312": {
+        "0": {
+          "title": "【第|index|話】開戦",
+          "sort": "だい|index|わ かいせん"
+        },
+        "1": {
+          "title": "Chapter |index|: Outbreak of War"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kaisen",
+          "sort": "Dai |index| Wa Kaisen"
+        }
+      },
+      "313": {
+        "0": {
+          "title": "【第|index|話】宿命の兄弟",
+          "sort": "だい|index|わ しゅくめい の きょうだい"
+        },
+        "1": {
+          "title": "Chapter |index|: Fated Brothers"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shukumei no Kyōdai",
+          "sort": "Dai |index| Wa Shukumei no Kyōdai"
+        }
+      },
+      "314": {
+        "0": {
+          "title": "【第|index|話】二人の魔神王",
+          "sort": "だい|index|わ ふたり の まじん おう"
+        },
+        "1": {
+          "title": "Chapter |index|: Their Demon Lord"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Futari no Majin-Ō",
+          "sort": "Dai |index| Wa Futari no Majin-Ō"
+        }
+      },
+      "315": {
+        "0": {
+          "title": "【第|index|話】最終戦争",
+          "sort": "だい|index|わ さいしゅうせんそう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Final Battle"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Saishū Sensō",
+          "sort": "Dai |index| Wa Saishū Sensō"
+        }
+      },
+      "316": {
+        "0": {
+          "title": "【第|index|話】主恩のインデュラ",
+          "sort": "だい|index|わ しゅおん の いんでゅら"
+        },
+        "1": {
+          "title": "Chapter |index|: The Lord's Grace Indura"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shuon no Indura",
+          "sort": "Dai |index| Wa Shuon no Indura"
+        }
+      },
+      "317": {
+        "0": {
+          "title": "【第|index|話】傲慢なる決意",
+          "sort": "だい|index|わ ごうまん なる けつい"
+        },
+        "1": {
+          "title": "Chapter |index|: Proud Determination"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Gōman naru Ketsui",
+          "sort": "Dai |index| Wa Gōman naru Ketsui"
+        }
+      },
+      "318": {
+        "0": {
+          "title": "【第|index|話】混迷の戦況",
+          "sort": "だい|index|わ こんめい の せんきょう"
+        },
+        "1": {
+          "title": "Chapter |index|: Ambiguous Fight"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Konmei no Senkyō",
+          "sort": "Dai |index| Wa Konmei no Senkyō"
+        }
+      },
+      "319": {
+        "0": {
+          "title": "【第|index|話】許されざる膠着",
+          "sort": "だい|index|わ ゆるさ れざる こうちゃく"
+        },
+        "1": {
+          "title": "Chapter |index|: Unforgivable Deadlock"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Yurusarezaru Kōchaku",
+          "sort": "Dai |index| Wa Yurusarezaru Kōchaku"
+        }
+      },
+      "320": {
+        "0": {
+          "title": "【第|index|話】絶望の兄弟",
+          "sort": "だい|index|わ ぜつぼう の きょうだい"
+        },
+        "1": {
+          "title": "Chapter |index|: Brothers of Despair"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zetsubō no Kyōdai",
+          "sort": "Dai |index| Wa Zetsubō no Kyōdai"
+        }
+      },
+      "321": {
+        "0": {
+          "title": "【第|index|話】光",
+          "sort": "だい|index|わ ひかり"
+        },
+        "1": {
+          "title": "Chapter |index|: The Light"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hikari",
+          "sort": "Dai |index| Wa Hikari"
+        }
+      },
+      "322": {
+        "0": {
+          "title": "【第|index|話】キミの名を呼ぶ声",
+          "sort": "だい|index|わ きみ の めい を よぶ こえ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Voice Calling Your Name"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kimi no Na wo Yobu Koe",
+          "sort": "Dai |index| Wa Kimi no Na wo Yobu Koe"
+        }
+      },
+      "323": {
+        "0": {
+          "title": "【第|index|話】ボクはここにいる",
+          "sort": "だい|index|わ ぼく はここにいる"
+        },
+        "1": {
+          "title": "Chapter |index|: I'm Right Here"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Boku wa Koko ni Iru",
+          "sort": "Dai |index| Wa Boku wa Koko ni Iru"
+        }
+      },
+      "324": {
+        "0": {
+          "title": "【第|index|話】兄弟の約束",
+          "sort": "だい|index|わ きょうだい の やくそく"
+        },
+        "1": {
+          "title": "Chapter |index|: A Promise Between Brothers"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kyōdai no Yakusoku",
+          "sort": "Dai |index| Wa Kyōdai no Yakusoku"
+        }
+      },
+      "325": {
+        "0": {
+          "title": "【第|index|話】抗う者たち",
+          "sort": "だい|index|わ あらがう もの たち"
+        },
+        "1": {
+          "title": "Chapter |index|: The Challengers"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Aragau Mono-tachi",
+          "sort": "Dai |index| Wa Aragau Mono-tachi"
+        }
+      },
+      "326": {
+        "0": {
+          "title": "【第|index|話】＜七つの大罪＞vs.魔神王",
+          "sort": "だい|index|わ ＜ ななつ の たいざい ＞ vs . まじん おう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Seven Deadly Sins vs. The Demon Lord"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] \"Nanatsu no Taizai\" vs. Majin-Ō",
+          "sort": "Dai |index| Wa \"Nanatsu no Taizai\" vs. Majin-Ō"
+        }
+      },
+      "327": {
+        "0": {
+          "title": "【第|index|話】エスカノールという男",
+          "sort": "だい|index|わ えすかのーる という おとこ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Man Called Escanor"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Esukanōru to iu Otoko",
+          "sort": "Dai |index| Wa Esukanōru to iu Otoko"
+        }
+      },
+      "327.5": {
+        "0": {
+          "title": "【外伝】王は孤独に歌う",
+          "sort": "がいでん おう は こどく に うたう"
+        },
+        "1": {
+          "title": "Side Story: The King Sings Alone"
+        },
+        "2": {
+          "title": "[Gaiden] Ō wa Kodoku ni Utau",
+          "sort": "Gaiden Ō wa Kodoku ni Utau"
+        }
+      },
+      "328": {
+        "0": {
+          "title": "【第|index|話】天上天下唯我独尊の極み",
+          "sort": "だい|index|わ てんじょうてんか ゆいがどくそん の きわみ"
+        },
+        "1": {
+          "title": "Chapter |index|: The One: Ultimate"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Za Wan Arutimetto",
+          "sort": "Dai |index| Wa Za Wan Arutimetto"
+        }
+      },
+      "329": {
+        "0": {
+          "title": "【第|index|話】ゼルドリスvs.魔神王",
+          "sort": "だい|index|わ ぜるどりす vs . まじん おう"
+        },
+        "1": {
+          "title": "Chapter |index|: Zeldris vs. The Demon Lord"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Zerudorisu vs. Majin-Ō",
+          "sort": "Dai |index| Wa Zerudorisu vs. Majin-Ō"
+        }
+      },
+      "330": {
+        "0": {
+          "title": "【第|index|話】あがき",
+          "sort": "だい|index|わ あがき"
+        },
+        "1": {
+          "title": "Chapter |index|: The Struggle"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Agaki",
+          "sort": "Dai |index| Wa Agaki"
+        }
+      },
+      "331": {
+        "0": {
+          "title": "【第|index|話】倶に天を戴かず",
+          "sort": "だい|index|わ ぐ に てん を いただか ず"
+        },
+        "1": {
+          "title": "Chapter |index|: Mortal Enemies"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tomo ni Ten wo Itadakazu",
+          "sort": "Dai |index| Wa Tomo ni Ten wo Itadakazu"
+        }
+      },
+      "332": {
+        "0": {
+          "title": "【第|index|話】代償",
+          "sort": "だい|index|わ だいしょう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Price"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Daishō",
+          "sort": "Dai |index| Wa Daishō"
+        }
+      },
+      "333": {
+        "0": {
+          "title": "【第|index|話】傲慢と暴食と傷跡",
+          "sort": "だい|index|わ ごうまん と ぼうしょく と きずあと"
+        },
+        "1": {
+          "title": "Chapter |index|: Arrogance, Overeating, and Scars"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Gōman to Bōshoku to Kizuato",
+          "sort": "Dai |index| Wa Gōman to Bōshoku to Kizuato"
+        }
+      },
+      "334": {
+        "0": {
+          "title": "【第|index|話】一つの時代の終わり",
+          "sort": "だい|index|わ ひとつ の じだい の おわり"
+        },
+        "1": {
+          "title": "Chapter |index|: The End of an Era"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Hitotsu no Jidai no Owari",
+          "sort": "Dai |index| Wa Hitotsu no Jidai no Owari"
+        }
+      },
+      "335": {
+        "0": {
+          "title": "【第|index|話】魔女が求めつづけたもの",
+          "sort": "だい|index|わ まじょ が もとめ つづけたもの"
+        },
+        "1": {
+          "title": "Chapter |index|: What the Witch Had Always Wanted"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Majo ga Motometsuzuketa Mono",
+          "sort": "Dai |index| Wa Majo ga Motometsuzuketa Mono"
+        }
+      },
+      "336": {
+        "0": {
+          "title": "【第|index|話】混沌の王",
+          "sort": "だい|index|わ こんとん の おう"
+        },
+        "1": {
+          "title": "Chapter |index|: The Lord of Chaos"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Konton no Ō",
+          "sort": "Dai |index| Wa Konton no Ō"
+        }
+      },
+      "337": {
+        "0": {
+          "title": "【第|index|話】マーリン",
+          "sort": "だい|index|わ まーりん"
+        },
+        "1": {
+          "title": "Chapter |index|: Merlin"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mārin",
+          "sort": "Dai |index| Wa Mārin"
+        }
+      },
+      "338": {
+        "0": {
+          "title": "【第|index|話】誕生",
+          "sort": "だい|index|わ たんじょう"
+        },
+        "1": {
+          "title": "Chapter |index|: Birth"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tanjō",
+          "sort": "Dai |index| Wa Tanjō"
+        }
+      },
+      "339": {
+        "0": {
+          "title": "【第|index|話】混沌の一端",
+          "sort": "だい|index|わ こんとん の いったん"
+        },
+        "1": {
+          "title": "Chapter |index|: A Taste of Chaos"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Konton no Ittan",
+          "sort": "Dai |index| Wa Konton no Ittan"
+        }
+      },
+      "340": {
+        "0": {
+          "title": "【第|index|話】あなたに会いたくて",
+          "sort": "だい|index|わ あなたに あい たくて"
+        },
+        "1": {
+          "title": "Chapter |index|: I Miss You"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Anata ni Aitakute",
+          "sort": "Dai |index| Wa Anata ni Aitakute"
+        }
+      },
+      "341": {
+        "0": {
+          "title": "【第|index|話】キャス・パリーグ",
+          "sort": "だい|index|わ きゃす・ぱりーぐ"
+        },
+        "1": {
+          "title": "Chapter |index|: Cath Palug"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Kyasu Parīgu",
+          "sort": "Dai |index| Wa Kyasu Parīgu"
+        }
+      },
+      "342": {
+        "0": {
+          "title": "【第|index|話】勝利の雄叫び",
+          "sort": "だい|index|わ しょうり の おたけび び"
+        },
+        "1": {
+          "title": "Chapter |index|: Victory Cry"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Shōri no Otakebi",
+          "sort": "Dai |index| Wa Shōri no Otakebi"
+        }
+      },
+      "343": {
+        "0": {
+          "title": "【第|index|話】永遠の王国",
+          "sort": "だい|index|わ えいえん の おうこく"
+        },
+        "1": {
+          "title": "Chapter |index|: An Everlasting Kingdom"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Eien no Ōkoku",
+          "sort": "Dai |index| Wa Eien no Ōkoku"
+        }
+      },
+      "344": {
+        "0": {
+          "title": "【第|index|話】未来へ",
+          "sort": "だい|index|わ みらい へ"
+        },
+        "1": {
+          "title": "Chapter |index|: Towards the Future"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Mirai e",
+          "sort": "Dai |index| Wa Mirai e"
+        }
+      },
+      "345": {
+        "0": {
+          "title": "【第|index|話】継がれゆくもの",
+          "sort": "だい|index|わ つが れゆくもの"
+        },
+        "1": {
+          "title": "Chapter |index|: Heirs"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Tsugareyuku Mono",
+          "sort": "Dai |index| Wa Tsugareyuku Mono"
+        }
+      },
+      "346": {
+        "0": {
+          "title": "【第|index|話】あの空のように",
+          "sort": "だい|index|わ あの そら のように"
+        },
+        "1": {
+          "title": "Chapter |index|: Like That Sky"
+        },
+        "2": {
+          "title": "[Dai |index| Wa] Ano Sora no Yō ni",
+          "sort": "Dai |index| Wa Ano Sora no Yō ni"
+        }
+      }
+    },
+    "language": "Japanese",
+    "disambiguation": "The Seven Deadly Sins, manga, Japanese",
+    "bookbrainz_work": {
+      "type": "manga",
+      "series": [
+        {
+          "id": "ada8c121-1a2b-459b-add0-ee7f695a75b0",
+          "offset": 0
+        },
+        {
+          "id": "2770aac1-2e00-4e87-b101-3a1223c0c0bc",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "writer",
+          "id": "cfae7528-a044-43f3-966d-3c9165907e1a"
+        },
+        {
+          "role": "illustrator",
+          "id": "cfae7528-a044-43f3-966d-3c9165907e1a"
+        }
+      ],
+      "identifiers": {}
+    }
+  },
+  "translation": {
+    "titles": [],
+    "subtitles": {},
+    "disambiguation": "The Seven Deadly Sins, manga, English",
+    "language": "English",
+    "bookbrainz_work": {
+      "series": [
+        {
+          "id": "ae93bf6b-4e83-4cac-8173-19c1d5d44648",
+          "offset": 0
+        },
+        {
+          "id": "fcaca2f0-4702-4a84-b458-59235df33945",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "translator",
+          "id": "5647f4b8-65b8-442d-8e6d-cfab7fac734e"
+        },
+        {
+          "role": "adapter",
+          "id": null
+        },
+        {
+          "role": "letterer",
+          "id": "1e3cfb9f-b7ec-499a-91d1-1a72e309b57c"
+        }
+      ],
+      "editions": {
+        "114": "71336506-cd5f-44ac-b0c0-d15acfa66a82",
+        "122": "e3a1bae6-1093-42a7-911b-85eac3e46792",
+        "163": "26f84945-cfa1-480d-85ab-36bcf3ed4b45",
+        "171": "ba8d8ebd-5a3f-4ce3-a1be-78571e20304b",
+        "189": "24ba3d80-c8ca-47ec-98e8-cc54fac7138d",
+        "207": "ae51dc4d-6ed6-47d2-96db-cfd89db3b5da",
+        "232": "79afaad8-2ea6-4a54-8d26-5abd05aa4e17",
+        "259": "a95cc959-cd47-4f8a-8c4b-1bd7bc928646",
+        "276": "f605c35a-cebd-4b88-954e-b96476232e96",
+        "294": "d03da106-7f0d-46fc-9a00-a0f09bbe99c9",
+        "303": "b39c0bb2-9a4e-43e9-8e3a-b7844ff34760",
+        "312": "00ebe7e5-0ed0-4254-988b-f16c3ad0e76f",
+        "321": "2c5f5662-9d42-419c-a130-632c3ec69f2d"
+      },
+      "identifiers": {}
+    }
+  },
+  "identifiers": {}
+}

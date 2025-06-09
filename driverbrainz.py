@@ -185,7 +185,7 @@ def bookbrainz_set_title(driver, index, title):
     subtitle = ""
     if "subtitle" in title and title["subtitle"]:
         subtitle = title["subtitle"]
-    name = title["text"].replace("|index|", f"{index}").replace("|subtitle|", subtitle)
+    name = title["text"].replace("|subtitle|", subtitle).replace("|index|", f"{index}")
     name_text_box.send_keys(name)
     wait.until(
         EC.visibility_of_element_located(
@@ -217,8 +217,8 @@ def bookbrainz_set_title(driver, index, title):
             sort_subtitle = subtitle
         sort_name_text_box.send_keys(
             title["sort"]
-            .replace("|index|", f"{index}")
             .replace("|subtitle|", sort_subtitle)
+            .replace("|index|", f"{index}")
         )
     wait.until(
         EC.visibility_of_element_located(
@@ -680,11 +680,11 @@ def bookbrainz_create_work(driver, work, index, username=None):
             titles.append(
                 {
                     "text": a["text"]
-                    .replace("|index|", f"{index}")
-                    .replace("|subtitle|", subtitle),
+                    .replace("|subtitle|", subtitle)
+                    .replace("|index|", f"{index}"),
                     "sort": a["sort"]
-                    .replace("|index|", f"{index}")
-                    .replace("|subtitle|", sort_subtitle),
+                    .replace("|subtitle|", sort_subtitle)
+                    .replace("|index|", f"{index}"),
                     "language": a["language"],
                     "primary": a["primary"] if "primary" in a else False,
                 }
@@ -1462,7 +1462,7 @@ def main():
                             key=lambda pair: float(pair[0]),
                         )
                     )
-                    if float(i) > float(index)
+                    if float(i) >= float(index)
                 ),
                 None,
             )

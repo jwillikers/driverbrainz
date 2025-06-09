@@ -64,8 +64,11 @@
               nushell
               pyright
               python3Packages.platformdirs
+              python3Packages.pykakasi
               python3Packages.python
+              python3Packages.requests
               python3Packages.selenium
+              python3Packages.wikitextparser
               treefmtEval.config.build.wrapper
               (builtins.attrValues treefmtEval.config.build.programs)
             ]

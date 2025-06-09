@@ -19,6 +19,7 @@ _: {
       "*.gif"
       "*.jpeg"
       "*.jpg"
+      "*.json"
       "*.png"
       "*.svg"
       "*.tiff"
