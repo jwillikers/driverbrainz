@@ -4,6 +4,7 @@ import json
 import logging
 import math
 import pykakasi
+import re
 import requests
 import wikitextparser as wtp
 
@@ -36,6 +37,79 @@ CHAPTER_PREFIX_DICTIONARY = {
 }
 
 
+def use_unicode_punctuation(input: str) -> str:
+    input = input.replace("'", "’").replace("-", "‐").replace("...", "…")
+    while '"' in input:
+        input = input.replace('"', "“", 1).replace('"', "”", 1)
+    return input
+
+
+def character_in_unicode_range(char, start_range, end_range):
+    code_point = ord(char)
+    return start_range <= code_point <= end_range
+
+
+def remove_extra_spaces_hiragana(input: str) -> str:
+    while "  " in input:
+        input = input.replace("  ", " ")
+    if " ｖ ｓ ． " in input:
+        input = input.replace(" ｖ ｓ ． ", "ｖｓ．")
+    if "ｖ ｓ ．" in input:
+        input = input.replace("ｖ ｓ ．", "ｖｓ．")
+    if " vs ． " in input:
+        input = input.replace(" vs ． ", "vs．")
+    if "vs ．" in input:
+        input = input.replace("vs ．", "vs．")
+    special_characters = [
+        "！",
+        "、",
+        "・",
+        "·",
+        "!",
+        "?",
+        ".",
+        "×",
+        "．",
+        "‐",
+        "「",
+        "」",
+        "【",
+        "】",
+        "〈",
+        "〉",
+        "(",
+        ")",
+        "[",
+        "]",
+        "{",
+        "}",
+    ]
+    for special_character in special_characters:
+        if f" {special_character} " in input:
+            input = input.replace(f" {special_character} ", special_character)
+        elif f"{special_character} " in input:
+            input = input.replace(f"{special_character} ", special_character)
+        elif f" {special_character}" in input:
+            input = input.replace(f" {special_character}", special_character)
+    output = input
+    for character in input:
+        # https://en.wikipedia.org/wiki/List_of_Unicode_characters#Enclosed_Alphanumerics
+        # https://en.wikipedia.org/wiki/CJK_Symbols_and_Punctuation_(Unicode_block)
+        # https://en.wikipedia.org/wiki/Halfwidth_and_Fullwidth_Forms_(Unicode_block)
+        if (
+            character_in_unicode_range(character, 0x2460, 0x24FF)
+            or character_in_unicode_range(character, 0x3000, 0x303F)
+            or character_in_unicode_range(character, 0xFFE0, 0xFFEE)
+        ):
+            if f" {character} " in input:
+                input = output.replace(f" {character} ", character)
+            elif f"{special_character} " in input:
+                input = output.replace(f"{character} ", character)
+            elif f" {special_character}" in input:
+                input = output.replace(f" {character}", character)
+    return output
+
+
 def fetch_wikipedia_section(page_title: str, section_number: int) -> str:
     url = f"https://en.wikipedia.org/w/api.php?action=parse&page={page_title}&section={section_number}&contentmodel=wikitext&prop=wikitext&format=json"
     response = requests.get(url, timeout=10)
@@ -52,6 +126,13 @@ def filter_templates_by_normal_name(templates: list, normal_name: str):
             yield template
 
 
+def find_template_where_string_contains(templates: list, container: str):
+    for template in templates:
+        if template.string in container:
+            return template
+    return None
+
+
 def parse_wikipedia_page(wikitext: str) -> list:
     # parsed = wtp.parse(wikitext, "utf-8")
     parsed = wtp.parse(wikitext)
@@ -61,49 +142,100 @@ def parse_wikipedia_page(wikitext: str) -> list:
     chapters = []
     for graphic_novel_list in graphic_novel_lists:
         for row in graphic_novel_list.get_lists():
-            for item, template in zip(row.items, row.templates):
+            for index, item in enumerate(row.items):
+                template = find_template_where_string_contains(row.templates, item)
+                # if template is None and index < len(row.templates):
+                #     template = row.templates[index]
                 chapter = {}
-                prefix_part = item.replace(template.string, "").strip().strip(".")
-                chapter_type = None
-                index = None
-                if prefix_part.isdecimal():
-                    index = float(prefix_part)
-                    chapter_type = "Chapter"
-                    if index.is_integer():
-                        index = int(index)
-                elif prefix_part:
-                    chapter_type = prefix_part
-                else:
-                    # Assume it is a regular chapter
-                    chapter_type = "Chapter"
-                english = template.arguments[0].value
-                if english.startswith('"') and english.endswith('"'):
-                    english = english.strip('"')
-                # todo Fix spaces in Japanese conversion
-                # todo Replace double quotes with unicode counterparts
-                english.replace("'", "’").replace("-", "‐").replace("...", "…")
-                if len(template.arguments) == 1:
-                    chapter["type"] = chapter_type
-                    chapter["index"] = index
-                    chapter["english"] = english
-                    chapter["kanji"] = english
-                    chapter["hepburn"] = english
-                else:
-                    chapter["type"] = chapter_type
-                    chapter["index"] = index
-                    chapter["english"] = english
-                    chapter["kanji"] = (
-                        template.arguments[1]
-                        .value.replace("'", "’")
-                        .replace("-", "‐")
-                        .replace("...", "…")
+                if template is None:
+                    # re.match(r'(?.*)\.\s+(?\w)+', item)
+                    # re.split(r'(?.*)\.\s+(?\w)+', item)
+                    m = re.fullmatch(
+                        r'\s*(?P<prefix_part>.*)\.\s+"(?P<english>.*)"', item
                     )
-                    chapter["hepburn"] = (
-                        template.arguments[2]
-                        .value.replace("'", "’")
-                        .replace("-", "‐")
-                        .replace("...", "…")
-                    )
+                    if m:
+                        chapter_type = None
+                        index = None
+                        prefix_part = m.group("prefix_part")
+                        if prefix_part.isdecimal():
+                            index = float(prefix_part)
+                            chapter_type = "Chapter"
+                            if index.is_integer():
+                                index = int(index)
+                        elif prefix_part:
+                            chapter_type = prefix_part
+                        else:
+                            # Assume it is a regular chapter
+                            chapter_type = "Chapter"
+                        english = use_unicode_punctuation(m.group("english"))
+                        chapter["type"] = chapter_type
+                        chapter["index"] = index
+                        chapter["english"] = english
+                        chapter["kanji"] = english
+                        chapter["hepburn"] = english
+                    else:
+                        english = use_unicode_punctuation(item)
+                        chapter["type"] = "Chapter"
+                        chapter["index"] = None
+                        chapter["english"] = english
+                        chapter["kanji"] = english
+                        chapter["hepburn"] = english
+                else:
+                    # chapter = {}
+                    # for item, template in zip(row.items, row.templates):
+                    # if index < len(row.templates):
+
+                    # if template.name.lower() == "efn":
+                    #     continue
+                    # only allow name to be nihongo?
+                    # if template.nesting_level > 2:
+                    #     continue
+                    prefix_part = item.split(template.string, 1)[0].strip().strip(".")
+                    chapter_type = None
+                    index = None
+                    if prefix_part.isdecimal():
+                        index = float(prefix_part)
+                        chapter_type = "Chapter"
+                        if index.is_integer():
+                            index = int(index)
+                    elif prefix_part:
+                        chapter_type = prefix_part
+                    else:
+                        # Assume it is a regular chapter
+                        chapter_type = "Chapter"
+                    english = template.arguments[0].value
+                    if english.startswith('"') and english.endswith('"'):
+                        english = english.strip('"')
+                    # todo Fix spaces in Japanese conversion
+                    # todo Replace double quotes with unicode counterparts
+                    # logger.info(f"english: {english}")
+                    english = use_unicode_punctuation(english)
+                    if len(template.arguments) == 1:
+                        chapter["type"] = chapter_type
+                        chapter["index"] = index
+                        chapter["english"] = english
+                        chapter["kanji"] = english
+                        chapter["hepburn"] = english
+                    elif len(template.arguments) == 2:
+                        chapter["type"] = chapter_type
+                        chapter["index"] = index
+                        chapter["english"] = english
+                        chapter["kanji"] = use_unicode_punctuation(
+                            template.arguments[1].value
+                        )
+                        chapter["hepburn"] = english
+                    else:
+                        # print(f"english: {english}")
+                        # print(f"kanji: {template.arguments[1].value}")
+                        chapter["type"] = chapter_type
+                        chapter["index"] = index
+                        chapter["english"] = english
+                        chapter["kanji"] = use_unicode_punctuation(
+                            template.arguments[1].value
+                        )
+                        chapter["hepburn"] = use_unicode_punctuation(
+                            template.arguments[2].value
+                        )
                 chapters.append(chapter)
     return chapters
 
@@ -136,7 +268,7 @@ def calculate_missing_chapter_index(previous, current, subsequent):
             # The type of the previous chapter is inconsequential.
             if current["type"] == "Chapter":
                 # If the current chapter is a regular chapter, just round up.
-                return math.ciel(previous["index"])
+                return math.ceil(previous["index"])
             else:
                 # If the current chapter is a special chapter, add 0.1 instead.
                 return round(previous["index"] + 0.1, 1)
@@ -145,6 +277,11 @@ def calculate_missing_chapter_index(previous, current, subsequent):
         if current["type"] == "Chapter":
             if subsequent["type"] == "Chapter":
                 # The next chapter is a normal chapter.
+                print(f"Chapter: {current}")
+                print(f"Subsequent: {subsequent}")
+                # if subsequent["index"] is None:
+                #     return 1
+                # else:
                 return subsequent["index"] - 1
             else:
                 # The next chapter is a special chapter.
@@ -203,7 +340,9 @@ def generate_kana(chapters: list) -> list:
     for chapter in chapters:
         converted = kks.convert(chapter["kanji"])
         chapter["kana"] = " ".join(filter_kakasi_output(converted, "kana"))
-        chapter["hiragana"] = " ".join(filter_kakasi_output(converted, "hira"))
+        chapter["hiragana"] = remove_extra_spaces_hiragana(
+            " ".join(filter_kakasi_output(converted, "hira"))
+        )
     return chapters
 
 
@@ -264,7 +403,13 @@ def prefix_chapter_titles(
             if (
                 (key == "chapter" and chapter["type"].lower() == "chapter")
                 or (key != "chapter" and key in chapter["type"].lower())
-                or (key == "bonus" and "extra" in chapter["type"].lower())
+                or (
+                    key == "bonus"
+                    and (
+                        "extra" in chapter["type"].lower()
+                        or "special" in chapter["type"].lower()
+                    )
+                )
             ):
                 if (
                     chapter["type"].lower() == "chapter"

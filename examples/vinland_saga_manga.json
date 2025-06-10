@@ -2,19 +2,19 @@
   "original": {
     "titles": [
       {
-        "text": "第|index|話 |subtitle|",
-        "sort": "だい|index|わ |subtitle|",
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
         "language": "Japanese"
       },
       {
-        "text": "Chapter |index|: |subtitle|",
+        "text": "|subtitle|",
         "sort": "COPY",
         "language": "English",
         "primary": true
       },
       {
-        "text": "Dai |index| Wa |subtitle|",
-        "sort": "Dai |index| Wa |subtitle|",
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
         "language": "Japanese",
         "primary": false
       }
@@ -22,2630 +22,2654 @@
     "subtitles": {
       "1": {
         "0": {
-          "title": "北人",
-          "sort": "きた にん"
+          "title": "第|index|話 北人",
+          "sort": "だい|index|わ きた にん"
         },
         "1": {
-          "title": "Normanni"
+          "title": "Chapter |index|: Normanni"
         },
         "2": {
-          "title": "Norumanni"
+          "title": "Dai |index| Wa Norumanni"
         }
       },
       "2": {
         "0": {
-          "title": "ここではないどこか",
-          "sort": "ここではないどこか"
+          "title": "第|index|話 ここではないどこか",
+          "sort": "だい|index|わ ここではないどこか"
         },
         "1": {
-          "title": "Somewhere Not Here"
+          "title": "Chapter |index|: Somewhere Not Here"
         },
         "2": {
-          "title": "Koko de wa Nai Dokoka"
+          "title": "Dai |index| Wa Koko de wa Nai Dokoka"
         }
       },
       "3": {
         "0": {
-          "title": "海の果ての果て",
-          "sort": "うみ の はて の はて"
+          "title": "第|index|話 海の果ての果て",
+          "sort": "だい|index|わ うみ の はて の はて"
         },
         "1": {
-          "title": "Beyond the Edge of the Sea"
+          "title": "Chapter |index|: Beyond the Edge of the Sea"
         },
         "2": {
-          "title": "Umi no Hate no Hate"
+          "title": "Dai |index| Wa Umi no Hate no Hate"
         }
       },
       "4": {
         "0": {
-          "title": "解かれ得ぬ鎖",
-          "sort": "とか れ えぬ くさり"
+          "title": "第|index|話 解かれ得ぬ鎖",
+          "sort": "だい|index|わ とか れ えぬ くさり"
         },
         "1": {
-          "title": "Unbreakable Chains"
+          "title": "Chapter |index|: Unbreakable Chains"
         },
         "2": {
-          "title": "Tokare Enu Kusari"
+          "title": "Dai |index| Wa Tokare Enu Kusari"
         }
       },
       "5": {
         "0": {
-          "title": "戦鬼",
-          "sort": "せん おに"
+          "title": "第|index|話 戦鬼",
+          "sort": "だい|index|わ せん おに"
         },
         "1": {
-          "title": "Troll"
+          "title": "Chapter |index|: Troll"
         },
         "2": {
-          "title": "Tororu"
+          "title": "Dai |index| Wa Tororu"
+        }
+      },
+      "5.5": {
+        "0": {
+          "title": "特別編 はたらくユルヴァちゃん",
+          "sort": "ばんがいへん はたらくユルヴァちゃん"
+        },
+        "1": {
+          "title": "Bonus Material: Heroic Exploits of Viking Girl Ylva"
+        },
+        "2": {
+          "title": "Bangai‐hen Tokubetsuhen Hataraku Ylva‐chan"
         }
       },
       "6": {
         "0": {
-          "title": "戦場よりの使者",
-          "sort": "せんじょう よりの ししゃ"
+          "title": "第|index|話 戦場よりの使者",
+          "sort": "だい|index|わ せんじょう よりの ししゃ"
         },
         "1": {
-          "title": "Messenger from the Battlefield"
+          "title": "Chapter |index|: Messenger from the Battlefield"
         },
         "2": {
-          "title": "Senjō Yori no Shisha"
+          "title": "Dai |index| Wa Senjō Yori no Shisha"
         }
       },
       "7": {
         "0": {
-          "title": "剣",
-          "sort": "つるぎ"
+          "title": "第|index|話 剣",
+          "sort": "だい|index|わ つるぎ"
         },
         "1": {
-          "title": "Sword"
+          "title": "Chapter |index|: Sword"
         },
         "2": {
-          "title": "Ken"
+          "title": "Dai |index| Wa Ken"
         }
       },
       "8": {
         "0": {
-          "title": "旅の始まり",
-          "sort": "たび の はじまり"
+          "title": "第|index|話 旅の始まり",
+          "sort": "だい|index|わ たび の はじまり"
         },
         "1": {
-          "title": "The Journey Begins"
+          "title": "Chapter |index|: The Journey Begins"
         },
         "2": {
-          "title": "Tabi no Hajimari"
+          "title": "Dai |index| Wa Tabi no Hajimari"
         }
       },
       "9": {
         "0": {
-          "title": "絶海の罠",
-          "sort": "ぜっかい の わな"
+          "title": "第|index|話 絶海の罠",
+          "sort": "だい|index|わ ぜっかい の わな"
         },
         "1": {
-          "title": "A Trap in Distant Seas"
+          "title": "Chapter |index|: A Trap in Distant Seas"
         },
         "2": {
-          "title": "Zekkai no Wana"
+          "title": "Dai |index| Wa Zekkai no Wana"
         }
       },
       "10": {
         "0": {
-          "title": "夜の航跡",
-          "sort": "よる の こうせき"
+          "title": "第|index|話 夜の航跡",
+          "sort": "だい|index|わ よる の こうせき"
         },
         "1": {
-          "title": "Night Wake"
+          "title": "Chapter |index|: Night Wake"
         },
         "2": {
-          "title": "Your no Kōseki"
+          "title": "Dai |index| Wa Yoru no Kōseki"
         }
       },
       "11": {
         "0": {
-          "title": "檻",
-          "sort": "らん"
+          "title": "第|index|話 檻",
+          "sort": "だい|index|わ らん"
         },
         "1": {
-          "title": "Cage"
+          "title": "Chapter |index|: Cage"
         },
         "2": {
-          "title": "Ori"
+          "title": "Dai |index| Wa Ori"
         }
       },
       "12": {
         "0": {
-          "title": "化け物以上上",
-          "sort": "ばけもの いじょう うえ"
+          "title": "第|index|話 化け物以上上",
+          "sort": "だい|index|わ ばけもの いじょう うえ"
         },
         "1": {
-          "title": "More Than a Monster"
+          "title": "Chapter |index|: More Than a Monster"
         },
         "2": {
-          "title": "Bakemono Ijō"
+          "title": "Dai |index| Wa Bakemono Ijō"
         }
       },
       "13": {
         "0": {
-          "title": "匂い",
-          "sort": "におい"
+          "title": "第|index|話 匂い",
+          "sort": "だい|index|わ におい"
         },
         "1": {
-          "title": "Smell"
+          "title": "Chapter |index|: Smell"
         },
         "2": {
-          "title": "Nioi"
+          "title": "Dai |index| Wa Nioi"
         }
       },
       "14": {
         "0": {
-          "title": "トールズの剣",
-          "sort": "トールズ の つるぎ"
+          "title": "第|index|話 トールズの剣",
+          "sort": "だい|index|わ とーるず の つるぎ"
         },
         "1": {
-          "title": "The Sword of Thors"
+          "title": "Chapter |index|: The Sword of Thors"
         },
         "2": {
-          "title": "Tōruzu no Ken"
+          "title": "Dai |index| Wa Tōruzu no Ken"
         }
       },
       "15": {
         "0": {
-          "title": "本当の戦士",
-          "sort": "ほんとう の せんし"
+          "title": "第|index|話 本当の戦士",
+          "sort": "だい|index|わ ほんとう の せんし"
         },
         "1": {
-          "title": "A True Warrior"
+          "title": "Chapter |index|: A True Warrior"
         },
         "2": {
-          "title": "Hontō no Senshi"
+          "title": "Dai |index| Wa Hontō no Senshi"
         }
       },
       "16": {
         "0": {
-          "title": "トールズの死",
-          "sort": "トールズ の し"
+          "title": "第|index|話 トールズの死",
+          "sort": "だい|index|わ とーるず の し"
         },
         "1": {
-          "title": "The Death of Thors"
+          "title": "Chapter |index|: The Death of Thors"
         },
         "2": {
-          "title": "Tōruzu no Shi"
+          "title": "Dai |index| Wa Tōruzu no Shi"
+        }
+      },
+      "16.1": {
+        "0": {
+          "title": "番外編 I Went to the Land of Aurora Borealis",
+          "sort": "ばんがいへん I Went to the Land of Aurora Borealis"
+        },
+        "1": {
+          "title": "Special Report: I Went to the Land of Aurora Borealis"
+        },
+        "2": {
+          "title": "Bangai‐hen I Went to the Land of Aurora Borealis"
+        }
+      },
+      "16.2": {
+        "0": {
+          "title": "番外編 ",
+          "sort": "ばんがいへん "
+        },
+        "1": {
+          "title": "Bonus Story: For Our Farewell Is Near, Part 1"
+        },
+        "2": {
+          "title": "Bangai‐hen "
         }
       },
       "17": {
         "0": {
-          "title": "イングランド―1008年―",
-          "sort": "イングランド―1008ねん―"
+          "title": "第|index|話 イングランド―1008年―",
+          "sort": "だい|index|わ いんぐらんど― 1008 ねん―"
         },
         "1": {
-          "title": "England, 1008 A.D."
+          "title": "Chapter |index|: England, 1008 A.D."
         },
         "2": {
-          "title": "Ingurando ― 1008‐nen ―"
+          "title": "Dai |index| Wa Ingurando ― 1008‐nen ―"
         }
       },
       "18": {
         "0": {
-          "title": "イングランド―1013年―",
-          "sort": "イングランド―1013ねん―"
+          "title": "第|index|話 イングランド―1013年―",
+          "sort": "だい|index|わ いんぐらんど― 1013 ねん―"
         },
         "1": {
-          "title": "England, 1013 A.D."
+          "title": "Chapter |index|: England, 1013 A.D."
         },
         "2": {
-          "title": "Ingurando ― 1013‐nen ―"
+          "title": "Dai |index| Wa Ingurando ― 1013‐nen ―"
         }
       },
       "19": {
         "0": {
-          "title": "ロンドン橋の死闘",
-          "sort": "ロンドン はし の しとう"
+          "title": "第|index|話 ロンドン橋の死闘",
+          "sort": "だい|index|わ ろんどん はし の しとう"
         },
         "1": {
-          "title": "The Battle of London Bridge"
+          "title": "Chapter |index|: The Battle of London Bridge"
         },
         "2": {
-          "title": "Rondon‐bashi no Shitō"
+          "title": "Dai |index| Wa Rondon‐bashi no Shitō"
         }
       },
       "20": {
         "0": {
-          "title": "ラグナロク",
-          "sort": "ラグナロク"
+          "title": "第|index|話 ラグナロク",
+          "sort": "だい|index|わ らぐなろく"
         },
         "1": {
-          "title": "Ragnarok"
+          "title": "Chapter |index|: Ragnarok"
         },
         "2": {
-          "title": "Ragunaroku"
+          "title": "Dai |index| Wa Ragunaroku"
         }
       },
       "21": {
         "0": {
-          "title": "ヴァルハラ",
-          "sort": "ヴァルハラ"
+          "title": "第|index|話 ヴァルハラ",
+          "sort": "だい|index|わ ゔぁるはら"
         },
         "1": {
-          "title": "Valhalla"
+          "title": "Chapter |index|: Valhalla"
         },
         "2": {
-          "title": "Varuhara"
+          "title": "Dai |index| Wa Varuhara"
+        }
+      },
+      "21.5": {
+        "0": {
+          "title": "番外編 Ylva at Work",
+          "sort": "ばんがいへん Ylva at Work"
+        },
+        "1": {
+          "title": "Bonus Material: Ylva at Work"
+        },
+        "2": {
+          "title": "Bangai‐hen Ylva at Work"
         }
       },
       "22": {
         "0": {
-          "title": "戦鬼の子",
-          "sort": "せん おに の こ"
+          "title": "第|index|話 戦鬼の子",
+          "sort": "だい|index|わ せん おに の こ"
         },
         "1": {
-          "title": "The Troll’s Son"
+          "title": "Chapter |index|: The Troll’s Son"
         },
         "2": {
-          "title": "Tororu no Ko"
+          "title": "Dai |index| Wa Tororu no Ko"
         }
       },
       "23": {
         "0": {
-          "title": "援軍",
-          "sort": "えんぐん"
+          "title": "第|index|話 援軍",
+          "sort": "だい|index|わ えんぐん"
         },
         "1": {
-          "title": "Reinforcements"
+          "title": "Chapter |index|: Reinforcements"
         },
         "2": {
-          "title": "Engun"
+          "title": "Dai |index| Wa Engun"
         }
       },
       "24": {
         "0": {
-          "title": "対岸の国",
-          "sort": "たいがん の くに"
+          "title": "第|index|話 対岸の国",
+          "sort": "だい|index|わ たいがん の くに"
         },
         "1": {
-          "title": "The Land on the Far Bank"
+          "title": "Chapter |index|: The Land on the Far Bank"
         },
         "2": {
-          "title": "Taigan no Kuni"
+          "title": "Dai |index| Wa Taigan no Kuni"
         }
       },
       "25": {
         "0": {
-          "title": "ハッタリ",
-          "sort": "ハッタリ"
+          "title": "第|index|話 ハッタリ",
+          "sort": "だい|index|わ はったり"
         },
         "1": {
-          "title": "Bluff"
+          "title": "Chapter |index|: Bluff"
         },
         "2": {
-          "title": "Hattari"
+          "title": "Dai |index| Wa Hattari"
         }
       },
       "26": {
         "0": {
-          "title": "アルトリウス",
-          "sort": "アルトリウス"
+          "title": "第|index|話 アルトリウス",
+          "sort": "だい|index|わ あるとりうす"
         },
         "1": {
-          "title": "Artorius"
+          "title": "Chapter |index|: Artorius"
         },
         "2": {
-          "title": "Arutoriusu"
+          "title": "Dai |index| Wa Arutoriusu"
         }
       },
       "27": {
         "0": {
-          "title": "戦士と修道士",
-          "sort": "せんし と しゅうどうし"
+          "title": "第|index|話 戦士と修道士",
+          "sort": "だい|index|わ せんし と しゅうどうし"
         },
         "1": {
-          "title": "The Warriors and the Monk"
+          "title": "Chapter |index|: The Warriors and the Monk"
         },
         "2": {
-          "title": "Senshi to Shūdōshi"
+          "title": "Dai |index| Wa Senshi to Shūdōshi"
         }
       },
       "28": {
         "0": {
-          "title": "夜間襲撃",
-          "sort": "やかん しゅうげき"
+          "title": "第|index|話 夜間襲撃",
+          "sort": "だい|index|わ やかん しゅうげき"
         },
         "1": {
-          "title": "Night Attack"
+          "title": "Chapter |index|: Night Attack"
         },
         "2": {
-          "title": "Yakan Shūgeki"
+          "title": "Dai |index| Wa Yakan Shūgeki"
+        }
+      },
+      "28.1": {
+        "0": {
+          "title": "番外編 Viking Girl Ylva, Hideo Nishimoto Edition",
+          "sort": "ばんがいへん Viking Girl Ylva, Hideo Nishimoto Edition"
+        },
+        "1": {
+          "title": "Bonus Material: Viking Girl Ylva, Hideo Nishimoto Edition"
+        },
+        "2": {
+          "title": "Bangai‐hen Viking Girl Ylva, Hideo Nishimoto Edition"
+        }
+      },
+      "28.2": {
+        "0": {
+          "title": "番外編 ",
+          "sort": "ばんがいへん "
+        },
+        "1": {
+          "title": "Bonus Story: For Our Farewell Is Near, Part 2"
+        },
+        "2": {
+          "title": "Bangai‐hen "
         }
       },
       "29": {
         "0": {
-          "title": "父と子",
-          "sort": "ちち と こ"
+          "title": "第|index|話 父と子",
+          "sort": "だい|index|わ ちち と こ"
         },
         "1": {
-          "title": "Father and Son"
+          "title": "Chapter |index|: Father and Son"
         },
         "2": {
-          "title": "Chichi to Ko"
+          "title": "Dai |index| Wa Chichi to Ko"
         }
       },
       "30": {
         "0": {
-          "title": "主従の食卓",
-          "sort": "しゅじゅう の しょくたく"
+          "title": "第|index|話 主従の食卓",
+          "sort": "だい|index|わ しゅじゅう の しょくたく"
         },
         "1": {
-          "title": "Master and Servant at the Table"
+          "title": "Chapter |index|: Master and Servant at the Table"
         },
         "2": {
-          "title": "Shujū no Shokutaku"
+          "title": "Dai |index| Wa Shujū no Shokutaku"
         }
       },
       "31": {
         "0": {
-          "title": "ケダモノの歴史",
-          "sort": "ケダモノ の れきし"
+          "title": "第|index|話 ケダモノの歴史",
+          "sort": "だい|index|わ けだもの の れきし"
         },
         "1": {
-          "title": "History of Beasts"
+          "title": "Chapter |index|: History of Beasts"
         },
         "2": {
-          "title": "Kedamono no Rekishi"
+          "title": "Dai |index| Wa Kedamono no Rekishi"
         }
       },
       "32": {
         "0": {
-          "title": "逃亡兵団",
-          "sort": "とうぼう へいだん"
+          "title": "第|index|話 逃亡兵団",
+          "sort": "だい|index|わ とうぼう へいだん"
         },
         "1": {
-          "title": "Defectors"
+          "title": "Chapter |index|: Defectors"
         },
         "2": {
-          "title": "Tōbō Heidan"
+          "title": "Dai |index| Wa Tōbō Heidan"
         }
       },
       "33": {
         "0": {
-          "title": "裏切り",
-          "sort": "うらぎり"
+          "title": "第|index|話 裏切り",
+          "sort": "だい|index|わ うらぎり"
         },
         "1": {
-          "title": "Betrayal"
+          "title": "Chapter |index|: Betrayal"
         },
         "2": {
-          "title": "Uragiri"
+          "title": "Dai |index| Wa Uragiri"
         }
       },
       "34": {
         "0": {
-          "title": "アヴァロン",
-          "sort": "アヴァロン"
+          "title": "第|index|話 アヴァロン",
+          "sort": "だい|index|わ あゔぁろん"
         },
         "1": {
-          "title": "Avalon"
+          "title": "Chapter |index|: Avalon"
         },
         "2": {
-          "title": "Avaron"
+          "title": "Dai |index| Wa Avaron"
         }
       },
       "35": {
         "0": {
-          "title": "両軍接触",
-          "sort": "りょうぐん せっしょく"
+          "title": "第|index|話 両軍接触",
+          "sort": "だい|index|わ りょうぐん せっしょく"
         },
         "1": {
-          "title": "Contact"
+          "title": "Chapter |index|: Contact"
         },
         "2": {
-          "title": "Ryōgun Sesshoku"
+          "title": "Dai |index| Wa Ryōgun Sesshoku"
         }
       },
       "36": {
         "0": {
-          "title": "戦場のふたり",
-          "sort": "せんじょう のふたり"
+          "title": "第|index|話 戦場のふたり",
+          "sort": "だい|index|わ せんじょう のふたり"
         },
         "1": {
-          "title": "Two on the Battlefield"
+          "title": "Chapter |index|: Two on the Battlefield"
         },
         "2": {
-          "title": "Senjō no Futari"
+          "title": "Dai |index| Wa Senjō no Futari"
         }
       },
       "37": {
         "0": {
-          "title": "愛の定義",
-          "sort": "あい の ていぎ"
+          "title": "第|index|話 愛の定義",
+          "sort": "だい|index|わ あい の ていぎ"
         },
         "1": {
-          "title": "The Definition of Love"
+          "title": "Chapter |index|: The Definition of Love"
         },
         "2": {
-          "title": "Ai no Teigi"
+          "title": "Dai |index| Wa Ai no Teigi"
         }
       },
       "38": {
         "0": {
-          "title": "ゆりかごの外",
-          "sort": "ゆりかごの そと"
+          "title": "第|index|話 ゆりかごの外",
+          "sort": "だい|index|わ ゆりかごの そと"
         },
         "1": {
-          "title": "Out of the Cradle"
+          "title": "Chapter |index|: Out of the Cradle"
         },
         "2": {
-          "title": "Yurikago no Soto"
+          "title": "Dai |index| Wa Yurikago no Soto"
         }
       },
       "39": {
         "0": {
-          "title": "王の目覚め",
-          "sort": "おう の めざめ"
+          "title": "第|index|話 王の目覚め",
+          "sort": "だい|index|わ おう の めざめ"
         },
         "1": {
-          "title": "The King Awakens"
+          "title": "Chapter |index|: The King Awakens"
         },
         "2": {
-          "title": "Ō no Mezame"
+          "title": "Dai |index| Wa Ō no Mezame"
         }
       },
       "40": {
         "0": {
-          "title": "トールズ伝",
-          "sort": "トールズ でん"
+          "title": "第|index|話 トールズ伝",
+          "sort": "だい|index|わ とーるず でん"
         },
         "1": {
-          "title": "The Legend of Thors"
+          "title": "Chapter |index|: The Legend of Thors"
         },
         "2": {
-          "title": "Tōruzu‐den"
+          "title": "Dai |index| Wa Tōruzu‐den"
         }
       },
       "41": {
         "0": {
-          "title": "共闘",
-          "sort": "きょうとう"
+          "title": "第|index|話 共闘",
+          "sort": "だい|index|わ きょうとう"
         },
         "1": {
-          "title": "United Front"
+          "title": "Chapter |index|: United Front"
         },
         "2": {
-          "title": "Kyōtō"
+          "title": "Dai |index| Wa Kyōtō"
         }
       },
       "42": {
         "0": {
-          "title": "裁定",
-          "sort": "さいてい"
+          "title": "第|index|話 裁定",
+          "sort": "だい|index|わ さいてい"
         },
         "1": {
-          "title": "Verdict"
+          "title": "Chapter |index|: Verdict"
         },
         "2": {
-          "title": "Saitei"
+          "title": "Dai |index| Wa Saitei"
+        }
+      },
+      "42.1": {
+        "0": {
+          "title": "番外編 Dimly‐Remembered Vinland Saga",
+          "sort": "ばんがいへん Dimly‐Remembered Vinland Saga"
+        },
+        "1": {
+          "title": "Bonus Manga: Dimly‐Remembered Vinland Saga"
+        },
+        "2": {
+          "title": "Bangai‐hen Dimly‐Remembered Vinland Saga"
+        }
+      },
+      "42.2": {
+        "0": {
+          "title": "番外編 ",
+          "sort": "ばんがいへん "
+        },
+        "1": {
+          "title": "Bonus Story: For Our Farewell Is Near, Part 3"
+        },
+        "2": {
+          "title": "Bangai‐hen "
         }
       },
       "43": {
         "0": {
-          "title": "王子生還",
-          "sort": "おうじ せいかん"
+          "title": "第|index|話 王子生還",
+          "sort": "だい|index|わ おうじ せいかん"
         },
         "1": {
-          "title": "The Prince Returns"
+          "title": "Chapter |index|: The Prince Returns"
         },
         "2": {
-          "title": "Ōji Seikan"
+          "title": "Dai |index| Wa Ōji Seikan"
         }
       },
       "44": {
         "0": {
-          "title": "王冠の呪い",
-          "sort": "おうかん の のろい"
+          "title": "第|index|話 王冠の呪い",
+          "sort": "だい|index|わ おうかん の のろい"
         },
         "1": {
-          "title": "The Curse of the Crown"
+          "title": "Chapter |index|: The Curse of the Crown"
         },
         "2": {
-          "title": "Ōkan no Noroi"
+          "title": "Dai |index| Wa Ōkan no Noroi"
         }
       },
       "45": {
         "0": {
-          "title": "最後の友達",
-          "sort": "さいご の ともだち"
+          "title": "第|index|話 最後の友達",
+          "sort": "だい|index|わ さいご の ともだち"
         },
         "1": {
-          "title": "His Last Friend"
+          "title": "Chapter |index|: His Last Friend"
         },
         "2": {
-          "title": "Saigo no Tomodachi"
+          "title": "Dai |index| Wa Saigo no Tomodachi"
         }
       },
       "46": {
         "0": {
-          "title": "二匹の孤狼",
-          "sort": "にひき の こ おおかみ"
+          "title": "第|index|話 二匹の孤狼",
+          "sort": "だい|index|わ にひき の こ おおかみ"
         },
         "1": {
-          "title": "Two Lone Wolves"
+          "title": "Chapter |index|: Two Lone Wolves"
         },
         "2": {
-          "title": "Nihiki no Korō"
+          "title": "Dai |index| Wa Nihiki no Korō"
         }
       },
       "47": {
         "0": {
-          "title": "英雄不在",
-          "sort": "えいゆう ふざい"
+          "title": "第|index|話 英雄不在",
+          "sort": "だい|index|わ えいゆう ふざい"
         },
         "1": {
-          "title": "There Hero Is Gone"
+          "title": "Chapter |index|: There Hero Is Gone"
         },
         "2": {
-          "title": "Eiyū Fuzai"
+          "title": "Dai |index| Wa Eiyū Fuzai"
         }
       },
       "48": {
         "0": {
-          "title": "再会",
-          "sort": "さいかい"
+          "title": "第|index|話 再会",
+          "sort": "だい|index|わ さいかい"
         },
         "1": {
-          "title": "Reunion"
+          "title": "Chapter |index|: Reunion"
         },
         "2": {
-          "title": "Saikai"
+          "title": "Dai |index| Wa Saikai"
         }
       },
       "49": {
         "0": {
-          "title": "カルルセヴニ",
-          "sort": "カルルセヴニ"
+          "title": "第|index|話 カルルセヴニ",
+          "sort": "だい|index|わ かるるせゔに"
         },
         "1": {
-          "title": "Karlsefni"
+          "title": "Chapter |index|: Karlsefni"
         },
         "2": {
-          "title": "Karurusevuni"
+          "title": "Dai |index| Wa Karurusevuni"
         }
       },
       "50": {
         "0": {
-          "title": "謀略",
-          "sort": "ぼうりゃく"
+          "title": "第|index|話 謀略",
+          "sort": "だい|index|わ ぼうりゃく"
         },
         "1": {
-          "title": "Plot"
+          "title": "Chapter |index|: Plot"
         },
         "2": {
-          "title": "Bōryaku"
+          "title": "Dai |index| Wa Bōryaku"
         }
       },
       "51": {
         "0": {
-          "title": "誤算",
-          "sort": "ごさん"
+          "title": "第|index|話 誤算",
+          "sort": "だい|index|わ ごさん"
         },
         "1": {
-          "title": "Miscalculation"
+          "title": "Chapter |index|: Miscalculation"
         },
         "2": {
-          "title": "Gosan"
+          "title": "Dai |index| Wa Gosan"
         }
       },
       "52": {
         "0": {
-          "title": "英雄復活",
-          "sort": "えいゆう ふっかつ"
+          "title": "第|index|話 英雄復活",
+          "sort": "だい|index|わ えいゆう ふっかつ"
         },
         "1": {
-          "title": "The Hero Returns"
+          "title": "Chapter |index|: The Hero Returns"
         },
         "2": {
-          "title": "Eiyū Fukkatsu"
+          "title": "Dai |index| Wa Eiyū Fukkatsu"
         }
       },
       "53": {
         "0": {
-          "title": "ブリタニア王猛る",
-          "sort": "ブリタニア おう たける"
+          "title": "第|index|話 ブリタニア王猛る",
+          "sort": "だい|index|わ ぶりたにあ おうもう る"
         },
         "1": {
-          "title": "The Fury of Britannia’s King"
+          "title": "Chapter |index|: The Fury of Britannia’s King"
         },
         "2": {
-          "title": "Buritania‐ō Takeru"
+          "title": "Dai |index| Wa Buritania‐ō Takeru"
         }
       },
       "54": {
+        "0": {
+          "title": "第|index|話 END OF THE PROLOGUE",
+          "sort": "だい|index|わ END OF THE PROLOGUE"
+        },
+        "1": {
+          "title": "Chapter |index|: End of the Prologue"
+        },
+        "2": {
+          "title": "Dai |index| Wa End of the Prologue"
+        }
+      },
+      "55": {
+        "0": {
+          "title": "第|index|話 奴隷",
+          "sort": "だい|index|わ どれい"
+        },
+        "1": {
+          "title": "Chapter |index|: Slave"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dorei"
+        }
+      },
+      "56": {
+        "0": {
+          "title": "第|index|話 ケティル農場",
+          "sort": "だい|index|わ けてぃる のうじょう"
+        },
+        "1": {
+          "title": "Chapter |index|: Ketil’s Farm"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ketiru Nōjō"
+        }
+      },
+      "56.5": {
         "0": {
           "title": "",
           "sort": ""
         },
         "1": {
-          "title": "End of the Prologue"
+          "title": "Bonus Story: For Our Farewell Is Near, Part 4"
         },
         "2": {
           "title": ""
         }
       },
-      "55": {
-        "0": {
-          "title": "奴隷",
-          "sort": "どれい"
-        },
-        "1": {
-          "title": "Slave"
-        },
-        "2": {
-          "title": "Dorei"
-        }
-      },
-      "56": {
-        "0": {
-          "title": "ケティル農場",
-          "sort": "ケティル のうじょう"
-        },
-        "1": {
-          "title": "Ketil’s Farm"
-        },
-        "2": {
-          "title": "Ketiru Nōjō"
-        }
-      },
       "57": {
         "0": {
-          "title": "若様",
-          "sort": "じゃく さま"
+          "title": "第|index|話 若様",
+          "sort": "だい|index|わ じゃく さま"
         },
         "1": {
-          "title": "Young Master"
+          "title": "Chapter |index|: Young Master"
         },
         "2": {
-          "title": "Wakasama"
+          "title": "Dai |index| Wa Wakasama"
         }
       },
       "58": {
         "0": {
-          "title": "殺してもいい人間",
-          "sort": "ころし てもいい にんげん"
+          "title": "第|index|話 殺してもいい人間",
+          "sort": "だい|index|わ ころし てもいい にんげん"
         },
         "1": {
-          "title": "The Men You’re Allowed to Kill"
+          "title": "Chapter |index|: The Men You’re Allowed to Kill"
         },
         "2": {
-          "title": "Koroshite mo Ii Ningen"
+          "title": "Dai |index| Wa Koroshite mo Ii Ningen"
         }
       },
       "59": {
         "0": {
-          "title": "蛇",
-          "sort": "へび"
+          "title": "第|index|話 蛇",
+          "sort": "だい|index|わ へび"
         },
         "1": {
-          "title": "Snake"
+          "title": "Chapter |index|: Snake"
         },
         "2": {
-          "title": "Hebi"
+          "title": "Dai |index| Wa Hebi"
         }
       },
       "60": {
         "0": {
-          "title": "最初の友達",
-          "sort": "さいしょ の ともだち"
+          "title": "第|index|話 最初の友達",
+          "sort": "だい|index|わ さいしょ の ともだち"
         },
         "1": {
-          "title": "His First Friend"
+          "title": "Chapter |index|: His First Friend"
         },
         "2": {
-          "title": "Saisho no Tomodachi"
+          "title": "Dai |index| Wa Saisho no Tomodachi"
         }
       },
       "61": {
         "0": {
-          "title": "血の道",
-          "sort": "ち の みち"
+          "title": "第|index|話 血の道",
+          "sort": "だい|index|わ ち の みち"
         },
         "1": {
-          "title": "The Way of Blood"
+          "title": "Chapter |index|: The Way of Blood"
         },
         "2": {
-          "title": "Chi no Michi"
+          "title": "Dai |index| Wa Chi no Michi"
         }
       },
       "62": {
         "0": {
-          "title": "クヌートのやり方",
-          "sort": "クヌート のやり ほう"
+          "title": "第|index|話 クヌートのやり方",
+          "sort": "だい|index|わ くぬーと のやり ほう"
         },
         "1": {
-          "title": "Canute’s Way"
+          "title": "Chapter |index|: Canute’s Way"
         },
         "2": {
-          "title": "Kunūto no Yarikata"
+          "title": "Dai |index| Wa Kunūto no Yarikata"
         }
       },
       "63": {
         "0": {
-          "title": "馬がほしい",
-          "sort": "うま がほしい"
+          "title": "第|index|話 馬がほしい",
+          "sort": "だい|index|わ うま がほしい"
         },
         "1": {
-          "title": "I Need a Horse"
+          "title": "Chapter |index|: I Need a Horse"
         },
         "2": {
-          "title": "Uma ga Hoshii"
+          "title": "Dai |index| Wa Uma ga Hoshii"
         }
       },
       "64": {
         "0": {
-          "title": "続・馬がほしい",
-          "sort": "ぞく・うま がほしい"
+          "title": "第|index|話 続・馬がほしい",
+          "sort": "だい|index|わ ぞく・うま がほしい"
         },
         "1": {
-          "title": "I Need a Horse, Part II"
+          "title": "Chapter |index|: I Need a Horse, Part II"
         },
         "2": {
-          "title": "Zoku – Uma ga Hoshii"
+          "title": "Dai |index| Wa Zoku – Uma ga Hoshii"
         }
       },
       "65": {
         "0": {
-          "title": "大旦那の家で",
-          "sort": "だい だんな の いえ で"
+          "title": "第|index|話 大旦那の家で",
+          "sort": "だい|index|わ だい だんな の いえ で"
         },
         "1": {
-          "title": "At the Old Master’s House"
+          "title": "Chapter |index|: At the Old Master’s House"
         },
         "2": {
-          "title": "Ōdanna no Ie de"
+          "title": "Dai |index| Wa Ōdanna no Ie de"
         }
       },
       "66": {
         "0": {
-          "title": "発芽",
-          "sort": "はつが"
+          "title": "第|index|話 発芽",
+          "sort": "だい|index|わ はつが"
         },
         "1": {
-          "title": "Budding"
+          "title": "Chapter |index|: Budding"
         },
         "2": {
-          "title": "Hatsuga"
+          "title": "Dai |index| Wa Hatsuga"
         }
       },
       "67": {
         "0": {
-          "title": "鉄拳ケティル",
-          "sort": "てっけん ケティル"
+          "title": "第|index|話 鉄拳ケティル",
+          "sort": "だい|index|わ てっけん けてぃる"
         },
         "1": {
-          "title": "Iron Fist Ketil"
+          "title": "Chapter |index|: Iron Fist Ketil"
         },
         "2": {
-          "title": "Tekken Ketiru"
+          "title": "Dai |index| Wa Tekken Ketiru"
         }
       },
       "68": {
         "0": {
-          "title": "カラッポな男",
-          "sort": "カラッポ な おとこ"
+          "title": "第|index|話 カラッポな男",
+          "sort": "だい|index|わ からっぽ な おとこ"
         },
         "1": {
-          "title": "An Empty Man"
+          "title": "Chapter |index|: An Empty Man"
         },
         "2": {
-          "title": "Karappo na Otoko"
+          "title": "Dai |index| Wa Karappo na Otoko"
         }
       },
       "69": {
         "0": {
-          "title": "いじめ",
-          "sort": "いじめ"
+          "title": "第|index|話 いじめ",
+          "sort": "だい|index|わ いじめ"
         },
         "1": {
-          "title": "Provocation"
+          "title": "Chapter |index|: Provocation"
         },
         "2": {
-          "title": "Ijime"
+          "title": "Dai |index| Wa Ijime"
         }
       },
       "70": {
         "0": {
-          "title": "夢の中身",
-          "sort": "ゆめ の なかみ"
+          "title": "第|index|話 夢の中身",
+          "sort": "だい|index|わ ゆめ の なかみ"
         },
         "1": {
-          "title": "The Dream"
+          "title": "Chapter |index|: The Dream"
         },
         "2": {
-          "title": "Yume no Nakami"
+          "title": "Dai |index| Wa Yume no Nakami"
         }
       },
       "71": {
         "0": {
-          "title": "誓い",
-          "sort": "ちかい"
+          "title": "第|index|話 誓い",
+          "sort": "だい|index|わ ちかい"
         },
         "1": {
-          "title": "Oath"
+          "title": "Chapter |index|: Oath"
         },
         "2": {
-          "title": "Chikai"
+          "title": "Dai |index| Wa Chikai"
+        }
+      },
+      "71.5": {
+        "0": {
+          "title": "",
+          "sort": ""
+        },
+        "1": {
+          "title": "Bonus Story: For Our Farewell Is Near, Part 5"
+        },
+        "2": {
+          "title": ""
         }
       },
       "72": {
         "0": {
-          "title": "呪いの首",
-          "sort": "のろい の くび"
+          "title": "第|index|話 呪いの首",
+          "sort": "だい|index|わ のろい の くび"
         },
         "1": {
-          "title": "The Curse of the Head"
+          "title": "Chapter |index|: The Curse of the Head"
         },
         "2": {
-          "title": "Noroi no Kubi"
+          "title": "Dai |index| Wa Noroi no Kubi"
         }
       },
       "73": {
         "0": {
-          "title": "自由になったら",
-          "sort": "じゆう になったら"
+          "title": "第|index|話 自由になったら",
+          "sort": "だい|index|わ じゆう になったら"
         },
         "1": {
-          "title": "When You’re Free"
+          "title": "Chapter |index|: When You’re Free"
         },
         "2": {
-          "title": "Jiyū ni Nattara"
+          "title": "Dai |index| Wa Jiyū ni Nattara"
         }
       },
       "74": {
         "0": {
-          "title": "逃亡奴隷",
-          "sort": "とうぼう どれい"
+          "title": "第|index|話 逃亡奴隷",
+          "sort": "だい|index|わ とうぼう どれい"
         },
         "1": {
-          "title": "Escaped Slave"
+          "title": "Chapter |index|: Escaped Slave"
         },
         "2": {
-          "title": "Tōbō Dorei"
+          "title": "Dai |index| Wa Tōbō Dorei"
         }
       },
       "75": {
         "0": {
-          "title": "王と剣",
-          "sort": "おう と つるぎ"
+          "title": "第|index|話 王と剣",
+          "sort": "だい|index|わ おう と つるぎ"
         },
         "1": {
-          "title": "King and Sword"
+          "title": "Chapter |index|: King and Sword"
         },
         "2": {
-          "title": "Ō to Ken"
+          "title": "Dai |index| Wa Ō to Ken"
         }
       },
       "76": {
         "0": {
-          "title": "オルマル晴れ舞台",
-          "sort": "オルマル はれ ぶたい"
+          "title": "第|index|話 オルマル晴れ舞台",
+          "sort": "だい|index|わ おるまる はれ ぶたい"
         },
         "1": {
-          "title": "Olmar’s Finest Hour"
+          "title": "Chapter |index|: Olmar’s Finest Hour"
         },
         "2": {
-          "title": "Orumaru Hare Butai"
+          "title": "Dai |index| Wa Orumaru Hare Butai"
         }
       },
       "77": {
         "0": {
-          "title": "侮辱",
-          "sort": "ぶじょく"
+          "title": "第|index|話 侮辱",
+          "sort": "だい|index|わ ぶじょく"
         },
         "1": {
-          "title": "Disgrace"
+          "title": "Chapter |index|: Disgrace"
         },
         "2": {
-          "title": "Bujoku"
+          "title": "Dai |index| Wa Bujoku"
         }
       },
       "78": {
         "0": {
-          "title": "反逆罪",
-          "sort": "はんぎゃく つみ"
+          "title": "第|index|話 反逆罪",
+          "sort": "だい|index|わ はんぎゃく つみ"
         },
         "1": {
-          "title": "Treason"
+          "title": "Chapter |index|: Treason"
         },
         "2": {
-          "title": "Hangyaku‐zai"
+          "title": "Dai |index| Wa Hangyaku‐zai"
         }
       },
       "79": {
         "0": {
-          "title": "暗雲の先触れ",
-          "sort": "あんうん の さき ふれ"
+          "title": "第|index|話 暗雲の先触れ",
+          "sort": "だい|index|わ あんうん の さきぶれ れ"
         },
         "1": {
-          "title": "Portents of Storm Clouds"
+          "title": "Chapter |index|: Portents of Storm Clouds"
         },
         "2": {
-          "title": "An’un no Sakibure"
+          "title": "Dai |index| Wa An’un no Sakibure"
         }
       },
       "80": {
         "0": {
-          "title": "ガルザル来襲",
-          "sort": "ガルザル らいしゅう"
+          "title": "第|index|話 ガルザル来襲",
+          "sort": "だい|index|わ がるざる らいしゅう"
         },
         "1": {
-          "title": "Gardar’s Assault"
+          "title": "Chapter |index|: Gardar’s Assault"
         },
         "2": {
-          "title": "Garuzaru Raishū"
+          "title": "Dai |index| Wa Garuzaru Raishū"
         }
       },
       "81": {
         "0": {
-          "title": "嵐",
-          "sort": "あらし"
+          "title": "第|index|話 嵐",
+          "sort": "だい|index|わ あらし"
         },
         "1": {
-          "title": "Storm"
+          "title": "Chapter |index|: Storm"
         },
         "2": {
-          "title": "Arashi"
+          "title": "Dai |index| Wa Arashi"
         }
       },
       "82": {
         "0": {
-          "title": "縛め",
-          "sort": "ばく め"
+          "title": "第|index|話 縛め",
+          "sort": "だい|index|わ ばく め"
         },
         "1": {
-          "title": "Bondage"
+          "title": "Chapter |index|: Bondage"
         },
         "2": {
-          "title": "Imashime"
+          "title": "Dai |index| Wa Imashime"
         }
       },
       "83": {
         "0": {
-          "title": "償い",
-          "sort": "つぐない"
+          "title": "第|index|話 償い",
+          "sort": "だい|index|わ つぐない"
         },
         "1": {
-          "title": "Atonement"
+          "title": "Chapter |index|: Atonement"
         },
         "2": {
-          "title": "Tsugunai"
+          "title": "Dai |index| Wa Tsugunai"
         }
       },
       "84": {
         "0": {
-          "title": "都合のいい夢",
-          "sort": "つごう のいい ゆめ"
+          "title": "第|index|話 都合のいい夢",
+          "sort": "だい|index|わ つごう のいい ゆめ"
         },
         "1": {
-          "title": "A Convenient Dream"
+          "title": "Chapter |index|: A Convenient Dream"
         },
         "2": {
-          "title": "Tsugō no Ii Yume"
+          "title": "Dai |index| Wa Tsugō no Ii Yume"
         }
       },
       "85": {
         "0": {
-          "title": "対決",
-          "sort": "たいけつ"
+          "title": "第|index|話 対決",
+          "sort": "だい|index|わ たいけつ"
         },
         "1": {
-          "title": "Confrontation"
+          "title": "Chapter |index|: Confrontation"
         },
         "2": {
-          "title": "Taiketsu"
+          "title": "Dai |index| Wa Taiketsu"
         }
       },
       "86": {
         "0": {
-          "title": "帰れないふたり",
-          "sort": "かえれ ないふたり"
+          "title": "第|index|話 帰れないふたり",
+          "sort": "だい|index|わ かえれ ないふたり"
         },
         "1": {
-          "title": "No Going Home"
+          "title": "Chapter |index|: No Going Home"
         },
         "2": {
-          "title": "Kaerenai Futari"
+          "title": "Dai |index| Wa Kaerenai Futari"
         }
       },
       "87": {
         "0": {
-          "title": "最初の手段",
-          "sort": "さいしょ の しゅだん"
+          "title": "第|index|話 最初の手段",
+          "sort": "だい|index|わ さいしょ の しゅだん"
         },
         "1": {
-          "title": "The First Move"
+          "title": "Chapter |index|: The First Move"
         },
         "2": {
-          "title": "Saisho no Shudan"
+          "title": "Dai |index| Wa Saisho no Shudan"
         }
       },
       "88": {
         "0": {
-          "title": "罰",
-          "sort": "ばつ"
+          "title": "第|index|話 罰",
+          "sort": "だい|index|わ ばつ"
         },
         "1": {
-          "title": "Punishment"
+          "title": "Chapter |index|: Punishment"
         },
         "2": {
-          "title": "Batsu"
+          "title": "Dai |index| Wa Batsu"
         }
       },
       "89": {
         "0": {
-          "title": "開戦前夜",
-          "sort": "かいせん ぜんや"
+          "title": "第|index|話 開戦前夜",
+          "sort": "だい|index|わ かいせん ぜんや"
         },
         "1": {
-          "title": "The Eve of Battle"
+          "title": "Chapter |index|: The Eve of Battle"
         },
         "2": {
-          "title": "Kaisen Zen’ya"
+          "title": "Dai |index| Wa Kaisen Zen’ya"
         }
       },
       "90": {
         "0": {
-          "title": "飯の代金",
-          "sort": "めし の だいきん"
+          "title": "第|index|話 飯の代金",
+          "sort": "だい|index|わ めし の だいきん"
         },
         "1": {
-          "title": "Price of the Food"
+          "title": "Chapter |index|: Price of the Food"
         },
         "2": {
-          "title": "Meshi no Daikin"
+          "title": "Dai |index| Wa Meshi no Daikin"
         }
       },
       "91": {
         "0": {
-          "title": "ケティル農場の戦い",
-          "sort": "ケティル のうじょう の たたかい"
+          "title": "第|index|話 ケティル農場の戦い",
+          "sort": "だい|index|わ けてぃる のうじょう の たたかい"
         },
         "1": {
-          "title": "The Battle of Ketil Farm"
+          "title": "Chapter |index|: The Battle of Ketil Farm"
         },
         "2": {
-          "title": "Ketiru Nōjō no Tatakai"
+          "title": "Dai |index| Wa Ketiru Nōjō no Tatakai"
         }
       },
       "92": {
         "0": {
-          "title": "百数える間",
-          "sort": "ひゃく かぞえ る かん"
+          "title": "第|index|話 百数える間",
+          "sort": "だい|index|わ ひゃく かぞえ る かん"
         },
         "1": {
-          "title": "Hundred‐Count"
+          "title": "Chapter |index|: Hundred‐Count"
         },
         "2": {
-          "title": "Hyaku Kazoeru Aida"
+          "title": "Dai |index| Wa Hyaku Kazoeru Aida"
         }
       },
       "93": {
         "0": {
-          "title": "戦士の誕生",
-          "sort": "せんし の たんじょう"
+          "title": "第|index|話 戦士の誕生",
+          "sort": "だい|index|わ せんし の たんじょう"
         },
         "1": {
-          "title": "Birth of a Warrior"
+          "title": "Chapter |index|: Birth of a Warrior"
         },
         "2": {
-          "title": "Senshi no Tanjō"
+          "title": "Dai |index| Wa Senshi no Tanjō"
         }
       },
       "94": {
         "0": {
-          "title": "降伏勧告",
-          "sort": "こうふく かんこく"
+          "title": "第|index|話 降伏勧告",
+          "sort": "だい|index|わ こうふく かんこく"
         },
         "1": {
-          "title": "Recommendation of Surrender"
+          "title": "Chapter |index|: Recommendation of Surrender"
         },
         "2": {
-          "title": "Kōfuku Kankoku"
+          "title": "Dai |index| Wa Kōfuku Kankoku"
         }
       },
       "95": {
         "0": {
-          "title": "忘れ物",
-          "sort": "わすれもの"
+          "title": "第|index|話 忘れ物",
+          "sort": "だい|index|わ わすれもの"
         },
         "1": {
-          "title": "Forgotten Things"
+          "title": "Chapter |index|: Forgotten Things"
         },
         "2": {
-          "title": "Wasuremono"
+          "title": "Dai |index| Wa Wasuremono"
         }
       },
       "96": {
         "0": {
-          "title": "無敵",
-          "sort": "むてき"
+          "title": "第|index|話 無敵",
+          "sort": "だい|index|わ むてき"
         },
         "1": {
-          "title": "Invincible"
+          "title": "Chapter |index|: Invincible"
         },
         "2": {
-          "title": "Muteki"
+          "title": "Dai |index| Wa Muteki"
         }
       },
       "97": {
         "0": {
-          "title": "叛逆の帝王",
-          "sort": "はん ぎゃくの ていおう"
+          "title": "第|index|話 叛逆の帝王",
+          "sort": "だい|index|わ はんぎゃく の ていおう"
         },
         "1": {
-          "title": "Emperor of Rebellion"
+          "title": "Chapter |index|: Emperor of Rebellion"
         },
         "2": {
-          "title": "Hangyaku no Teiō"
+          "title": "Dai |index| Wa Hangyaku no Teiō"
         }
       },
       "98": {
         "0": {
-          "title": "ふたつの楽土",
-          "sort": "ふたつの らくど"
+          "title": "第|index|話 ふたつの楽土",
+          "sort": "だい|index|わ ふたつの らくど"
         },
         "1": {
-          "title": "Two Paradises"
+          "title": "Chapter |index|: Two Paradises"
         },
         "2": {
-          "title": "Futatsu no Rakudo"
+          "title": "Dai |index| Wa Futatsu no Rakudo"
         }
       },
       "99": {
         "0": {
-          "title": "船出",
-          "sort": "ふなで"
+          "title": "第|index|話 船出",
+          "sort": "だい|index|わ ふなで"
         },
         "1": {
-          "title": "Departure"
+          "title": "Chapter |index|: Departure"
         },
         "2": {
-          "title": "Funade"
+          "title": "Dai |index| Wa Funade"
         }
       },
       "100": {
         "0": {
-          "title": "帰郷",
-          "sort": "ききょう"
+          "title": "第|index|話 帰郷",
+          "sort": "だい|index|わ ききょう"
         },
         "1": {
-          "title": "Homecoming"
+          "title": "Chapter |index|: Homecoming"
         },
         "2": {
-          "title": "Kikyō"
+          "title": "Dai |index| Wa Kikyō"
         }
       },
       "101": {
         "0": {
-          "title": "繋がれたアジサシ(クリーア)1",
-          "sort": "つなが れた アジサシ(クリーア)1"
+          "title": "第|index|話 繋がれたアジサシ(クリーア)1",
+          "sort": "だい|index|わ つなが れた あじさし(くりーあ)1"
         },
         "1": {
-          "title": "The Fettered Tern (1)"
+          "title": "Chapter |index|: The Fettered Tern (1)"
         },
         "2": {
-          "title": "Tsunagareta Ajisashi (Kurīa) 1"
+          "title": "Dai |index| Wa Tsunagareta Ajisashi (Kurīa) 1"
         }
       },
       "102": {
         "0": {
-          "title": "繋がれたアジサシ(クリーア)2",
-          "sort": "つなが れた アジサシ(クリーア)2"
+          "title": "第|index|話 繋がれたアジサシ(クリーア)2",
+          "sort": "だい|index|わ つなが れた あじさし(くりーあ)2"
         },
         "1": {
-          "title": "The Fettered Tern (2)"
+          "title": "Chapter |index|: The Fettered Tern (2)"
         },
         "2": {
-          "title": "Tsunagareta Ajisashi (Kurīa) 2"
+          "title": "Dai |index| Wa Tsunagareta Ajisashi (Kurīa) 2"
         }
       },
       "103": {
         "0": {
-          "title": "繋がれたアジサシ(クリーア)3",
-          "sort": "つなが れた アジサシ(クリーア)3"
+          "title": "第|index|話 繋がれたアジサシ(クリーア)3",
+          "sort": "だい|index|わ つなが れた あじさし(くりーあ)3"
         },
         "1": {
-          "title": "The Fettered Tern (3)"
+          "title": "Chapter |index|: The Fettered Tern (3)"
         },
         "2": {
-          "title": "Tsunagareta Ajisashi (Kurīa) 3"
+          "title": "Dai |index| Wa Tsunagareta Ajisashi (Kurīa) 3"
         }
       },
       "104": {
         "0": {
-          "title": "繋がれたアジサシ(クリーア)4",
-          "sort": "つなが れた アジサシ(クリーア)4"
+          "title": "第|index|話 繋がれたアジサシ(クリーア)4",
+          "sort": "だい|index|わ つなが れた あじさし(くりーあ)4"
         },
         "1": {
-          "title": "The Fettered Tern (4)"
+          "title": "Chapter |index|: The Fettered Tern (4)"
         },
         "2": {
-          "title": "Tsunagareta Ajisashi (Kurīa) 4"
+          "title": "Dai |index| Wa Tsunagareta Ajisashi (Kurīa) 4"
         }
       },
       "105": {
         "0": {
-          "title": "繋がれたアジサシ(クリーア)5",
-          "sort": "つなが れた アジサシ(クリーア)5"
+          "title": "第|index|話 繋がれたアジサシ(クリーア)5",
+          "sort": "だい|index|わ つなが れた あじさし(くりーあ)5"
         },
         "1": {
-          "title": "The Fettered Tern (5)"
+          "title": "Chapter |index|: The Fettered Tern (5)"
         },
         "2": {
-          "title": "Tsunagareta Ajisashi (Kurīa) 5"
+          "title": "Dai |index| Wa Tsunagareta Ajisashi (Kurīa) 5"
         }
       },
       "106": {
         "0": {
-          "title": "繋がれたアジサシ(クリーア)6",
-          "sort": "つなが れた アジサシ(クリーア)6"
+          "title": "第|index|話 繋がれたアジサシ(クリーア)6",
+          "sort": "だい|index|わ つなが れた あじさし(くりーあ)6"
         },
         "1": {
-          "title": "The Fettered Tern (6)"
+          "title": "Chapter |index|: The Fettered Tern (6)"
         },
         "2": {
-          "title": "Tsunagareta Ajisashi (Kurīa) 6"
+          "title": "Dai |index| Wa Tsunagareta Ajisashi (Kurīa) 6"
         }
       },
       "107": {
         "0": {
-          "title": "繋がれたアジサシ(クリーア)7",
-          "sort": "つなが れた アジサシ (クリーア)7"
+          "title": "第|index|話 繋がれたアジサシ(クリーア)7",
+          "sort": "だい|index|わ つなが れた あじさし(くりーあ)7"
         },
         "1": {
-          "title": "The Fettered Tern (7)"
+          "title": "Chapter |index|: The Fettered Tern (7)"
         },
         "2": {
-          "title": "Tsunagareta Ajisashi (Kurīa) 7"
+          "title": "Dai |index| Wa Tsunagareta Ajisashi (Kurīa) 7"
         }
       },
       "108": {
         "0": {
-          "title": "繋がれたアジサシ(クリーア)8",
-          "sort": "つなが れた アジサシ (クリーア)8"
+          "title": "第|index|話 繋がれたアジサシ(クリーア)8",
+          "sort": "だい|index|わ つなが れた あじさし(くりーあ)8"
         },
         "1": {
-          "title": "The Fettered Tern (8)"
+          "title": "Chapter |index|: The Fettered Tern (8)"
         },
         "2": {
-          "title": "Tsunagareta Ajisashi (Kurīa) 8"
+          "title": "Dai |index| Wa Tsunagareta Ajisashi (Kurīa) 8"
         }
       },
       "109": {
         "0": {
-          "title": "放たれたアジサシ(クリーア)",
-          "sort": "ほうった れた アジサシ (クリーア)"
+          "title": "第|index|話 放たれたアジサシ(クリーア)",
+          "sort": "だい|index|わ ほうった れた あじさし(くりーあ)"
         },
         "1": {
-          "title": "The Liberated Tern"
+          "title": "Chapter |index|: The Liberated Tern"
         },
         "2": {
-          "title": "Hanatareta Ajisashi (Kurīa)"
+          "title": "Dai |index| Wa Hanatareta Ajisashi (Kurīa)"
         }
       },
       "110": {
         "0": {
-          "title": "北海横断",
-          "sort": "ほっかい おうだん"
+          "title": "第|index|話 北海横断",
+          "sort": "だい|index|わ ほっかい おうだん"
         },
         "1": {
-          "title": "Crossing the North Sea"
+          "title": "Chapter |index|: Crossing the North Sea"
         },
         "2": {
-          "title": "Hokkai Ōdan"
+          "title": "Dai |index| Wa Hokkai Ōdan"
         }
       },
       "111": {
         "0": {
-          "title": "戦士から、戦士へ",
-          "sort": "せんし から、せんし へ"
+          "title": "第|index|話 戦士から、戦士へ",
+          "sort": "だい|index|わ せんし から、せんし へ"
         },
         "1": {
-          "title": "From Warrior to Warrior"
+          "title": "Chapter |index|: From Warrior to Warrior"
         },
         "2": {
-          "title": "Senshi kara, Senshi e"
+          "title": "Dai |index| Wa Senshi kara, Senshi e"
         }
       },
       "112": {
         "0": {
-          "title": "復讐の義務",
-          "sort": "ふくしゅう の ぎむ"
+          "title": "第|index|話 復讐の義務",
+          "sort": "だい|index|わ ふくしゅう の ぎむ"
         },
         "1": {
-          "title": "Obligatory Vengeance"
+          "title": "Chapter |index|: Obligatory Vengeance"
         },
         "2": {
-          "title": "Fukushū no Gimu"
+          "title": "Dai |index| Wa Fukushū no Gimu"
         }
       },
       "113": {
         "0": {
-          "title": "厄介な奴ら",
-          "sort": "やっかい な やつ ら"
+          "title": "第|index|話 厄介な奴ら",
+          "sort": "だい|index|わ やっかい な やつ ら"
         },
         "1": {
-          "title": "Troublemakers"
+          "title": "Chapter |index|: Troublemakers"
         },
         "2": {
-          "title": "Yakkai na Yatsura"
+          "title": "Dai |index| Wa Yakkai na Yatsura"
         }
       },
       "114": {
         "0": {
-          "title": "狩る者 狩られる者1",
-          "sort": "かる もの から れる もの1"
+          "title": "第|index|話 狩る者 狩られる者1",
+          "sort": "だい|index|わ かる もの から れる もの 1"
         },
         "1": {
-          "title": "The Hunter and the Hunted (1)"
+          "title": "Chapter |index|: The Hunter and the Hunted (1)"
         },
         "2": {
-          "title": "Karu Mono Karareru Mono 1"
+          "title": "Dai |index| Wa Karu Mono Karareru Mono 1"
         }
       },
       "115": {
         "0": {
-          "title": "狩る者 狩られる者2",
-          "sort": "かる もの から れる もの2"
+          "title": "第|index|話 狩る者 狩られる者2",
+          "sort": "だい|index|わ かる もの から れる もの 2"
         },
         "1": {
-          "title": "The Hunter and the Hunted (2)"
+          "title": "Chapter |index|: The Hunter and the Hunted (2)"
         },
         "2": {
-          "title": "Karu Mono Karareru Mono 2"
+          "title": "Dai |index| Wa Karu Mono Karareru Mono 2"
         }
       },
       "116": {
         "0": {
-          "title": "狩る者 狩られる者3",
-          "sort": "かる もの から れる もの3"
+          "title": "第|index|話 狩る者 狩られる者3",
+          "sort": "だい|index|わ かる もの から れる もの 3"
         },
         "1": {
-          "title": "The Hunter and the Hunted (3)"
+          "title": "Chapter |index|: The Hunter and the Hunted (3)"
         },
         "2": {
-          "title": "Karu Mono Karareru Mono 3"
+          "title": "Dai |index| Wa Karu Mono Karareru Mono 3"
         }
       },
       "117": {
         "0": {
-          "title": "狩る者 狩られる者4",
-          "sort": "かる もの から れる もの4"
+          "title": "第|index|話 狩る者 狩られる者4",
+          "sort": "だい|index|わ かる もの から れる もの 4"
         },
         "1": {
-          "title": "The Hunter and the Hunted (4)"
+          "title": "Chapter |index|: The Hunter and the Hunted (4)"
         },
         "2": {
-          "title": "Karu Mono Karareru Mono 4"
+          "title": "Dai |index| Wa Karu Mono Karareru Mono 4"
         }
       },
       "118": {
         "0": {
-          "title": "狩る者 狩られる者5",
-          "sort": "かる もの から れる もの5"
+          "title": "第|index|話 狩る者 狩られる者5",
+          "sort": "だい|index|わ かる もの から れる もの 5"
         },
         "1": {
-          "title": "The Hunter and the Hunted (5)"
+          "title": "Chapter |index|: The Hunter and the Hunted (5)"
         },
         "2": {
-          "title": "Karu Mono Karareru Mono 5"
+          "title": "Dai |index| Wa Karu Mono Karareru Mono 5"
         }
       },
       "119": {
         "0": {
-          "title": "狩る者 狩られる者6",
-          "sort": "かる もの から れる もの6"
+          "title": "第|index|話 狩る者 狩られる者6",
+          "sort": "だい|index|わ かる もの から れる もの 6"
         },
         "1": {
-          "title": "The Hunter and the Hunted (6)"
+          "title": "Chapter |index|: The Hunter and the Hunted (6)"
         },
         "2": {
-          "title": "Karu Mono Karareru Mono 6"
+          "title": "Dai |index| Wa Karu Mono Karareru Mono 6"
         }
       },
       "120": {
         "0": {
-          "title": "狩る者 狩られる者7W",
-          "sort": "かる もの から れる もの7"
+          "title": "第|index|話 狩る者 狩られる者7",
+          "sort": "だい|index|わ かる もの から れる もの 7"
         },
         "1": {
-          "title": "The Hunter and the Hunted (7)"
+          "title": "Chapter |index|: The Hunter and the Hunted (7)"
         },
         "2": {
-          "title": "Karu Mono Karareru Mono 7"
+          "title": "Dai |index| Wa Karu Mono Karareru Mono 7"
         }
       },
       "121": {
         "0": {
-          "title": "狩る者 狩られる者8",
-          "sort": "かる もの から れる もの8"
+          "title": "第|index|話 狩る者 狩られる者8",
+          "sort": "だい|index|わ かる もの から れる もの 8"
         },
         "1": {
-          "title": "The Hunter and the Hunted (8)"
+          "title": "Chapter |index|: The Hunter and the Hunted (8)"
         },
         "2": {
-          "title": "Karu Mono Karareru Mono 8"
+          "title": "Dai |index| Wa Karu Mono Karareru Mono 8"
         }
       },
       "122": {
         "0": {
-          "title": "狩る者 狩られる者9",
-          "sort": "かる もの から れる もの9"
+          "title": "第|index|話 狩る者 狩られる者9",
+          "sort": "だい|index|わ かる もの から れる もの 9"
         },
         "1": {
-          "title": "The Hunter and the Hunted (9)"
+          "title": "Chapter |index|: The Hunter and the Hunted (9)"
         },
         "2": {
-          "title": "Karu Mono Karareru Mono 9"
+          "title": "Dai |index| Wa Karu Mono Karareru Mono 9"
         }
       },
       "123": {
         "0": {
-          "title": "借り物の命",
-          "sort": "かりもの の いのち"
+          "title": "第|index|話 借り物の命",
+          "sort": "だい|index|わ かりもの の いのち"
         },
         "1": {
-          "title": "A Borrowed Life"
+          "title": "Chapter |index|: A Borrowed Life"
         },
         "2": {
-          "title": "Karimono no Inochi"
+          "title": "Dai |index| Wa Karimono no Inochi"
         }
       },
       "124": {
         "0": {
-          "title": "ノルウェー出立",
-          "sort": "ノルウェー しゅったつ"
+          "title": "第|index|話 ノルウェー出立",
+          "sort": "だい|index|わ のるうぇー しゅったつ"
         },
         "1": {
-          "title": "Departing Norway"
+          "title": "Chapter |index|: Departing Norway"
         },
         "2": {
-          "title": "Noruwē Shuppatsu"
+          "title": "Dai |index| Wa Noruwē Shuppatsu"
         }
       },
       "125": {
         "0": {
-          "title": "バルト海戦役1",
-          "sort": "バルト かいせん やく1"
+          "title": "第|index|話 バルト海戦役1",
+          "sort": "だい|index|わ ばると かいせん やく 1"
         },
         "1": {
-          "title": "War In The Baltic (1)"
+          "title": "Chapter |index|: War In The Baltic (1)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 1"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 1"
         }
       },
       "126": {
         "0": {
-          "title": "バルト海戦役2",
-          "sort": "バルト かいせん やく2"
+          "title": "第|index|話 バルト海戦役2",
+          "sort": "だい|index|わ ばると かいせん やく 2"
         },
         "1": {
-          "title": "War In The Baltic (2)"
+          "title": "Chapter |index|: War In The Baltic (2)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 2"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 2"
         }
       },
       "127": {
         "0": {
-          "title": "バルト海戦役3",
-          "sort": "バルト かいせん やく3"
+          "title": "第|index|話 バルト海戦役3",
+          "sort": "だい|index|わ ばると かいせん やく 3"
         },
         "1": {
-          "title": "War In The Baltic (3)"
+          "title": "Chapter |index|: War In The Baltic (3)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 3"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 3"
         }
       },
       "128": {
         "0": {
-          "title": "バルト海戦役4",
-          "sort": "バルト かいせん やく4"
+          "title": "第|index|話 バルト海戦役4",
+          "sort": "だい|index|わ ばると かいせん やく 4"
         },
         "1": {
-          "title": "War In The Baltic (4)"
+          "title": "Chapter |index|: War In The Baltic (4)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 4"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 4"
         }
       },
       "129": {
         "0": {
-          "title": "バルト海戦役5",
-          "sort": "バルト かいせん やく5"
+          "title": "第|index|話 バルト海戦役5",
+          "sort": "だい|index|わ ばると かいせん やく 5"
         },
         "1": {
-          "title": "War In The Baltic (5)"
+          "title": "Chapter |index|: War In The Baltic (5)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 5"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 5"
         }
       },
       "130": {
         "0": {
-          "title": "バルト海戦役6",
-          "sort": "バルト かいせん やく6"
+          "title": "第|index|話 バルト海戦役6",
+          "sort": "だい|index|わ ばると かいせん やく 6"
         },
         "1": {
-          "title": "War In The Baltic (6)"
+          "title": "Chapter |index|: War In The Baltic (6)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 6"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 6"
         }
       },
       "131": {
         "0": {
-          "title": "バルト海戦役7",
-          "sort": "バルト かいせん やく7"
+          "title": "第|index|話 バルト海戦役7",
+          "sort": "だい|index|わ ばると かいせん やく 7"
         },
         "1": {
-          "title": "War In The Baltic (7)"
+          "title": "Chapter |index|: War In The Baltic (7)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 7"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 7"
         }
       },
       "132": {
         "0": {
-          "title": "バルト海戦役8",
-          "sort": "バルト かいせん やく8"
+          "title": "第|index|話 バルト海戦役8",
+          "sort": "だい|index|わ ばると かいせん やく 8"
         },
         "1": {
-          "title": "War In The Baltic (8)"
+          "title": "Chapter |index|: War In The Baltic (8)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 8"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 8"
         }
       },
       "133": {
         "0": {
-          "title": "バルト海戦役9",
-          "sort": "バルト かいせん やく9"
+          "title": "第|index|話 バルト海戦役9",
+          "sort": "だい|index|わ ばると かいせん やく 9"
         },
         "1": {
-          "title": "War In The Baltic (9)"
+          "title": "Chapter |index|: War In The Baltic (9)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 9"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 9"
         }
       },
       "134": {
         "0": {
-          "title": "バルト海戦役10",
-          "sort": "バルト かいせん やく10"
+          "title": "第|index|話 バルト海戦役10",
+          "sort": "だい|index|わ ばると かいせん やく 10"
         },
         "1": {
-          "title": "War In The Baltic (10)"
+          "title": "Chapter |index|: War In The Baltic (10)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 10"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 10"
         }
       },
       "135": {
         "0": {
-          "title": "バルト海戦役11",
-          "sort": "バルト かいせん やく11"
+          "title": "第|index|話 バルト海戦役11",
+          "sort": "だい|index|わ ばると かいせん やく 11"
         },
         "1": {
-          "title": "War In The Baltic (11)"
+          "title": "Chapter |index|: War In The Baltic (11)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 11"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 11"
         }
       },
       "136": {
         "0": {
-          "title": "バルト海戦役12",
-          "sort": "バルト かいせん やく12"
+          "title": "第|index|話 バルト海戦役12",
+          "sort": "だい|index|わ ばると かいせん やく 12"
         },
         "1": {
-          "title": "War In The Baltic (12)"
+          "title": "Chapter |index|: War In The Baltic (12)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 12"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 12"
+        }
+      },
+      "136.5": {
+        "0": {
+          "title": "",
+          "sort": ""
+        },
+        "1": {
+          "title": "Side Story: Dogland Saga"
+        },
+        "2": {
+          "title": ""
         }
       },
       "137": {
         "0": {
-          "title": "バルト海戦役13",
-          "sort": "バルト かいせん やく13"
+          "title": "第|index|話 バルト海戦役13",
+          "sort": "だい|index|わ ばると かいせん やく 13"
         },
         "1": {
-          "title": "War In The Baltic (13)"
+          "title": "Chapter |index|: War In The Baltic (13)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 13"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 13"
         }
       },
       "138": {
         "0": {
-          "title": "バルト海戦役14",
-          "sort": "バルト かいせん やく14"
+          "title": "第|index|話 バルト海戦役14",
+          "sort": "だい|index|わ ばると かいせん やく 14"
         },
         "1": {
-          "title": "War In The Baltic (14)"
+          "title": "Chapter |index|: War In The Baltic (14)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 14"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 14"
         }
       },
       "139": {
         "0": {
-          "title": "バルト海戦役15",
-          "sort": "バルト かいせん やく15"
+          "title": "第|index|話 バルト海戦役15",
+          "sort": "だい|index|わ ばると かいせん やく 15"
         },
         "1": {
-          "title": "War In The Baltic (15)"
+          "title": "Chapter |index|: War In The Baltic (15)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 15"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 15"
         }
       },
       "140": {
         "0": {
-          "title": "バルト海戦役16",
-          "sort": "バルト かいせん やく16"
+          "title": "第|index|話 バルト海戦役16",
+          "sort": "だい|index|わ ばると かいせん やく 16"
         },
         "1": {
-          "title": "War In The Baltic (16)"
+          "title": "Chapter |index|: War In The Baltic (16)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 16"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 16"
         }
       },
       "141": {
         "0": {
-          "title": "バルト海戦役17",
-          "sort": "バルト かいせん やく17"
+          "title": "第|index|話 バルト海戦役17",
+          "sort": "だい|index|わ ばると かいせん やく 17"
         },
         "1": {
-          "title": "War In The Baltic (17)"
+          "title": "Chapter |index|: War In The Baltic (17)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 17"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 17"
         }
       },
       "142": {
         "0": {
-          "title": "バルト海戦役18",
-          "sort": "バルト かいせん やく18"
+          "title": "第|index|話 バルト海戦役18",
+          "sort": "だい|index|わ ばると かいせん やく 18"
         },
         "1": {
-          "title": "War In The Baltic (18)"
+          "title": "Chapter |index|: War In The Baltic (18)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 18"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 18"
         }
       },
       "143": {
         "0": {
-          "title": "バルト海戦役19",
-          "sort": "バルト かいせん やく19"
+          "title": "第|index|話 バルト海戦役19",
+          "sort": "だい|index|わ ばると かいせん やく 19"
         },
         "1": {
-          "title": "War In The Baltic (19)"
+          "title": "Chapter |index|: War In The Baltic (19)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 19"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 19"
         }
       },
       "144": {
         "0": {
-          "title": "バルト海戦役20",
-          "sort": "バルト かいせん やく20"
+          "title": "第|index|話 バルト海戦役20",
+          "sort": "だい|index|わ ばると かいせん やく 20"
         },
         "1": {
-          "title": "War In The Baltic (20)"
+          "title": "Chapter |index|: War In The Baltic (20)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 20"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 20"
         }
       },
       "145": {
         "0": {
-          "title": "バルト海戦役21",
-          "sort": "バルト かいせん やく21"
+          "title": "第|index|話 バルト海戦役21",
+          "sort": "だい|index|わ ばると かいせん やく 21"
         },
         "1": {
-          "title": "War In The Baltic (21)"
+          "title": "Chapter |index|: War In The Baltic (21)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 21"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 21"
         }
       },
       "146": {
         "0": {
-          "title": "バルト海戦役22",
-          "sort": "バルト かいせん やく22"
+          "title": "第|index|話 バルト海戦役22",
+          "sort": "だい|index|わ ばると かいせん やく 22"
         },
         "1": {
-          "title": "War In The Baltic (22)"
+          "title": "Chapter |index|: War In The Baltic (22)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 22"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 22"
         }
       },
       "147": {
         "0": {
-          "title": "バルト海戦役23",
-          "sort": "バルト かいせん やく23"
+          "title": "第|index|話 バルト海戦役23",
+          "sort": "だい|index|わ ばると かいせん やく 23"
         },
         "1": {
-          "title": "War In The Baltic (23)"
+          "title": "Chapter |index|: War In The Baltic (23)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 23"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 23"
         }
       },
       "148": {
         "0": {
-          "title": "バルト海戦役24",
-          "sort": "バルト かいせん やく24"
+          "title": "第|index|話 バルト海戦役24",
+          "sort": "だい|index|わ ばると かいせん やく 24"
         },
         "1": {
-          "title": "War In The Baltic (24)"
+          "title": "Chapter |index|: War In The Baltic (24)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 24"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 24"
         }
       },
       "149": {
         "0": {
-          "title": "バルト海戦役25",
-          "sort": "バルト かいせん やく25"
+          "title": "第|index|話 バルト海戦役25",
+          "sort": "だい|index|わ ばると かいせん やく 25"
         },
         "1": {
-          "title": "War In The Baltic (25)"
+          "title": "Chapter |index|: War In The Baltic (25)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 25"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 25"
         }
       },
       "150": {
         "0": {
-          "title": "バルト海戦役26",
-          "sort": "バルト かいせん やく26"
+          "title": "第|index|話 バルト海戦役26",
+          "sort": "だい|index|わ ばると かいせん やく 26"
         },
         "1": {
-          "title": "War In The Baltic (26)"
+          "title": "Chapter |index|: War In The Baltic (26)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 26"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 26"
         }
       },
       "151": {
         "0": {
-          "title": "バルト海戦役27",
-          "sort": "バルト かいせん やく27"
+          "title": "第|index|話 バルト海戦役27",
+          "sort": "だい|index|わ ばると かいせん やく 27"
         },
         "1": {
-          "title": "War In The Baltic (27)"
+          "title": "Chapter |index|: War In The Baltic (27)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 27"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 27"
         }
       },
       "152": {
         "0": {
-          "title": "バルト海戦役28",
-          "sort": "バルト かいせん やく28"
+          "title": "第|index|話 バルト海戦役28",
+          "sort": "だい|index|わ ばると かいせん やく 28"
         },
         "1": {
-          "title": "War In The Baltic (28)"
+          "title": "Chapter |index|: War In The Baltic (28)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 28"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 28"
         }
       },
       "153": {
         "0": {
-          "title": "バルト海戦役29",
-          "sort": "バルト かいせん やく29"
+          "title": "第|index|話 バルト海戦役29",
+          "sort": "だい|index|わ ばると かいせん やく 29"
         },
         "1": {
-          "title": "War In The Baltic (29)"
+          "title": "Chapter |index|: War In The Baltic (29)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 29"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 29"
         }
       },
       "154": {
         "0": {
-          "title": "バルト海戦役30",
-          "sort": "バルト かいせん やく30"
+          "title": "第|index|話 バルト海戦役30",
+          "sort": "だい|index|わ ばると かいせん やく 30"
         },
         "1": {
-          "title": "War In The Baltic (30)"
+          "title": "Chapter |index|: War In The Baltic (30)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 30"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 30"
         }
       },
       "155": {
         "0": {
-          "title": "バルト海戦役31",
-          "sort": "バルト かいせん やく31"
+          "title": "第|index|話 バルト海戦役31",
+          "sort": "だい|index|わ ばると かいせん やく 31"
         },
         "1": {
-          "title": "War In The Baltic (31)"
+          "title": "Chapter |index|: War In The Baltic (31)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 31"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 31"
         }
       },
       "156": {
         "0": {
-          "title": "バルト海戦役32",
-          "sort": "バルト かいせん やく32"
+          "title": "第|index|話 バルト海戦役32",
+          "sort": "だい|index|わ ばると かいせん やく 32"
         },
         "1": {
-          "title": "War In The Baltic (32)"
+          "title": "Chapter |index|: War In The Baltic (32)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 32"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 32"
         }
       },
       "157": {
         "0": {
-          "title": "バルト海戦役33",
-          "sort": "バルト かいせん やく33"
+          "title": "第|index|話 バルト海戦役33",
+          "sort": "だい|index|わ ばると かいせん やく 33"
         },
         "1": {
-          "title": "War In The Baltic (33)"
+          "title": "Chapter |index|: War In The Baltic (33)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 33"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 33"
         }
       },
       "158": {
         "0": {
-          "title": "バルト海戦役33",
-          "sort": "バルト かいせん やく33"
+          "title": "第|index|話 バルト海戦役33",
+          "sort": "だい|index|わ ばると かいせん やく 33"
         },
         "1": {
-          "title": "War In The Baltic (34)"
+          "title": "Chapter |index|: War In The Baltic (34)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 34"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 34"
         }
       },
       "159": {
         "0": {
-          "title": "バルト海戦役35",
-          "sort": "バルト かいせん やく35"
+          "title": "第|index|話 バルト海戦役35",
+          "sort": "だい|index|わ ばると かいせん やく 35"
         },
         "1": {
-          "title": "War In The Baltic (35)"
+          "title": "Chapter |index|: War In The Baltic (35)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 35"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 35"
         }
       },
       "160": {
         "0": {
-          "title": "バルト海戦役36",
-          "sort": "バルト かいせん やく36"
+          "title": "第|index|話 バルト海戦役36",
+          "sort": "だい|index|わ ばると かいせん やく 36"
         },
         "1": {
-          "title": "War In The Baltic (36)"
+          "title": "Chapter |index|: War In The Baltic (36)"
         },
         "2": {
-          "title": "Baruto‐kai Sen’eki 36"
+          "title": "Dai |index| Wa Baruto‐kai Sen’eki 36"
         }
       },
       "161": {
         "0": {
-          "title": "シグルドの決断",
-          "sort": "シグルド の けつだん"
+          "title": "第|index|話 シグルドの決断",
+          "sort": "だい|index|わ しぐるど の けつだん"
         },
         "1": {
-          "title": "Sigurd’s Decision"
+          "title": "Chapter |index|: Sigurd’s Decision"
         },
         "2": {
-          "title": "Shigurudo no Ketsudan"
+          "title": "Dai |index| Wa Shigurudo no Ketsudan"
         }
       },
       "162": {
         "0": {
-          "title": "シグルドの帰還",
-          "sort": "シグルド の きかん"
+          "title": "第|index|話 シグルドの帰還",
+          "sort": "だい|index|わ しぐるど の きかん"
         },
         "1": {
-          "title": "Sigurd’s Return"
+          "title": "Chapter |index|: Sigurd’s Return"
         },
         "2": {
-          "title": "Shigurudo no Kikan"
+          "title": "Dai |index| Wa Shigurudo no Kikan"
         }
       },
       "163": {
         "0": {
-          "title": "シグやんとハトちゃん",
-          "sort": "シグ やんと ハト ちゃん"
+          "title": "第|index|話 シグやんとハトちゃん",
+          "sort": "だい|index|わ しぐ やんと はと ちゃん"
         },
         "1": {
-          "title": "Siggy and Hall"
+          "title": "Chapter |index|: Siggy and Hall"
         },
         "2": {
-          "title": "Shigu‐yan to Hato‐chan"
+          "title": "Dai |index| Wa Shigu‐yan to Hato‐chan"
         }
       },
       "164": {
         "0": {
-          "title": "シグルドの反抗",
-          "sort": "シグルド の はんこう"
+          "title": "第|index|話 シグルドの反抗",
+          "sort": "だい|index|わ しぐるど の はんこう"
         },
         "1": {
-          "title": "Sigurd’s Resistance"
+          "title": "Chapter |index|: Sigurd’s Resistance"
         },
         "2": {
-          "title": "Shigurudo no Hankō"
+          "title": "Dai |index| Wa Shigurudo no Hankō"
         }
       },
       "165": {
         "0": {
-          "title": "シグルドの出立",
-          "sort": "シグルド の しゅったつ"
+          "title": "第|index|話 シグルドの出立",
+          "sort": "だい|index|わ しぐるど の しゅったつ"
         },
         "1": {
-          "title": "Sigurd’s Departure"
+          "title": "Chapter |index|: Sigurd’s Departure"
         },
         "2": {
-          "title": "Shigurudo no Shuttatsu"
+          "title": "Dai |index| Wa Shigurudo no Shuttatsu"
         }
       },
       "166": {
         "0": {
-          "title": "結婚",
-          "sort": "けっこん"
+          "title": "第|index|話 結婚",
+          "sort": "だい|index|わ けっこん"
         },
         "1": {
-          "title": "Marriage"
+          "title": "Chapter |index|: Marriage"
         },
         "2": {
-          "title": "Kekkon"
+          "title": "Dai |index| Wa Kekkon"
+        }
+      },
+      "166.5": {
+        "0": {
+          "title": "番外編 さようならが近いので",
+          "sort": "ばんがいへん さようならが ちかい ので"
+        },
+        "1": {
+          "title": "Bonus Chapter: For Our Farewell is Near"
+        },
+        "2": {
+          "title": "Bangai‐hen Sayōnara ga Chikai no de"
         }
       },
       "167": {
         "0": {
-          "title": "西方航路①",
-          "sort": "せいほう こうろ①"
+          "title": "第|index|話 西方航路①",
+          "sort": "だい|index|わ せいほう こうろ ①"
         },
         "1": {
-          "title": "Voyage to the West (1)"
+          "title": "Chapter |index|: Voyage to the West (1)"
         },
         "2": {
-          "title": "Seihō Kōro (1)"
+          "title": "Dai |index| Wa Seihō Kōro (1)"
         }
       },
       "168": {
         "0": {
-          "title": "西方航路②",
-          "sort": "せいほう こうろ②"
+          "title": "第|index|話 西方航路②",
+          "sort": "だい|index|わ せいほう こうろ ②"
         },
         "1": {
-          "title": "Voyage to the West (2)"
+          "title": "Chapter |index|: Voyage to the West (2)"
         },
         "2": {
-          "title": "Seihō Kōro (2)"
+          "title": "Dai |index| Wa Seihō Kōro (2)"
         }
       },
       "169": {
         "0": {
-          "title": "西方航路③",
-          "sort": "せいほう こうろ③"
+          "title": "第|index|話 西方航路③",
+          "sort": "だい|index|わ せいほう こうろ ③"
         },
         "1": {
-          "title": "Voyage to the West (3)"
+          "title": "Chapter |index|: Voyage to the West (3)"
         },
         "2": {
-          "title": "Seihō Kōro (3)"
+          "title": "Dai |index| Wa Seihō Kōro (3)"
         }
       },
       "170": {
         "0": {
-          "title": "西方航路④",
-          "sort": "せいほう こうろ④"
+          "title": "第|index|話 西方航路④",
+          "sort": "だい|index|わ せいほう こうろ ④"
         },
         "1": {
-          "title": "Voyage to the West (4)"
+          "title": "Chapter |index|: Voyage to the West (4)"
         },
         "2": {
-          "title": "Seihō Kōro (4)"
+          "title": "Dai |index| Wa Seihō Kōro (4)"
         }
       },
       "171": {
         "0": {
-          "title": "西方航路⑤",
-          "sort": "せいほう こうろ⑤"
+          "title": "第|index|話 西方航路⑤",
+          "sort": "だい|index|わ せいほう こうろ ⑤"
         },
         "1": {
-          "title": "Voyage to the West (5)"
+          "title": "Chapter |index|: Voyage to the West (5)"
         },
         "2": {
-          "title": "Seihō Kōro (5)"
+          "title": "Dai |index| Wa Seihō Kōro (5)"
         }
       },
       "172": {
         "0": {
-          "title": "西方航路⑥",
-          "sort": "せいほう こうろ⑥"
+          "title": "第|index|話 西方航路⑥",
+          "sort": "だい|index|わ せいほう こうろ ⑥"
         },
         "1": {
-          "title": "Voyage to the West (6)"
+          "title": "Chapter |index|: Voyage to the West (6)"
         },
         "2": {
-          "title": "Seihō Kōro (6)"
+          "title": "Dai |index| Wa Seihō Kōro (6)"
         }
       },
       "173": {
         "0": {
-          "title": "西方航路⑦",
-          "sort": "せいほう こうろ⑦"
+          "title": "第|index|話 西方航路⑦",
+          "sort": "だい|index|わ せいほう こうろ ⑦"
         },
         "1": {
-          "title": "Voyage to the West (7)"
+          "title": "Chapter |index|: Voyage to the West (7)"
         },
         "2": {
-          "title": "Seihō Kōro (7)"
+          "title": "Dai |index| Wa Seihō Kōro (7)"
         }
       },
       "174": {
         "0": {
-          "title": "西方航路⑧",
-          "sort": "せいほう こうろ⑧"
+          "title": "第|index|話 西方航路⑧",
+          "sort": "だい|index|わ せいほう こうろ ⑧"
         },
         "1": {
-          "title": "Voyage to the West (8)"
+          "title": "Chapter |index|: Voyage to the West (8)"
         },
         "2": {
-          "title": "Seihō Kōro (8)"
+          "title": "Dai |index| Wa Seihō Kōro (8)"
         }
       },
       "175": {
         "0": {
-          "title": "西方航路⑨",
-          "sort": "せいほう こうろ⑨"
+          "title": "第|index|話 西方航路⑨",
+          "sort": "だい|index|わ せいほう こうろ ⑨"
         },
         "1": {
-          "title": "Voyage to the West (9)"
+          "title": "Chapter |index|: Voyage to the West (9)"
         },
         "2": {
-          "title": "Seihō Kōro (9)"
+          "title": "Dai |index| Wa Seihō Kōro (9)"
         }
       },
       "176": {
         "0": {
-          "title": "西方航路⑩",
-          "sort": "せいほう こうろ⑩"
+          "title": "第|index|話 西方航路⑩",
+          "sort": "だい|index|わ せいほう こうろ ⑩"
         },
         "1": {
-          "title": "Voyage to the West (10)"
+          "title": "Chapter |index|: Voyage to the West (10)"
         },
         "2": {
-          "title": "Seihō Kōro (10)"
+          "title": "Dai |index| Wa Seihō Kōro (10)"
         }
       },
       "177": {
         "0": {
-          "title": "西方航路⑪",
-          "sort": "せいほう こうろ⑪"
+          "title": "第|index|話 西方航路⑪",
+          "sort": "だい|index|わ せいほう こうろ ⑪"
         },
         "1": {
-          "title": "Voyage to the West (11)"
+          "title": "Chapter |index|: Voyage to the West (11)"
         },
         "2": {
-          "title": "Seihō Kōro (11)"
+          "title": "Dai |index| Wa Seihō Kōro (11)"
         }
       },
       "178": {
         "0": {
-          "title": "西方航路⑫",
-          "sort": "せいほう こうろ⑫"
+          "title": "第|index|話 西方航路⑫",
+          "sort": "だい|index|わ せいほう こうろ ⑫"
         },
         "1": {
-          "title": "Voyage to the West (12)"
+          "title": "Chapter |index|: Voyage to the West (12)"
         },
         "2": {
-          "title": "Seihō Kōro (12)"
+          "title": "Dai |index| Wa Seihō Kōro (12)"
         }
       },
       "179": {
         "0": {
-          "title": "西方航路⑬",
-          "sort": "せいほう こうろ⑬"
+          "title": "第|index|話 西方航路⑬",
+          "sort": "だい|index|わ せいほう こうろ ⑬"
         },
         "1": {
-          "title": "Voyage to the West (13)"
+          "title": "Chapter |index|: Voyage to the West (13)"
         },
         "2": {
-          "title": "Seihō Kōro (13)"
+          "title": "Dai |index| Wa Seihō Kōro (13)"
         }
       },
       "180": {
         "0": {
-          "title": "西方航路⑭",
-          "sort": "せいほう こうろ⑭"
+          "title": "第|index|話 西方航路⑭",
+          "sort": "だい|index|わ せいほう こうろ ⑭"
         },
         "1": {
-          "title": "Voyage to the West (14)"
+          "title": "Chapter |index|: Voyage to the West (14)"
         },
         "2": {
-          "title": "Seihō Kōro (14)"
+          "title": "Dai |index| Wa Seihō Kōro (14)"
         }
       },
       "181": {
         "0": {
-          "title": "村の名前は",
-          "sort": "むら の なまえ は"
+          "title": "第|index|話 村の名前は",
+          "sort": "だい|index|わ むら の なまえ は"
         },
         "1": {
-          "title": "The Name of the Village is…"
+          "title": "Chapter |index|: The Name of the Village is…"
         },
         "2": {
-          "title": "Mura no Namae wa"
+          "title": "Dai |index| Wa Mura no Namae wa"
         }
       },
       "182": {
         "0": {
-          "title": "いちばん恐ろしい男",
-          "sort": "いちばん おそろ しい おとこ"
+          "title": "第|index|話 いちばん恐ろしい男",
+          "sort": "だい|index|わ いちばん おそろしい おとこ"
         },
         "1": {
-          "title": "The Most Frightening Man"
+          "title": "Chapter |index|: The Most Frightening Man"
         },
         "2": {
-          "title": "Ichiban Osoroshii Otoko"
+          "title": "Dai |index| Wa Ichiban Osoroshii Otoko"
         }
       },
       "183": {
         "0": {
-          "title": "先住民",
-          "sort": "せんじゅうみん"
+          "title": "第|index|話 先住民",
+          "sort": "だい|index|わ せんじゅうみん"
         },
         "1": {
-          "title": "Natives"
+          "title": "Chapter |index|: Natives"
         },
         "2": {
-          "title": "Senjūmin"
+          "title": "Dai |index| Wa Senjūmin"
         }
       },
       "184": {
         "0": {
-          "title": "ウーヌゥ",
-          "sort": "ウーヌゥ"
+          "title": "第|index|話 ウーヌゥ",
+          "sort": "だい|index|わ うーぬぅ"
         },
         "1": {
-          "title": "Lnu"
+          "title": "Chapter |index|: Lnu"
         },
         "2": {
-          "title": "Wunu"
+          "title": "Dai |index| Wa Wunu"
         }
       },
       "185": {
         "0": {
-          "title": "ニスカワジージュの夢",
-          "sort": "ニスカワジージュ の ゆめ"
+          "title": "第|index|話 ニスカワジージュの夢",
+          "sort": "だい|index|わ にすかわじーじゅ の ゆめ"
         },
         "1": {
-          "title": "Niskawaji’j’s Dream"
+          "title": "Chapter |index|: Niskawaji’j’s Dream"
         },
         "2": {
-          "title": "Nisukawajīju no Yume"
+          "title": "Dai |index| Wa Nisukawajīju no Yume"
         }
       },
       "186": {
         "0": {
-          "title": "コ—デリアの懊悩",
-          "sort": "ココ�デリア の おうのう"
+          "title": "第|index|話 コ—デリアの懊悩",
+          "sort": "だい|index|わ こ — でりあ の おうのう"
         },
         "1": {
-          "title": "Cordelia’s Anguish"
+          "title": "Chapter |index|: Cordelia’s Anguish"
         },
         "2": {
-          "title": "Kōderia no Ōnō"
+          "title": "Dai |index| Wa Kōderia no Ōnō"
         }
       },
       "187": {
         "0": {
-          "title": "ニスカワジージュの探検",
-          "sort": "ニスカワジージュ の たんけん"
+          "title": "第|index|話 ニスカワジージュの探検",
+          "sort": "だい|index|わ にすかわじーじゅ の たんけん"
         },
         "1": {
-          "title": "Niskawaji’j’s Expedition"
+          "title": "Chapter |index|: Niskawaji’j’s Expedition"
         },
         "2": {
-          "title": "Nisukawajīju no Tanken"
+          "title": "Dai |index| Wa Nisukawajīju no Tanken"
         }
       },
       "188": {
         "0": {
-          "title": "ヒルドと森の神",
-          "sort": "ヒルド と もり の かみ"
+          "title": "第|index|話 ヒルドと森の神",
+          "sort": "だい|index|わ ひるど と もり の かみ"
         },
         "1": {
-          "title": "Hild and the God of the Forest"
+          "title": "Chapter |index|: Hild and the God of the Forest"
         },
         "2": {
-          "title": "Hirudo to Mori no Kami"
+          "title": "Dai |index| Wa Hirudo to Mori no Kami"
         }
       },
       "189": {
         "0": {
-          "title": "ミスグェゲブージュの秘術",
-          "sort": "ミスグェゲブージュ の ひじゅつ"
+          "title": "第|index|話 ミスグェゲブージュの秘術",
+          "sort": "だい|index|わ みすぐぇげぶーじゅ の ひじゅつ"
         },
         "1": {
-          "title": "Miskwekepu’j’s Ritual"
+          "title": "Chapter |index|: Miskwekepu’j’s Ritual"
         },
         "2": {
-          "title": "Misugwegebūju no Hijutsu"
+          "title": "Dai |index| Wa Misugwegebūju no Hijutsu"
         }
       },
       "190": {
         "0": {
-          "title": "ラグナロク問答",
-          "sort": "ラグナロク もんどう"
+          "title": "第|index|話 ラグナロク問答",
+          "sort": "だい|index|わ らぐなろく もんどう"
         },
         "1": {
-          "title": "The Ragnarok Dialogue"
+          "title": "Chapter |index|: The Ragnarok Dialogue"
         },
         "2": {
-          "title": "Ragunaroku Mondō"
+          "title": "Dai |index| Wa Ragunaroku Mondō"
         }
       },
       "191": {
         "0": {
-          "title": "その日",
-          "sort": "その にち"
+          "title": "第|index|話 その日",
+          "sort": "だい|index|わ その にち"
         },
         "1": {
-          "title": "The Day Arrives"
+          "title": "Chapter |index|: The Day Arrives"
         },
         "2": {
-          "title": "Sono Hi"
+          "title": "Dai |index| Wa Sono Hi"
         }
       },
       "192": {
         "0": {
-          "title": "千年航路①",
-          "sort": "せんねん こうろ①"
+          "title": "第|index|話 千年航路①",
+          "sort": "だい|index|わ せんねん こうろ ①"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 1"
+          "title": "Chapter |index|: Thousand Year Voyage Part 1"
         },
         "2": {
-          "title": "Sennen Kōro (1)"
+          "title": "Dai |index| Wa Sennen Kōro (1)"
         }
       },
       "193": {
         "0": {
-          "title": "千年航路②",
-          "sort": "せんねん こうろ②"
+          "title": "第|index|話 千年航路②",
+          "sort": "だい|index|わ せんねん こうろ ②"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 2"
+          "title": "Chapter |index|: Thousand Year Voyage Part 2"
         },
         "2": {
-          "title": "Sennen Kōro (2)"
+          "title": "Dai |index| Wa Sennen Kōro (2)"
         }
       },
       "194": {
         "0": {
-          "title": "千年航路③",
-          "sort": "せんねん こうろ③"
+          "title": "第|index|話 千年航路③",
+          "sort": "だい|index|わ せんねん こうろ ③"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 3"
+          "title": "Chapter |index|: Thousand Year Voyage Part 3"
         },
         "2": {
-          "title": "Sennen Kōro (3)"
+          "title": "Dai |index| Wa Sennen Kōro (3)"
         }
       },
       "195": {
         "0": {
-          "title": "千年航路④",
-          "sort": "せんねん こうろ④"
+          "title": "第|index|話 千年航路④",
+          "sort": "だい|index|わ せんねん こうろ ④"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 4"
+          "title": "Chapter |index|: Thousand Year Voyage Part 4"
         },
         "2": {
-          "title": "Sennen Kōro (4)"
+          "title": "Dai |index| Wa Sennen Kōro (4)"
         }
       },
       "196": {
         "0": {
-          "title": "千年航路⑤",
-          "sort": "せんねん こうろ⑤"
+          "title": "第|index|話 千年航路⑤",
+          "sort": "だい|index|わ せんねん こうろ ⑤"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 5"
+          "title": "Chapter |index|: Thousand Year Voyage Part 5"
         },
         "2": {
-          "title": "Sennen Kōro (5)"
+          "title": "Dai |index| Wa Sennen Kōro (5)"
         }
       },
       "197": {
         "0": {
-          "title": "千年航路⑥",
-          "sort": "せんねん こうろ⑥"
+          "title": "第|index|話 千年航路⑥",
+          "sort": "だい|index|わ せんねん こうろ ⑥"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 6"
+          "title": "Chapter |index|: Thousand Year Voyage Part 6"
         },
         "2": {
-          "title": "Sennen Kōro (6)"
+          "title": "Dai |index| Wa Sennen Kōro (6)"
         }
       },
       "198": {
         "0": {
-          "title": "千年航路⑦",
-          "sort": "せんねん こうろ⑦"
+          "title": "第|index|話 千年航路⑦",
+          "sort": "だい|index|わ せんねん こうろ ⑦"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 7"
+          "title": "Chapter |index|: Thousand Year Voyage Part 7"
         },
         "2": {
-          "title": "Sennen Kōro (7)"
+          "title": "Dai |index| Wa Sennen Kōro (7)"
         }
       },
       "199": {
         "0": {
-          "title": "千年航路⑧",
-          "sort": "せんねん こうろ⑧"
+          "title": "第|index|話 千年航路⑧",
+          "sort": "だい|index|わ せんねん こうろ ⑧"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 8"
+          "title": "Chapter |index|: Thousand Year Voyage Part 8"
         },
         "2": {
-          "title": "Sennen Kōro (8)"
+          "title": "Dai |index| Wa Sennen Kōro (8)"
         }
       },
       "200": {
         "0": {
-          "title": "千年航路⑨",
-          "sort": "せんねん こうろ⑨"
+          "title": "第|index|話 千年航路⑨",
+          "sort": "だい|index|わ せんねん こうろ ⑨"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 9"
+          "title": "Chapter |index|: Thousand Year Voyage Part 9"
         },
         "2": {
-          "title": "Sennen Kōro (9)"
+          "title": "Dai |index| Wa Sennen Kōro (9)"
         }
       },
       "201": {
         "0": {
-          "title": "千年航路⑩",
-          "sort": "せんねん こうろ⑩"
+          "title": "第|index|話 千年航路⑩",
+          "sort": "だい|index|わ せんねん こうろ ⑩"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 10"
+          "title": "Chapter |index|: Thousand Year Voyage Part 10"
         },
         "2": {
-          "title": "Sennen Kōro (10)"
+          "title": "Dai |index| Wa Sennen Kōro (10)"
         }
       },
       "202": {
         "0": {
-          "title": "千年航路⑪",
-          "sort": "せんねん こうろ⑪"
+          "title": "第|index|話 千年航路⑪",
+          "sort": "だい|index|わ せんねん こうろ ⑪"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 11"
+          "title": "Chapter |index|: Thousand Year Voyage Part 11"
         },
         "2": {
-          "title": "Sennen Kōro (11)"
+          "title": "Dai |index| Wa Sennen Kōro (11)"
         }
       },
       "203": {
         "0": {
-          "title": "千年航路⑫",
-          "sort": "せんねん こうろ⑫"
+          "title": "第|index|話 千年航路⑫",
+          "sort": "だい|index|わ せんねん こうろ ⑫"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 12"
+          "title": "Chapter |index|: Thousand Year Voyage Part 12"
         },
         "2": {
-          "title": "Sennen Kōro (12)"
+          "title": "Dai |index| Wa Sennen Kōro (12)"
         }
       },
       "204": {
         "0": {
-          "title": "千年航路⑬",
-          "sort": "せんねん こうろ⑬"
+          "title": "第|index|話 千年航路⑬",
+          "sort": "だい|index|わ せんねん こうろ ⑬"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 13"
+          "title": "Chapter |index|: Thousand Year Voyage Part 13"
         },
         "2": {
-          "title": "Sennen Kōro (13)"
+          "title": "Dai |index| Wa Sennen Kōro (13)"
         }
       },
       "205": {
         "0": {
-          "title": "千年航路⑭",
-          "sort": "せんねん こうろ⑭"
+          "title": "第|index|話 千年航路⑭",
+          "sort": "だい|index|わ せんねん こうろ ⑭"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 14"
+          "title": "Chapter |index|: Thousand Year Voyage Part 14"
         },
         "2": {
-          "title": "Sennen Kōro (14)"
+          "title": "Dai |index| Wa Sennen Kōro (14)"
         }
       },
       "206": {
         "0": {
-          "title": "千年航路⑮",
-          "sort": "せんねん こうろ⑮"
+          "title": "第|index|話 千年航路⑮",
+          "sort": "だい|index|わ せんねん こうろ ⑮"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 15"
+          "title": "Chapter |index|: Thousand Year Voyage Part 15"
         },
         "2": {
-          "title": "Sennen Kōro (15)"
+          "title": "Dai |index| Wa Sennen Kōro (15)"
         }
       },
       "207": {
         "0": {
-          "title": "千年航路⑯",
-          "sort": "せんねん こうろ⑯"
+          "title": "第|index|話 千年航路⑯",
+          "sort": "だい|index|わ せんねん こうろ ⑯"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 16"
+          "title": "Chapter |index|: Thousand Year Voyage Part 16"
         },
         "2": {
-          "title": "Sennen Kōro (16)"
+          "title": "Dai |index| Wa Sennen Kōro (16)"
         }
       },
       "208": {
         "0": {
-          "title": "千年航路⑰",
-          "sort": "せんねん こうろ⑰"
+          "title": "第|index|話 千年航路⑰",
+          "sort": "だい|index|わ せんねん こうろ ⑰"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 17"
+          "title": "Chapter |index|: Thousand Year Voyage Part 17"
         },
         "2": {
-          "title": "Sennen Kōro (17)"
+          "title": "Dai |index| Wa Sennen Kōro (17)"
         }
       },
       "209": {
         "0": {
-          "title": "千年航路⑱",
-          "sort": "せんねん こうろ⑱"
+          "title": "第|index|話 千年航路⑱",
+          "sort": "だい|index|わ せんねん こうろ ⑱"
         },
         "1": {
-          "title": "Thousand Year Voyage Part 18"
+          "title": "Chapter |index|: Thousand Year Voyage Part 18"
         },
         "2": {
-          "title": "Sennen Kōro (18)"
-        }
-      },
-      "210": {
-        "0": {
-          "title": "千年航路⑲",
-          "sort": "せんねん こうろ⑲"
-        },
-        "1": {
-          "title": "Thousand Year Voyage Part 19"
-        },
-        "2": {
-          "title": "Sennen Kōro (19)"
-        }
-      },
-      "211": {
-        "0": {
-          "title": "千年航路⑳",
-          "sort": "せんねん こうろ⑳"
-        },
-        "1": {
-          "title": "Thousand Year Voyage Part 20"
-        },
-        "2": {
-          "title": "Sennen Kōro (20)"
-        }
-      },
-      "212": {
-        "0": {
-          "title": "千年航路㉑",
-          "sort": "せんねん こうろ㉑"
-        },
-        "1": {
-          "title": "Thousand Year Voyage Part 21"
-        },
-        "2": {
-          "title": "Sennen Kōro (21)"
-        }
-      },
-      "213": {
-        "0": {
-          "title": "千年航路㉒",
-          "sort": "せんねん こうろ㉒"
-        },
-        "1": {
-          "title": "Thousand Year Voyage Part 22"
-        },
-        "2": {
-          "title": "Sennen Kōro (22)"
-        }
-      },
-      "214": {
-        "0": {
-          "title": "千年航路㉓",
-          "sort": "せんねん こうろ㉓"
-        },
-        "1": {
-          "title": "Thousand Year Voyage Part 23"
-        },
-        "2": {
-          "title": "Sennen Koro (23)"
-        }
-      },
-      "215": {
-        "0": {
-          "title": "千年航路㉔",
-          "sort": "せんねん こうろ㉔"
-        },
-        "1": {
-          "title": "Thousand Year Voyage Part 24"
-        },
-        "2": {
-          "title": "Sennen Koro (24)"
-        }
-      },
-      "216": {
-        "0": {
-          "title": "千年航路㉕",
-          "sort": "せんねん こうろ㉕"
-        },
-        "1": {
-          "title": "Thousand Year Voyage Part 25"
-        },
-        "2": {
-          "title": "Sennen Kōro (25)"
-        }
-      },
-      "217": {
-        "0": {
-          "title": "千年航路㉖",
-          "sort": "せんねん こうろ㉖"
-        },
-        "1": {
-          "title": "Thousand Year Voyage Part 26"
-        },
-        "2": {
-          "title": "Sennen Kōro (26)"
-        }
-      },
-      "218": {
-        "0": {
-          "title": "千年航路㉗",
-          "sort": "せんねん こうろ㉗"
-        },
-        "1": {
-          "title": "Thousand Year Voyage Part 27"
-        },
-        "2": {
-          "title": "Sennen Kōro (27)"
-        }
-      },
-      "219": {
-        "0": {
-          "title": "何度でも",
-          "sort": "なんど でも"
-        },
-        "1": {
-          "title": "Again and Again"
-        },
-        "2": {
-          "title": "Nandodemo"
+          "title": "Dai |index| Wa Sennen Kōro (18)"
         }
       }
     },
