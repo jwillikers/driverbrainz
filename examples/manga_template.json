@@ -1,0 +1,94 @@
+{
+  "original": {
+    "titles": [
+      {
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
+        "language": "Japanese"
+      },
+      {
+        "text": "|subtitle|",
+        "sort": "COPY",
+        "language": "English",
+        "primary": true
+      },
+      {
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
+        "language": "Japanese",
+        "primary": false
+      }
+    ],
+    "subtitles": {
+      "1": {
+        "0": {
+          "title": "第|index|話 水炊き",
+          "sort": "だい|index|わ みずたき き"
+        },
+        "1": {
+          "title": "Chapter |index|: Hot Pot"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mizutaki"
+        }
+      }
+    },
+    "language": "Japanese",
+    "disambiguation": "<English Title>, manga, Japanese",
+    "bookbrainz_work": {
+      "type": "manga",
+      "series": [
+        {
+          "id": "",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "writer",
+          "id": ""
+        },
+        {
+          "role": "illustrator",
+          "id": ""
+        }
+      ],
+      "identifiers": {}
+    }
+  },
+  "translation": {
+    "titles": [],
+    "subtitles": {},
+    "disambiguation": "<English Title>, manga, English",
+    "language": "English",
+    "bookbrainz_work": {
+      "series": [
+        {
+          "id": "",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "translator",
+          "id": ""
+        },
+        {
+          "role": "adapter",
+          "id": null
+        },
+        {
+          "role": "letterer",
+          "id": ""
+        }
+      ],
+      "editions": {
+        "1": "",
+        "10": "",
+        "": ""
+      },
+      "identifiers": {}
+    }
+  },
+  "identifiers": {}
+}

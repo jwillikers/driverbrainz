@@ -176,7 +176,7 @@ def musicbrainz_log_in(driver, username):
 
 
 def bookbrainz_set_title(driver, index, title):
-    wait = WebDriverWait(driver, timeout=100)
+    wait = WebDriverWait(driver, timeout=200)
     # todo Make more accurate by relative to label
     name_text_box = driver.find_element(
         by=By.XPATH,
@@ -260,7 +260,7 @@ def bookbrainz_set_title(driver, index, title):
 
 
 def bookbrainz_add_aliases(driver, aliases):
-    wait = WebDriverWait(driver, timeout=100)
+    wait = WebDriverWait(driver, timeout=200)
     add_aliases_button = driver.find_element(
         by=By.XPATH, value="//button[text()='Add aliases…']"
     )
@@ -368,7 +368,7 @@ def bookbrainz_add_aliases(driver, aliases):
 
 
 def bookbrainz_add_identifiers(driver, identifiers):
-    wait = WebDriverWait(driver, timeout=100)
+    wait = WebDriverWait(driver, timeout=200)
     add_identifiers_button = driver.find_element(by=By.CSS_SELECTOR, value=".wrap")
     add_identifiers_button.click()
     wait.until(
@@ -409,7 +409,7 @@ def bookbrainz_add_identifiers(driver, identifiers):
 
 
 def bookbrainz_set_work_type(driver, work_type):
-    wait = WebDriverWait(driver, timeout=100)
+    wait = WebDriverWait(driver, timeout=200)
     work_type_text_box = driver.find_element(By.ID, "react-select-workType-input")
     work_type_text_box.send_keys(work_type)
     # work_type_index = 0
@@ -432,7 +432,7 @@ def bookbrainz_set_work_type(driver, work_type):
 
 
 def bookbrainz_add_series(driver, series, index):
-    wait = WebDriverWait(driver, timeout=100)
+    wait = WebDriverWait(driver, timeout=200)
     add_relationships_button = driver.find_element(
         by=By.XPATH, value="//span[contains(.,' Add relationship')]"
     )
@@ -528,7 +528,7 @@ def bookbrainz_add_relationship(driver, relationship):
         or not relationship["role"]
     ):
         return
-    wait = WebDriverWait(driver, timeout=100)
+    wait = WebDriverWait(driver, timeout=200)
     add_relationships_button = driver.find_element(
         by=By.XPATH, value="//span[contains(.,' Add relationship')]"
     )
@@ -1262,7 +1262,7 @@ def main():
     # profile = driver.profile
     # profile.DEFAULT_PREFERENCES["frozen"]["browser.cache.memory.capacity"] = 2400
 
-    wait = WebDriverWait(driver, timeout=100)
+    wait = WebDriverWait(driver, timeout=200)
 
     try:
         with open(COOKIES_CACHE_FILE) as f:

@@ -1,4 +1,201 @@
 {
+  "range": [
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "21.5",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "28.1",
+    "28.2",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "42.1",
+    "42.2",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "56.5",
+    "57",
+    "58",
+    "59",
+    "60",
+    "61",
+    "62",
+    "63",
+    "64",
+    "65",
+    "66",
+    "67",
+    "68",
+    "69",
+    "70",
+    "71",
+    "71.5",
+    "72",
+    "73",
+    "74",
+    "75",
+    "76",
+    "77",
+    "78",
+    "79",
+    "80",
+    "81",
+    "82",
+    "83",
+    "84",
+    "85",
+    "86",
+    "87",
+    "88",
+    "89",
+    "90",
+    "91",
+    "92",
+    "93",
+    "94",
+    "95",
+    "96",
+    "97",
+    "98",
+    "99",
+    "100",
+    "101",
+    "102",
+    "103",
+    "104",
+    "105",
+    "106",
+    "107",
+    "108",
+    "109",
+    "110",
+    "111",
+    "112",
+    "113",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119",
+    "120",
+    "121",
+    "122",
+    "123",
+    "124",
+    "125",
+    "126",
+    "127",
+    "128",
+    "129",
+    "130",
+    "131",
+    "132",
+    "133",
+    "134",
+    "135",
+    "136",
+    "136.5",
+    "137",
+    "138",
+    "139",
+    "140",
+    "141",
+    "142",
+    "143",
+    "144",
+    "145",
+    "146",
+    "147",
+    "148",
+    "149",
+    "150",
+    "151",
+    "152",
+    "153",
+    "154",
+    "155",
+    "156",
+    "157",
+    "158",
+    "159",
+    "160",
+    "161",
+    "162",
+    "163",
+    "164",
+    "165",
+    "166",
+    "167",
+    "168",
+    "169",
+    "170",
+    "171",
+    "172",
+    "173",
+    "174",
+    "175",
+    "175.1",
+    "175.2",
+    "176",
+    "177",
+    "178",
+    "179",
+    "180",
+    "181",
+    "182",
+    "183",
+    "184",
+    "185",
+    "186",
+    "187",
+    "188",
+    "189",
+    "190",
+    "191",
+    "192",
+    "193",
+    "194",
+    "195",
+    "196",
+    "197",
+    "198",
+    "199",
+    "200",
+    "201"
+  ],
   "original": {
     "titles": [
       {
@@ -238,14 +435,14 @@
       },
       "16.2": {
         "0": {
-          "title": "番外編 ",
-          "sort": "ばんがいへん "
+          "title": "さようならが近いので①",
+          "sort": "さようならが近いので①"
         },
         "1": {
           "title": "Bonus Story: For Our Farewell Is Near, Part 1"
         },
         "2": {
-          "title": "Bangai‐hen "
+          "title": "Sayōnara ga Chikai no de 1"
         }
       },
       "17": {
@@ -310,14 +507,14 @@
       },
       "21.5": {
         "0": {
-          "title": "番外編 Ylva at Work",
-          "sort": "ばんがいへん Ylva at Work"
+          "title": "特別編　はたらくユルヴァちゃん",
+          "sort": "ばんがいへん はたらくユルヴァちゃん"
         },
         "1": {
           "title": "Bonus Material: Ylva at Work"
         },
         "2": {
-          "title": "Bangai‐hen Ylva at Work"
+          "title": "Bangai‐hen Hataraku Ylva‐chan"
         }
       },
       "22": {
@@ -418,14 +615,14 @@
       },
       "28.2": {
         "0": {
-          "title": "番外編 ",
-          "sort": "ばんがいへん "
+          "title": "さようならが近いので②",
+          "sort": "さようならが近いので②"
         },
         "1": {
           "title": "Bonus Story: For Our Farewell Is Near, Part 2"
         },
         "2": {
-          "title": "Bangai‐hen "
+          "title": "Sayōnara ga Chikai no de 2"
         }
       },
       "29": {
@@ -610,14 +807,14 @@
       },
       "42.2": {
         "0": {
-          "title": "番外編 ",
-          "sort": "ばんがいへん "
+          "title": "さようならが近いので③",
+          "sort": "さようならが近いので③"
         },
         "1": {
           "title": "Bonus Story: For Our Farewell Is Near, Part 3"
         },
         "2": {
-          "title": "Bangai‐hen "
+          "title": "Sayōnara ga Chikai no de 3"
         }
       },
       "43": {
@@ -790,14 +987,14 @@
       },
       "56.5": {
         "0": {
-          "title": "",
-          "sort": ""
+          "title": "さようならが近いので④",
+          "sort": "さようならが近いので④"
         },
         "1": {
           "title": "Bonus Story: For Our Farewell Is Near, Part 4"
         },
         "2": {
-          "title": ""
+          "title": "Sayōnara ga Chikai no de 4"
         }
       },
       "57": {
@@ -982,14 +1179,14 @@
       },
       "71.5": {
         "0": {
-          "title": "",
-          "sort": ""
+          "title": "さようならが近いので⑤",
+          "sort": "さようならが近いので⑤"
         },
         "1": {
           "title": "Bonus Story: For Our Farewell Is Near, Part 5"
         },
         "2": {
-          "title": ""
+          "title": "Sayōnara ga Chikai no de 5"
         }
       },
       "72": {
@@ -1774,14 +1971,14 @@
       },
       "136.5": {
         "0": {
-          "title": "",
-          "sort": ""
+          "title": "番外編　VINLAND SAGA外伝　犬",
+          "sort": "ばんがいへん　VINLAND SAGAがいでん　いぬ"
         },
         "1": {
           "title": "Side Story: Dogland Saga"
         },
         "2": {
-          "title": ""
+          "title": "Bangai‐hen VINLAND SAGA Gaiden Inu"
         }
       },
       "137": {
@@ -2144,18 +2341,6 @@
           "title": "Dai |index| Wa Kekkon"
         }
       },
-      "166.5": {
-        "0": {
-          "title": "番外編 さようならが近いので",
-          "sort": "ばんがいへん さようならが ちかい ので"
-        },
-        "1": {
-          "title": "Bonus Chapter: For Our Farewell is Near"
-        },
-        "2": {
-          "title": "Bangai‐hen Sayōnara ga Chikai no de"
-        }
-      },
       "167": {
         "0": {
           "title": "第|index|話 西方航路①",
@@ -2262,6 +2447,30 @@
         },
         "2": {
           "title": "Dai |index| Wa Seihō Kōro (9)"
+        }
+      },
+      "175.1": {
+        "0": {
+          "title": "番外編 Valhalla Report",
+          "sort": "ばんがいへん Valhalla Report"
+        },
+        "1": {
+          "title": "Bonus Manga: Valhalla Report"
+        },
+        "2": {
+          "title": "Bangai‐hen Valhalla Report"
+        }
+      },
+      "175.2": {
+        "0": {
+          "title": "番外編 Assassin’s Creed Valhalla Collaboration",
+          "sort": "ばんがいへん Assassin’s Creed Valhalla Collaboration"
+        },
+        "1": {
+          "title": "Bonus Manga: Assassin’s Creed Valhalla Collaboration"
+        },
+        "2": {
+          "title": "Bangai‐hen Assassin’s Creed Valhalla Collaboration"
         }
       },
       "176": {
@@ -2462,7 +2671,7 @@
           "sort": "だい|index|わ せんねん こうろ ①"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 1"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 1"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (1)"
@@ -2474,7 +2683,7 @@
           "sort": "だい|index|わ せんねん こうろ ②"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 2"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 2"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (2)"
@@ -2486,7 +2695,7 @@
           "sort": "だい|index|わ せんねん こうろ ③"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 3"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 3"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (3)"
@@ -2498,7 +2707,7 @@
           "sort": "だい|index|わ せんねん こうろ ④"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 4"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 4"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (4)"
@@ -2510,7 +2719,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑤"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 5"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 5"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (5)"
@@ -2522,7 +2731,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑥"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 6"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 6"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (6)"
@@ -2534,7 +2743,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑦"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 7"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 7"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (7)"
@@ -2546,7 +2755,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑧"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 8"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 8"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (8)"
@@ -2558,7 +2767,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑨"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 9"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 9"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (9)"
@@ -2570,7 +2779,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑩"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 10"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 10"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (10)"
@@ -2582,7 +2791,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑪"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 11"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 11"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (11)"
@@ -2594,7 +2803,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑫"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 12"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 12"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (12)"
@@ -2606,7 +2815,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑬"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 13"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 13"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (13)"
@@ -2618,7 +2827,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑭"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 14"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 14"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (14)"
@@ -2630,7 +2839,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑮"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 15"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 15"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (15)"
@@ -2642,7 +2851,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑯"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 16"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 16"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (16)"
@@ -2654,7 +2863,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑰"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 17"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 17"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (17)"
@@ -2666,7 +2875,7 @@
           "sort": "だい|index|わ せんねん こうろ ⑱"
         },
         "1": {
-          "title": "Chapter |index|: Thousand Year Voyage Part 18"
+          "title": "Chapter |index|: Thousand Year Voyage, Part 18"
         },
         "2": {
           "title": "Dai |index| Wa Sennen Kōro (18)"
@@ -2679,7 +2888,7 @@
       "type": "manga",
       "series": [
         {
-          "id": "",
+          "id": "16288ba8-7df9-434a-9f4b-f70ccd0b5f03",
           "offset": 0
         }
       ],
@@ -2704,7 +2913,7 @@
     "bookbrainz_work": {
       "series": [
         {
-          "id": "",
+          "id": "995fe86e-e6ed-4587-afd4-d4300f217138",
           "offset": 0
         }
       ],
@@ -2725,9 +2934,18 @@
       "editions": {
         "1": "de9392c4-dec3-48ad-8614-7afb2ff37599",
         "17": "c135e2c6-e810-4de2-8963-febf5219a3bn",
-        "29": "",
-        "43": "",
-        "": ""
+        "29": "f0126b2e-a7bf-4eff-8c12-4b1af7844a97",
+        "43": "223e2e07-2473-43f6-a4ce-2242f732d142",
+        "57": "0961c00d-88e1-447e-9d2c-b4af9371c415",
+        "72": "660aa8a1-1673-4272-808b-5c8aa85fd4f3",
+        "87": "2aa3aabb-847f-4707-8099-f55f3cd179d7",
+        "101": "1984db4a-3091-4351-b06c-42a1872e0292",
+        "116": "718da8fd-8423-4ee1-ac2f-c9eb98d30021",
+        "130": "e57ccf58-3d7c-4fcc-8abc-702a72d7b28d",
+        "145": "65a7de4d-8f92-4121-b9c1-15e2f7775697",
+        "161": "7fb494ee-9880-43ae-a384-1bcce7e81df3",
+        "176": "d758640f-b27d-44ce-bfd1-b63cc2c7b2da",
+        "192": "6172093f-7e77-4f6b-b30b-a9e470e50561"
       },
       "identifiers": {}
     }

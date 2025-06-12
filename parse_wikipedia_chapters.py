@@ -83,6 +83,16 @@ def remove_extra_spaces_hiragana(input: str) -> str:
         "]",
         "{",
         "}",
+        "　",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
     ]
     for special_character in special_characters:
         if f" {special_character} " in input:
@@ -120,9 +130,9 @@ def fetch_wikipedia_section(page_title: str, section_number: int) -> str:
     return data["parse"]["wikitext"]["*"]
 
 
-def filter_templates_by_normal_name(templates: list, normal_name: str):
+def filter_templates_by_normal_name(templates: list, normal_names: list):
     for template in templates:
-        if template.normal_name() == normal_name:
+        if template.normal_name() in normal_names:
             yield template
 
 
@@ -137,7 +147,7 @@ def parse_wikipedia_page(wikitext: str) -> list:
     # parsed = wtp.parse(wikitext, "utf-8")
     parsed = wtp.parse(wikitext)
     graphic_novel_lists = filter_templates_by_normal_name(
-        parsed.templates, "Graphic novel list"
+        parsed.templates, ["Graphic novel list", "Numbered list"]
     )
     chapters = []
     for graphic_novel_list in graphic_novel_lists:
@@ -236,6 +246,68 @@ def parse_wikipedia_page(wikitext: str) -> list:
                         chapter["hepburn"] = use_unicode_punctuation(
                             template.arguments[2].value
                         )
+                chapters.append(chapter)
+    if len(chapters) == 0:
+        numbered_lists = filter_templates_by_normal_name(
+            parsed.templates, ["Numbered list"]
+        )
+        for numbered_list in numbered_lists:
+            start_index = None
+            if numbered_list.get_arg("start"):
+                value = numbered_list.get_arg("start").value.strip()
+                if value.isdecimal():
+                    value = float(value)
+                    if value.is_integer():
+                        value = int(value)
+                    start_index = value
+            nihongo_templates = filter_templates_by_normal_name(
+                numbered_list.templates, ["Nihongo", "nihongo"]
+            )
+            for template_index, template in enumerate(nihongo_templates):
+                chapter = {}
+                # prefix_part = item.split(template.string, 1)[0].strip().strip(".")
+                chapter_type = "Chapter"
+                index = None
+                if start_index:
+                    index = start_index + template_index
+                # if prefix_part.isdecimal():
+                #     index = float(prefix_part)
+                #     chapter_type = "Chapter"
+                #     if index.is_integer():
+                #         index = int(index)
+                # elif prefix_part:
+                #     chapter_type = prefix_part
+                # else:
+                #     # Assume it is a regular chapter
+                #     chapter_type = "Chapter"
+                english = template.arguments[0].value
+                if english.startswith('"') and english.endswith('"'):
+                    english = english.strip('"')
+                english = use_unicode_punctuation(english)
+                if len(template.arguments) == 1:
+                    chapter["type"] = chapter_type
+                    chapter["index"] = index
+                    chapter["english"] = english
+                    chapter["kanji"] = english
+                    chapter["hepburn"] = english
+                elif len(template.arguments) == 2:
+                    chapter["type"] = chapter_type
+                    chapter["index"] = index
+                    chapter["english"] = english
+                    chapter["kanji"] = use_unicode_punctuation(
+                        template.arguments[1].value
+                    )
+                    chapter["hepburn"] = english
+                else:
+                    chapter["type"] = chapter_type
+                    chapter["index"] = index
+                    chapter["english"] = english
+                    chapter["kanji"] = use_unicode_punctuation(
+                        template.arguments[1].value
+                    )
+                    chapter["hepburn"] = use_unicode_punctuation(
+                        template.arguments[2].value
+                    )
                 chapters.append(chapter)
     return chapters
 
