@@ -1,0 +1,128 @@
+{
+  "original": {
+    "titles": [
+      {
+        "text": "第|index|話",
+        "sort": "だい|index|わ",
+        "language": "Japanese"
+      },
+      {
+        "text": "Chapter |index|",
+        "sort": "COPY",
+        "language": "English",
+        "primary": true
+      },
+      {
+        "text": "Dai |index| Wa",
+        "sort": "COPY",
+        "language": "Japanese",
+        "primary": false
+      }
+    ],
+    "subtitles": {
+      "9.1": {
+        "0": {
+          "title": "特別編①",
+          "sort": "ばんがいへん①"
+        },
+        "1": {
+          "title": "Bonus Manga ①"
+        },
+        "2": {
+          "title": "Bangai‐hen 1"
+        }
+      },
+      "9.2": {
+        "0": {
+          "title": "特別編②",
+          "sort": "ばんがいへん②"
+        },
+        "1": {
+          "title": "Bonus Manga ②"
+        },
+        "2": {
+          "title": "Bangai‐hen 2"
+        }
+      },
+      "9.3": {
+        "0": {
+          "title": "特別編③",
+          "sort": "ばんがいへん③"
+        },
+        "1": {
+          "title": "Bonus Manga ③"
+        },
+        "2": {
+          "title": "Bangai‐hen 3"
+        }
+      }
+    },
+    "language": "Japanese",
+    "disambiguation": "The Way of the Househusband, manga, Japanese",
+    "bookbrainz_work": {
+      "type": "manga",
+      "series": [
+        {
+          "id": "d01d0cb4-17d6-4a3d-8811-e429d77ff631",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "writer",
+          "id": "7645b8f0-eb74-4a31-90eb-2ad013e67a7c"
+        },
+        {
+          "role": "illustrator",
+          "id": "7645b8f0-eb74-4a31-90eb-2ad013e67a7c"
+        }
+      ],
+      "identifiers": {}
+    }
+  },
+  "translation": {
+    "titles": [],
+    "subtitles": {},
+    "disambiguation": "The Way of the Househusband, manga, English",
+    "language": "English",
+    "bookbrainz_work": {
+      "series": [
+        {
+          "id": "72f71d9f-6f6b-4af0-8833-74dc9450f9a9",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "translator",
+          "id": "506ca671-8492-43e8-9a05-3f7183e3035c"
+        },
+        {
+          "role": "adapter",
+          "id": "68cc3e13-d796-44db-bdcf-61251ce92aff"
+        },
+        {
+          "role": "letterer",
+          "id": "b62d3947-6166-4f4b-b1d6-7a91fdb6e726"
+        }
+      ],
+      "editions": {
+        "1": "9066716c-b0e7-4077-a944-f3b03c2b09e8",
+        "10": "d4684ec7-4192-4134-b6fc-e4915c9212c1",
+        "19": "855e4321-e3ea-467f-9021-60141ec2b54a",
+        "28": "fe457946-a02e-43af-8e73-a2a8b586969a",
+        "37": "a5b1beb8-23d3-4c31-9d72-6f73b7f543dc",
+        "46": "d1bc3121-587c-4264-b36f-eb8879ce37eb",
+        "55": "d1bc3121-587c-4264-b36f-eb8879ce37eb",
+        "64": "224020cd-1cda-4e7e-9fc5-9f14a6177743",
+        "73": "8008190e-08ff-4d11-9aa7-2f9b9a9797a4",
+        "82": "fb52e72c-6978-4aea-8916-d9877f88e851",
+        "91": "d0b9b061-04f7-44fa-9d1e-d3d61ca209d9",
+        "100": "ff6e181a-8d74-4a36-a4fa-deb4a8bed752",
+        "109": "9f3b696e-8766-45dc-8c65-20cb420457ea"
+      },
+      "identifiers": {}
+    }
+  },
+  "identifiers": {}
+}

@@ -1,0 +1,2114 @@
+{
+  "range": [
+    "126",
+    "127",
+    "128",
+    "129",
+    "130",
+    "131",
+    "132",
+    "133",
+    "134",
+    "135",
+    "136",
+    "137",
+    "138",
+    "139",
+    "140",
+    "141",
+    "142",
+    "143",
+    "144",
+    "145",
+    "146",
+    "147",
+    "148",
+    "149",
+    "150",
+    "151",
+    "152",
+    "153",
+    "154",
+    "155",
+    "156",
+    "157",
+    "158",
+    "159",
+    "160",
+    "161",
+    "162",
+    "163",
+    "164",
+    "165"
+  ],
+  "original": {
+    "titles": [
+      {
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
+        "language": "Japanese"
+      },
+      {
+        "text": "|subtitle|",
+        "sort": "COPY",
+        "language": "English",
+        "primary": true
+      },
+      {
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
+        "language": "Japanese",
+        "primary": false
+      }
+    ],
+    "subtitles": {
+      "1": {
+        "0": {
+          "title": "第|index|話 それって恋のはじまりじゃんよ",
+          "sort": "だい|index|わ それって こい のはじまりじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: That’s How Love Starts, Ya Know!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Sorette Koi no Hajimari jan yo"
+        }
+      },
+      "2": {
+        "0": {
+          "title": "第|index|話 それって宇宙人じゃね",
+          "sort": "だい|index|わ それって うちゅうじん じゃね"
+        },
+        "1": {
+          "title": "Chapter |index|: That’s a Space Alien, Ain’t It?!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Sorette Uchūbito ja ne"
+        }
+      },
+      "3": {
+        "0": {
+          "title": "第|index|話 ババアとババアが激突じゃんか",
+          "sort": "だい|index|わ ばばあ と ばばあ が げきとつ じゃんか"
+        },
+        "1": {
+          "title": "Chapter |index|: It’s a Granny Vs. Granny Clash!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Babā to Babā ga Gekitotsu jan ka"
+        }
+      },
+      "4": {
+        "0": {
+          "title": "第|index|話 トイレにいこう",
+          "sort": "だい|index|わ といれ にいこう"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Go to the John"
+        },
+        "2": {
+          "title": "Dai |index| Wa Toire ni Ikō"
+        }
+      },
+      "5": {
+        "0": {
+          "title": "第|index|話 ターボババアをぶっ飛ばそう",
+          "sort": "だい|index|わ たーぼばばあ をぶっ とば そう"
+        },
+        "1": {
+          "title": "Chapter |index|: Kicking Turbo Granny’s Ass"
+        },
+        "2": {
+          "title": "Dai |index| Wa Tābo Babā o Buttobasō"
+        }
+      },
+      "6": {
+        "0": {
+          "title": "第|index|話 カニ食べたくね",
+          "sort": "だい|index|わ かに たべた くね"
+        },
+        "1": {
+          "title": "Chapter |index|: A Craving for Crab"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kani Tabetaku ne"
+        }
+      },
+      "7": {
+        "0": {
+          "title": "第|index|話 100キロババアだろ",
+          "sort": "だい|index|わ 100 きろばばあ だろ"
+        },
+        "1": {
+          "title": "Chapter |index|: Hundred‐KMPH Granny"
+        },
+        "2": {
+          "title": "Dai |index| Wa Hyaku Kiro Babā Daro"
+        }
+      },
+      "8": {
+        "0": {
+          "title": "第|index|話 カニ食べよう",
+          "sort": "だい|index|わ かに たべ よう"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Eat Crab"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kani Tabeyō"
+        }
+      },
+      "9": {
+        "0": {
+          "title": "第|index|話 会えないじゃん",
+          "sort": "だい|index|わ あえ ないじゃん"
+        },
+        "1": {
+          "title": "Chapter |index|: Missing Each Other"
+        },
+        "2": {
+          "title": "Dai |index| Wa Aenai jan"
+        }
+      },
+      "10": {
+        "0": {
+          "title": "第|index|話 タマはどこじゃんよ",
+          "sort": "だい|index|わ たま はどこじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: Like, Where Are Your Balls?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Tama wa Doko jan yo"
+        }
+      },
+      "11": {
+        "0": {
+          "title": "第|index|話 腐ったみかんじゃね",
+          "sort": "だい|index|わ くさっ たみかんじゃね"
+        },
+        "1": {
+          "title": "Chapter |index|: You’re a Rotten Tangerine, Ain’t Ya?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kusatta Mikan ja ne"
+        }
+      },
+      "12": {
+        "0": {
+          "title": "第|index|話 かわいいって気付いたっぽい",
+          "sort": "だい|index|わ かわいいって きづい たっぽい"
+        },
+        "1": {
+          "title": "Chapter |index|: Seems He Finally Realized She’s Cute"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kawaii tte Kidzuita ppoi"
+        }
+      },
+      "13": {
+        "0": {
+          "title": "第|index|話 ヤベー女がきた",
+          "sort": "だい|index|わ やべー おんな がきた"
+        },
+        "1": {
+          "title": "Chapter |index|: A Dangerous Woman Arrives"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yabē Onna ga Kita"
+        }
+      },
+      "14": {
+        "0": {
+          "title": "第|index|話 アクロバティックサラサラって長くね",
+          "sort": "だい|index|わ あくろばてぃっくさらさら って ながく ね"
+        },
+        "1": {
+          "title": "Chapter |index|: {{“ ’}}Acrobatic Silky’ Is Kinda Long”"
+        },
+        "2": {
+          "title": "Dai |index| Wa Akurobatikku Sarasara tte Nagaku ne"
+        }
+      },
+      "15": {
+        "0": {
+          "title": "第|index|話 アクサラって呼ぼう",
+          "sort": "だい|index|わ あくさら って よぼ う"
+        },
+        "1": {
+          "title": "Chapter |index|: “Let’s Just Call Her ’Acro‐Silky{{’ ”}}"
+        },
+        "2": {
+          "title": "Dai |index| Wa Akusara tte Yobō"
+        }
+      },
+      "16": {
+        "0": {
+          "title": "第|index|話 アクさら",
+          "sort": "だい|index|わ あく さら"
+        },
+        "1": {
+          "title": "Chapter |index|: Acro‐Silky"
+        },
+        "2": {
+          "title": "Dai |index| Wa Akusara"
+        }
+      },
+      "17": {
+        "0": {
+          "title": "第|index|話 優しい世界へ",
+          "sort": "だい|index|わ やさしい せかい へ"
+        },
+        "1": {
+          "title": "Chapter |index|: To a Kinder World"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yasashii Sekai e"
+        }
+      },
+      "18": {
+        "0": {
+          "title": "第|index|話 そうめんでも食べよ",
+          "sort": "だい|index|わ そうめんでも たべ よ"
+        },
+        "1": {
+          "title": "Chapter |index|: Eat Some Somen Noodles or Something"
+        },
+        "2": {
+          "title": "Dai |index| Wa Sōmen demo Tabeyo"
+        }
+      },
+      "19": {
+        "0": {
+          "title": "第|index|話 なんかモヤモヤするじゃんよ",
+          "sort": "だい|index|わ なんか もやもや するじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: I’ve Got This Funny Feeling"
+        },
+        "2": {
+          "title": "Dai |index| Wa Nanka Moyamoya Suru jan yo"
+        }
+      },
+      "20": {
+        "0": {
+          "title": "第|index|話 また来たじゃんよ",
+          "sort": "だい|index|わ また きた じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: They’re, Like, Back Again"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mata Kita jan yo"
+        }
+      },
+      "21": {
+        "0": {
+          "title": "第|index|話 服が着たい",
+          "sort": "だい|index|わ ふく が きた い"
+        },
+        "1": {
+          "title": "Chapter |index|: Gotta Put On Some Clothes!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Fuku ga Kitai"
+        }
+      },
+      "22": {
+        "0": {
+          "title": "第|index|話 モモちゃんまだモヤモヤしてます",
+          "sort": "だい|index|わ もも ちゃんまだ もやもや してます"
+        },
+        "1": {
+          "title": "Chapter |index|: Momo Still Has Some Pent‐Up Feelings"
+        },
+        "2": {
+          "title": "Dai |index| Wa Momo‐chan Mada Moyamoya Shitemasu"
+        }
+      },
+      "23": {
+        "0": {
+          "title": "第|index|話 気にしてるじゃんか",
+          "sort": "だい|index|わ きに してるじゃんか"
+        },
+        "1": {
+          "title": "Chapter |index|: You’re Bothered, Aren’t You?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ki ni Shiteru jan ka"
+        }
+      },
+      "24": {
+        "0": {
+          "title": "第|index|話 合体！セルポドーバーデーモンネッシー！",
+          "sort": "だい|index|わ がったい！せるぽどーばーでーもんねっしー ！"
+        },
+        "1": {
+          "title": "Chapter |index|: Merge! Serpo Dover Demon Nessie!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gattai! Serupo Dōbā Dēmon Nesshī!"
+        }
+      },
+      "25": {
+        "0": {
+          "title": "第|index|話 ドキドキじゃんよ",
+          "sort": "だい|index|わ どきどき じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: It Makes Your Heart Race, Don’t It?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dokidoki jan yo"
+        }
+      },
+      "26": {
+        "0": {
+          "title": "第|index|話 河童を拾いました",
+          "sort": "だい|index|わ かっぱ を ひろい ました"
+        },
+        "1": {
+          "title": "Chapter |index|: We Picked Up a Kappa Monster"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kappa o Hiroimashita"
+        }
+      },
+      "27": {
+        "0": {
+          "title": "第|index|話 キャトルミューティレーションを君は見たか",
+          "sort": "だい|index|わ きゃとるみゅーてぃれーしょん を くん は みた か"
+        },
+        "1": {
+          "title": "Chapter |index|: Have You Ever Seen a Cattle Mutilation?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kyatoru Myūtirēshon o Kimi wa Mita ka"
+        }
+      },
+      "28": {
+        "0": {
+          "title": "第|index|話 ラヴ波乱の予感じゃんよ",
+          "sort": "だい|index|わ らゔ はらん の よかん じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: That’s a Premonition About the Turmoils of Love"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ravu Haran no Yokan jan yo"
+        }
+      },
+      "29": {
+        "0": {
+          "title": "第|index|話 初恋の人",
+          "sort": "だい|index|わ はつこい の にん"
+        },
+        "1": {
+          "title": "Chapter |index|: First Love"
+        },
+        "2": {
+          "title": "Dai |index| Wa Hatsukoi no Hito"
+        }
+      },
+      "30": {
+        "0": {
+          "title": "第|index|話 あきらめるなよ！",
+          "sort": "だい|index|わ あきらめるなよ！"
+        },
+        "1": {
+          "title": "Chapter |index|: Don’t Give Up!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Akirameru na yo!"
+        }
+      },
+      "31": {
+        "0": {
+          "title": "第|index|話 人体模型の生活",
+          "sort": "だい|index|わ じんたいもけい の せいかつ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Life of an Anatomical Model"
+        },
+        "2": {
+          "title": "Dai |index| Wa Jintai Mokei no Seikatsu"
+        }
+      },
+      "32": {
+        "0": {
+          "title": "第|index|話 呪いの家へレッツゴー",
+          "sort": "だい|index|わ のろい の いえ へ れっつごー"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Go to the Cursed House"
+        },
+        "2": {
+          "title": "Dai |index| Wa Noroi no Ie e Rettsu Gō"
+        }
+      },
+      "33": {
+        "0": {
+          "title": "第|index|話 どっちが好きか決めようや",
+          "sort": "だい|index|わ どっちが すき か きめ ようや"
+        },
+        "1": {
+          "title": "Chapter |index|: Better Decide Which One’s Into Her"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dotchi ga Suki ka Kimeyō ya"
+        }
+      },
+      "34": {
+        "0": {
+          "title": "第|index|話 鬼頭家が来る",
+          "sort": "だい|index|わ きとう いえ が くる"
+        },
+        "1": {
+          "title": "Chapter |index|: The Kito Family Is Coming"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kitō‐ke ga Kuru"
+        }
+      },
+      "35": {
+        "0": {
+          "title": "第|index|話 ツチノコはどこ",
+          "sort": "だい|index|わ つちのこ はどこ"
+        },
+        "1": {
+          "title": "Chapter |index|: Where’s the Tsuchinoko Monster?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Tsuchinoko wa Doko"
+        }
+      },
+      "36": {
+        "0": {
+          "title": "第|index|話 鬼頭家のババア",
+          "sort": "だい|index|わ きとう いえ の ばばあ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Kito Family’s Old Lady"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kitō‐ke no Babā"
+        }
+      },
+      "37": {
+        "0": {
+          "title": "第|index|話 大蛇伝説ってこれじゃんよ",
+          "sort": "だい|index|わ おろち でんせつ ってこれじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: Like, This Is the Legend of the Giant Snake"
+        },
+        "2": {
+          "title": "Dai |index| Wa Orochi Densetsu tte Kore jan yo"
+        }
+      },
+      "38": {
+        "0": {
+          "title": "第|index|話 モンゴリアンデスワームはやばい",
+          "sort": "だい|index|わ もんごりあんですわーむ はやばい"
+        },
+        "1": {
+          "title": "Chapter |index|: Mongolian Death Worms Are Deadly"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mongorian Desu Wāmu wa Yabai"
+        }
+      },
+      "39": {
+        "0": {
+          "title": "第|index|話 邪視",
+          "sort": "だい|index|わ じゃし"
+        },
+        "1": {
+          "title": "Chapter |index|: The Evil Eye"
+        },
+        "2": {
+          "title": "Dai |index| Wa Jashi"
+        }
+      },
+      "40": {
+        "0": {
+          "title": "第|index|話 契約",
+          "sort": "だい|index|わ けいやく"
+        },
+        "1": {
+          "title": "Chapter |index|: Contract"
+        },
+        "2": {
+          "title": "Dai |index| Wa Keiyaku"
+        }
+      },
+      "41": {
+        "0": {
+          "title": "第|index|話 天才ジジ",
+          "sort": "だい|index|わ てんさい じじ"
+        },
+        "1": {
+          "title": "Chapter |index|: Jiji the Prodigy"
+        },
+        "2": {
+          "title": "Dai |index| Wa Tensai Jiji"
+        }
+      },
+      "42": {
+        "0": {
+          "title": "第|index|話 脱出！多段式！",
+          "sort": "だい|index|わ だっしゅつ！ただん しき ！"
+        },
+        "1": {
+          "title": "Chapter |index|: Escape! Multistage!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dasshutsu! Tadanshiki!"
+        }
+      },
+      "43": {
+        "0": {
+          "title": "第|index|話 ゆるさねえぜ",
+          "sort": "だい|index|わ ゆるさねえぜ"
+        },
+        "1": {
+          "title": "Chapter |index|: You Won’t Get Away with This!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yurusa nē ze"
+        }
+      },
+      "44": {
+        "0": {
+          "title": "第|index|話 目障りな家じゃんよ",
+          "sort": "だい|index|わ めざわり な いえ じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: This House Is a Damn Eyesore"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mezawari na Ie jan yo"
+        }
+      },
+      "45": {
+        "0": {
+          "title": "第|index|話 ポンプです",
+          "sort": "だい|index|わ ぽんぷ です"
+        },
+        "1": {
+          "title": "Chapter |index|: It’s a Pump"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ponpu Desu"
+        }
+      },
+      "46": {
+        "0": {
+          "title": "第|index|話 消火しよう",
+          "sort": "だい|index|わ しょうか しよう"
+        },
+        "1": {
+          "title": "Chapter |index|: Put That Fire Out"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shōka Shiyō"
+        }
+      },
+      "47": {
+        "0": {
+          "title": "第|index|話 やば過ぎじゃんよ",
+          "sort": "だい|index|わ やば すぎ じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: That’s, Like, Way Deadly"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yabasugi jan yo"
+        }
+      },
+      "48": {
+        "0": {
+          "title": "第|index|話 UFOすげえ",
+          "sort": "だい|index|わ UFO すげえ"
+        },
+        "1": {
+          "title": "Chapter |index|: That UFO Is Awesome"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yūfō Sugē"
+        }
+      },
+      "49": {
+        "0": {
+          "title": "第|index|話 封印じゃんよ",
+          "sort": "だい|index|わ ふういん じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: He’s, Like, Sealed"
+        },
+        "2": {
+          "title": "Dai |index| Wa Fūin jan yo"
+        }
+      },
+      "50": {
+        "0": {
+          "title": "第|index|話 みんなでお湯を持とう",
+          "sort": "だい|index|わ みんなでお ゆ を もと う"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s All Carry Around Hot Water"
+        },
+        "2": {
+          "title": "Dai |index| Wa Minna de Oyu o Motō"
+        }
+      },
+      "51": {
+        "0": {
+          "title": "第|index|話 みんなでお泊まりじゃんよ",
+          "sort": "だい|index|わ みんなでお とまり じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: We Can All Stay There Together!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Minna de Otomari jan yo"
+        }
+      },
+      "52": {
+        "0": {
+          "title": "第|index|話 囃子が来ました",
+          "sort": "だい|index|わ はやし が きま した"
+        },
+        "1": {
+          "title": "Chapter |index|: The Hayashi Performers Are Here"
+        },
+        "2": {
+          "title": "Dai |index| Wa Hayashi ga Kimashita"
+        }
+      },
+      "53": {
+        "0": {
+          "title": "第|index|話 家族になりました",
+          "sort": "だい|index|わ かぞく になりました"
+        },
+        "1": {
+          "title": "Chapter |index|: We Became a Family"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kazoku ni Narimashita"
+        }
+      },
+      "54": {
+        "0": {
+          "title": "第|index|話 バイトをしよう",
+          "sort": "だい|index|わ ばいと をしよう"
+        },
+        "1": {
+          "title": "Chapter |index|: Get a Part‐Time Job"
+        },
+        "2": {
+          "title": "Dai |index| Wa Baito o Shiyō"
+        }
+      },
+      "55": {
+        "0": {
+          "title": "第|index|話 モエモエ気功砲",
+          "sort": "だい|index|わ もえもえ きこう ほう"
+        },
+        "1": {
+          "title": "Chapter |index|: Moe! Moe! Tri‐beam!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Moe Moe Kikōhō"
+        }
+      },
+      "56": {
+        "0": {
+          "title": "第|index|話 なんかモヤモヤするじゃんよ",
+          "sort": "だい|index|わ なんか もやもや するじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: Feeling Kinda Gloomy"
+        },
+        "2": {
+          "title": "Dai |index| Wa Nanka Moyamoya Suru jan yo"
+        }
+      },
+      "57": {
+        "0": {
+          "title": "第|index|話 学校の怖いやつ",
+          "sort": "だい|index|わ がっこう の こわい やつ"
+        },
+        "1": {
+          "title": "Chapter |index|: Scary Dudes at School"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gakkō no Kowai Yatsu"
+        }
+      },
+      "58": {
+        "0": {
+          "title": "第|index|話 交響曲第6番",
+          "sort": "だい|index|わ こうきょうきょく だい6ばん"
+        },
+        "1": {
+          "title": "Chapter |index|: Symphony No. 6"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kōkyō Kyoku Dai Roku‐ban"
+        }
+      },
+      "59": {
+        "0": {
+          "title": "第|index|話 交響曲第9番",
+          "sort": "だい|index|わ こうきょうきょく だい9ばん"
+        },
+        "1": {
+          "title": "Chapter |index|: Symphony No. 9"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kōkyō Kyoku Dai Kyū‐ban"
+        }
+      },
+      "60": {
+        "0": {
+          "title": "第|index|話 がんばれオカルン",
+          "sort": "だい|index|わ がんばれ おかるん"
+        },
+        "1": {
+          "title": "Chapter |index|: You Can Do It, Okarun!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ganbare Okarun"
+        }
+      },
+      "61": {
+        "0": {
+          "title": "第|index|話 邪視のブリーフ",
+          "sort": "だい|index|わ じゃし の ぶりーふ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Evil Eye’s Briefs"
+        },
+        "2": {
+          "title": "Dai |index| Wa Jashi no Burīfu"
+        }
+      },
+      "62": {
+        "0": {
+          "title": "第|index|話 家を建て直したい",
+          "sort": "だい|index|わ いえ を たて なおし たい"
+        },
+        "1": {
+          "title": "Chapter |index|: I Want to Rebuild the House"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ie o Tatenaoshitai"
+        }
+      },
+      "63": {
+        "0": {
+          "title": "第|index|話 学生生活",
+          "sort": "だい|index|わ がくせいせいかつ"
+        },
+        "1": {
+          "title": "Chapter |index|: School Life"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gakusei Seikatsu"
+        }
+      },
+      "64": {
+        "0": {
+          "title": "第|index|話 モテる秘訣はなんだ",
+          "sort": "だい|index|わ もて る ひけつ はなんだ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Secret Art of Being Attractive"
+        },
+        "2": {
+          "title": "Dai |index| Wa Moteru Hiketsu wa Nan da"
+        }
+      },
+      "65": {
+        "0": {
+          "title": "第|index|話 見えないじゃんよ",
+          "sort": "だい|index|わ みえ ないじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: I Can’t See Them!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mienai jan yo"
+        }
+      },
+      "66": {
+        "0": {
+          "title": "第|index|話 怪獣じゃんよ",
+          "sort": "だい|index|わ かいじゅう じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: Hey, It’s a Kaiju"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kaijū jan yo"
+        }
+      },
+      "67": {
+        "0": {
+          "title": "第|index|話 怪獣はめちゃ強い",
+          "sort": "だい|index|わ かいじゅう はめちゃ つよい"
+        },
+        "1": {
+          "title": "Chapter |index|: The Kaiju’s Wicked Strong"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kaijū wa Mecha Tsuyoi"
+        }
+      },
+      "68": {
+        "0": {
+          "title": "第|index|話 金太のイメージ",
+          "sort": "だい|index|わ きんた の いめーじ"
+        },
+        "1": {
+          "title": "Chapter |index|: Kinta’s Imagination"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kinta no Imēji"
+        }
+      },
+      "69": {
+        "0": {
+          "title": "第|index|話 激突！宇宙怪獣対巨大ロボ！",
+          "sort": "だい|index|わ げきとつ！うちゅう かいじゅう つい きょだい ろぼ ！"
+        },
+        "1": {
+          "title": "Chapter |index|: Clash! Space Kaiju vs. Giant Robot!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gekitotsu! Uchū Kaijū Tai Kyodai Robo!"
+        }
+      },
+      "70": {
+        "0": {
+          "title": "第|index|話 怪獣の倒し方はこれじゃんよ",
+          "sort": "だい|index|わ かいじゅう の たおし かたは これじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: This Is How You Beat a Kaiju, Okay?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kaijū no Taoshikata wa Kore jan yo"
+        }
+      },
+      "71": {
+        "0": {
+          "title": "第|index|話 ロボットも怪獣もこりごりだ",
+          "sort": "だい|index|わ ろぼっと も かいじゅう もこりごりだ"
+        },
+        "1": {
+          "title": "Chapter |index|: I’m Sick of Robots and Kaiju!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Robotto mo Kaijū mo Korigori da"
+        }
+      },
+      "72": {
+        "0": {
+          "title": "第|index|話 だれか翻訳してくれ",
+          "sort": "だい|index|わ だれか ほんやく してくれ"
+        },
+        "1": {
+          "title": "Chapter |index|: Somebody, Please Translate"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dareka Honyaku Shitekure"
+        }
+      },
+      "73": {
+        "0": {
+          "title": "第|index|話 タコヤキを食べよう",
+          "sort": "だい|index|わ たこやき を たべ よう"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Eat Some Takoyaki"
+        },
+        "2": {
+          "title": "Dai |index| Wa Takoyaki o Tabeyō"
+        }
+      },
+      "74": {
+        "0": {
+          "title": "第|index|話 学校へ行こう",
+          "sort": "だい|index|わ がっこう へ いこ う"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Go to School"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gakkō e Ikō"
+        }
+      },
+      "75": {
+        "0": {
+          "title": "第|index|話 やべえ奴に遭遇しました",
+          "sort": "だい|index|わ やべえ やつ に そうぐう しました"
+        },
+        "1": {
+          "title": "Chapter |index|: Ran Into Someone Deadly"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yabē Yatsu ni Sōgū Shimashita"
+        }
+      },
+      "76": {
+        "0": {
+          "title": "第|index|話 どーするこいつ",
+          "sort": "だい|index|わ どーするこいつ"
+        },
+        "1": {
+          "title": "Chapter |index|: What Do We Do With Her?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dō Suru Koitsu"
+        }
+      },
+      "77": {
+        "0": {
+          "title": "第|index|話 めんどくせえ奴",
+          "sort": "だい|index|わ めんどくせえ やつ"
+        },
+        "1": {
+          "title": "Chapter |index|: This Person Is a Pain in the Butt"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mendokusē Yatsu"
+        }
+      },
+      "78": {
+        "0": {
+          "title": "第|index|話 ときめきナイトじゃんよ",
+          "sort": "だい|index|わ ときめき ないと じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: A Pulse‐Pounding Night"
+        },
+        "2": {
+          "title": "Dai |index| Wa Tokimeki Naito jan yo"
+        }
+      },
+      "79": {
+        "0": {
+          "title": "第|index|話 こいつは一体何者なんだよ",
+          "sort": "だい|index|わ こいつは いったいなにもの なんだよ"
+        },
+        "1": {
+          "title": "Chapter |index|: Just Who the Heck Is This Person?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Koitsu wa Ittai Nanimono Nanda yo"
+        }
+      },
+      "80": {
+        "0": {
+          "title": "第|index|話 やべえやつらに遭遇しました2",
+          "sort": "だい|index|わ やべえやつらに そうぐう しました2"
+        },
+        "1": {
+          "title": "Chapter |index|: Ran Into Some Deadly Dudes 2"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yabē Yatsura ni Sōgū Shimashita 2"
+        }
+      },
+      "81": {
+        "0": {
+          "title": "第|index|話 どうしようやべえやつら",
+          "sort": "だい|index|わ どうしようやべえやつら"
+        },
+        "1": {
+          "title": "Chapter |index|: What Do We Do About These Deadly Dudes?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dō Shiyō Yabē Yatsura"
+        }
+      },
+      "82": {
+        "0": {
+          "title": "第|index|話 一番やべえやつ",
+          "sort": "だい|index|わ いちばん やべえやつ"
+        },
+        "1": {
+          "title": "Chapter |index|: Number One Deadliest Dude"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ichiban Yabē Yatsu"
+        }
+      },
+      "83": {
+        "0": {
+          "title": "第|index|話 バイト中",
+          "sort": "だい|index|わ ばいと なか"
+        },
+        "1": {
+          "title": "Chapter |index|: At Work"
+        },
+        "2": {
+          "title": "Dai |index| Wa Baito‐chū"
+        }
+      },
+      "84": {
+        "0": {
+          "title": "第|index|話 ムカツクやつら",
+          "sort": "だい|index|わ むかつく やつら"
+        },
+        "1": {
+          "title": "Chapter |index|: Annoying Dudes"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mukatsuku Yatsura"
+        }
+      },
+      "85": {
+        "0": {
+          "title": "第|index|話 ネッシーの力",
+          "sort": "だい|index|わ ねっしー の ちから"
+        },
+        "1": {
+          "title": "Chapter |index|: The Power of Nessie"
+        },
+        "2": {
+          "title": "Dai |index| Wa Nesshī no Chikara"
+        }
+      },
+      "86": {
+        "0": {
+          "title": "第|index|話 早く帰りたいじゃんよ",
+          "sort": "だい|index|わ はやく かえり たいじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: I Just Wanna Leave Already"
+        },
+        "2": {
+          "title": "Dai |index| Wa Hayaku Kaeritai jan yo"
+        }
+      },
+      "87": {
+        "0": {
+          "title": "第|index|話 マンガ喫茶は眠れない",
+          "sort": "だい|index|わ まんが きっさ は ねむれ ない"
+        },
+        "1": {
+          "title": "Chapter |index|: Can Never Sleep at a Manga Cafe"
+        },
+        "2": {
+          "title": "Dai |index| Wa Manga Kissa wa Nemurenai"
+        }
+      },
+      "88": {
+        "0": {
+          "title": "第|index|話 スパイ",
+          "sort": "だい|index|わ すぱい"
+        },
+        "1": {
+          "title": "Chapter |index|: Spy"
+        },
+        "2": {
+          "title": "Dai |index| Wa Supai"
+        }
+      },
+      "89": {
+        "0": {
+          "title": "第|index|話 ケンカ",
+          "sort": "だい|index|わ けんか"
+        },
+        "1": {
+          "title": "Chapter |index|: Argument"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kenka"
+        }
+      },
+      "90": {
+        "0": {
+          "title": "第|index|話 どーするかねえ",
+          "sort": "だい|index|わ どーするかねえ"
+        },
+        "1": {
+          "title": "Chapter |index|: What’re We Gonna Do?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dō Suru ka nē"
+        }
+      },
+      "91": {
+        "0": {
+          "title": "第|index|話 始動！逆襲への道！",
+          "sort": "だい|index|わ しどう！ぎゃくしゅう への みち ！"
+        },
+        "1": {
+          "title": "Chapter |index|: Initiate! The Road to Counterattack!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shidō! Gyakushū e no Michi!"
+        }
+      },
+      "92": {
+        "0": {
+          "title": "第|index|話 寝てられないじゃんよ",
+          "sort": "だい|index|わ ねて られないじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: Just Can’t Sleep"
+        },
+        "2": {
+          "title": "Dai |index| Wa Neterarenai jan yo"
+        }
+      },
+      "93": {
+        "0": {
+          "title": "第|index|話 {{Ruby‐ja|幽体離脱|アストラルボディ}}の冒険",
+          "sort": "だい|index|わ {{Ruby‐ja| ゆうたい りだつ | あすとらるぼでぃ }}の ぼうけん"
+        },
+        "1": {
+          "title": "Chapter |index|: Astral Body Adventure"
+        },
+        "2": {
+          "title": "Dai |index| Wa Asutoraru Bodi no Bōken"
+        }
+      },
+      "94": {
+        "0": {
+          "title": "第|index|話 体の戻り方教えてください",
+          "sort": "だい|index|わ からだ の もどり ほう おしえ てください"
+        },
+        "1": {
+          "title": "Chapter |index|: Please Tell Me How to Get Back Into My Body"
+        },
+        "2": {
+          "title": "Dai |index| Wa Karada no Modorikata Oshiete Kudasai"
+        }
+      },
+      "95": {
+        "0": {
+          "title": "第|index|話 決戦の日",
+          "sort": "だい|index|わ けっせん の にち"
+        },
+        "1": {
+          "title": "Chapter |index|: Day of the Decisive Battle"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kessen no Hi"
+        }
+      },
+      "96": {
+        "0": {
+          "title": "第|index|話 やる気",
+          "sort": "だい|index|わ やる き"
+        },
+        "1": {
+          "title": "Chapter |index|: Motivation"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yaruki"
+        }
+      },
+      "97": {
+        "0": {
+          "title": "第|index|話 どーする名前",
+          "sort": "だい|index|わ どーする なまえ"
+        },
+        "1": {
+          "title": "Chapter |index|: What to Do About the Name?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dō Suru Namae"
+        }
+      },
+      "98": {
+        "0": {
+          "title": "第|index|話 どーする美容",
+          "sort": "だい|index|わ どーする びよう"
+        },
+        "1": {
+          "title": "Chapter |index|: What to Do About My Beauty Treatment"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dō Suru Biyō"
+        }
+      },
+      "99": {
+        "0": {
+          "title": "第|index|話 おれのターン",
+          "sort": "だい|index|わ おれの たーん"
+        },
+        "1": {
+          "title": "Chapter |index|: My Turn"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ore no Tān"
+        }
+      },
+      "100": {
+        "0": {
+          "title": "第|index|話 ゲートを閉じろ",
+          "sort": "だい|index|わ げーと を とじ ろ"
+        },
+        "1": {
+          "title": "Chapter |index|: Close That Gate"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gēto o Tojiro"
+        }
+      },
+      "101": {
+        "0": {
+          "title": "第|index|話 バモラ",
+          "sort": "だい|index|わ ばもら"
+        },
+        "1": {
+          "title": "Chapter |index|: Vamola"
+        },
+        "2": {
+          "title": "Dai |index| Wa Bamora"
+        }
+      },
+      "102": {
+        "0": {
+          "title": "第|index|話 バモラ2",
+          "sort": "だい|index|わ ばもら2"
+        },
+        "1": {
+          "title": "Chapter |index|: Vamola 2"
+        },
+        "2": {
+          "title": "Dai |index| Wa Bamora 2"
+        }
+      },
+      "103": {
+        "0": {
+          "title": "第|index|話 バモラ3",
+          "sort": "だい|index|わ ばもら3"
+        },
+        "1": {
+          "title": "Chapter |index|: Vamola 3"
+        },
+        "2": {
+          "title": "Dai |index| Wa Bamora 3"
+        }
+      },
+      "104": {
+        "0": {
+          "title": "第|index|話 バモラ4",
+          "sort": "だい|index|わ ばもら4"
+        },
+        "1": {
+          "title": "Chapter |index|: Vamola 4"
+        },
+        "2": {
+          "title": "Dai |index| Wa Bamora 4"
+        }
+      },
+      "105": {
+        "0": {
+          "title": "第|index|話 バンガ",
+          "sort": "だい|index|わ ばんが"
+        },
+        "1": {
+          "title": "Chapter |index|: Banga"
+        },
+        "2": {
+          "title": "Dai |index| Wa Banga"
+        }
+      },
+      "106": {
+        "0": {
+          "title": "第|index|話 バモラの理由",
+          "sort": "だい|index|わ ばもら の りゆう"
+        },
+        "1": {
+          "title": "Chapter |index|: Vamola’s Reasons"
+        },
+        "2": {
+          "title": "Dai |index| Wa Bamora no Riyū"
+        }
+      },
+      "107": {
+        "0": {
+          "title": "第|index|話 タコ焼き決定じゃんよ",
+          "sort": "だい|index|わ たこ やき けってい じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: I’ve Decided on Takoyaki"
+        },
+        "2": {
+          "title": "Dai |index| Wa Takoyaki Kettei jan yo"
+        }
+      },
+      "108": {
+        "0": {
+          "title": "第|index|話 蹴っ飛ばしてやるわい",
+          "sort": "だい|index|わ けっ とば してやるわい"
+        },
+        "1": {
+          "title": "Chapter |index|: I’m Gonna Kick Ya Into Tomorrow"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kettobashite Yaruwai"
+        }
+      },
+      "109": {
+        "0": {
+          "title": "第|index|話 シャコの計算",
+          "sort": "だい|index|わ しゃこ の けいさん"
+        },
+        "1": {
+          "title": "Chapter |index|: Mantis Shrimp’s Calculation"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shako no Keisan"
+        }
+      },
+      "110": {
+        "0": {
+          "title": "第|index|話 やばい力",
+          "sort": "だい|index|わ やばい ちから"
+        },
+        "1": {
+          "title": "Chapter |index|: Wicked Power"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yabai Chikara"
+        }
+      },
+      "111": {
+        "0": {
+          "title": "第|index|話 集まってきちゃった",
+          "sort": "だい|index|わ あつま ってきちゃった"
+        },
+        "1": {
+          "title": "Chapter |index|: Everyone’s Reconvened"
+        },
+        "2": {
+          "title": "Dai |index| Wa Atsumattekichatta"
+        }
+      },
+      "112": {
+        "0": {
+          "title": "第|index|話 今日は火曜日",
+          "sort": "だい|index|わ こんにちは かようび"
+        },
+        "1": {
+          "title": "Chapter |index|: Today Is a Tuesday"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kyō wa Kayōbi"
+        }
+      },
+      "113": {
+        "0": {
+          "title": "第|index|話 ブチ壊せ",
+          "sort": "だい|index|わ ぶち こわせ"
+        },
+        "1": {
+          "title": "Chapter |index|: Wreck ’Em"
+        },
+        "2": {
+          "title": "Dai |index| Wa Buchikowase"
+        }
+      },
+      "114": {
+        "0": {
+          "title": "第|index|話 しぶとい野郎",
+          "sort": "だい|index|わ しぶとい やろう"
+        },
+        "1": {
+          "title": "Chapter |index|: A Persistent Bastard"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shibutoi Yarō"
+        }
+      },
+      "115": {
+        "0": {
+          "title": "第|index|話 金太の出番じゃんよ",
+          "sort": "だい|index|わ きんた の でばん じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: It’s Kinta’s Turn Onstage"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kinta no Deban jan yo"
+        }
+      },
+      "116": {
+        "0": {
+          "title": "第|index|話 唸れグレートキンタ",
+          "sort": "だい|index|わ うなれ ぐれーときんた"
+        },
+        "1": {
+          "title": "Chapter |index|: Howl, Great Kinta!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Unare Gurēto Kinta"
+        }
+      },
+      "117": {
+        "0": {
+          "title": "第|index|話 一難去ってまた一難",
+          "sort": "だい|index|わ いちなん さっ てまた いちなん"
+        },
+        "1": {
+          "title": "Chapter |index|: Out of the Frying Pan"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ichinan Satte Mata Ichinan"
+        }
+      },
+      "118": {
+        "0": {
+          "title": "第|index|話 カシマレイコの力",
+          "sort": "だい|index|わ かしまれいこ の ちから"
+        },
+        "1": {
+          "title": "Chapter |index|: The Power of Reiko Kashima"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kashima Reiko no Chikara"
+        }
+      },
+      "119": {
+        "0": {
+          "title": "第|index|話 あの手紙",
+          "sort": "だい|index|わ あの てがみ"
+        },
+        "1": {
+          "title": "Chapter |index|: That Note"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ano Tegami"
+        }
+      },
+      "120": {
+        "0": {
+          "title": "第|index|話 カシマレイコの乙女心",
+          "sort": "だい|index|わ かしまれいこ の おとめごころ"
+        },
+        "1": {
+          "title": "Chapter |index|: Reiko Kashima’s Maiden Heart"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kashima Reiko no Otomegokoro"
+        }
+      },
+      "121": {
+        "0": {
+          "title": "第|index|話 こいつは誰だ",
+          "sort": "だい|index|わ こいつは だれ だ"
+        },
+        "1": {
+          "title": "Chapter |index|: Who’s This Person?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Koitsu wa Dare da"
+        }
+      },
+      "122": {
+        "0": {
+          "title": "第|index|話 部活を作ろう",
+          "sort": "だい|index|わ ぶかつ を つくろ う"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Form a Club"
+        },
+        "2": {
+          "title": "Dai |index| Wa Bukatsu o Tsukurō"
+        }
+      },
+      "123": {
+        "0": {
+          "title": "第|index|話 委員長の秘密",
+          "sort": "だい|index|わ いいんちょう の ひみつ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Class Rep’s Secret"
+        },
+        "2": {
+          "title": "Dai |index| Wa Iinchō no Himitsu"
+        }
+      },
+      "124": {
+        "0": {
+          "title": "第|index|話 オンブスマン",
+          "sort": "だい|index|わ おんぶすまん"
+        },
+        "1": {
+          "title": "Chapter |index|: Ombusman"
+        },
+        "2": {
+          "title": "Dai |index| Wa Onbusuman"
+        }
+      },
+      "125": {
+        "0": {
+          "title": "第|index|話 おはらいしようぜ",
+          "sort": "だい|index|わ おはらいしようぜ"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Do an Exorcism"
+        },
+        "2": {
+          "title": "Dai |index| Wa Oharai Shiyō ze"
+        }
+      },
+      "126": {
+        "0": {
+          "title": "第|index|話 山車だ祭りだ二宮だ",
+          "sort": "だい|index|わ だし だ まつり だ にのみや だ"
+        },
+        "1": {
+          "title": "Chapter |index|: It’s a Parade Float. It’s a Festival. It’s Ninomiya"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dashi da Matsuri da Ninomiya da"
+        }
+      },
+      "127": {
+        "0": {
+          "title": "第|index|話 ひっかわせ",
+          "sort": "だい|index|わ ひっかわせ"
+        },
+        "1": {
+          "title": "Chapter |index|: Float Performance Face‐Off"
+        },
+        "2": {
+          "title": "Dai |index| Wa Hikkawase"
+        }
+      },
+      "128": {
+        "0": {
+          "title": "第|index|話 アイドルやろうぜ",
+          "sort": "だい|index|わ あいどる やろうぜ"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Be Idols"
+        },
+        "2": {
+          "title": "Dai |index| Wa Aidoru Yarō ze"
+        }
+      },
+      "129": {
+        "0": {
+          "title": "第|index|話 カワバンガ",
+          "sort": "だい|index|わ かわばんが"
+        },
+        "1": {
+          "title": "Chapter |index|: Kawabanga"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kawabanga"
+        }
+      },
+      "130": {
+        "0": {
+          "title": "第|index|話 スパイ大作戦",
+          "sort": "だい|index|わ すぱい だいさくせん"
+        },
+        "1": {
+          "title": "Chapter |index|: Mission Impossible"
+        },
+        "2": {
+          "title": "Dai |index| Wa Supai Daisakusen"
+        }
+      },
+      "131": {
+        "0": {
+          "title": "第|index|話 プライドじゃんよ",
+          "sort": "だい|index|わ ぷらいど じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: It’s, Like, Pride"
+        },
+        "2": {
+          "title": "Dai |index| Wa Puraido jan yo"
+        }
+      },
+      "132": {
+        "0": {
+          "title": "第|index|話 ヤンキー運動会",
+          "sort": "だい|index|わ やんきー うんどうかい"
+        },
+        "1": {
+          "title": "Chapter |index|: Delinquents’ Track Meet"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yankī Undōkai"
+        }
+      },
+      "133": {
+        "0": {
+          "title": "第|index|話 ズマはどこだ？",
+          "sort": "だい|index|わ ずま はどこだ ？"
+        },
+        "1": {
+          "title": "Chapter |index|: Where’s Zuma?"
+        },
+        "2": {
+          "title": "Dai |index| Wa Zuma wa Doko da?"
+        }
+      },
+      "134": {
+        "0": {
+          "title": "第|index|話 やべえ呪物",
+          "sort": "だい|index|わ やべえ じゅぶつ"
+        },
+        "1": {
+          "title": "Chapter |index|: Deadly Magic Object"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yabē Jubutsu"
+        }
+      },
+      "135": {
+        "0": {
+          "title": "第|index|話 入っちゃったじゃんよ",
+          "sort": "だい|index|わ いっっ ちゃったじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: She Went and Entered It"
+        },
+        "2": {
+          "title": "Dai |index| Wa Haitchatta jan yo"
+        }
+      },
+      "136": {
+        "0": {
+          "title": "第|index|話 これボードゲームじゃんよ",
+          "sort": "だい|index|わ これ ぼーどげーむ じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: It’s, Like, a Board Game"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kore Bōdo Gēmu jan yo"
+        }
+      },
+      "137": {
+        "0": {
+          "title": "第|index|話 ズマってやつ",
+          "sort": "だい|index|わ ずま ってやつ"
+        },
+        "1": {
+          "title": "Chapter |index|: That Zuma Dude"
+        },
+        "2": {
+          "title": "Dai |index| Wa Zuma tte Yatsu"
+        }
+      },
+      "138": {
+        "0": {
+          "title": "第|index|話 ゲームスタート",
+          "sort": "だい|index|わ げーむすたーと"
+        },
+        "1": {
+          "title": "Chapter |index|: Start Game"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gēmu Sutāto"
+        }
+      },
+      "139": {
+        "0": {
+          "title": "第|index|話 ケーキ食わせろや",
+          "sort": "だい|index|わ けーき くわ せろや"
+        },
+        "1": {
+          "title": "Chapter |index|: Let ’Em Eat Cake"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kēki Kuwasero ya"
+        }
+      },
+      "140": {
+        "0": {
+          "title": "第|index|話 能力の使い方",
+          "sort": "だい|index|わ のうりょく の つかいかた"
+        },
+        "1": {
+          "title": "Chapter |index|: How to Use Powers"
+        },
+        "2": {
+          "title": "Dai |index| Wa Nōryoku no Tsukaikata"
+        }
+      },
+      "141": {
+        "0": {
+          "title": "第|index|話 お菓子食い過ぎじゃんよ",
+          "sort": "だい|index|わ お かし くい すぎ じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: Eatin’ Too Many Treats"
+        },
+        "2": {
+          "title": "Dai |index| Wa Okashi Kuisugi jan yo"
+        }
+      },
+      "142": {
+        "0": {
+          "title": "第|index|話 甘いものはもういいぜ",
+          "sort": "だい|index|わ あまい ものはもういいぜ"
+        },
+        "1": {
+          "title": "Chapter |index|: That’s Enough of Sweets!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Amai Mono wa Mō Ii ze"
+        }
+      },
+      "143": {
+        "0": {
+          "title": "第|index|話 休憩しようぜ",
+          "sort": "だい|index|わ きゅうけい しようぜ"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Take a Break!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kyūkei Shiyō ze"
+        }
+      },
+      "144": {
+        "0": {
+          "title": "第|index|話 冒険しようぜ",
+          "sort": "だい|index|わ ぼうけん しようぜ"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Go on an Adventure!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Bōken Shiyō ze"
+        }
+      },
+      "145": {
+        "0": {
+          "title": "第|index|話 攻城戦開幕",
+          "sort": "だい|index|わ こうじょう せん かいまく"
+        },
+        "1": {
+          "title": "Chapter |index|: Commence Castle Siege"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kōjō‐sen Kaimaku"
+        }
+      },
+      "146": {
+        "0": {
+          "title": "第|index|話 攻城戦は難しい",
+          "sort": "だい|index|わ こうじょう せん は むずかしい"
+        },
+        "1": {
+          "title": "Chapter |index|: Castle Sieges Are Hard"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kōjō‐sen wa Muzukashii"
+        }
+      },
+      "147": {
+        "0": {
+          "title": "第|index|話 大乱闘じゃんよ",
+          "sort": "だい|index|わ たいらん とう じゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: It’s a Megabrawl"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dai Rantō jan yo"
+        }
+      },
+      "148": {
+        "0": {
+          "title": "第|index|話 ゲームクリア",
+          "sort": "だい|index|わ げーむくりあ"
+        },
+        "1": {
+          "title": "Chapter |index|: Game Cleared"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gēmu Kuria"
+        }
+      },
+      "149": {
+        "0": {
+          "title": "第|index|話 悪魔のメルヘンカルタ",
+          "sort": "だい|index|わ あくま の めるへんかるた"
+        },
+        "1": {
+          "title": "Chapter |index|: That Devil, the Fairy‐Tale Card"
+        },
+        "2": {
+          "title": "Dai |index| Wa Akuma no Meruhen Karuta"
+        }
+      },
+      "150": {
+        "0": {
+          "title": "第|index|話 厄介なやつ",
+          "sort": "だい|index|わ やっかい なやつ"
+        },
+        "1": {
+          "title": "Chapter |index|: This Guy’s a Pain"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yakkai na Yatsu"
+        }
+      },
+      "151": {
+        "0": {
+          "title": "第|index|話 金玉を取り戻せ",
+          "sort": "だい|index|わ きんぎょく を とり もどせ"
+        },
+        "1": {
+          "title": "Chapter |index|: Get That Family Jewel Back"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kintama o Torimodose"
+        }
+      },
+      "152": {
+        "0": {
+          "title": "第|index|話 ターボババアVSアンブレボーイ",
+          "sort": "だい|index|わ たーぼばばあ VS あんぶれぼーい"
+        },
+        "1": {
+          "title": "Chapter |index|: Turbo Granny vs. ’Brella Boy"
+        },
+        "2": {
+          "title": "Dai |index| Wa Tābo Babā tai Anbure Bōi"
+        }
+      },
+      "153": {
+        "0": {
+          "title": "第|index|話 頭間雲児",
+          "sort": "だい|index|わ あたま かん くも じ"
+        },
+        "1": {
+          "title": "Chapter |index|: Unji Zuma"
+        },
+        "2": {
+          "title": "Dai |index| Wa Zuma Unji"
+        }
+      },
+      "154": {
+        "0": {
+          "title": "第|index|話 頭間雲児2",
+          "sort": "だい|index|わ あたま かん くも じ2"
+        },
+        "1": {
+          "title": "Chapter |index|: Unji Zuma 2"
+        },
+        "2": {
+          "title": "Dai |index| Wa Zuma Unji 2"
+        }
+      },
+      "155": {
+        "0": {
+          "title": "第|index|話 頭間雲児3",
+          "sort": "だい|index|わ あたま かん くも じ3"
+        },
+        "1": {
+          "title": "Chapter |index|: Unji Zuma 3"
+        },
+        "2": {
+          "title": "Dai |index| Wa Zuma Unji 3"
+        }
+      },
+      "156": {
+        "0": {
+          "title": "第|index|話 アンブレボーイ",
+          "sort": "だい|index|わ あんぶれぼーい"
+        },
+        "1": {
+          "title": "Chapter |index|: {{“ ’}}Brella Boy”"
+        },
+        "2": {
+          "title": "Dai |index| Wa Anbure Bōi"
+        }
+      },
+      "157": {
+        "0": {
+          "title": "第|index|話 部賀正道",
+          "sort": "だい|index|わ ぶ がしょう みち"
+        },
+        "1": {
+          "title": "Chapter |index|: Masamichi Bega"
+        },
+        "2": {
+          "title": "Dai |index| Wa Bega Masamichi"
+        }
+      },
+      "158": {
+        "0": {
+          "title": "第|index|話 カワバンガというやつは",
+          "sort": "だい|index|わ かわばんが というやつは"
+        },
+        "1": {
+          "title": "Chapter |index|: That Kawabanga Girl"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kawabanga to Iu Yatsu wa"
+        }
+      },
+      "159": {
+        "0": {
+          "title": "第|index|話 脱出！！呪行李！！",
+          "sort": "だい|index|わ だっしゅつ！！ じゅ こうり！！"
+        },
+        "1": {
+          "title": "Chapter |index|: Escape from the Cursed Trunk!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Dasshutsu!! Noroi Kōri!!"
+        }
+      },
+      "160": {
+        "0": {
+          "title": "第|index|話 悪魔のメルヘンカルタの力",
+          "sort": "だい|index|わ あくま の めるへんかるた の ちから"
+        },
+        "1": {
+          "title": "Chapter |index|: The Power of the Demonic Fairy‐Tale Card"
+        },
+        "2": {
+          "title": "Dai |index| Wa Akuma no Meruhen Karuta no Chikara"
+        }
+      },
+      "161": {
+        "0": {
+          "title": "第|index|話 謎の男サンジェルマン",
+          "sort": "だい|index|わ なぞ の おとこ さんじぇるまん"
+        },
+        "1": {
+          "title": "Chapter |index|: Saint‐Germain, the Mysterious Man"
+        },
+        "2": {
+          "title": "Dai |index| Wa Nazo no Otoko Sanjeruman"
+        }
+      },
+      "162": {
+        "0": {
+          "title": "第|index|話 悪魔のメルヘンカルタをぶっ飛ばせ！！",
+          "sort": "だい|index|わ あくま の めるへんかるた をぶっ とば せ！！"
+        },
+        "1": {
+          "title": "Chapter |index|: Let’s Blow the Demonic Fairy‐Tale Card Away!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Akuma no Meruhen Karuta o Buttobase!!"
+        }
+      },
+      "163": {
+        "0": {
+          "title": "第|index|話 間に合え救出！！",
+          "sort": "だい|index|わ まにあえ きゅうしゅつ！！"
+        },
+        "1": {
+          "title": "Chapter |index|: Saviors, Don’t Be Late!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Maniae Kyūshutsu!!"
+        }
+      },
+      "164": {
+        "0": {
+          "title": "第|index|話 小っちゃくなったじゃんよ",
+          "sort": "だい|index|わ ちっちゃく なったじゃんよ"
+        },
+        "1": {
+          "title": "Chapter |index|: She’s Gone All Little!"
+        },
+        "2": {
+          "title": "Dai |index| Wa Chitchaku Natta jan yo"
+        }
+      },
+      "165": {
+        "0": {
+          "title": "第|index|話 金玉コンプリート",
+          "sort": "だい|index|わ きんぎょく こんぷりーと"
+        },
+        "1": {
+          "title": "Chapter |index|: Family Jewels—Intact"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kintama Konpurīto"
+        }
+      }
+    },
+    "language": "Japanese",
+    "disambiguation": "Dandadan, manga, Japanese",
+    "bookbrainz_work": {
+      "type": "manga",
+      "series": [
+        {
+          "id": "bf617785-2472-4d6f-828b-bc205d33ad11",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "writer",
+          "id": "f6d193b9-9b38-474a-ab9d-cf0a79617c02"
+        },
+        {
+          "role": "illustrator",
+          "id": "f6d193b9-9b38-474a-ab9d-cf0a79617c02"
+        }
+      ],
+      "identifiers": {}
+    }
+  },
+  "translation": {
+    "titles": [],
+    "subtitles": {},
+    "disambiguation": "Dandadan, manga, English",
+    "language": "English",
+    "bookbrainz_work": {
+      "series": [
+        {
+          "id": "e80134fa-dfc0-4d25-a087-06d318bf5a63",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "translator",
+          "id": "3c12e32b-b69e-4670-9883-3d7cc416043d"
+        },
+        {
+          "role": "adapter",
+          "id": "68cc3e13-d796-44db-bdcf-61251ce92aff"
+        },
+        {
+          "role": "letterer",
+          "id": "fbda072e-f752-4b17-82a6-da3bce7436b9"
+        }
+      ],
+      "editions": {
+        "1": "94ae5001-f91e-491d-80bc-4475144b2974",
+        "6": "8c4050cf-a59a-4836-87a0-90f7881c4535",
+        "15": "3ecf25c9-a594-4545-9f26-e30affa68782",
+        "24": "d5404557-72d0-40a2-852b-28c30cd53b61",
+        "33": "095d921d-aff7-40e9-af46-062aa1537b39",
+        "41": "ad67c987-af04-43ee-a3d1-f83cd39b973b",
+        "50": "2952ebf8-e20e-4943-a221-b79e84227123",
+        "59": "45bc4937-9c04-4353-9c60-b2d4acfcb0db",
+        "68": "dd150456-9e3b-4f43-8d16-5dfe7cba8a97",
+        "77": "885d1af3-4e75-4a38-9f8a-b5263cdce36f",
+        "86": "fb227c87-fb94-44c1-9095-a31542fda21d",
+        "94": "376f69f7-047a-42c7-a30f-0838220c9150",
+        "103": "2900b11c-7d12-47c1-aec1-df9a34fa5bf0"
+      },
+      "identifiers": {}
+    }
+  },
+  "identifiers": {}
+}

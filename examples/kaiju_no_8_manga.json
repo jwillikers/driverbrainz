@@ -1,0 +1,104 @@
+{
+  "original": {
+    "titles": [
+      {
+        "text": "第|index|話",
+        "sort": "だい|index|わ",
+        "language": "Japanese"
+      },
+      {
+        "text": "Chapter |index|",
+        "sort": "COPY",
+        "language": "English",
+        "primary": true
+      },
+      {
+        "text": "Dai |index| Wa",
+        "sort": "COPY",
+        "language": "Japanese",
+        "primary": false
+      }
+    ],
+    "subtitles": {
+      "1": {
+        "0": {
+          "title": "第|index|話 水炊き",
+          "sort": "だい|index|わ みずたき き"
+        },
+        "1": {
+          "title": "Chapter |index|: Hot Pot"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mizutaki"
+        }
+      }
+    },
+    "language": "Japanese",
+    "disambiguation": "Kaiju No. 8, manga, Japanese",
+    "bookbrainz_work": {
+      "type": "manga",
+      "series": [
+        {
+          "id": "68010948-2adf-4c6a-94d0-9662a7b4696e",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "writer",
+          "id": "82efd8bd-71f6-450f-8a4f-18a594261b2d"
+        },
+        {
+          "role": "illustrator",
+          "id": "82efd8bd-71f6-450f-8a4f-18a594261b2d"
+        }
+      ],
+      "identifiers": {}
+    }
+  },
+  "translation": {
+    "titles": [],
+    "subtitles": {},
+    "disambiguation": "Kaiju No. 8, manga, English",
+    "language": "English",
+    "bookbrainz_work": {
+      "series": [
+        {
+          "id": "615b7d9f-a86a-4467-b685-92c731e9ebb6",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "translator",
+          "id": "27a507ae-c22c-4785-8bc3-684cde4c0019"
+        },
+        {
+          "role": "adapter",
+          "id": null
+        },
+        {
+          "role": "letterer",
+          "id": "dc69d40e-4773-4b3b-a34a-8e87f8e57cb6"
+        }
+      ],
+      "editions": {
+        "1": "6aebedef-5974-4b51-a0ae-25322363605b",
+        "8": "https://bookbrainz.org/edition/1a3926ca-e871-4288-a2c1-6830977baff9",
+        "18": "https://bookbrainz.org/edition/35f19ace-e431-4ced-8e24-9aa1dd6f85c6",
+        "27": "https://bookbrainz.org/edition/2b9708ed-e135-460f-8921-35a5d4f84c4d",
+        "36": "https://bookbrainz.org/edition/c1dff2fc-e37e-4c2c-a5a3-04e737793b45",
+        "44": "https://bookbrainz.org/edition/06732b2e-f6e5-41aa-9090-e1f6e1cd2495",
+        "52": "https://bookbrainz.org/edition/82e2a01c-99d8-4006-b4ee-d2bb0527ca9b",
+        "60": "https://bookbrainz.org/edition/fc32b1ce-a4db-49a0-9897-c1de7ec62206",
+        "67": "https://bookbrainz.org/edition/e57bcb1b-1fd0-4874-a877-bd6463251f87",
+        "74": "https://bookbrainz.org/edition/d12d1abf-ba08-4251-aab6-759400639ce9",
+        "82": "https://bookbrainz.org/edition/b1c14877-bbf2-4ed8-b0d4-07a46195fa4d",
+        "90": "https://bookbrainz.org/edition/0a2cd3ca-4fb8-4757-9bc6-3b1459ee7a2d",
+        "98": "https://bookbrainz.org/edition/511bbb31-22c7-482c-8fe8-9ea0f7b3e57e"
+      },
+      "identifiers": {}
+    }
+  },
+  "identifiers": {}
+}

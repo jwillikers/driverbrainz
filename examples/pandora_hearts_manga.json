@@ -1,0 +1,953 @@
+{
+  "original": {
+    "titles": [
+      {
+        "text": "Retrace |index|: |subtitle|",
+        "sort": "Retrace |index|: |subtitle|",
+        "language": "Japanese"
+      },
+      {
+        "text": "Retrace |index|: |subtitle|",
+        "sort": "Retrace |index|: |subtitle|",
+        "language": "English",
+        "primary": true
+      }
+    ],
+    "subtitles": {
+      "1": {
+        "0": {
+          "title": "Innocent Calm"
+        },
+        "1": {
+          "title": "Innocent Calm"
+        }
+      },
+      "2": {
+        "0": {
+          "title": "Tempest of Conviction"
+        },
+        "1": {
+          "title": "Tempest of Conviction"
+        }
+      },
+      "3": {
+        "0": {
+          "title": "Prisoner&Alichino"
+        },
+        "1": {
+          "title": "Prisoner & Alichino"
+        }
+      },
+      "4": {
+        "0": {
+          "title": "Rendezvous"
+        },
+        "1": {
+          "title": "Rendezvous"
+        }
+      },
+      "5": {
+        "0": {
+          "title": "Clockwise Doom."
+        },
+        "1": {
+          "title": "Clockwise Doom."
+        }
+      },
+      "6": {
+        "0": {
+          "title": "Where am I?"
+        },
+        "1": {
+          "title": "Where am I?"
+        }
+      },
+      "7": {
+        "0": {
+          "title": "Reunion"
+        },
+        "1": {
+          "title": "Reunion"
+        }
+      },
+      "8": {
+        "0": {
+          "title": "Whisperer"
+        },
+        "1": {
+          "title": "Whisperer"
+        }
+      },
+      "9": {
+        "0": {
+          "title": "Question"
+        },
+        "1": {
+          "title": "Question"
+        }
+      },
+      "10": {
+        "0": {
+          "title": "Malediction"
+        },
+        "1": {
+          "title": "Malediction"
+        }
+      },
+      "11": {
+        "0": {
+          "title": "Grim"
+        },
+        "1": {
+          "title": "Grim"
+        }
+      },
+      "12": {
+        "0": {
+          "title": "Where am I?"
+        },
+        "1": {
+          "title": "Where am I?"
+        }
+      },
+      "13": {
+        "0": {
+          "title": "A Lost Raven"
+        },
+        "1": {
+          "title": "A Lost Raven"
+        }
+      },
+      "14": {
+        "0": {
+          "title": "Lop Ear"
+        },
+        "1": {
+          "title": "Lop Ear"
+        }
+      },
+      "15": {
+        "0": {
+          "title": "Welcome to Labyrinth"
+        },
+        "1": {
+          "title": "Welcome to Labyrinth"
+        }
+      },
+      "16": {
+        "0": {
+          "title": "Keeper of the secret"
+        },
+        "1": {
+          "title": "Keeper of the Secret"
+        }
+      },
+      "17": {
+        "0": {
+          "title": "Odds and Ends"
+        },
+        "1": {
+          "title": "Odds and Ends"
+        }
+      },
+      "18": {
+        "0": {
+          "title": "Hollow eye socket"
+        },
+        "1": {
+          "title": "Hollow Eye Socket"
+        }
+      },
+      "19": {
+        "0": {
+          "title": "Detestably"
+        },
+        "1": {
+          "title": "Detestably"
+        }
+      },
+      "20": {
+        "0": {
+          "title": "Who killed poor Alice?"
+        },
+        "1": {
+          "title": "Who Killed Poor Alice?"
+        }
+      },
+      "21": {
+        "0": {
+          "title": "Discord"
+        },
+        "1": {
+          "title": "Discord"
+        }
+      },
+      "22": {
+        "0": {
+          "title": "His name is…"
+        },
+        "1": {
+          "title": "His Name Is…"
+        }
+      },
+      "23": {
+        "0": {
+          "title": "Conflict"
+        },
+        "1": {
+          "title": "Conflict"
+        }
+      },
+      "24": {
+        "0": {
+          "title": "Hello my sister!"
+        },
+        "1": {
+          "title": "Hello My Sister!"
+        }
+      },
+      "25": {
+        "0": {
+          "title": "Elliot&Leo"
+        },
+        "1": {
+          "title": "Elliot & Leo"
+        }
+      },
+      "26": {
+        "0": {
+          "title": "The pool of Tears"
+        },
+        "1": {
+          "title": "The Pool of Tears"
+        }
+      },
+      "27": {
+        "0": {
+          "title": "Get out of the Pool"
+        },
+        "1": {
+          "title": "Get Out of the Pool"
+        }
+      },
+      "28": {
+        "0": {
+          "title": "Modulation"
+        },
+        "1": {
+          "title": "Modulation"
+        }
+      },
+      "29": {
+        "0": {
+          "title": "Rufus Barma"
+        },
+        "1": {
+          "title": "Rufus Barma"
+        }
+      },
+      "30": {
+        "0": {
+          "title": "Snow White Chaos"
+        },
+        "1": {
+          "title": "Snow White Chaos"
+        }
+      },
+      "31": {
+        "0": {
+          "title": "Countervalue of Loss"
+        },
+        "1": {
+          "title": "Countervalue of Loss"
+        }
+      },
+      "32": {
+        "0": {
+          "title": "Snow Dome"
+        },
+        "1": {
+          "title": "Snow Dome"
+        }
+      },
+      "33": {
+        "0": {
+          "title": "Echo of Noise"
+        },
+        "1": {
+          "title": "Echo of Noise"
+        }
+      },
+      "33.5": {
+        "0": {
+          "title": "Pandora Hearts One‐Shot"
+        },
+        "1": {
+          "title": "Pandora Hearts One‐Shot"
+        }
+      },
+      "34": {
+        "0": {
+          "title": "Noise of Echo"
+        },
+        "1": {
+          "title": "Noise of Echo"
+        }
+      },
+      "35": {
+        "0": {
+          "title": "Madness of Lost Memories"
+        },
+        "1": {
+          "title": "Madness of Lost Memories"
+        }
+      },
+      "36": {
+        "0": {
+          "title": "Sablier"
+        },
+        "1": {
+          "title": "Sablier"
+        }
+      },
+      "37": {
+        "0": {
+          "title": "Glen Baskerville"
+        },
+        "1": {
+          "title": "Glen Baskerville"
+        }
+      },
+      "38": {
+        "0": {
+          "title": "Scapegoat"
+        },
+        "1": {
+          "title": "Scapegoat"
+        }
+      },
+      "39": {
+        "0": {
+          "title": "Gate of Blackness"
+        },
+        "1": {
+          "title": "Gate of Blackness"
+        }
+      },
+      "40": {
+        "0": {
+          "title": "Blindness"
+        },
+        "1": {
+          "title": "Blindness"
+        }
+      },
+      "41": {
+        "0": {
+          "title": "Where am I!?"
+        },
+        "1": {
+          "title": "Where am I!?"
+        }
+      },
+      "42": {
+        "0": {
+          "title": "Stray"
+        },
+        "1": {
+          "title": "Stray"
+        }
+      },
+      "43": {
+        "0": {
+          "title": "Crown of Clown"
+        },
+        "1": {
+          "title": "Crown of Clown"
+        }
+      },
+      "44": {
+        "0": {
+          "title": "Dusty Sky"
+        },
+        "1": {
+          "title": "Dusty Sky"
+        }
+      },
+      "45": {
+        "0": {
+          "title": "Queen of Hurts"
+        },
+        "1": {
+          "title": "Queen of Hurts"
+        }
+      },
+      "46": {
+        "0": {
+          "title": "Persona"
+        },
+        "1": {
+          "title": "Persona"
+        }
+      },
+      "47": {
+        "0": {
+          "title": "Unbirthday"
+        },
+        "1": {
+          "title": "Unbirthday"
+        }
+      },
+      "48": {
+        "0": {
+          "title": "Isla=Yura"
+        },
+        "1": {
+          "title": "Isla=Yura"
+        }
+      },
+      "49": {
+        "0": {
+          "title": "Night in gale"
+        },
+        "1": {
+          "title": "Night in Gale"
+        }
+      },
+      "50": {
+        "0": {
+          "title": "Reverse Corte"
+        },
+        "1": {
+          "title": "Reverse Corte"
+        }
+      },
+      "51": {
+        "0": {
+          "title": "Lily&Reim"
+        },
+        "1": {
+          "title": "Lily & Reim"
+        }
+      },
+      "52": {
+        "0": {
+          "title": "Bloody Rites"
+        },
+        "1": {
+          "title": "Bloody Rites"
+        }
+      },
+      "53": {
+        "0": {
+          "title": "Humpty Dumpty Sat On A Wall"
+        },
+        "1": {
+          "title": "Humpty Dumpty Sat on a Wall"
+        }
+      },
+      "54": {
+        "0": {
+          "title": "Blank Smile"
+        },
+        "1": {
+          "title": "Blank Smile"
+        }
+      },
+      "55": {
+        "0": {
+          "title": "Black To Black"
+        },
+        "1": {
+          "title": "Black to Black"
+        }
+      },
+      "56": {
+        "0": {
+          "title": "Rabbit Eyes"
+        },
+        "1": {
+          "title": "Rabbit Eyes"
+        }
+      },
+      "57": {
+        "0": {
+          "title": "Humpty Dumpty had a Great Fall"
+        },
+        "1": {
+          "title": "Humpty Dumpty had a Great Fall"
+        }
+      },
+      "58": {
+        "0": {
+          "title": "Puddle of blood"
+        },
+        "1": {
+          "title": "Puddle of Blood"
+        }
+      },
+      "59": {
+        "0": {
+          "title": "Couldn’t Put Humpty Together Again"
+        },
+        "1": {
+          "title": "Couldn’t Put Humpty Together Again"
+        }
+      },
+      "60": {
+        "0": {
+          "title": "Egg Shell"
+        },
+        "1": {
+          "title": "Egg Shell"
+        }
+      },
+      "61": {
+        "0": {
+          "title": "Demios"
+        },
+        "1": {
+          "title": "Demios"
+        }
+      },
+      "62": {
+        "0": {
+          "title": "Repose"
+        },
+        "1": {
+          "title": "Repose"
+        }
+      },
+      "63": {
+        "0": {
+          "title": "Purpose"
+        },
+        "1": {
+          "title": "Purpose"
+        }
+      },
+      "64": {
+        "0": {
+          "title": "Tarantelle"
+        },
+        "1": {
+          "title": "Tarantelle"
+        }
+      },
+      "65": {
+        "0": {
+          "title": "Collapse"
+        },
+        "1": {
+          "title": "Collapse"
+        }
+      },
+      "66": {
+        "0": {
+          "title": "Jack"
+        },
+        "1": {
+          "title": "Jack"
+        }
+      },
+      "67": {
+        "0": {
+          "title": "Lacie"
+        },
+        "1": {
+          "title": "Lacie"
+        }
+      },
+      "68": {
+        "0": {
+          "title": "Glen"
+        },
+        "1": {
+          "title": "Glen"
+        }
+      },
+      "69": {
+        "0": {
+          "title": "Alice"
+        },
+        "1": {
+          "title": "Alice"
+        }
+      },
+      "70": {
+        "0": {
+          "title": "Oz"
+        },
+        "1": {
+          "title": "Oz"
+        }
+      },
+      "71": {
+        "0": {
+          "title": "Black Rabbit"
+        },
+        "1": {
+          "title": "Black Rabbit"
+        }
+      },
+      "72": {
+        "0": {
+          "title": "Bloody Rabbit"
+        },
+        "1": {
+          "title": "Bloody Rabbit"
+        }
+      },
+      "73": {
+        "0": {
+          "title": "A Note"
+        },
+        "1": {
+          "title": "A Note"
+        }
+      },
+      "74": {
+        "0": {
+          "title": "Broken Rabbit"
+        },
+        "1": {
+          "title": "Broken Rabbit"
+        }
+      },
+      "75": {
+        "0": {
+          "title": "Alone"
+        },
+        "1": {
+          "title": "Alone"
+        }
+      },
+      "76": {
+        "0": {
+          "title": "Alice&Oz"
+        },
+        "1": {
+          "title": "Alice & Oz"
+        }
+      },
+      "77": {
+        "0": {
+          "title": "Vacant"
+        },
+        "1": {
+          "title": "Vacant"
+        }
+      },
+      "78": {
+        "0": {
+          "title": "Decision"
+        },
+        "1": {
+          "title": "Decision"
+        }
+      },
+      "79": {
+        "0": {
+          "title": "Falling"
+        },
+        "1": {
+          "title": "Falling"
+        }
+      },
+      "80": {
+        "0": {
+          "title": "Oscar Vessalius"
+        },
+        "1": {
+          "title": "Oscar Vessalius"
+        }
+      },
+      "81": {
+        "0": {
+          "title": "CHILDREN"
+        },
+        "1": {
+          "title": "Children"
+        }
+      },
+      "82": {
+        "0": {
+          "title": "It makes all kinds"
+        },
+        "1": {
+          "title": "It Makes All Kinds"
+        }
+      },
+      "83": {
+        "0": {
+          "title": "Wish"
+        },
+        "1": {
+          "title": "Wish"
+        }
+      },
+      "84": {
+        "0": {
+          "title": "After the rain"
+        },
+        "1": {
+          "title": "After the Rain"
+        }
+      },
+      "85": {
+        "0": {
+          "title": "Trickster"
+        },
+        "1": {
+          "title": "Trickster"
+        }
+      },
+      "86": {
+        "0": {
+          "title": "Reverberate"
+        },
+        "1": {
+          "title": "Reverberate"
+        }
+      },
+      "87": {
+        "0": {
+          "title": "Together"
+        },
+        "1": {
+          "title": "Together"
+        }
+      },
+      "88": {
+        "0": {
+          "title": "Wager"
+        },
+        "1": {
+          "title": "Wager"
+        }
+      },
+      "89": {
+        "0": {
+          "title": "Starting Point"
+        },
+        "1": {
+          "title": "Starting Point"
+        }
+      },
+      "90": {
+        "0": {
+          "title": "Answer"
+        },
+        "1": {
+          "title": "Answer"
+        }
+      },
+      "91": {
+        "0": {
+          "title": "Staccato drop"
+        },
+        "1": {
+          "title": "Staccato Drop"
+        }
+      },
+      "92": {
+        "0": {
+          "title": "Clocktower"
+        },
+        "1": {
+          "title": "Clocktower"
+        }
+      },
+      "93": {
+        "0": {
+          "title": "Juror"
+        },
+        "1": {
+          "title": "Juror"
+        }
+      },
+      "94": {
+        "0": {
+          "title": "A Story"
+        },
+        "1": {
+          "title": "A Story"
+        }
+      },
+      "95": {
+        "0": {
+          "title": "Abyss"
+        },
+        "1": {
+          "title": "Abyss"
+        }
+      },
+      "96": {
+        "0": {
+          "title": "Blaze"
+        },
+        "1": {
+          "title": "Blaze"
+        }
+      },
+      "97": {
+        "0": {
+          "title": "Vincent"
+        },
+        "1": {
+          "title": "Vincent"
+        }
+      },
+      "98": {
+        "0": {
+          "title": "Disagree"
+        },
+        "1": {
+          "title": "Disagree"
+        }
+      },
+      "99": {
+        "0": {
+          "title": "I am"
+        },
+        "1": {
+          "title": "I am"
+        }
+      },
+      "100": {
+        "0": {
+          "title": "Reverberate"
+        },
+        "1": {
+          "title": "Reverberate"
+        }
+      },
+      "101": {
+        "0": {
+          "title": "Shade"
+        },
+        "1": {
+          "title": "Shade"
+        }
+      },
+      "102": {
+        "0": {
+          "title": "Ossia"
+        },
+        "1": {
+          "title": "Ossia"
+        }
+      },
+      "103": {
+        "0": {
+          "title": "Oswald"
+        },
+        "1": {
+          "title": "Oswald"
+        }
+      },
+      "104": {
+        "0": {
+          "title": "The Nursery"
+        },
+        "1": {
+          "title": "The Nursery"
+        }
+      },
+      "105": {
+        "0": {
+          "title": "Call Your Name"
+        },
+        "1": {
+          "title": "Call Your Name"
+        }
+      },
+      "106": {
+        "0": {
+          "title": "Will"
+        },
+        "1": {
+          "title": "Will"
+        }
+      }
+    },
+    "language": "Japanese",
+    "disambiguation": "Pandora Hearts, manga, Japanese",
+    "bookbrainz_work": {
+      "type": "manga",
+      "series": [
+        {
+          "id": "c2afca0e-d70a-42ca-9561-b466d27a0d87",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "writer",
+          "id": "5f5cd7b9-f19f-4fc1-8f84-611599ae1fdc"
+        },
+        {
+          "role": "illustrator",
+          "id": "5f5cd7b9-f19f-4fc1-8f84-611599ae1fdc"
+        }
+      ],
+      "identifiers": {}
+    }
+  },
+  "translation": {
+    "titles": [],
+    "subtitles": {},
+    "disambiguation": "Pandora Hearts, manga, English",
+    "language": "English",
+    "bookbrainz_work": {
+      "series": [
+        {
+          "id": "5c30c932-147f-41d3-847c-83c6248333e2",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "translator",
+          "id": "21ff9a68-28f0-4bce-ae2c-c5274dc84c87"
+        },
+        {
+          "role": "adapter",
+          "id": null
+        },
+        {
+          "role": "letterer",
+          "id": "6906cc6d-e4ca-4517-bde0-143afce3c42c"
+        }
+      ],
+      "editions": {
+        "1": "f194c771-6543-46bf-a6a4-0a98610ed8e7",
+        "5": "78b9865e-d960-4043-8ae5-20150ea9326e",
+        "10": "bc139126-7c98-4735-bed0-6f86975d86e6",
+        "14": "92b4f524-9ee6-4799-91e5-938218b060f2",
+        "19": "1f55f7ff-3040-4e87-bd60-08cc9f458bde",
+        "23": "a9727c3e-f263-49bb-9ccf-3093643eb498",
+        "27": "f66bc26b-2702-4338-9808-db49fcbda782",
+        "31": "b33e1b57-b5bd-4d97-99af-61a3b7beeb58",
+        "34": "44a07f1e-6048-4f80-9fff-b2b9c48c0e2f",
+        "38": "4ad33131-546a-4cb0-93e4-258409623b98",
+        "42": "6c9d4778-7d11-44d1-8838-b186e2f93f80",
+        "46": "5bdb144a-7ea3-42ec-ae4e-a2ec7210448a",
+        "50": "d210f03c-47f9-43eb-ac6c-d69a44c59def",
+        "54": "849aac95-683e-4a20-94d0-942c4e4caea7",
+        "58": "936c2f0b-5471-456d-aab6-ac23d62b881d",
+        "62": "064d2648-02db-4680-83dc-5d3dcc8974a7",
+        "66": "49d55ba8-1955-441e-8ad2-937517a2a533",
+        "71": "4a3d039d-d0a3-4117-843b-6012fd846806",
+        "75": "6f48c0fb-82d8-46e3-be6c-e75c2209f914",
+        "79": "05611e6f-5cbd-41f3-8d61-24618f95dcb7",
+        "83": "000e29b5-3c01-48ba-af52-0471f3ead943",
+        "88": "e3fcc6ea-b068-45f9-8e52-340dad71a17a",
+        "93": "0fe55a97-cd32-463b-8b3a-513ebbaa8095",
+        "99": "2feed5d7-8a26-4ad1-aa28-5b4134aee830"
+      },
+      "identifiers": {}
+    }
+  },
+  "identifiers": {}
+}

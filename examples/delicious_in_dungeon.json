@@ -1,0 +1,1545 @@
+{
+  "range": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "7.5",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "14.5",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "21.5",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "28.5",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "35.5",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "42.5",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "49.5",
+    "50",
+    "51",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "56.5",
+    "57",
+    "58",
+    "59",
+    "60",
+    "61",
+    "62",
+    "62.5",
+    "63",
+    "64",
+    "65",
+    "66",
+    "67",
+    "68",
+    "69",
+    "69.5",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75",
+    "76",
+    "76.5",
+    "77",
+    "78",
+    "79",
+    "80",
+    "81",
+    "82",
+    "83",
+    "84",
+    "85",
+    "85.5",
+    "86",
+    "87",
+    "88",
+    "89",
+    "90",
+    "91",
+    "91.5",
+    "92",
+    "93",
+    "94",
+    "95",
+    "96",
+    "97",
+    "97.5"
+  ],
+  "original": {
+    "titles": [
+      {
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
+        "language": "Japanese"
+      },
+      {
+        "text": "|subtitle|",
+        "sort": "COPY",
+        "language": "English",
+        "primary": true
+      },
+      {
+        "text": "|subtitle|",
+        "sort": "|subtitle|",
+        "language": "Japanese",
+        "primary": false
+      }
+    ],
+    "subtitles": {
+      "1": {
+        "0": {
+          "title": "第|index|話 水炊き",
+          "sort": "だい|index|わ みずたき き"
+        },
+        "1": {
+          "title": "Chapter |index|: Hot Pot"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mizutaki"
+        }
+      },
+      "2": {
+        "0": {
+          "title": "第|index|話 タルト",
+          "sort": "だい|index|わ たると"
+        },
+        "1": {
+          "title": "Chapter |index|: Tart"
+        },
+        "2": {
+          "title": "Dai |index| Wa Taruto"
+        }
+      },
+      "3": {
+        "0": {
+          "title": "第|index|話 ローストバジリスク",
+          "sort": "だい|index|わ ろーすとばじりすく"
+        },
+        "1": {
+          "title": "Chapter |index|: Roast Basilisk"
+        },
+        "2": {
+          "title": "Dai |index| Wa Rōsuto Bajirisuku"
+        }
+      },
+      "4": {
+        "0": {
+          "title": "第|index|話 オムレツ",
+          "sort": "だい|index|わ おむれつ"
+        },
+        "1": {
+          "title": "Chapter |index|: Omelet"
+        },
+        "2": {
+          "title": "Dai |index| Wa Omuretsu"
+        }
+      },
+      "5": {
+        "0": {
+          "title": "第|index|話 かき揚げ",
+          "sort": "だい|index|わ かき あげ"
+        },
+        "1": {
+          "title": "Chapter |index|: Kakiage"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kakiage"
+        }
+      },
+      "6": {
+        "0": {
+          "title": "第|index|話 動く鎧 ‐１‐",
+          "sort": "だい|index|わ うごく よろい‐１‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Living Armor ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ugoku Yoroi ‐1‐"
+        }
+      },
+      "7": {
+        "0": {
+          "title": "第|index|話 動く鎧 ‐２‐",
+          "sort": "だい|index|わ うごく よろい‐２‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Living Armor ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ugoku Yoroi ‐2‐"
+        }
+      },
+      "7.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話1",
+          "sort": "ばんがいへん もんすたー よもやま はなし 1"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐1‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 1"
+        }
+      },
+      "8": {
+        "0": {
+          "title": "第|index|話 キャベツ煮",
+          "sort": "だい|index|わ きゃべつ に"
+        },
+        "1": {
+          "title": "Chapter |index|: Stewed Cabbage"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kyabetsu Ni"
+        }
+      },
+      "9": {
+        "0": {
+          "title": "第|index|話 オーク",
+          "sort": "だい|index|わ おーく"
+        },
+        "1": {
+          "title": "Chapter |index|: Orcs"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ōku"
+        }
+      },
+      "10": {
+        "0": {
+          "title": "第|index|話 おやつ",
+          "sort": "だい|index|わ おやつ"
+        },
+        "1": {
+          "title": "Chapter |index|: Snacks"
+        },
+        "2": {
+          "title": "Dai |index| Wa Oyatsu"
+        }
+      },
+      "11": {
+        "0": {
+          "title": "第|index|話 ソルベ",
+          "sort": "だい|index|わ そるべ"
+        },
+        "1": {
+          "title": "Chapter |index|: Sorbet"
+        },
+        "2": {
+          "title": "Dai |index| Wa Sorube"
+        }
+      },
+      "12": {
+        "0": {
+          "title": "第|index|話 宮廷料理",
+          "sort": "だい|index|わ きゅうてい りょうり"
+        },
+        "1": {
+          "title": "Chapter |index|: Court Cuisine"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kyūtei Ryōri"
+        }
+      },
+      "13": {
+        "0": {
+          "title": "第|index|話 塩茹で",
+          "sort": "だい|index|わ しお ゆで"
+        },
+        "1": {
+          "title": "Chapter |index|: Boiled in Salt Water"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shioyude"
+        }
+      },
+      "14": {
+        "0": {
+          "title": "第|index|話 水棲馬",
+          "sort": "だい|index|わ すいせい うま"
+        },
+        "1": {
+          "title": "Chapter |index|: Kelpie"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kerupī"
+        }
+      },
+      "14.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話2",
+          "sort": "ばんがいへん もんすたー よもやま はなし 2"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐2‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 2"
+        }
+      },
+      "15": {
+        "0": {
+          "title": "第|index|話 雑炊",
+          "sort": "だい|index|わ ぞうすい"
+        },
+        "1": {
+          "title": "Chapter |index|: Porridge"
+        },
+        "2": {
+          "title": "Dai |index| Wa Zōsui"
+        }
+      },
+      "16": {
+        "0": {
+          "title": "第|index|話 蒲焼き",
+          "sort": "だい|index|わ かばやき き"
+        },
+        "1": {
+          "title": "Chapter |index|: Broiled with Sauce"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kabayaki"
+        }
+      },
+      "17": {
+        "0": {
+          "title": "第|index|話 木苺",
+          "sort": "だい|index|わ きいちご"
+        },
+        "1": {
+          "title": "Chapter |index|: Raspberries"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kiichigo"
+        }
+      },
+      "18": {
+        "0": {
+          "title": "第|index|話 焼き肉",
+          "sort": "だい|index|わ やきにく"
+        },
+        "1": {
+          "title": "Chapter |index|: Grilled Meat"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yakiniku"
+        }
+      },
+      "19": {
+        "0": {
+          "title": "第|index|話 テンタクルス",
+          "sort": "だい|index|わ てんたくるす"
+        },
+        "1": {
+          "title": "Chapter |index|: Tentacles"
+        },
+        "2": {
+          "title": "Dai |index| Wa Tentakurusu"
+        }
+      },
+      "20": {
+        "0": {
+          "title": "第|index|話 シチュー",
+          "sort": "だい|index|わ しちゅー"
+        },
+        "1": {
+          "title": "Chapter |index|: Stew"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shichū"
+        }
+      },
+      "21": {
+        "0": {
+          "title": "第|index|話 大ガエル",
+          "sort": "だい|index|わ だい がえる"
+        },
+        "1": {
+          "title": "Chapter |index|: Giant Frogs"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ōgaeru"
+        }
+      },
+      "21.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話3",
+          "sort": "ばんがいへん もんすたー よもやま はなし 3"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐3‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 3"
+        }
+      },
+      "22": {
+        "0": {
+          "title": "第|index|話 地上にて",
+          "sort": "だい|index|わ ちじょう にて"
+        },
+        "1": {
+          "title": "Chapter |index|: Aboveground"
+        },
+        "2": {
+          "title": "Dai |index| Wa Chijō nite"
+        }
+      },
+      "23": {
+        "0": {
+          "title": "第|index|話 炎竜1",
+          "sort": "だい|index|わ えんりゅう 1"
+        },
+        "1": {
+          "title": "Chapter |index|: Red Dragon I",
+          "sort": "Chapter |index|: Red Dragon 1"
+        },
+        "2": {
+          "title": "Dai |index| Wa Reddo Doragon 1"
+        }
+      },
+      "24": {
+        "0": {
+          "title": "第|index|話 炎竜2",
+          "sort": "だい|index|わ えんりゅう 2"
+        },
+        "1": {
+          "title": "Chapter |index|: Red Dragon II",
+          "sort": "Chapter |index|: Red Dragon 2"
+        },
+        "2": {
+          "title": "Dai |index| Wa Reddo Doragon 2"
+        }
+      },
+      "25": {
+        "0": {
+          "title": "第|index|話 炎竜3",
+          "sort": "だい|index|わ えんりゅう 3"
+        },
+        "1": {
+          "title": "Chapter |index|: Red Dragon III",
+          "sort": "Chapter |index|: Red Dragon 3"
+        },
+        "2": {
+          "title": "Dai |index| Wa Reddo Doragon 3"
+        }
+      },
+      "26": {
+        "0": {
+          "title": "第|index|話 炎竜4",
+          "sort": "だい|index|わ えんりゅう 4"
+        },
+        "1": {
+          "title": "Chapter |index|: Red Dragon IV",
+          "sort": "Chapter |index|: Red Dragon 4"
+        },
+        "2": {
+          "title": "Dai |index| Wa Reddo Doragon 4"
+        }
+      },
+      "27": {
+        "0": {
+          "title": "第|index|話 炎竜5",
+          "sort": "だい|index|わ えんりゅう 5"
+        },
+        "1": {
+          "title": "Chapter |index|: Red Dragon V",
+          "sort": "Chapter |index|: Red Dragon 5"
+        },
+        "2": {
+          "title": "Dai |index| Wa Reddo Doragon 5"
+        }
+      },
+      "28": {
+        "0": {
+          "title": "第|index|話 炎竜6",
+          "sort": "だい|index|わ えんりゅう 6"
+        },
+        "1": {
+          "title": "Chapter |index|: Red Dragon VI",
+          "sort": "Chapter |index|: Red Dragon 6"
+        },
+        "2": {
+          "title": "Dai |index| Wa Reddo Doragon 6"
+        }
+      },
+      "28.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話4",
+          "sort": "ばんがいへん もんすたー よもやま はなし 4"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐4‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 4"
+        }
+      },
+      "29": {
+        "0": {
+          "title": "第|index|話 炎竜7",
+          "sort": "だい|index|わ えんりゅう 7"
+        },
+        "1": {
+          "title": "Chapter |index|: Red Dragon VII",
+          "sort": "Chapter |index|: Red Dragon 7"
+        },
+        "2": {
+          "title": "Dai |index| Wa Reddo Doragon 7"
+        }
+      },
+      "30": {
+        "0": {
+          "title": "第|index|話 良薬",
+          "sort": "だい|index|わ りょうやく"
+        },
+        "1": {
+          "title": "Chapter |index|: Good Medicine"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ryōyaku"
+        }
+      },
+      "31": {
+        "0": {
+          "title": "第|index|話 シーサーペント 前編",
+          "sort": "だい|index|わ しーさーぺんと ぜんぺん"
+        },
+        "1": {
+          "title": "Chapter |index|: Sea Serpent, Part 1"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shīsāpento Zenpen"
+        }
+      },
+      "32": {
+        "0": {
+          "title": "第|index|話 シーサーペント 後編",
+          "sort": "だい|index|わ しーさーぺんと こうへん"
+        },
+        "1": {
+          "title": "Chapter |index|: Sea Serpent, Part 2"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shīsāpento Kōhen"
+        }
+      },
+      "33": {
+        "0": {
+          "title": "第|index|話 ドライアド",
+          "sort": "だい|index|わ どらいあど"
+        },
+        "1": {
+          "title": "Chapter |index|: Dryad"
+        },
+        "2": {
+          "title": "Dai |index| Wa Doraiado"
+        }
+      },
+      "34": {
+        "0": {
+          "title": "第|index|話 コカトリス",
+          "sort": "だい|index|わ こかとりす"
+        },
+        "1": {
+          "title": "Chapter |index|: Cockatrice"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kokatorisu"
+        }
+      },
+      "35": {
+        "0": {
+          "title": "第|index|話 掃除屋",
+          "sort": "だい|index|わ そうじ や"
+        },
+        "1": {
+          "title": "Chapter |index|: Cleaners"
+        },
+        "2": {
+          "title": "Dai |index| Wa Sōjiya"
+        }
+      },
+      "35.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話5",
+          "sort": "ばんがいへん もんすたー よもやま はなし 5"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐5‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 5"
+        }
+      },
+      "36": {
+        "0": {
+          "title": "第|index|話 みりん干し",
+          "sort": "だい|index|わ みりん ほし"
+        },
+        "1": {
+          "title": "Chapter |index|: Dried With Sweet Sake"
+        },
+        "2": {
+          "title": "Dai |index| Wa Mirin boshi"
+        }
+      },
+      "37": {
+        "0": {
+          "title": "第|index|話 ハーピー",
+          "sort": "だい|index|わ はーぴー"
+        },
+        "1": {
+          "title": "Chapter |index|: Harpy"
+        },
+        "2": {
+          "title": "Dai |index| Wa Hāpī"
+        }
+      },
+      "38": {
+        "0": {
+          "title": "第|index|話 キメラ",
+          "sort": "だい|index|わ きめら"
+        },
+        "1": {
+          "title": "Chapter |index|: Chimera"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kimera"
+        }
+      },
+      "39": {
+        "0": {
+          "title": "第|index|話 シェイプシフター　‐１‐",
+          "sort": "だい|index|わ しぇいぷしふたー　‐１‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Shapeshifter ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Sheipu Shifutā ‐1‐"
+        }
+      },
+      "40": {
+        "0": {
+          "title": "第|index|話 シェイプシフター　‐２‐",
+          "sort": "だい|index|わ しぇいぷしふたー　‐２‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Shapeshifter ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Sheipu Shifutā ‐2‐"
+        }
+      },
+      "41": {
+        "0": {
+          "title": "第|index|話 山姥",
+          "sort": "だい|index|わ やまうば"
+        },
+        "1": {
+          "title": "Chapter |index|: Hag"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yamanba"
+        }
+      },
+      "42": {
+        "0": {
+          "title": "第|index|話 夢魔",
+          "sort": "だい|index|わ むま"
+        },
+        "1": {
+          "title": "Chapter |index|: Nightmare"
+        },
+        "2": {
+          "title": "Dai |index| Wa Muma"
+        }
+      },
+      "42.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話6",
+          "sort": "ばんがいへん もんすたー よもやま はなし 6"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐6‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 6"
+        }
+      },
+      "43": {
+        "0": {
+          "title": "第|index|話 アイスゴーレム",
+          "sort": "だい|index|わ あいすごーれむ"
+        },
+        "1": {
+          "title": "Chapter |index|: Ice Golem"
+        },
+        "2": {
+          "title": "Dai |index| Wa Aisu Gōremu"
+        }
+      },
+      "44": {
+        "0": {
+          "title": "第|index|話 バロメッツ",
+          "sort": "だい|index|わ ばろめっつ"
+        },
+        "1": {
+          "title": "Chapter |index|: Barometz"
+        },
+        "2": {
+          "title": "Dai |index| Wa Baromettsu"
+        }
+      },
+      "45": {
+        "0": {
+          "title": "第|index|話 卵",
+          "sort": "だい|index|わ たまご"
+        },
+        "1": {
+          "title": "Chapter |index|: Egg"
+        },
+        "2": {
+          "title": "Dai |index| Wa Tamago"
+        }
+      },
+      "46": {
+        "0": {
+          "title": "第|index|話 黄金郷",
+          "sort": "だい|index|わ おうごん さと"
+        },
+        "1": {
+          "title": "Chapter |index|: The Golden Country"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ōgonkyō"
+        }
+      },
+      "47": {
+        "0": {
+          "title": "第|index|話 グリフィン",
+          "sort": "だい|index|わ ぐりふぃん"
+        },
+        "1": {
+          "title": "Chapter |index|: Griffin"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gurifin"
+        }
+      },
+      "48": {
+        "0": {
+          "title": "第|index|話 使い魔",
+          "sort": "だい|index|わ つかい ま"
+        },
+        "1": {
+          "title": "Chapter |index|: Familiars"
+        },
+        "2": {
+          "title": "Dai |index| Wa Tsukaima"
+        }
+      },
+      "49": {
+        "0": {
+          "title": "第|index|話 グリフィンのスープ",
+          "sort": "だい|index|わ ぐりふぃん の すーぷ"
+        },
+        "1": {
+          "title": "Chapter |index|: Griffin Soup"
+        },
+        "2": {
+          "title": "Dai |index| Wa Gurifin no Sūpu"
+        }
+      },
+      "49.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話7",
+          "sort": "ばんがいへん もんすたー よもやま はなし 7"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐7‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 7"
+        }
+      },
+      "50": {
+        "0": {
+          "title": "第|index|話 ダンプリング　‐１‐",
+          "sort": "だい|index|わ だんぷりんぐ　‐１‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Dumplings ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Danpuringu ‐1‐"
+        }
+      },
+      "51": {
+        "0": {
+          "title": "第|index|話 ダンプリング　‐２‐",
+          "sort": "だい|index|わ だんぷりんぐ　‐２‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Dumplings ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Danpuringu ‐2‐"
+        }
+      },
+      "52": {
+        "0": {
+          "title": "第|index|話 ベーコンエッグ",
+          "sort": "だい|index|わ べーこんえっぐ"
+        },
+        "1": {
+          "title": "Chapter |index|: Bacon and Eggs"
+        },
+        "2": {
+          "title": "Dai |index| Wa Bēkon’Eggu"
+        }
+      },
+      "53": {
+        "0": {
+          "title": "第|index|話 地下１階にて　‐１‐",
+          "sort": "だい|index|わ ちか １ かい にて　‐１‐"
+        },
+        "1": {
+          "title": "Chapter |index|: On Floor One ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Chika 1‐kai Nite ‐1‐"
+        }
+      },
+      "54": {
+        "0": {
+          "title": "第|index|話 地下１階にて　‐２‐",
+          "sort": "だい|index|わ ちか １ かい にて　‐２‐"
+        },
+        "1": {
+          "title": "Chapter |index|: On Floor One ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Chika 1‐kai Nite ‐2‐"
+        }
+      },
+      "55": {
+        "0": {
+          "title": "第|index|話 地下１階にて　‐３‐",
+          "sort": "だい|index|わ ちか １ かい にて　‐３‐"
+        },
+        "1": {
+          "title": "Chapter |index|: On Floor One ‐3‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Chika 1‐kai Nite ‐3‐"
+        }
+      },
+      "56": {
+        "0": {
+          "title": "第|index|話 バイコーン",
+          "sort": "だい|index|わ ばいこーん"
+        },
+        "1": {
+          "title": "Chapter |index|: Bicorn"
+        },
+        "2": {
+          "title": "Dai |index| Wa Baikōn"
+        }
+      },
+      "56.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話8",
+          "sort": "ばんがいへん もんすたー よもやま はなし 8"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐8‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 8"
+        }
+      },
+      "57": {
+        "0": {
+          "title": "第|index|話 兜煮",
+          "sort": "だい|index|わ かぶとに"
+        },
+        "1": {
+          "title": "Chapter |index|: Stewed Head"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kabutoni"
+        }
+      },
+      "58": {
+        "0": {
+          "title": "第|index|話 サキュバス　前編",
+          "sort": "だい|index|わ さきゅばす　ぜんぺん"
+        },
+        "1": {
+          "title": "Chapter |index|: Succubus ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Sakyubasu Zenpen"
+        }
+      },
+      "59": {
+        "0": {
+          "title": "第|index|話 サキュバス　後編",
+          "sort": "だい|index|わ さきゅばす　こうへん"
+        },
+        "1": {
+          "title": "Chapter |index|: Succubus ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Sakyubasu Kōhen"
+        }
+      },
+      "60": {
+        "0": {
+          "title": "第|index|話 有翼の獅子",
+          "sort": "だい|index|わ ゆうよく の しし"
+        },
+        "1": {
+          "title": "Chapter |index|: The Winged Lion"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yūyoku no Shishi"
+        }
+      },
+      "61": {
+        "0": {
+          "title": "第|index|話 焼き歩き茸",
+          "sort": "だい|index|わ やき あるき たけ"
+        },
+        "1": {
+          "title": "Chapter |index|: Roasted Walking Mushroom"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yaki Aruki Kinoko"
+        }
+      },
+      "62": {
+        "0": {
+          "title": "第|index|話 ６日間",
+          "sort": "だい|index|わ ６ にちかん"
+        },
+        "1": {
+          "title": "Chapter |index|: Six Days"
+        },
+        "2": {
+          "title": "Dai |index| Wa 6‐Kakan"
+        }
+      },
+      "62.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話9",
+          "sort": "ばんがいへん もんすたー よもやま はなし 9"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐9‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 9"
+        }
+      },
+      "63": {
+        "0": {
+          "title": "第|index|話 コンフィ",
+          "sort": "だい|index|わ こんふぃ"
+        },
+        "1": {
+          "title": "Chapter |index|: Confit"
+        },
+        "2": {
+          "title": "Dai |index| Wa Konfi"
+        }
+      },
+      "64": {
+        "0": {
+          "title": "第|index|話 ウサギ　‐１‐",
+          "sort": "だい|index|わ うさぎ　‐１‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Rabbits ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Usagi ‐1‐"
+        }
+      },
+      "65": {
+        "0": {
+          "title": "第|index|話 ウサギ　‐２‐",
+          "sort": "だい|index|わ うさぎ　‐２‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Rabbits ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Usagi ‐2‐"
+        }
+      },
+      "66": {
+        "0": {
+          "title": "第|index|話 カレー　‐１‐",
+          "sort": "だい|index|わ かれー　‐１‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Curry ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Karē ‐1‐"
+        }
+      },
+      "67": {
+        "0": {
+          "title": "第|index|話 カレー　‐２‐",
+          "sort": "だい|index|わ かれー　‐２‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Curry ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Karē ‐2‐"
+        }
+      },
+      "68": {
+        "0": {
+          "title": "第|index|話 シスル　‐１‐",
+          "sort": "だい|index|わ しする　‐１‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Sissel ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shisuru ‐1‐"
+        }
+      },
+      "69": {
+        "0": {
+          "title": "第|index|話 シスル　‐２‐",
+          "sort": "だい|index|わ しする　‐２‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Sissel ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shisuru ‐2‐"
+        }
+      },
+      "69.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話10",
+          "sort": "ばんがいへん もんすたー よもやま はなし 10"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐10‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 10"
+        }
+      },
+      "70": {
+        "0": {
+          "title": "第|index|話 シスル　‐３‐",
+          "sort": "だい|index|わ しする　‐３‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Sissel ‐3‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shisuru ‐3‐"
+        }
+      },
+      "71": {
+        "0": {
+          "title": "第|index|話 シスル　‐４‐",
+          "sort": "だい|index|わ しする　‐４‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Sissel ‐4‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shisuru ‐4‐"
+        }
+      },
+      "72": {
+        "0": {
+          "title": "第|index|話 シスル　‐５‐",
+          "sort": "だい|index|わ しする　‐５‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Sissel ‐5‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shisuru ‐5‐"
+        }
+      },
+      "73": {
+        "0": {
+          "title": "第|index|話 ババロア",
+          "sort": "だい|index|わ ばばろあ"
+        },
+        "1": {
+          "title": "Chapter |index|: Bavarois"
+        },
+        "2": {
+          "title": "Dai |index| Wa Babaroa"
+        }
+      },
+      "74": {
+        "0": {
+          "title": "第|index|話 リリクムムアレ",
+          "sort": "だい|index|わ りりくむむあれ"
+        },
+        "1": {
+          "title": "Chapter |index|: Liricmumwarei"
+        },
+        "2": {
+          "title": "Dai |index| Wa Ririkumumuare"
+        }
+      },
+      "75": {
+        "0": {
+          "title": "第|index|話 迷宮の主　‐１‐",
+          "sort": "だい|index|わ めいきゅう の しゅ　‐１‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Lord of the Dungeon ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Meikyū no Aruji ‐1‐"
+        }
+      },
+      "76": {
+        "0": {
+          "title": "第|index|話 迷宮の主　‐２‐",
+          "sort": "だい|index|わ めいきゅう の しゅ　‐２‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Lord of the Dungeon ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Meikyū no Aruji ‐2‐"
+        }
+      },
+      "76.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話11",
+          "sort": "ばんがいへん もんすたー よもやま はなし 11"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐11‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 11"
+        }
+      },
+      "77": {
+        "0": {
+          "title": "第|index|話 迷宮",
+          "sort": "だい|index|わ めいきゅう"
+        },
+        "1": {
+          "title": "Chapter |index|: Dungeon ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Meikyū"
+        }
+      },
+      "78": {
+        "0": {
+          "title": "第|index|話 迷宮2",
+          "sort": "だい|index|わ めいきゅう 2"
+        },
+        "1": {
+          "title": "Chapter |index|: Dungeon ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Meikyū 2"
+        }
+      },
+      "79": {
+        "0": {
+          "title": "第|index|話 寄生虫",
+          "sort": "だい|index|わ きせいちゅう"
+        },
+        "1": {
+          "title": "Chapter |index|: Parasites"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kiseichū"
+        }
+      },
+      "80": {
+        "0": {
+          "title": "第|index|話 食物連鎖",
+          "sort": "だい|index|わ しょくもつれんさ"
+        },
+        "1": {
+          "title": "Chapter |index|: The Food Chain"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shokumotsu Rensa"
+        }
+      },
+      "81": {
+        "0": {
+          "title": "第|index|話 郷土料理",
+          "sort": "だい|index|わ きょうどりょうり"
+        },
+        "1": {
+          "title": "Chapter |index|: Local Cuisine"
+        },
+        "2": {
+          "title": "Dai |index| Wa Kyōdo Ryōri"
+        }
+      },
+      "82": {
+        "0": {
+          "title": "第|index|話 マルシル",
+          "sort": "だい|index|わ まるしる"
+        },
+        "1": {
+          "title": "Chapter |index|: Marcille ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Marushiru"
+        }
+      },
+      "83": {
+        "0": {
+          "title": "第|index|話 マルシル2",
+          "sort": "だい|index|わ まるしる 2"
+        },
+        "1": {
+          "title": "Chapter |index|: Marcille ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Marushiru 2"
+        }
+      },
+      "84": {
+        "0": {
+          "title": "第|index|話 マルシル3",
+          "sort": "だい|index|わ まるしる 3"
+        },
+        "1": {
+          "title": "Chapter |index|: Marcille ‐3‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Marushiru 3"
+        }
+      },
+      "85": {
+        "0": {
+          "title": "第|index|話 マルシル4",
+          "sort": "だい|index|わ まるしる 4"
+        },
+        "1": {
+          "title": "Chapter |index|: Marcille ‐4‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Marushiru 4"
+        }
+      },
+      "85.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話12",
+          "sort": "ばんがいへん もんすたー よもやま はなし 12"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐12‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 12"
+        }
+      },
+      "86": {
+        "0": {
+          "title": "第|index|話 翼獅子",
+          "sort": "だい|index|わ つばさ しし"
+        },
+        "1": {
+          "title": "Chapter |index|: Winged Lion ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yokujishi"
+        }
+      },
+      "87": {
+        "0": {
+          "title": "第|index|話 翼獅子2",
+          "sort": "だい|index|わ つばさ しし 2"
+        },
+        "1": {
+          "title": "Chapter |index|: Winged Lion ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yokujishi 2"
+        }
+      },
+      "88": {
+        "0": {
+          "title": "第|index|話 翼獅子3",
+          "sort": "だい|index|わ つばさ しし 3"
+        },
+        "1": {
+          "title": "Chapter |index|: Winged Lion ‐3‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yokujishi 3"
+        }
+      },
+      "89": {
+        "0": {
+          "title": "第|index|話 翼獅子4",
+          "sort": "だい|index|わ つばさ しし 4"
+        },
+        "1": {
+          "title": "Chapter |index|: Winged Lion ‐4‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yokujishi 4"
+        }
+      },
+      "90": {
+        "0": {
+          "title": "第|index|話 翼獅子5",
+          "sort": "だい|index|わ つばさ しし 5"
+        },
+        "1": {
+          "title": "Chapter |index|: Winged Lion ‐5‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yokujishi 5"
+        }
+      },
+      "91": {
+        "0": {
+          "title": "第|index|話 翼獅子6",
+          "sort": "だい|index|わ つばさ しし 6"
+        },
+        "1": {
+          "title": "Chapter |index|: Winged Lion ‐6‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Yokujishi 6"
+        }
+      },
+      "91.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話13",
+          "sort": "ばんがいへん もんすたー よもやま はなし 13"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐13‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 13"
+        }
+      },
+      "92": {
+        "0": {
+          "title": "第|index|話 島",
+          "sort": "だい|index|わ しま"
+        },
+        "1": {
+          "title": "Chapter |index|: The Island"
+        },
+        "2": {
+          "title": "Dai |index| Wa Shima"
+        }
+      },
+      "93": {
+        "0": {
+          "title": "第|index|話 ファリン ‐１‐",
+          "sort": "だい|index|わ ふぁりん‐１‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Falin ‐1‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Farin ‐1‐"
+        }
+      },
+      "94": {
+        "0": {
+          "title": "第|index|話 ファリン ‐２‐",
+          "sort": "だい|index|わ ふぁりん‐２‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Falin ‐2‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Farin ‐2‐"
+        }
+      },
+      "95": {
+        "0": {
+          "title": "第|index|話 ファリン ‐３‐",
+          "sort": "だい|index|わ ふぁりん‐３‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Falin ‐3‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Farin ‐3‐"
+        }
+      },
+      "96": {
+        "0": {
+          "title": "第|index|話 ファリン ‐４‐",
+          "sort": "だい|index|わ ふぁりん‐４‐"
+        },
+        "1": {
+          "title": "Chapter |index|: Falin ‐4‐"
+        },
+        "2": {
+          "title": "Dai |index| Wa Farin ‐4‐"
+        }
+      },
+      "97": {
+        "0": {
+          "title": "第|index|話 ダンジョン飯",
+          "sort": "だい|index|わ だんじょん めし"
+        },
+        "1": {
+          "title": "Chapter |index|: Delicious in Dungeon"
+        },
+        "2": {
+          "title": "Dai |index| Wa Danjon Meshi"
+        }
+      },
+      "97.5": {
+        "0": {
+          "title": "番外編 モンスターよもやま話14",
+          "sort": "ばんがいへん もんすたー よもやま はなし 14"
+        },
+        "1": {
+          "title": "Bonus: Miscellaneous Monster Tales ‐14‐"
+        },
+        "2": {
+          "title": "Bangai‐hen Monsutā Yomoyamabanashi 14"
+        }
+      }
+    },
+    "language": "Japanese",
+    "disambiguation": "Delicious in Dungeon, manga, Japanese",
+    "bookbrainz_work": {
+      "type": "manga",
+      "series": [
+        {
+          "id": "d16fef65-1eb5-40c8-ac9e-8c89c3f6ceb5",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "writer",
+          "id": "b63a60b4-6a1f-4cbd-904f-90bcd3cb7dff"
+        },
+        {
+          "role": "illustrator",
+          "id": "b63a60b4-6a1f-4cbd-904f-90bcd3cb7dff"
+        }
+      ],
+      "identifiers": {}
+    }
+  },
+  "translation": {
+    "titles": [],
+    "subtitles": {},
+    "disambiguation": "Delicious in Dungeon, manga, English",
+    "language": "English",
+    "bookbrainz_work": {
+      "series": [
+        {
+          "id": "e1c9a438-b9d1-41c5-aca5-ae884bf7df09",
+          "offset": 0
+        }
+      ],
+      "relationships": [
+        {
+          "role": "translator",
+          "id": "9b76929e-9967-49ed-a838-e1e23464f00f"
+        },
+        {
+          "role": "adapter",
+          "id": null
+        },
+        {
+          "role": "letterer",
+          "id": "6a41c5d8-96fa-475a-8795-769ac22cf8b4"
+        }
+      ],
+      "editions": {
+        "1": "030cc758-7c79-4ae1-bf12-a3f4499b44ac",
+        "8": "1affa317-a973-4beb-8476-db6bb727f91d",
+        "15": "e9082145-43ab-47bb-873f-02861706daa1",
+        "22": "e0765d2d-4766-49bd-8d45-b550682f9625",
+        "29": "817a8f30-58a3-4c1b-8277-e530dec639a2",
+        "36": "73f4f950-ebdc-4952-8a4d-b950fe8cf5c2",
+        "43": "49be5995-e6a7-49c9-92ad-ea6f0c4b628c",
+        "50": "3a626977-3989-4d37-944c-8f96eaf2f589",
+        "57": "eb50d7e8-496f-4eb3-80b6-fc21ef3d8b33",
+        "63": "38c9ebe8-65d7-49ea-acc3-6a466496a465",
+        "70": "49e577d0-bedf-4c69-9eff-84cf70cc1248",
+        "77": "2f3acc79-e6c0-4124-8397-47f63b7a8ce3",
+        "86": "1ba60b84-52a4-454e-9e30-362e017c60ad",
+        "92": "f90e8371-57e0-4a10-b352-b47a9a31febb"
+      },
+      "identifiers": {}
+    }
+  },
+  "identifiers": {}
+}
