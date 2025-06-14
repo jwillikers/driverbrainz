@@ -1,6 +1,4 @@
 #!/usr/bin/env python
-import json
-import platformdirs
 from selenium import webdriver
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -10,7 +8,10 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 
 import argparse
+from collections import OrderedDict
 import copy
+import json
+import platformdirs
 import logging
 import os
 import shutil
@@ -166,6 +167,34 @@ TRANSLATED_MUSICBRAINZ_WORK_IDENTIFIERS = {}
 # }
 
 
+# https://stackoverflow.com/a/28777781/9835303
+def write_roman(num):
+    roman = OrderedDict()
+    roman[1000] = "M"
+    roman[900] = "CM"
+    roman[500] = "D"
+    roman[400] = "CD"
+    roman[100] = "C"
+    roman[90] = "XC"
+    roman[50] = "L"
+    roman[40] = "XL"
+    roman[10] = "X"
+    roman[9] = "IX"
+    roman[5] = "V"
+    roman[4] = "IV"
+    roman[1] = "I"
+
+    def roman_num(num):
+        for r in roman.keys():
+            x, y = divmod(num, r)
+            yield roman[r] * x
+            num -= r * x
+            if num <= 0:
+                break
+
+    return "".join([a for a in roman_num(num)])
+
+
 def musicbrainz_log_in(driver, username):
     username_text_box = driver.find_element(by=By.ID, value="id-username")
     username_text_box.send_keys(username)
@@ -175,7 +204,7 @@ def musicbrainz_log_in(driver, username):
     submit_button.click()
 
 
-def bookbrainz_set_title(driver, index, title):
+def bookbrainz_set_title(driver, index, title, roman_numerals=False):
     wait = WebDriverWait(driver, timeout=200)
     # todo Make more accurate by relative to label
     name_text_box = driver.find_element(
@@ -185,7 +214,11 @@ def bookbrainz_set_title(driver, index, title):
     subtitle = ""
     if "subtitle" in title and title["subtitle"]:
         subtitle = title["subtitle"]
-    name = title["text"].replace("|subtitle|", subtitle).replace("|index|", f"{index}")
+    name = (
+        title["text"]
+        .replace("|subtitle|", subtitle)
+        .replace("|index|", write_roman(int(index)) if roman_numerals else f"{index}")
+    )
     name_text_box.send_keys(name)
     wait.until(
         EC.visibility_of_element_located(
@@ -508,6 +541,7 @@ def bookbrainz_add_series(driver, series, index):
 
 
 BOOKBRAINZ_RELATIONSHIP_VERB = {
+    "adaptation": "is an adaptation of",
     "adapter": "adapted",
     "edition": "contains",
     "illustrator": "illustrated",
@@ -615,7 +649,7 @@ def bookbrainz_add_relationship(driver, relationship):
 #         }
 #     ],
 # }
-def bookbrainz_create_work(driver, work, index, username=None):
+def bookbrainz_create_work(driver, work, index, username=None, roman_numerals=False):
     wait = WebDriverWait(driver, timeout=200)
 
     # driver.close()
@@ -648,7 +682,9 @@ def bookbrainz_create_work(driver, work, index, username=None):
         cookies.append(driver.get_cookie("connect.sid"))
         with open(COOKIES_CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump(cookies, f, ensure_ascii=False, indent=4)
-    bookbrainz_set_title(driver, index, work["titles"][0])
+    bookbrainz_set_title(
+        driver, index, work["titles"][0], roman_numerals=roman_numerals
+    )
     # disambiguation_label = driver.find_element(by=By.XPATH, value="//label[@class='form-label' and span/starts-with(text(),'Disambiguation')]")
     # disambiguation_text_box_locator = driver.find_element(by=By.XPATH, value=".row:nth-child(5) .form-control")
     # disambiguation_text_box_locator = locate_with(By.ID, "react-select-language-input").below({By.XPATH: "//div[@class='form-group']/input[@class='form-control']"})
@@ -681,7 +717,10 @@ def bookbrainz_create_work(driver, work, index, username=None):
                 {
                     "text": a["text"]
                     .replace("|subtitle|", subtitle)
-                    .replace("|index|", f"{index}"),
+                    .replace(
+                        "|index|",
+                        write_roman(int(index)) if roman_numerals else f"{index}",
+                    ),
                     "sort": a["sort"]
                     .replace("|subtitle|", sort_subtitle)
                     .replace("|index|", f"{index}"),
@@ -1120,6 +1159,7 @@ def main():
     parser.add_argument("--range-start", type=int)
     parser.add_argument("--range-end", type=int)
     parser.add_argument("--no-headless", action="store_true")
+    parser.add_argument("--roman-numerals", action="store_true")
     parser.add_argument("--username")
     args = parser.parse_args()
 
@@ -1431,7 +1471,13 @@ def main():
                 titles.append(title)
             original_work["titles"] = titles
 
-            bookbrainz_create_work(driver, original_work, i, username=args.username)
+            bookbrainz_create_work(
+                driver,
+                original_work,
+                i,
+                username=args.username,
+                roman_numerals=args.roman_numerals,
+            )
             original_work_url = driver.current_url
 
             # Now create the translated work
@@ -1528,7 +1574,13 @@ def main():
                 titles.append(title)
             translation_work["titles"] = [original_work["titles"][1]] + titles
 
-            bookbrainz_create_work(driver, translation_work, i, username=args.username)
+            bookbrainz_create_work(
+                driver,
+                translation_work,
+                i,
+                username=args.username,
+                roman_numerals=args.roman_numerals,
+            )
 
     driver.quit()
     print("Complete")
