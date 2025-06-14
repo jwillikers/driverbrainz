@@ -113,9 +113,9 @@ def remove_extra_spaces_hiragana(input: str) -> str:
         ):
             if f" {character} " in input:
                 input = output.replace(f" {character} ", character)
-            elif f"{special_character} " in input:
+            elif f"{character} " in input:
                 input = output.replace(f"{character} ", character)
-            elif f" {special_character}" in input:
+            elif f" {character}" in input:
                 input = output.replace(f" {character}", character)
     return output
 
@@ -126,7 +126,7 @@ def fetch_wikipedia_section(page_title: str, section_number: int) -> str:
     response.raise_for_status()
     data = response.json()
     if "parse" not in data:
-        return None
+        return ""
     return data["parse"]["wikitext"]["*"]
 
 
@@ -496,7 +496,7 @@ def prefix_chapter_titles(
                         chapter,
                         prefix,
                         use_brackets_japanese,
-                        english_chapter_prefix=None,
+                        english_chapter_prefix="",
                     )
                 unknown_prefix = False
                 break
