@@ -65,6 +65,7 @@ def remove_extra_spaces_hiragana(input: str) -> str:
         "、",
         "・",
         "·",
+        ",",
         "!",
         "?",
         ".",
