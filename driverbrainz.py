@@ -4,7 +4,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.relative_locator import locate_with
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 
 import argparse
@@ -675,23 +674,27 @@ def bookbrainz_set_work_type(driver, work_type):
     wait = WebDriverWait(driver, timeout=200)
     work_type_text_box = driver.find_element(By.ID, "react-select-workType-input")
     work_type_text_box.send_keys(work_type)
-    # work_type_index = 0
-    # if work_type == "Novel":
-    #     work_type_index = 1
-    wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".margin-left-d10")))
-    if work_type == "Novel":
-        work_type_text_box.send_keys(Keys.ARROW_DOWN)
-        # todo Wait
-        # work_type_index = 1
-    work_type_text_box.send_keys(Keys.ENTER)
-    # work_type_option = driver.find_element(by=By.CSS_SELECTOR, value=f"#react-select-workType-option-{work_type_index} > .margin-left-d10")
-    # work_type_option.click()
     wait.until(
         EC.visibility_of_element_located(
-            (By.XPATH, "//div[@id='content']/form/div/div/div[3]/div/div/div/small")
+            (
+                By.XPATH,
+                f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@class,'react-select__option')]/div[text()='{work_type}']",
+            )
         )
     )
-    # wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(4) .text-success")))
+    work_type_option = driver.find_element(
+        by=By.XPATH,
+        value=f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@class,'react-select__option')]/div[text()='{work_type}']",
+    )
+    work_type_option.click()
+    wait.until(
+        EC.visibility_of_element_located(
+            (
+                By.XPATH,
+                f"//div[@class='form-group']/label[@class='form-label' and text()='Type']/../div/div[starts-with(@class,'react-select__control')]/div[starts-with(@class,'react-select__value-container')]/div[starts-with(@class,'react-select__single-value') and text()='{work_type}']",
+            )
+        )
+    )
 
 
 def bookbrainz_add_series(driver, series, index):
