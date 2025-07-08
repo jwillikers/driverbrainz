@@ -773,6 +773,7 @@ def bookbrainz_add_series(driver, series, index):
 BOOKBRAINZ_RELATIONSHIP_VERB = {
     "adaptation": "is an adaptation of",
     "adapter": "adapted",
+    "contributor": "contributed to",
     "edition": "contains",
     "illustrator": "illustrated",
     "letterer": "lettered",
@@ -1497,6 +1498,16 @@ def main():
                             ].append(
                                 {"role": "provided art for", "id": relationship["id"]}
                             )
+                    elif relationship["role"] in ["contributor"]:
+                        if {
+                            "role": "contributor",
+                            "id": relationship["id"],
+                        } not in data["translation"]["bookbrainz_work"][
+                            "relationships"
+                        ]:
+                            data["translation"]["bookbrainz_work"][
+                                "relationships"
+                            ].append({"role": "contributor", "id": relationship["id"]})
 
     # To have a special title sort in MusicBrainz, it's necessary to add an alias.
     # aliases = []
