@@ -127,8 +127,10 @@ def remove_extra_spaces_hiragana(input: str) -> str:
     return output
 
 
-def fetch_wikipedia_section(page_title: str, section_number: int) -> str:
-    url = f"https://en.wikipedia.org/w/api.php?action=parse&page={page_title}&section={section_number}&contentmodel=wikitext&prop=wikitext&format=json"
+def fetch_wikipedia_section(
+    page_title: str, section_number: int, language_code: str = "en"
+) -> str:
+    url = f"https://{language_code}.wikipedia.org/w/api.php?action=parse&page={page_title}&section={section_number}&contentmodel=wikitext&prop=wikitext&format=json"
     response = requests.get(url, timeout=10)
     response.raise_for_status()
     data = response.json()
@@ -300,7 +302,7 @@ def parse_chapter_from_template(template, index: int = None) -> dict:
 def parse_wikipedia_page(wikitext: str) -> list:
     parsed = wtp.parse(wikitext)
     graphic_novel_lists = filter_templates_by_normal_name(
-        parsed.templates, ["Graphic novel list", "Numbered list"]
+        parsed.templates, ["Graphic novel list", "Volume Manga", "Numbered list"]
     )
     chapters = []
     for graphic_novel_list in graphic_novel_lists:
@@ -314,7 +316,7 @@ def parse_wikipedia_page(wikitext: str) -> list:
                 else:
                     chapter = parse_chapter_from_template_and_item(template, item)
                 chapters.append(chapter)
-        if graphic_novel_list.normal_name() == "Graphic novel list":
+        if graphic_novel_list.normal_name() in ["Graphic novel list", "Volume Manga"]:
             templates = filter_templates_by_normal_name(
                 graphic_novel_list.templates, ["Nihongo", "nihongo", "nihongo4"]
             )
@@ -630,8 +632,11 @@ def main():
     parser.add_argument("section_number", type=int)
     parser.add_argument("--use-brackets-japanese", action="store_true")
     parser.add_argument("--english-chapter-prefix", type=str)
+    parser.add_argument("--wikipedia-language-code", type=str, default="en")
     args = parser.parse_args()
-    wikitext = fetch_wikipedia_section(args.page_title, args.section_number)
+    wikitext = fetch_wikipedia_section(
+        args.page_title, args.section_number, language_code=args.wikipedia_language_code
+    )
     chapters = parse_wikipedia_page(wikitext)
     # print(chapters)
     chapters = generate_missing_chapter_indices(chapters)
