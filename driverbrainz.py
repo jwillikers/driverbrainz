@@ -11,6 +11,7 @@ import argparse
 from collections import OrderedDict
 import copy
 import json
+import math
 import platformdirs
 import logging
 import os
@@ -169,6 +170,9 @@ TRANSLATED_MUSICBRAINZ_WORK_IDENTIFIERS = {}
 
 # https://stackoverflow.com/a/28777781/9835303
 def write_roman(num):
+    if not num.is_integer():
+        return num
+
     roman = OrderedDict()
     roman[1000] = "M"
     roman[900] = "CM"
@@ -195,6 +199,222 @@ def write_roman(num):
     return "".join([a for a in roman_num(num)])
 
 
+# https://en.wikipedia.org/wiki/Japanese_numerals
+# Note: The mapping to formal Kanji is currently only useful for Fire Force's specific choice of characters.
+# Tweak as necessary.
+STANDARD_JAPANESE_NUMERALS = {
+    0: {
+        "kanji": "零",  # 〇
+        "hiragana": "れい",
+        "hepburn": "Rei",  # or Zero
+        "formal_kanji": "零",
+    },
+    1: {
+        "kanji": "一",
+        "hiragana": "いち",
+        "hepburn": "Ichi",
+        "formal_kanji": "壱",
+    },
+    2: {
+        "kanji": "二",
+        "hiragana": "に",
+        "hepburn": "Ni",
+        "formal_kanji": "弐",
+    },
+    3: {
+        "kanji": "三",
+        "hiragana": "さん",
+        "hepburn": "San",
+        "formal_kanji": "参",
+    },
+    4: {
+        "kanji": "四",
+        "hiragana": "し",
+        "hepburn": "Shi",
+        "formal_kanji": "四",
+    },
+    5: {
+        "kanji": "五",
+        "hiragana": "ご",
+        "hepburn": "Go",
+        "formal_kanji": "伍",
+    },
+    6: {
+        "kanji": "六",
+        "hiragana": "ろく",
+        "hepburn": "Roku",
+        "formal_kanji": "陸",
+    },
+    7: {
+        "kanji": "七",
+        "hiragana": "なな",
+        "hepburn": "Nana",
+        "formal_kanji": "七",
+    },
+    8: {
+        "kanji": "八",
+        "hiragana": "はち",
+        "hepburn": "Hachi",
+        "formal_kanji": "八",
+    },
+    9: {
+        "kanji": "九",
+        "hiragana": "きゅう",
+        "hepburn": "Kyū",
+        "formal_kanji": "九",
+    },
+    10: {
+        "kanji": "十",
+        "hiragana": "じゅう",
+        "hepburn": "Jū",
+        "formal_kanji": "拾",
+    },
+    100: {
+        "kanji": "百",
+        "hiragana": "ひゃく",
+        "hepburn": "Hyaku",
+        "formal_kanji": "佰",
+    },
+    1_000: {
+        "kanji": "千",
+        "hiragana": "せん",
+        "hepburn": "Sen",
+        "formal_kanji": "千",
+    },
+    10_000: {
+        "kanji": "万",
+        "hiragana": "まん",
+        "hepburn": "Man",
+        "formal_kanji": "万",
+    },
+    100_000_000: {
+        "kanji": "億",
+        "hiragana": "おく",
+        "hepburn": "Oku",
+    },
+}
+
+
+# Convert an integer to the requested type in Japanese.
+#
+# The requested type can be kanji, hiragana, hepburn, or formal_kanji.
+def convert_to_japanese_numeral(num: int, requested_type: str) -> str:
+    if not num.is_integer():
+        return num
+
+    if requested_type not in ["kanji", "hiragana", "hepburn", "formal_kanji"]:
+        return None
+
+    # I'm not worrying about numbers larger than 99,999 right now
+    if (num // 10000) > 9:
+        return None
+    string = ""
+    number = num
+    for power in [4, 3, 2, 1, 0]:
+        power_of_ten = math.pow(10, power)
+        quotient = number // power_of_ten
+        if quotient > 0:
+            if power == 0:
+                string += STANDARD_JAPANESE_NUMERALS[quotient][requested_type]
+            elif quotient == 1:
+                string += STANDARD_JAPANESE_NUMERALS[power_of_ten][requested_type]
+            elif quotient > 1:
+                string += (
+                    STANDARD_JAPANESE_NUMERALS[quotient][requested_type]
+                    + STANDARD_JAPANESE_NUMERALS[power_of_ten][requested_type]
+                )
+            number = number % power_of_ten
+    if len(string) == 0:
+        return STANDARD_JAPANESE_NUMERALS[0][requested_type]
+    return string
+
+
+# Format an integer according to the given format.
+#
+# The requested format can be kanji, hiragana, hepburn, formal_kanji, numeral, or roman_numeral.
+def format_number(number: int, format: str) -> str:
+    if not number.is_integer():
+        return number
+
+    if format not in [
+        "kanji",
+        "hiragana",
+        "hepburn",
+        "formal_kanji",
+        "numeral",
+        "roman_numeral",
+    ]:
+        return None
+
+    if format == "numeral":
+        return f"{number}"
+
+    if format == "roman_numeral":
+        return write_roman(number)
+
+    # if format not in ["kanji", "hiragana", "hepburn", "formal_kanji"]:
+    return convert_to_japanese_numeral(number, format)
+
+
+DEFAULT_INDEX_NUMBER_FORMAT_MAP = {
+    "English": {
+        "Latin": "numeral",
+    },
+    "Japanese": {
+        "Kanji": "numeral",
+        "Latin": "numeral",
+    },
+}
+
+DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP = {
+    "English": {
+        "Latin": "numeral",
+    },
+    "Japanese": {
+        "Kanji": "numeral",
+        "Latin": "numeral",
+    },
+}
+
+
+# Insert an index using the necessary format
+def format_index(index: str, title: dict, format_map: dict) -> str:
+    format = format_map[title["language"]][title["script"]]
+    if format == "numeral":
+        return index
+    number = None
+    if not index.isnumeric():
+        return index
+    number = float(index)
+    if not number.is_integer():
+        return number
+    number = int(number)
+    return format_number(number, format)
+
+
+# Sanitize a sort field by removing leading pairs of brackets, parentheses, and similar punctuation
+def sanitize_sort(sanitized_sort_title: str) -> str:
+    # sanitized_sort_title = sort_title
+    if sanitized_sort_title.startswith("【"):
+        sanitized_sort_title = sanitized_sort_title.replace("【", "", 1)
+        if sanitized_sort_title.endswith("】"):
+            sanitized_sort_title = sanitized_sort_title.replace("】", "", 1)
+        else:
+            sanitized_sort_title = sanitized_sort_title.replace("】", " ", 1)
+    if sanitized_sort_title.startswith("["):
+        sanitized_sort_title = sanitized_sort_title.replace("[", "", 1)
+        sanitized_sort_title = sanitized_sort_title.replace("]", "", 1)
+    if sanitized_sort_title.startswith("("):
+        sanitized_sort_title = sanitized_sort_title.replace("(", "", 1)
+        sanitized_sort_title = sanitized_sort_title.replace(")", "", 1)
+    if sanitized_sort_title.startswith('"'):
+        sanitized_sort_title = sanitized_sort_title.replace('"', "", 1)
+        sanitized_sort_title = sanitized_sort_title.replace('"', "", 1)
+    if sanitized_sort_title.startswith("#"):
+        sanitized_sort_title = sanitized_sort_title.replace("#", "", 1)
+    return sanitized_sort_title
+
+
 def musicbrainz_log_in(driver, username):
     username_text_box = driver.find_element(by=By.ID, value="id-username")
     username_text_box.send_keys(username)
@@ -204,7 +424,13 @@ def musicbrainz_log_in(driver, username):
     submit_button.click()
 
 
-def bookbrainz_set_title(driver, index, title, roman_numerals=False):
+def bookbrainz_set_title(
+    driver,
+    index,
+    title,
+    index_number_format_map: dict = DEFAULT_INDEX_NUMBER_FORMAT_MAP,
+    sort_index_number_format_map: dict = DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP,
+):
     wait = WebDriverWait(driver, timeout=200)
     # todo Make more accurate by relative to label
     name_text_box = driver.find_element(
@@ -217,7 +443,7 @@ def bookbrainz_set_title(driver, index, title, roman_numerals=False):
     name = (
         title["text"]
         .replace("|subtitle|", subtitle)
-        .replace("|index|", write_roman(int(index)) if roman_numerals else f"{index}")
+        .replace("|index|", format_index(index, title, index_number_format_map))
     )
     name_text_box.send_keys(name)
     wait.until(
@@ -249,9 +475,13 @@ def bookbrainz_set_title(driver, index, title, roman_numerals=False):
         else:
             sort_subtitle = subtitle
         sort_name_text_box.send_keys(
-            title["sort"]
-            .replace("|subtitle|", sort_subtitle)
-            .replace("|index|", f"{index}")
+            sanitize_sort(
+                title["sort"]
+                .replace("|subtitle|", sort_subtitle)
+                .replace(
+                    "|index|", format_index(index, title, sort_index_number_format_map)
+                )
+            )
         )
     wait.until(
         EC.visibility_of_element_located(
@@ -546,6 +776,7 @@ BOOKBRAINZ_RELATIONSHIP_VERB = {
     "edition": "contains",
     "illustrator": "illustrated",
     "letterer": "lettered",
+    "provided art for": "provided art for",
     "provided story for": "provided story for",
     "revisor": "revised",
     "translation": "is a translation of",
@@ -649,7 +880,14 @@ def bookbrainz_add_relationship(driver, relationship):
 #         }
 #     ],
 # }
-def bookbrainz_create_work(driver, work, index, username=None, roman_numerals=False):
+def bookbrainz_create_work(
+    driver,
+    work,
+    index,
+    username=None,
+    index_number_format_map: dict = DEFAULT_INDEX_NUMBER_FORMAT_MAP,
+    sort_index_number_format_map: dict = DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP,
+):
     wait = WebDriverWait(driver, timeout=200)
 
     # driver.close()
@@ -683,7 +921,11 @@ def bookbrainz_create_work(driver, work, index, username=None, roman_numerals=Fa
         with open(COOKIES_CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump(cookies, f, ensure_ascii=False, indent=4)
     bookbrainz_set_title(
-        driver, index, work["titles"][0], roman_numerals=roman_numerals
+        driver,
+        index,
+        work["titles"][0],
+        index_number_format_map=index_number_format_map,
+        sort_index_number_format_map=sort_index_number_format_map,
     )
     # disambiguation_label = driver.find_element(by=By.XPATH, value="//label[@class='form-label' and span/starts-with(text(),'Disambiguation')]")
     # disambiguation_text_box_locator = driver.find_element(by=By.XPATH, value=".row:nth-child(5) .form-control")
@@ -718,12 +960,16 @@ def bookbrainz_create_work(driver, work, index, username=None, roman_numerals=Fa
                     "text": a["text"]
                     .replace("|subtitle|", subtitle)
                     .replace(
-                        "|index|",
-                        write_roman(int(index)) if roman_numerals else f"{index}",
+                        "|index|", format_index(index, a, index_number_format_map)
                     ),
-                    "sort": a["sort"]
-                    .replace("|subtitle|", sort_subtitle)
-                    .replace("|index|", f"{index}"),
+                    "sort": sanitize_sort(
+                        a["sort"]
+                        .replace("|subtitle|", sort_subtitle)
+                        .replace(
+                            "|index|",
+                            format_index(index, a, sort_index_number_format_map),
+                        )
+                    ),
                     "language": a["language"],
                     "primary": a["primary"] if "primary" in a else False,
                 }
@@ -1159,7 +1405,6 @@ def main():
     parser.add_argument("--range-start", type=int)
     parser.add_argument("--range-end", type=int)
     parser.add_argument("--no-headless", action="store_true")
-    parser.add_argument("--roman-numerals", action="store_true")
     parser.add_argument("--username")
     args = parser.parse_args()
 
@@ -1219,13 +1464,39 @@ def main():
             for relationship in data["original"]["bookbrainz_work"]["relationships"]:
                 if relationship["id"]:
                     if relationship["role"] in ["writer", "provided story for"]:
-                        data["translation"]["bookbrainz_work"]["relationships"].append(
-                            {"role": "provided story for", "id": relationship["id"]}
-                        )
+                        if {
+                            "role": "provided story for",
+                            "id": relationship["id"],
+                        } not in data["translation"]["bookbrainz_work"][
+                            "relationships"
+                        ]:
+                            data["translation"]["bookbrainz_work"][
+                                "relationships"
+                            ].append(
+                                {"role": "provided story for", "id": relationship["id"]}
+                            )
                     elif relationship["role"] in ["illustrator"]:
-                        data["translation"]["bookbrainz_work"]["relationships"].append(
-                            {"role": "illustrator", "id": relationship["id"]}
-                        )
+                        if {
+                            "role": "illustrator",
+                            "id": relationship["id"],
+                        } not in data["translation"]["bookbrainz_work"][
+                            "relationships"
+                        ]:
+                            data["translation"]["bookbrainz_work"][
+                                "relationships"
+                            ].append({"role": "illustrator", "id": relationship["id"]})
+                    elif relationship["role"] in ["provided art for"]:
+                        if {
+                            "role": "provided art for",
+                            "id": relationship["id"],
+                        } not in data["translation"]["bookbrainz_work"][
+                            "relationships"
+                        ]:
+                            data["translation"]["bookbrainz_work"][
+                                "relationships"
+                            ].append(
+                                {"role": "provided art for", "id": relationship["id"]}
+                            )
 
     # To have a special title sort in MusicBrainz, it's necessary to add an alias.
     # aliases = []
@@ -1475,8 +1746,9 @@ def main():
                 driver,
                 original_work,
                 i,
-                username=args.username,
-                roman_numerals=args.roman_numerals,
+                username=username,
+                index_number_format_map=data["index_number_format_map"],
+                sort_index_number_format_map=data["sort_index_number_format_map"],
             )
             original_work_url = driver.current_url
 
@@ -1578,8 +1850,9 @@ def main():
                 driver,
                 translation_work,
                 i,
-                username=args.username,
-                roman_numerals=args.roman_numerals,
+                username=username,
+                index_number_format_map=data["index_number_format_map"],
+                sort_index_number_format_map=data["sort_index_number_format_map"],
             )
 
     driver.quit()
