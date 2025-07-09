@@ -1,22 +1,43 @@
 {
+  "index_number_format_map": {
+    "English": {
+      "Latin": "numeral"
+    },
+    "Japanese": {
+      "Kanji": "numeral",
+      "Latin": "numeral"
+    }
+  },
+  "sort_index_number_format_map": {
+    "English": {
+      "Latin": "numeral"
+    },
+    "Japanese": {
+      "Kanji": "numeral",
+      "Latin": "numeral"
+    }
+  },
   "original": {
     "titles": [
       {
         "text": "|subtitle|",
         "sort": "|subtitle|",
-        "language": "Japanese"
+        "language": "Japanese",
+        "script": "Kanji"
       },
       {
         "text": "|subtitle|",
-        "sort": "COPY",
+        "sort": "|subtitle|",
         "language": "English",
-        "primary": true
+        "primary": true,
+        "script": "Latin"
       },
       {
         "text": "|subtitle|",
         "sort": "|subtitle|",
         "language": "Japanese",
-        "primary": false
+        "primary": false,
+        "script": "Latin"
       }
     ],
     "subtitles": {
@@ -29,14 +50,14 @@
           "title": "Chapter |index|: Hot Pot"
         },
         "2": {
-          "title": "Dai |index| Wa Mizutaki"
+          "title": "Dai |index|‐wa Mizutaki"
         }
       }
     },
     "language": "Japanese",
     "disambiguation": "<English Title>, manga, Japanese",
     "bookbrainz_work": {
-      "type": "manga",
+      "type": "Comics/manga/sequential art",
       "series": [
         {
           "id": "",

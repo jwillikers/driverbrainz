@@ -18,7 +18,7 @@ CHAPTER_PREFIX_DICTIONARY = {
         "kanji": "第|index|話 ",  # 	【第|index|話】
         "kana": "ダイ|index|ワ ",
         "hiragana": "だい|index|わ ",
-        "hepburn": "Dai |index| Wa ",
+        "hepburn": "Dai |index|‐wa ",
     },
     "bonus": {
         "english": "Bonus Chapter: ",
@@ -64,19 +64,24 @@ def remove_extra_spaces_hiragana(input: str) -> str:
         "！",
         "、",
         "・",
+        "•",
         "·",
+        ",",
         "!",
         "?",
         ".",
         "×",
         "．",
         "‐",
+        "…",
         "「",
         "」",
         "【",
         "】",
         "〈",
         "〉",
+        "（",
+        "）",
         "(",
         ")",
         "[",
@@ -84,6 +89,8 @@ def remove_extra_spaces_hiragana(input: str) -> str:
         "{",
         "}",
         "　",
+        "：",
+        ":",
         "1",
         "2",
         "3",
@@ -120,8 +127,10 @@ def remove_extra_spaces_hiragana(input: str) -> str:
     return output
 
 
-def fetch_wikipedia_section(page_title: str, section_number: int) -> str:
-    url = f"https://en.wikipedia.org/w/api.php?action=parse&page={page_title}&section={section_number}&contentmodel=wikitext&prop=wikitext&format=json"
+def fetch_wikipedia_section(
+    page_title: str, section_number: int, language_code: str = "en"
+) -> str:
+    url = f"https://{language_code}.wikipedia.org/w/api.php?action=parse&page={page_title}&section={section_number}&contentmodel=wikitext&prop=wikitext&format=json"
     response = requests.get(url, timeout=10)
     response.raise_for_status()
     data = response.json()
@@ -143,110 +152,172 @@ def find_template_where_string_contains(templates: list, container: str):
     return None
 
 
+def parse_chapter_from_template_and_item(template, item: str) -> dict:
+    chapter = {}
+    # for item, template in zip(row.items, row.templates):
+    # if index < len(row.templates):
+
+    # if template.name.lower() == "efn":
+    #     continue
+    # only allow name to be nihongo?
+    # if template.nesting_level > 2:
+    #     continue
+    prefix_part = item.split(template.string, 1)[0].strip().strip(".")
+    chapter_type = None
+    index = None
+    # "Chapter 1:"
+    chapter_match = re.fullmatch(r"Chapter\s+(?P<index>.*)(:|\.){0,1}", prefix_part)
+    # print(f"prefix_part: '{prefix_part}'")
+    # print(f"chapter_match: '{chapter_match}'")
+    if chapter_match:
+        chapter_type = "Chapter"
+        index = float(chapter_match.group("index"))
+        if index.is_integer():
+            index = int(index)
+    else:
+        if prefix_part.isdecimal():
+            index = float(prefix_part)
+            chapter_type = "Chapter"
+            if index.is_integer():
+                index = int(index)
+        elif prefix_part:
+            chapter_type = prefix_part
+        else:
+            # Assume it is a regular chapter
+            chapter_type = "Chapter"
+    english = template.arguments[0].value
+    if english.startswith('"') and english.endswith('"'):
+        english = english.strip('"')
+    # todo Fix spaces in Japanese conversion
+    # todo Replace double quotes with unicode counterparts
+    # logger.info(f"english: {english}")
+    english = use_unicode_punctuation(english)
+    if len(template.arguments) == 1:
+        chapter["type"] = chapter_type
+        chapter["index"] = index
+        chapter["english"] = english
+        chapter["kanji"] = english
+        chapter["hepburn"] = english
+    elif len(template.arguments) == 2:
+        chapter["type"] = chapter_type
+        chapter["index"] = index
+        chapter["english"] = english
+        chapter["kanji"] = use_unicode_punctuation(template.arguments[1].value)
+        chapter["hepburn"] = english
+    else:
+        # print(f"english: {english}")
+        # print(f"kanji: {template.arguments[1].value}")
+        chapter["type"] = chapter_type
+        chapter["index"] = index
+        chapter["english"] = english
+        chapter["kanji"] = use_unicode_punctuation(template.arguments[1].value)
+        chapter["hepburn"] = use_unicode_punctuation(template.arguments[2].value).strip(
+            '"'
+        )
+    return chapter
+
+
+def parse_chapter_from_item(item: str) -> dict:
+    chapter = {}
+    m = re.fullmatch(r'\s*(?P<prefix_part>.*)(:|\.){0,1}\s+"(?P<english>.*)"', item)
+    if m:
+        chapter_type = None
+        index = None
+        prefix_part = m.group("prefix_part")
+        # "Chapter 1:"
+        chapter_match = re.fullmatch(
+            r"Chapter\s+(?P<index>.*)(:|\.){0,1}\s*", prefix_part
+        )
+        if chapter_match:
+            chapter_type = "Chapter"
+            index = float(chapter_match.group("index"))
+            if index.is_integer():
+                index = int(index)
+        else:
+            if prefix_part.isdecimal():
+                index = float(prefix_part)
+                chapter_type = "Chapter"
+                if index.is_integer():
+                    index = int(index)
+            elif prefix_part:
+                chapter_type = prefix_part
+            else:
+                # Assume it is a regular chapter
+                chapter_type = "Chapter"
+        english = use_unicode_punctuation(m.group("english"))
+        chapter["type"] = chapter_type
+        chapter["index"] = index
+        chapter["english"] = english
+        chapter["kanji"] = english
+        chapter["hepburn"] = english
+    else:
+        english = use_unicode_punctuation(item)
+        chapter["type"] = "Chapter"
+        chapter["index"] = None
+        chapter["english"] = english
+        chapter["kanji"] = english
+        chapter["hepburn"] = english
+    return chapter
+
+
+def parse_chapter_from_template(template, index: int = -1) -> dict:
+    chapter = {}
+    chapter_type = "Chapter"
+    english = template.arguments[0].value
+    if english.startswith('"') and english.endswith('"'):
+        english = english.strip('"')
+    english = use_unicode_punctuation(english)
+    if len(template.arguments) == 1:
+        chapter["type"] = chapter_type
+        chapter["index"] = index if index >= 0 else None
+        chapter["english"] = english
+        chapter["kanji"] = english
+        chapter["hepburn"] = english
+    elif len(template.arguments) == 2:
+        chapter["type"] = chapter_type
+        chapter["index"] = index if index >= 0 else None
+        chapter["english"] = english
+        chapter["kanji"] = use_unicode_punctuation(template.arguments[1].value)
+        chapter["hepburn"] = english
+    else:
+        chapter["type"] = chapter_type
+        chapter["index"] = index if index >= 0 else None
+        chapter["english"] = english
+        chapter["kanji"] = use_unicode_punctuation(template.arguments[1].value)
+        chapter["hepburn"] = use_unicode_punctuation(template.arguments[2].value)
+    return chapter
+
+
 def parse_wikipedia_page(wikitext: str) -> list:
-    # parsed = wtp.parse(wikitext, "utf-8")
     parsed = wtp.parse(wikitext)
     graphic_novel_lists = filter_templates_by_normal_name(
-        parsed.templates, ["Graphic novel list", "Numbered list"]
+        parsed.templates, ["Graphic novel list", "Volume Manga", "Numbered list"]
     )
     chapters = []
     for graphic_novel_list in graphic_novel_lists:
-        for row in graphic_novel_list.get_lists():
+        lists = graphic_novel_list.get_lists()
+        for row in lists:
             for index, item in enumerate(row.items):
                 template = find_template_where_string_contains(row.templates, item)
-                # if template is None and index < len(row.templates):
-                #     template = row.templates[index]
                 chapter = {}
                 if template is None:
-                    # re.match(r'(?.*)\.\s+(?\w)+', item)
-                    # re.split(r'(?.*)\.\s+(?\w)+', item)
-                    m = re.fullmatch(
-                        r'\s*(?P<prefix_part>.*)\.\s+"(?P<english>.*)"', item
-                    )
-                    if m:
-                        chapter_type = None
-                        index = None
-                        prefix_part = m.group("prefix_part")
-                        if prefix_part.isdecimal():
-                            index = float(prefix_part)
-                            chapter_type = "Chapter"
-                            if index.is_integer():
-                                index = int(index)
-                        elif prefix_part:
-                            chapter_type = prefix_part
-                        else:
-                            # Assume it is a regular chapter
-                            chapter_type = "Chapter"
-                        english = use_unicode_punctuation(m.group("english"))
-                        chapter["type"] = chapter_type
-                        chapter["index"] = index
-                        chapter["english"] = english
-                        chapter["kanji"] = english
-                        chapter["hepburn"] = english
-                    else:
-                        english = use_unicode_punctuation(item)
-                        chapter["type"] = "Chapter"
-                        chapter["index"] = None
-                        chapter["english"] = english
-                        chapter["kanji"] = english
-                        chapter["hepburn"] = english
+                    chapter = parse_chapter_from_item(item)
                 else:
-                    # chapter = {}
-                    # for item, template in zip(row.items, row.templates):
-                    # if index < len(row.templates):
-
-                    # if template.name.lower() == "efn":
-                    #     continue
-                    # only allow name to be nihongo?
-                    # if template.nesting_level > 2:
-                    #     continue
-                    prefix_part = item.split(template.string, 1)[0].strip().strip(".")
-                    chapter_type = None
-                    index = None
-                    if prefix_part.isdecimal():
-                        index = float(prefix_part)
-                        chapter_type = "Chapter"
-                        if index.is_integer():
-                            index = int(index)
-                    elif prefix_part:
-                        chapter_type = prefix_part
-                    else:
-                        # Assume it is a regular chapter
-                        chapter_type = "Chapter"
-                    english = template.arguments[0].value
-                    if english.startswith('"') and english.endswith('"'):
-                        english = english.strip('"')
-                    # todo Fix spaces in Japanese conversion
-                    # todo Replace double quotes with unicode counterparts
-                    # logger.info(f"english: {english}")
-                    english = use_unicode_punctuation(english)
-                    if len(template.arguments) == 1:
-                        chapter["type"] = chapter_type
-                        chapter["index"] = index
-                        chapter["english"] = english
-                        chapter["kanji"] = english
-                        chapter["hepburn"] = english
-                    elif len(template.arguments) == 2:
-                        chapter["type"] = chapter_type
-                        chapter["index"] = index
-                        chapter["english"] = english
-                        chapter["kanji"] = use_unicode_punctuation(
-                            template.arguments[1].value
-                        )
-                        chapter["hepburn"] = english
-                    else:
-                        # print(f"english: {english}")
-                        # print(f"kanji: {template.arguments[1].value}")
-                        chapter["type"] = chapter_type
-                        chapter["index"] = index
-                        chapter["english"] = english
-                        chapter["kanji"] = use_unicode_punctuation(
-                            template.arguments[1].value
-                        )
-                        chapter["hepburn"] = use_unicode_punctuation(
-                            template.arguments[2].value
-                        )
+                    chapter = parse_chapter_from_template_and_item(template, item)
                 chapters.append(chapter)
+        if graphic_novel_list.normal_name() in ["Graphic novel list", "Volume Manga"]:
+            templates = filter_templates_by_normal_name(
+                graphic_novel_list.templates, ["Nihongo", "nihongo", "nihongo4"]
+            )
+            for index, template in enumerate(templates):
+                chapter = parse_chapter_from_template(
+                    template, 1 if len(chapters) == 0 else -1
+                )
+                # This assumes that chapter names are not repeated, which may not always be the case.
+                if chapter["kanji"] not in [
+                    c.get("kanji") for c in chapters if "kanji" in c
+                ]:
+                    chapters.append(chapter)
     if len(chapters) == 0:
         numbered_lists = filter_templates_by_normal_name(
             parsed.templates, ["Numbered list"]
@@ -261,54 +332,25 @@ def parse_wikipedia_page(wikitext: str) -> list:
                         value = int(value)
                     start_index = value
             nihongo_templates = filter_templates_by_normal_name(
-                numbered_list.templates, ["Nihongo", "nihongo"]
+                numbered_list.templates, ["Nihongo", "nihongo", "nihongo4"]
             )
             for template_index, template in enumerate(nihongo_templates):
-                chapter = {}
-                # prefix_part = item.split(template.string, 1)[0].strip().strip(".")
-                chapter_type = "Chapter"
-                index = None
+                index: int = -1
                 if start_index:
-                    index = start_index + template_index
-                # if prefix_part.isdecimal():
-                #     index = float(prefix_part)
-                #     chapter_type = "Chapter"
-                #     if index.is_integer():
-                #         index = int(index)
-                # elif prefix_part:
-                #     chapter_type = prefix_part
-                # else:
-                #     # Assume it is a regular chapter
-                #     chapter_type = "Chapter"
-                english = template.arguments[0].value
-                if english.startswith('"') and english.endswith('"'):
-                    english = english.strip('"')
-                english = use_unicode_punctuation(english)
-                if len(template.arguments) == 1:
-                    chapter["type"] = chapter_type
-                    chapter["index"] = index
-                    chapter["english"] = english
-                    chapter["kanji"] = english
-                    chapter["hepburn"] = english
-                elif len(template.arguments) == 2:
-                    chapter["type"] = chapter_type
-                    chapter["index"] = index
-                    chapter["english"] = english
-                    chapter["kanji"] = use_unicode_punctuation(
-                        template.arguments[1].value
-                    )
-                    chapter["hepburn"] = english
-                else:
-                    chapter["type"] = chapter_type
-                    chapter["index"] = index
-                    chapter["english"] = english
-                    chapter["kanji"] = use_unicode_punctuation(
-                        template.arguments[1].value
-                    )
-                    chapter["hepburn"] = use_unicode_punctuation(
-                        template.arguments[2].value
-                    )
+                    if not start_index.is_integer():
+                        logger.error(
+                            f"The start index {start_index} is a float, not an integer. Forcibly casting to an integer."
+                        )
+                    index = int(start_index) + template_index
+                chapter = parse_chapter_from_template(template, index)
                 chapters.append(chapter)
+    # Assume the first chapter is chapter 1 if there is no explicit index.
+    if (
+        len(chapters) > 0
+        and chapters[0]["index"] is None
+        and chapters[0]["type"] == "Chapter"
+    ):
+        chapters[0]["index"] = 1
     return chapters
 
 
@@ -426,6 +468,7 @@ def replace_last(source_string, replace_what, replace_with):
 def add_chapter_prefix_to_chapter_name(
     chapter, prefix, use_brackets_japanese: bool, english_chapter_prefix: str
 ):
+    prefixed_chapter = chapter.copy()
     for language in prefix.keys():
         if language in chapter:
             if use_brackets_japanese and language in [
@@ -433,6 +476,7 @@ def add_chapter_prefix_to_chapter_name(
                 "kana",
                 "hiragana",
                 "hepburn",
+                "hepburn_sort",
             ]:
                 if language in ["kanji", "kana", "hiragana"]:
                     # Remove the space at the end when using brackets with Japanese characters.
@@ -442,8 +486,8 @@ def add_chapter_prefix_to_chapter_name(
                         + chapter[language]
                     )
                     c_sort = prefix[language] + chapter[language]
-                    chapter[language] = c
-                    chapter[language + "_sort"] = c_sort
+                    prefixed_chapter[language] = c
+                    prefixed_chapter[language + "_sort"] = c_sort
                 else:
                     # Use square brackets for the hepburn which uses latin characters
                     c = (
@@ -452,23 +496,35 @@ def add_chapter_prefix_to_chapter_name(
                         + chapter[language]
                     )
                     c_sort = prefix[language] + chapter[language]
-                    chapter[language] = c
-                    chapter[language + "_sort"] = c_sort
+                    prefixed_chapter[language] = c
+                    prefixed_chapter[language + "_sort"] = c_sort
             else:
                 if (
                     language == "english"
                     and english_chapter_prefix is not None
                     and len(english_chapter_prefix) > 0
                 ):
-                    chapter[language] = english_chapter_prefix + chapter[language]
+                    prefixed_chapter[language] = (
+                        english_chapter_prefix + chapter[language]
+                    )
                 else:
-                    chapter[language] = prefix[language] + chapter[language]
-    return chapter
+                    prefixed_chapter[language] = prefix[language] + chapter[language]
+        else:
+            if (
+                language.endswith("_sort")
+                and language not in chapter
+                and language.replace("_sort", "") in chapter
+            ):
+                prefixed_chapter[language] = (
+                    prefix[language] + chapter[language.replace("_sort", "")]
+                )
+    return prefixed_chapter
 
 
 def prefix_chapter_titles(
     chapters: list, use_brackets_japanese: bool, english_chapter_prefix: str
 ):
+    prefixed_chapters = []
     for chapter in chapters:
         unknown_prefix = True
         for key, prefix in CHAPTER_PREFIX_DICTIONARY.items():
@@ -488,23 +544,48 @@ def prefix_chapter_titles(
                     and english_chapter_prefix is not None
                     and len(english_chapter_prefix) > 0
                 ):
-                    chapter = add_chapter_prefix_to_chapter_name(
-                        chapter, prefix, use_brackets_japanese, english_chapter_prefix
+                    prefixed_chapters.append(
+                        add_chapter_prefix_to_chapter_name(
+                            chapter,
+                            prefix,
+                            use_brackets_japanese,
+                            english_chapter_prefix,
+                        )
                     )
                 else:
-                    chapter = add_chapter_prefix_to_chapter_name(
-                        chapter,
-                        prefix,
-                        use_brackets_japanese,
-                        english_chapter_prefix="",
+                    prefixed_chapters.append(
+                        add_chapter_prefix_to_chapter_name(
+                            chapter,
+                            prefix,
+                            use_brackets_japanese,
+                            english_chapter_prefix="",
+                        )
                     )
                 unknown_prefix = False
                 break
+            else:
+                # When the chapter type is unknown, use the type parameter as the prefix if possible
+                prefixed_chapter = chapter.copy()
+                if len(chapter["type"]) > 0:
+                    for language in [
+                        "english",
+                        "english_sort",
+                        "kanji",
+                        "kana",
+                        "hiragana",
+                        "hepburn",
+                        "hepburn_sort",
+                    ]:
+                        if language in chapter:
+                            prefixed_chapter[language] = (
+                                chapter["type"] + " " + chapter[language]
+                            )
+                prefixed_chapters.append(prefixed_chapter)
         if unknown_prefix:
             logger.warning(
                 f"Unknown chapter type '{chapter['type']}' for chapter {chapter['index']}!"
             )
-    return chapters
+    return prefixed_chapters
 
 
 # Convert chapters for DriverBrainz
@@ -528,6 +609,8 @@ def convert_chapters_for_driverbrainz(chapters: list) -> dict:
             "1": {"title": chapter["english"]},
             "2": {"title": chapter["hepburn"]},
         }
+        if "english_sort" in chapter:
+            converted[str(chapter["index"])]["1"]["sort"] = chapter["english_sort"]
         if "hepburn_sort" in chapter:
             converted[str(chapter["index"])]["2"]["sort"] = chapter["hepburn_sort"]
     return converted
@@ -542,9 +625,13 @@ def main():
     parser.add_argument("section_number", type=int)
     parser.add_argument("--use-brackets-japanese", action="store_true")
     parser.add_argument("--english-chapter-prefix", type=str)
+    parser.add_argument("--wikipedia-language-code", type=str, default="en")
     args = parser.parse_args()
-    wikitext = fetch_wikipedia_section(args.page_title, args.section_number)
+    wikitext = fetch_wikipedia_section(
+        args.page_title, args.section_number, language_code=args.wikipedia_language_code
+    )
     chapters = parse_wikipedia_page(wikitext)
+    # print(chapters)
     chapters = generate_missing_chapter_indices(chapters)
     chapters = generate_kana(chapters)
     chapters = prefix_chapter_titles(

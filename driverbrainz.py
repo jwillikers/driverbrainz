@@ -4,13 +4,13 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.relative_locator import locate_with
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
 
 import argparse
 from collections import OrderedDict
 import copy
 import json
+import math
 import platformdirs
 import logging
 import os
@@ -29,51 +29,6 @@ MUSICBRAINZ_CREATE_RELEASE_GROUP_URL = (
     "https://beta.musicbrainz.org/release-group/create"
 )
 BOOKBRAINZ_CREATE_WORK_URL = "https://bookbrainz.org/work/create"
-
-# Prerequisites
-#
-# Firefox
-# Disable the browser.translations.automaticallyPopup option in about:config
-# Install the https://www.greasespot.net/[GreaseMonkey] extension in Firefox
-# Install the SUPER MIND CONTROL II X Turbo user script for MusicBrainz
-# https://github.com/jesus2099/konami-command/raw/master/mb_SUPER-MIND-CONTROL-II-X-TURBO.user.js
-# Install the Guess Unicode Punctuation user script for MusicBrainz
-#
-# The clipse clipboard manager in the Sway desktop is necessary since I use it to manage the contents of the clipboard.
-# It's bound to the keyboard shortcut Super+I
-#
-# Requires fcitx5 for the input of Unicode characters.
-# sudo rpm-ostree install fcitx5-autostart
-# sudo systemctl reboot
-#
-# This script is used on an Adafruit MacroPad using CircuitPython.
-# It requires the MacroPad library plus all of its dependencies to be copied over to the lib directory on the MacroPad.
-
-# Usage
-#
-# Configure the constants below as necessary for the works of the series you want to add.
-# Set the volume start and end values, which are inclusive, accordingly.
-# Save the updated script to the MacroPad in the code.py file.
-# Copy the name for the first volume in the original language.
-# This copied text will be used as the title and immediately followed by the index value.
-# Open a browser window and focus on it.
-# Click the desired key to create the series.
-# Always test with 1 or 2 works in the series before doing more.
-#
-
-# 0 - Create a series of MusicBrainz works along with their associated translated works
-# 1 - Create a series of MusicBrain release groups
-# 3 - Create a series of BookBrainz works along with their associated translated works
-
-# The second title must always be the title for the translated works
-# Remember to use the appropriate Unicode characters!
-#
-# Apostrophe:: ’
-# Dash:: ‐
-# Ellipsis:: …
-# Multiplication Sign:: ×
-# Quotation Marks:: “”
-#
 
 MUSICBRAINZ_WORK_TYPE = "Prose"
 
@@ -168,7 +123,7 @@ TRANSLATED_MUSICBRAINZ_WORK_IDENTIFIERS = {}
 
 
 # https://stackoverflow.com/a/28777781/9835303
-def write_roman(num):
+def write_roman(num: int) -> str:
     roman = OrderedDict()
     roman[1000] = "M"
     roman[900] = "CM"
@@ -195,6 +150,213 @@ def write_roman(num):
     return "".join([a for a in roman_num(num)])
 
 
+# https://en.wikipedia.org/wiki/Japanese_numerals
+# Note: The mapping to formal Kanji is currently only useful for Fire Force's specific choice of characters.
+# Tweak as necessary.
+STANDARD_JAPANESE_NUMERALS = {
+    0: {
+        "kanji": "零",  # 〇
+        "hiragana": "れい",
+        "hepburn": "Rei",  # or Zero
+        "formal_kanji": "零",
+    },
+    1: {
+        "kanji": "一",
+        "hiragana": "いち",
+        "hepburn": "Ichi",
+        "formal_kanji": "壱",
+    },
+    2: {
+        "kanji": "二",
+        "hiragana": "に",
+        "hepburn": "Ni",
+        "formal_kanji": "弐",
+    },
+    3: {
+        "kanji": "三",
+        "hiragana": "さん",
+        "hepburn": "San",
+        "formal_kanji": "参",
+    },
+    4: {
+        "kanji": "四",
+        "hiragana": "し",
+        "hepburn": "Shi",
+        "formal_kanji": "四",
+    },
+    5: {
+        "kanji": "五",
+        "hiragana": "ご",
+        "hepburn": "Go",
+        "formal_kanji": "伍",
+    },
+    6: {
+        "kanji": "六",
+        "hiragana": "ろく",
+        "hepburn": "Roku",
+        "formal_kanji": "陸",
+    },
+    7: {
+        "kanji": "七",
+        "hiragana": "なな",
+        "hepburn": "Nana",
+        "formal_kanji": "七",
+    },
+    8: {
+        "kanji": "八",
+        "hiragana": "はち",
+        "hepburn": "Hachi",
+        "formal_kanji": "八",
+    },
+    9: {
+        "kanji": "九",
+        "hiragana": "きゅう",
+        "hepburn": "Kyū",
+        "formal_kanji": "九",
+    },
+    10: {
+        "kanji": "十",
+        "hiragana": "じゅう",
+        "hepburn": "Jū",
+        "formal_kanji": "拾",
+    },
+    100: {
+        "kanji": "百",
+        "hiragana": "ひゃく",
+        "hepburn": "Hyaku",
+        "formal_kanji": "佰",
+    },
+    1_000: {
+        "kanji": "千",
+        "hiragana": "せん",
+        "hepburn": "Sen",
+        "formal_kanji": "千",
+    },
+    10_000: {
+        "kanji": "万",
+        "hiragana": "まん",
+        "hepburn": "Man",
+        "formal_kanji": "万",
+    },
+    100_000_000: {
+        "kanji": "億",
+        "hiragana": "おく",
+        "hepburn": "Oku",
+    },
+}
+
+
+# Convert an integer to the requested type in Japanese.
+#
+# The requested type can be kanji, hiragana, hepburn, or formal_kanji.
+def convert_to_japanese_numeral(num: int, requested_type: str) -> str:
+    if requested_type not in ["kanji", "hiragana", "hepburn", "formal_kanji"]:
+        return ""
+
+    # I'm not worrying about numbers larger than 99,999 right now
+    if (num // 10000) > 9:
+        return ""
+    string: str = ""
+    number: int = num
+    for power in [4, 3, 2, 1, 0]:
+        power_of_ten: int = int(math.pow(10, power))
+        quotient: int = number // power_of_ten
+        if quotient > 0:
+            if power == 0:
+                string += STANDARD_JAPANESE_NUMERALS[quotient][requested_type]
+            elif quotient == 1:
+                string += STANDARD_JAPANESE_NUMERALS[power_of_ten][requested_type]
+            elif quotient > 1:
+                string += (
+                    STANDARD_JAPANESE_NUMERALS[quotient][requested_type]
+                    + STANDARD_JAPANESE_NUMERALS[power_of_ten][requested_type]
+                )
+            number = number % power_of_ten
+    if len(string) == 0:
+        return STANDARD_JAPANESE_NUMERALS[0][requested_type]
+    return string
+
+
+# Format an integer according to the given format.
+#
+# The requested format can be kanji, hiragana, hepburn, formal_kanji, numeral, or roman_numeral.
+def format_number(number: int, format: str) -> str:
+    if format not in [
+        "kanji",
+        "hiragana",
+        "hepburn",
+        "formal_kanji",
+        "numeral",
+        "roman_numeral",
+    ]:
+        return ""
+
+    if format == "numeral":
+        return f"{number}"
+
+    if format == "roman_numeral":
+        return write_roman(number)
+
+    return convert_to_japanese_numeral(number, format)
+
+
+DEFAULT_INDEX_NUMBER_FORMAT_MAP = {
+    "English": {
+        "Latin": "numeral",
+    },
+    "Japanese": {
+        "Kanji": "numeral",
+        "Latin": "numeral",
+    },
+}
+
+DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP = {
+    "English": {
+        "Latin": "numeral",
+    },
+    "Japanese": {
+        "Kanji": "numeral",
+        "Latin": "numeral",
+    },
+}
+
+
+# Insert an index using the necessary format
+def format_index(index: str, title: dict, format_map: dict) -> str:
+    format = format_map[title["language"]][title["script"]]
+    if format == "numeral":
+        return index
+    if not index.isnumeric():
+        return index
+    number = float(index)
+    if not number.is_integer():
+        return str(number)
+    number = int(number)
+    return format_number(number, format)
+
+
+# Sanitize a sort field by removing leading pairs of brackets, parentheses, and similar punctuation
+def sanitize_sort(sanitized_sort_title: str) -> str:
+    if sanitized_sort_title.startswith("【"):
+        sanitized_sort_title = sanitized_sort_title.replace("【", "", 1)
+        if sanitized_sort_title.endswith("】"):
+            sanitized_sort_title = sanitized_sort_title.replace("】", "", 1)
+        else:
+            sanitized_sort_title = sanitized_sort_title.replace("】", " ", 1)
+    if sanitized_sort_title.startswith("["):
+        sanitized_sort_title = sanitized_sort_title.replace("[", "", 1)
+        sanitized_sort_title = sanitized_sort_title.replace("]", "", 1)
+    if sanitized_sort_title.startswith("("):
+        sanitized_sort_title = sanitized_sort_title.replace("(", "", 1)
+        sanitized_sort_title = sanitized_sort_title.replace(")", "", 1)
+    if sanitized_sort_title.startswith('"'):
+        sanitized_sort_title = sanitized_sort_title.replace('"', "", 1)
+        sanitized_sort_title = sanitized_sort_title.replace('"', "", 1)
+    if sanitized_sort_title.startswith("#"):
+        sanitized_sort_title = sanitized_sort_title.replace("#", "", 1)
+    return sanitized_sort_title
+
+
 def musicbrainz_log_in(driver, username):
     username_text_box = driver.find_element(by=By.ID, value="id-username")
     username_text_box.send_keys(username)
@@ -204,7 +366,13 @@ def musicbrainz_log_in(driver, username):
     submit_button.click()
 
 
-def bookbrainz_set_title(driver, index, title, roman_numerals=False):
+def bookbrainz_set_title(
+    driver,
+    index,
+    title,
+    index_number_format_map: dict = DEFAULT_INDEX_NUMBER_FORMAT_MAP,
+    sort_index_number_format_map: dict = DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP,
+):
     wait = WebDriverWait(driver, timeout=200)
     # todo Make more accurate by relative to label
     name_text_box = driver.find_element(
@@ -217,7 +385,7 @@ def bookbrainz_set_title(driver, index, title, roman_numerals=False):
     name = (
         title["text"]
         .replace("|subtitle|", subtitle)
-        .replace("|index|", write_roman(int(index)) if roman_numerals else f"{index}")
+        .replace("|index|", format_index(index, title, index_number_format_map))
     )
     name_text_box.send_keys(name)
     wait.until(
@@ -232,7 +400,6 @@ def bookbrainz_set_title(driver, index, title, roman_numerals=False):
         by=By.XPATH, value="//button[text()='Guess']"
     )
     sort_copy_button = driver.find_element(by=By.XPATH, value="//button[text()='Copy']")
-    # sort_name_text_box = driver.find_element(by=By.XPATH, value=".input-group:nth-child(2) > .form-control")
     # todo Make more accurate by relative to label
     sort_name_text_box = driver.find_element(
         by=By.XPATH,
@@ -249,9 +416,13 @@ def bookbrainz_set_title(driver, index, title, roman_numerals=False):
         else:
             sort_subtitle = subtitle
         sort_name_text_box.send_keys(
-            title["sort"]
-            .replace("|subtitle|", sort_subtitle)
-            .replace("|index|", f"{index}")
+            sanitize_sort(
+                title["sort"]
+                .replace("|subtitle|", sort_subtitle)
+                .replace(
+                    "|index|", format_index(index, title, sort_index_number_format_map)
+                )
+            )
         )
     wait.until(
         EC.visibility_of_element_located(
@@ -284,12 +455,6 @@ def bookbrainz_set_title(driver, index, title, roman_numerals=False):
             (By.XPATH, "//span[@class='text-success' and text()='Language']")
         )
     )
-
-    # language_text_box.send_keys(title["language"])
-    # wait.until(EC.visibility_of_element_located((By.ID, "react-select-language-option-0")))
-    # first_language_option = driver.find_element(by=By.ID, value="react-select-language-option-0")
-    # first_language_option.click()
-    # wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(4) .text-success")))
 
 
 def bookbrainz_add_aliases(driver, aliases):
@@ -325,8 +490,6 @@ def bookbrainz_add_aliases(driver, aliases):
             by=By.XPATH,
             value=f"(//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/div[@class='input-group']/div[@class='input-group-append']/button[text()='Copy'])[{one_based_index}]",
         )
-        # language_text_box_locator = locate_with(By.XPATH, "react-select-language-input").to_right_of({By.CSS_SELECTOR: f"{row} .input-group > .form-control"})
-        # language_text_box = driver.find_element(language_text_box_locator)
         language_text_box = driver.find_element(
             by=By.XPATH,
             value=f"(//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/div[starts-with(@class,'Select')]/div[starts-with(@class,'react-select__control')]/div[starts-with(@class,'react-select__value-container')]/div/div[@class='react-select__input']/input[@id='react-select-language-input'])[{one_based_index}]",
@@ -358,7 +521,6 @@ def bookbrainz_add_aliases(driver, aliases):
                 )
             )
         )
-        # "css=.react-select__control--is-focused > .react-select__value-container"
         language_text_box.send_keys(alias["language"])
         wait.until(
             EC.visibility_of_element_located(
@@ -396,10 +558,11 @@ def bookbrainz_add_aliases(driver, aliases):
             )
         else:
             close_button.click()
-            # todo Or check title? Waiting for the modal dialog to disappear
             wait.until(EC.visibility_of(add_aliases_button))
 
 
+# todo This almost certainly doesn't work.
+# Use XPATH.
 def bookbrainz_add_identifiers(driver, identifiers):
     wait = WebDriverWait(driver, timeout=200)
     add_identifiers_button = driver.find_element(by=By.CSS_SELECTOR, value=".wrap")
@@ -437,7 +600,6 @@ def bookbrainz_add_identifiers(driver, identifiers):
             )
         else:
             close_button.click()
-            # todo Or check title? Waiting for the modal dialog to disappear
             wait.until(EC.visibility_of_element_located(add_identifiers_button))
 
 
@@ -445,23 +607,27 @@ def bookbrainz_set_work_type(driver, work_type):
     wait = WebDriverWait(driver, timeout=200)
     work_type_text_box = driver.find_element(By.ID, "react-select-workType-input")
     work_type_text_box.send_keys(work_type)
-    # work_type_index = 0
-    # if work_type == "Novel":
-    #     work_type_index = 1
-    wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".margin-left-d10")))
-    if work_type == "Novel":
-        work_type_text_box.send_keys(Keys.ARROW_DOWN)
-        # todo Wait
-        # work_type_index = 1
-    work_type_text_box.send_keys(Keys.ENTER)
-    # work_type_option = driver.find_element(by=By.CSS_SELECTOR, value=f"#react-select-workType-option-{work_type_index} > .margin-left-d10")
-    # work_type_option.click()
     wait.until(
         EC.visibility_of_element_located(
-            (By.XPATH, "//div[@id='content']/form/div/div/div[3]/div/div/div/small")
+            (
+                By.XPATH,
+                f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@class,'react-select__option')]/div[text()='{work_type}']",
+            )
         )
     )
-    # wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(4) .text-success")))
+    work_type_option = driver.find_element(
+        by=By.XPATH,
+        value=f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@class,'react-select__option')]/div[text()='{work_type}']",
+    )
+    work_type_option.click()
+    wait.until(
+        EC.visibility_of_element_located(
+            (
+                By.XPATH,
+                f"//div[@class='form-group']/label[@class='form-label' and text()='Type']/../div/div[starts-with(@class,'react-select__control')]/div[starts-with(@class,'react-select__value-container')]/div[starts-with(@class,'react-select__single-value') and text()='{work_type}']",
+            )
+        )
+    )
 
 
 def bookbrainz_add_series(driver, series, index):
@@ -475,38 +641,16 @@ def bookbrainz_add_series(driver, series, index):
         By.ID, "react-select-relationshipEntitySearchField-input"
     )
     other_entity_text_box.send_keys(series)
-    # wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".progress-bar")))
     wait.until(
         EC.visibility_of_element_located(
             (By.XPATH, "//div[@class='progress']/div[@aria-valuenow=50]")
         )
     )
-    # relationship_text_box = None
-    # if is_first_relationship:
-    # wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "react-select__input")))
-    # react_select_input_span = driver.find_element(By.XPATH, "//div[@class='react-select__input']/input")
-    # relationship_text_box = react_select_input_span.find_element(By.TAG_NAME, "input")
     relationship_text_box_locator = locate_with(
         By.XPATH, "//div[@class='react-select__input']/input"
     ).below(other_entity_text_box)
     relationship_text_box = driver.find_element(relationship_text_box_locator)
-    # else:
-    #     wait.until(EC.visibility_of_element_located((By.ID, "react-select-4-input")))
-    #     relationship_text_box = driver.find_element(By.ID, "react-select-4-input")
-    # relationship_text_box.click()
     relationship_text_box.send_keys("is part of")
-    # relationship_selection = None
-    # if select_input_index == 2:
-    # "react-select__option react-select__option--is-focused react-select__option--is-selected"
-    # react-select__option--is-selected
-    # react-select__option--is-focused
-    # "react-select__menu-list"
-    # wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='react-select__menu-list']/div/div[@class='react-select__option']")))
-    # wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "react-select__menu")))
-    # react_select_menu = driver.find_element(By.CLASS_NAME, "react-select__menu")
-    # react_select_option = react_select_menu.find_element(By.CLASS_NAME, "margin-left-d0")
-    # wait.until(EC.visibility_of_element_located((By.XPATH, "//div[starts-with(@class,'react-select__menu-list')]/div/div[@class='margin-left-d0'][1]")))
-    # react_select_option = driver.find_element(By.XPATH, "//div[starts-with(@class,'react-select__menu-list')]/div/div[@class='margin-left-d0'][1]")
     wait.until(
         EC.visibility_of_element_located(
             (
@@ -519,9 +663,6 @@ def bookbrainz_add_series(driver, series, index):
         By.XPATH,
         "//div[starts-with(@class,'react-select__menu-list')]/div/div[starts-with(@class,'margin-left-d')][1]",
     )
-    # else:
-    # wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"#react-select-{select_input_index + 1}-option-0 > .margin-left-d0")))
-    # relationship_selection = driver.find_element(By.CSS_SELECTOR, f"#react-select-{select_input_index + 1}-option-0 > .margin-left-d0")
     react_select_option.click()
     wait.until(
         EC.visibility_of_element_located(
@@ -543,9 +684,11 @@ def bookbrainz_add_series(driver, series, index):
 BOOKBRAINZ_RELATIONSHIP_VERB = {
     "adaptation": "is an adaptation of",
     "adapter": "adapted",
+    "contributor": "contributed to",
     "edition": "contains",
     "illustrator": "illustrated",
     "letterer": "lettered",
+    "provided art for": "provided art for",
     "provided story for": "provided story for",
     "revisor": "revised",
     "translation": "is a translation of",
@@ -571,8 +714,6 @@ def bookbrainz_add_relationship(driver, relationship):
     other_entity_text_box = driver.find_element(
         By.ID, "react-select-relationshipEntitySearchField-input"
     )
-    # if relationship["id"] == "PASTE_FROM_CLIPBOARD":
-    #     paste(macropad)
     other_entity_text_box.send_keys(relationship["id"])
     wait.until(
         EC.visibility_of_element_located(
@@ -584,15 +725,6 @@ def bookbrainz_add_relationship(driver, relationship):
         By.XPATH, "//div[@class='react-select__input']/input"
     ).below(other_entity_text_box)
     relationship_text_box = driver.find_element(relationship_text_box_locator)
-    # relationship_text_box = driver.find_element(By.XPATH, "//div[@class='react-select__input']/input")
-    # relationship_text_box = driver.find_element(By.XPATH, f"//div[@class='react-select__input']/input[contains(@value,'{relation}')]")
-    # if is_first_relationship:
-    # wait.until(EC.visibility_of_element_located((By.ID, f"react-select-{select_input_index}-input")))
-    # relationship_text_box = driver.find_element(By.ID, f"react-select-{select_input_index}-input")
-    # else:
-    #     wait.until(EC.visibility_of_element_located((By.ID, "react-select-4-input")))
-    #     relationship_text_box = driver.find_element(By.ID, "react-select-4-input")
-    # relationship_text_box = driver.find_element(By.CSS_SELECTOR, ".react-select__control--is-focused > .react-select__value-container")
     relationship_text_box.send_keys(relation)
     wait.until(
         EC.visibility_of_element_located(
@@ -606,15 +738,7 @@ def bookbrainz_add_relationship(driver, relationship):
         By.XPATH,
         "//div[starts-with(@class,'react-select__menu-list')]/div/div[starts-with(@class,'margin-left-d')][1]",
     )
-    # relationship_selection = None
-    # if select_input_index == 2:
-    #     wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".margin-left-d0")))
-    #     relationship_selection = driver.find_element(By.CSS_SELECTOR, ".margin-left-d0")
-    # else:
-    #     wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"#react-select-{select_input_index + 1}-option-0 > .margin-left-d0")))
-    #     relationship_selection = driver.find_element(By.CSS_SELECTOR, f"#react-select-{select_input_index + 1}-option-0 > .margin-left-d0")
     react_select_option.click()
-    # //small XPATH?
     wait.until(
         EC.visibility_of_element_located(
             (By.XPATH, "//div[@class='progress']/div[@aria-valuenow=100]")
@@ -630,29 +754,16 @@ def bookbrainz_add_relationship(driver, relationship):
     wait.until(EC.visibility_of(add_relationships_button))
 
 
-# original_work = {
-#     "title": {
-#         # "text": "",
-#         "sort": ORIGINAL_WORK_TITLE_SORT,
-#         "language": ORIGINAL_LANGUAGE,
-#     },
-#     "type": "",
-#     "language": "",
-#     "disambiguation": ORIGINAL_WORK_DISAMBIGUATION_COMMENT,
-#     "aliases": original_aliases,
-#     "identifiers": original_identifiers,
-#     "series": BOOKBRAINZ_ORIGINAL_WORK_SERIES,
-#     "relationships": [
-#         {
-#             "writer": BOOKBRAINZ_WRITER,
-#             "illustrator": BOOKBRAINZ_ILLUSTRATOR,
-#         }
-#     ],
-# }
-def bookbrainz_create_work(driver, work, index, username=None, roman_numerals=False):
+def bookbrainz_create_work(
+    driver,
+    work,
+    index,
+    username=None,
+    index_number_format_map: dict = DEFAULT_INDEX_NUMBER_FORMAT_MAP,
+    sort_index_number_format_map: dict = DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP,
+):
     wait = WebDriverWait(driver, timeout=200)
 
-    # driver.close()
     driver.get(BOOKBRAINZ_CREATE_WORK_URL)
 
     wait.until(
@@ -683,17 +794,17 @@ def bookbrainz_create_work(driver, work, index, username=None, roman_numerals=Fa
         with open(COOKIES_CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump(cookies, f, ensure_ascii=False, indent=4)
     bookbrainz_set_title(
-        driver, index, work["titles"][0], roman_numerals=roman_numerals
+        driver,
+        index,
+        work["titles"][0],
+        index_number_format_map=index_number_format_map,
+        sort_index_number_format_map=sort_index_number_format_map,
     )
-    # disambiguation_label = driver.find_element(by=By.XPATH, value="//label[@class='form-label' and span/starts-with(text(),'Disambiguation')]")
-    # disambiguation_text_box_locator = driver.find_element(by=By.XPATH, value=".row:nth-child(5) .form-control")
-    # disambiguation_text_box_locator = locate_with(By.ID, "react-select-language-input").below({By.XPATH: "//div[@class='form-group']/input[@class='form-control']"})
     # todo Make more accurate by relative to label
     disambiguation_text_box = driver.find_element(
         by=By.XPATH,
         value="(//div[@class='form-group']/input[@class='form-control'])[2]",
     )
-    # disambiguation_text_box = driver.find_element(disambiguation_text_box_locator)
     if "disambiguation" in work and work["disambiguation"]:
         disambiguation_text_box.send_keys(work["disambiguation"])
         wait.until(
@@ -718,12 +829,16 @@ def bookbrainz_create_work(driver, work, index, username=None, roman_numerals=Fa
                     "text": a["text"]
                     .replace("|subtitle|", subtitle)
                     .replace(
-                        "|index|",
-                        write_roman(int(index)) if roman_numerals else f"{index}",
+                        "|index|", format_index(index, a, index_number_format_map)
                     ),
-                    "sort": a["sort"]
-                    .replace("|subtitle|", sort_subtitle)
-                    .replace("|index|", f"{index}"),
+                    "sort": sanitize_sort(
+                        a["sort"]
+                        .replace("|subtitle|", sort_subtitle)
+                        .replace(
+                            "|index|",
+                            format_index(index, a, sort_index_number_format_map),
+                        )
+                    ),
                     "language": a["language"],
                     "primary": a["primary"] if "primary" in a else False,
                 }
@@ -1159,7 +1274,6 @@ def main():
     parser.add_argument("--range-start", type=int)
     parser.add_argument("--range-end", type=int)
     parser.add_argument("--no-headless", action="store_true")
-    parser.add_argument("--roman-numerals", action="store_true")
     parser.add_argument("--username")
     args = parser.parse_args()
 
@@ -1203,12 +1317,8 @@ def main():
     elif "range" in data and data["range"]:
         range_ = [str(i) for i in data["range"]]
 
-    # bookbrainz_original_work = None
     if "bookbrainz_work" in data["original"]:
-        # bookbrainz_original_work = data["original"]["bookbrainz_work"]
         if "bookbrainz_work" in data["translation"]:
-            # if "titles" not in data["translation"] or not data["translation"]["titles"]:
-            #     data["translation"]["titles"] = [data["original"]["titles"][1]]
             if (
                 "type" not in data["translation"]["bookbrainz_work"]
                 or not data["bookbrainz_work"]["translation"]["type"]
@@ -1219,13 +1329,49 @@ def main():
             for relationship in data["original"]["bookbrainz_work"]["relationships"]:
                 if relationship["id"]:
                     if relationship["role"] in ["writer", "provided story for"]:
-                        data["translation"]["bookbrainz_work"]["relationships"].append(
-                            {"role": "provided story for", "id": relationship["id"]}
-                        )
+                        if {
+                            "role": "provided story for",
+                            "id": relationship["id"],
+                        } not in data["translation"]["bookbrainz_work"][
+                            "relationships"
+                        ]:
+                            data["translation"]["bookbrainz_work"][
+                                "relationships"
+                            ].append(
+                                {"role": "provided story for", "id": relationship["id"]}
+                            )
                     elif relationship["role"] in ["illustrator"]:
-                        data["translation"]["bookbrainz_work"]["relationships"].append(
-                            {"role": "illustrator", "id": relationship["id"]}
-                        )
+                        if {
+                            "role": "illustrator",
+                            "id": relationship["id"],
+                        } not in data["translation"]["bookbrainz_work"][
+                            "relationships"
+                        ]:
+                            data["translation"]["bookbrainz_work"][
+                                "relationships"
+                            ].append({"role": "illustrator", "id": relationship["id"]})
+                    elif relationship["role"] in ["provided art for"]:
+                        if {
+                            "role": "provided art for",
+                            "id": relationship["id"],
+                        } not in data["translation"]["bookbrainz_work"][
+                            "relationships"
+                        ]:
+                            data["translation"]["bookbrainz_work"][
+                                "relationships"
+                            ].append(
+                                {"role": "provided art for", "id": relationship["id"]}
+                            )
+                    elif relationship["role"] in ["contributor"]:
+                        if {
+                            "role": "contributor",
+                            "id": relationship["id"],
+                        } not in data["translation"]["bookbrainz_work"][
+                            "relationships"
+                        ]:
+                            data["translation"]["bookbrainz_work"][
+                                "relationships"
+                            ].append({"role": "contributor", "id": relationship["id"]})
 
     # To have a special title sort in MusicBrainz, it's necessary to add an alias.
     # aliases = []
@@ -1297,10 +1443,6 @@ def main():
     options.set_preference("browser.cache.memory.capacity", 1_048_576)
 
     driver = webdriver.Firefox(options=options, service=service)
-
-    # FirefoxProfile
-    # profile = driver.profile
-    # profile.DEFAULT_PREFERENCES["frozen"]["browser.cache.memory.capacity"] = 2400
 
     wait = WebDriverWait(driver, timeout=200)
 
@@ -1475,8 +1617,9 @@ def main():
                 driver,
                 original_work,
                 i,
-                username=args.username,
-                roman_numerals=args.roman_numerals,
+                username=username,
+                index_number_format_map=data["index_number_format_map"],
+                sort_index_number_format_map=data["sort_index_number_format_map"],
             )
             original_work_url = driver.current_url
 
@@ -1530,21 +1673,6 @@ def main():
             if "titles" not in translation or not translation["titles"]:
                 translation["titles"] = []
 
-            # if (
-            #     "subtitles" in original
-            #     and original["subtitles"]
-            #     and i in original["subtitles"]
-            #     and original["subtitles"][i]
-            #     and "1" in original["subtitles"][i]
-            #     and original["subtitles"][i]["1"]
-            # ):
-            #     translation["subtitles"][i]["0"] = original["subtitles"][i]["1"]
-            # else:
-            #     if "subtitles" in translation and translation["subtitles"]:
-            #         translation["subtitles"] = [{}].append(translation["subtitles"])
-            #     else:
-            #         translation["subtitles"] = []
-
             titles = []
             for title_index, title in enumerate(translation["titles"]):
                 title_index = str(title_index)
@@ -1578,8 +1706,9 @@ def main():
                 driver,
                 translation_work,
                 i,
-                username=args.username,
-                roman_numerals=args.roman_numerals,
+                username=username,
+                index_number_format_map=data["index_number_format_map"],
+                sort_index_number_format_map=data["sort_index_number_format_map"],
             )
 
     driver.quit()
