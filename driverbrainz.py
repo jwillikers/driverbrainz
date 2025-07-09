@@ -30,51 +30,6 @@ MUSICBRAINZ_CREATE_RELEASE_GROUP_URL = (
 )
 BOOKBRAINZ_CREATE_WORK_URL = "https://bookbrainz.org/work/create"
 
-# Prerequisites
-#
-# Firefox
-# Disable the browser.translations.automaticallyPopup option in about:config
-# Install the https://www.greasespot.net/[GreaseMonkey] extension in Firefox
-# Install the SUPER MIND CONTROL II X Turbo user script for MusicBrainz
-# https://github.com/jesus2099/konami-command/raw/master/mb_SUPER-MIND-CONTROL-II-X-TURBO.user.js
-# Install the Guess Unicode Punctuation user script for MusicBrainz
-#
-# The clipse clipboard manager in the Sway desktop is necessary since I use it to manage the contents of the clipboard.
-# It's bound to the keyboard shortcut Super+I
-#
-# Requires fcitx5 for the input of Unicode characters.
-# sudo rpm-ostree install fcitx5-autostart
-# sudo systemctl reboot
-#
-# This script is used on an Adafruit MacroPad using CircuitPython.
-# It requires the MacroPad library plus all of its dependencies to be copied over to the lib directory on the MacroPad.
-
-# Usage
-#
-# Configure the constants below as necessary for the works of the series you want to add.
-# Set the volume start and end values, which are inclusive, accordingly.
-# Save the updated script to the MacroPad in the code.py file.
-# Copy the name for the first volume in the original language.
-# This copied text will be used as the title and immediately followed by the index value.
-# Open a browser window and focus on it.
-# Click the desired key to create the series.
-# Always test with 1 or 2 works in the series before doing more.
-#
-
-# 0 - Create a series of MusicBrainz works along with their associated translated works
-# 1 - Create a series of MusicBrain release groups
-# 3 - Create a series of BookBrainz works along with their associated translated works
-
-# The second title must always be the title for the translated works
-# Remember to use the appropriate Unicode characters!
-#
-# Apostrophe:: ’
-# Dash:: ‐
-# Ellipsis:: …
-# Multiplication Sign:: ×
-# Quotation Marks:: “”
-#
-
 MUSICBRAINZ_WORK_TYPE = "Prose"
 
 MUSICBRAINZ_WRITER = ""
@@ -351,7 +306,6 @@ def format_number(number: int, format: str) -> str:
     if format == "roman_numeral":
         return write_roman(number)
 
-    # if format not in ["kanji", "hiragana", "hepburn", "formal_kanji"]:
     return convert_to_japanese_numeral(number, format)
 
 
@@ -393,7 +347,6 @@ def format_index(index: str, title: dict, format_map: dict) -> str:
 
 # Sanitize a sort field by removing leading pairs of brackets, parentheses, and similar punctuation
 def sanitize_sort(sanitized_sort_title: str) -> str:
-    # sanitized_sort_title = sort_title
     if sanitized_sort_title.startswith("【"):
         sanitized_sort_title = sanitized_sort_title.replace("【", "", 1)
         if sanitized_sort_title.endswith("】"):
@@ -457,7 +410,6 @@ def bookbrainz_set_title(
         by=By.XPATH, value="//button[text()='Guess']"
     )
     sort_copy_button = driver.find_element(by=By.XPATH, value="//button[text()='Copy']")
-    # sort_name_text_box = driver.find_element(by=By.XPATH, value=".input-group:nth-child(2) > .form-control")
     # todo Make more accurate by relative to label
     sort_name_text_box = driver.find_element(
         by=By.XPATH,
@@ -514,12 +466,6 @@ def bookbrainz_set_title(
         )
     )
 
-    # language_text_box.send_keys(title["language"])
-    # wait.until(EC.visibility_of_element_located((By.ID, "react-select-language-option-0")))
-    # first_language_option = driver.find_element(by=By.ID, value="react-select-language-option-0")
-    # first_language_option.click()
-    # wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".row:nth-child(4) .text-success")))
-
 
 def bookbrainz_add_aliases(driver, aliases):
     wait = WebDriverWait(driver, timeout=200)
@@ -554,8 +500,6 @@ def bookbrainz_add_aliases(driver, aliases):
             by=By.XPATH,
             value=f"(//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/div[@class='input-group']/div[@class='input-group-append']/button[text()='Copy'])[{one_based_index}]",
         )
-        # language_text_box_locator = locate_with(By.XPATH, "react-select-language-input").to_right_of({By.CSS_SELECTOR: f"{row} .input-group > .form-control"})
-        # language_text_box = driver.find_element(language_text_box_locator)
         language_text_box = driver.find_element(
             by=By.XPATH,
             value=f"(//div/div[@class='row']/div[@class='col-lg-4']/div[@class='form-group']/div[starts-with(@class,'Select')]/div[starts-with(@class,'react-select__control')]/div[starts-with(@class,'react-select__value-container')]/div/div[@class='react-select__input']/input[@id='react-select-language-input'])[{one_based_index}]",
@@ -587,7 +531,6 @@ def bookbrainz_add_aliases(driver, aliases):
                 )
             )
         )
-        # "css=.react-select__control--is-focused > .react-select__value-container"
         language_text_box.send_keys(alias["language"])
         wait.until(
             EC.visibility_of_element_located(
@@ -625,10 +568,11 @@ def bookbrainz_add_aliases(driver, aliases):
             )
         else:
             close_button.click()
-            # todo Or check title? Waiting for the modal dialog to disappear
             wait.until(EC.visibility_of(add_aliases_button))
 
 
+# todo This almost certainly doesn't work.
+# Use XPATH.
 def bookbrainz_add_identifiers(driver, identifiers):
     wait = WebDriverWait(driver, timeout=200)
     add_identifiers_button = driver.find_element(by=By.CSS_SELECTOR, value=".wrap")
@@ -666,7 +610,6 @@ def bookbrainz_add_identifiers(driver, identifiers):
             )
         else:
             close_button.click()
-            # todo Or check title? Waiting for the modal dialog to disappear
             wait.until(EC.visibility_of_element_located(add_identifiers_button))
 
 
@@ -708,38 +651,16 @@ def bookbrainz_add_series(driver, series, index):
         By.ID, "react-select-relationshipEntitySearchField-input"
     )
     other_entity_text_box.send_keys(series)
-    # wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".progress-bar")))
     wait.until(
         EC.visibility_of_element_located(
             (By.XPATH, "//div[@class='progress']/div[@aria-valuenow=50]")
         )
     )
-    # relationship_text_box = None
-    # if is_first_relationship:
-    # wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "react-select__input")))
-    # react_select_input_span = driver.find_element(By.XPATH, "//div[@class='react-select__input']/input")
-    # relationship_text_box = react_select_input_span.find_element(By.TAG_NAME, "input")
     relationship_text_box_locator = locate_with(
         By.XPATH, "//div[@class='react-select__input']/input"
     ).below(other_entity_text_box)
     relationship_text_box = driver.find_element(relationship_text_box_locator)
-    # else:
-    #     wait.until(EC.visibility_of_element_located((By.ID, "react-select-4-input")))
-    #     relationship_text_box = driver.find_element(By.ID, "react-select-4-input")
-    # relationship_text_box.click()
     relationship_text_box.send_keys("is part of")
-    # relationship_selection = None
-    # if select_input_index == 2:
-    # "react-select__option react-select__option--is-focused react-select__option--is-selected"
-    # react-select__option--is-selected
-    # react-select__option--is-focused
-    # "react-select__menu-list"
-    # wait.until(EC.visibility_of_element_located((By.XPATH, "//div[@class='react-select__menu-list']/div/div[@class='react-select__option']")))
-    # wait.until(EC.visibility_of_element_located((By.CLASS_NAME, "react-select__menu")))
-    # react_select_menu = driver.find_element(By.CLASS_NAME, "react-select__menu")
-    # react_select_option = react_select_menu.find_element(By.CLASS_NAME, "margin-left-d0")
-    # wait.until(EC.visibility_of_element_located((By.XPATH, "//div[starts-with(@class,'react-select__menu-list')]/div/div[@class='margin-left-d0'][1]")))
-    # react_select_option = driver.find_element(By.XPATH, "//div[starts-with(@class,'react-select__menu-list')]/div/div[@class='margin-left-d0'][1]")
     wait.until(
         EC.visibility_of_element_located(
             (
@@ -752,9 +673,6 @@ def bookbrainz_add_series(driver, series, index):
         By.XPATH,
         "//div[starts-with(@class,'react-select__menu-list')]/div/div[starts-with(@class,'margin-left-d')][1]",
     )
-    # else:
-    # wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"#react-select-{select_input_index + 1}-option-0 > .margin-left-d0")))
-    # relationship_selection = driver.find_element(By.CSS_SELECTOR, f"#react-select-{select_input_index + 1}-option-0 > .margin-left-d0")
     react_select_option.click()
     wait.until(
         EC.visibility_of_element_located(
@@ -806,8 +724,6 @@ def bookbrainz_add_relationship(driver, relationship):
     other_entity_text_box = driver.find_element(
         By.ID, "react-select-relationshipEntitySearchField-input"
     )
-    # if relationship["id"] == "PASTE_FROM_CLIPBOARD":
-    #     paste(macropad)
     other_entity_text_box.send_keys(relationship["id"])
     wait.until(
         EC.visibility_of_element_located(
@@ -819,15 +735,6 @@ def bookbrainz_add_relationship(driver, relationship):
         By.XPATH, "//div[@class='react-select__input']/input"
     ).below(other_entity_text_box)
     relationship_text_box = driver.find_element(relationship_text_box_locator)
-    # relationship_text_box = driver.find_element(By.XPATH, "//div[@class='react-select__input']/input")
-    # relationship_text_box = driver.find_element(By.XPATH, f"//div[@class='react-select__input']/input[contains(@value,'{relation}')]")
-    # if is_first_relationship:
-    # wait.until(EC.visibility_of_element_located((By.ID, f"react-select-{select_input_index}-input")))
-    # relationship_text_box = driver.find_element(By.ID, f"react-select-{select_input_index}-input")
-    # else:
-    #     wait.until(EC.visibility_of_element_located((By.ID, "react-select-4-input")))
-    #     relationship_text_box = driver.find_element(By.ID, "react-select-4-input")
-    # relationship_text_box = driver.find_element(By.CSS_SELECTOR, ".react-select__control--is-focused > .react-select__value-container")
     relationship_text_box.send_keys(relation)
     wait.until(
         EC.visibility_of_element_located(
@@ -841,15 +748,7 @@ def bookbrainz_add_relationship(driver, relationship):
         By.XPATH,
         "//div[starts-with(@class,'react-select__menu-list')]/div/div[starts-with(@class,'margin-left-d')][1]",
     )
-    # relationship_selection = None
-    # if select_input_index == 2:
-    #     wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, ".margin-left-d0")))
-    #     relationship_selection = driver.find_element(By.CSS_SELECTOR, ".margin-left-d0")
-    # else:
-    #     wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, f"#react-select-{select_input_index + 1}-option-0 > .margin-left-d0")))
-    #     relationship_selection = driver.find_element(By.CSS_SELECTOR, f"#react-select-{select_input_index + 1}-option-0 > .margin-left-d0")
     react_select_option.click()
-    # //small XPATH?
     wait.until(
         EC.visibility_of_element_located(
             (By.XPATH, "//div[@class='progress']/div[@aria-valuenow=100]")
@@ -865,25 +764,6 @@ def bookbrainz_add_relationship(driver, relationship):
     wait.until(EC.visibility_of(add_relationships_button))
 
 
-# original_work = {
-#     "title": {
-#         # "text": "",
-#         "sort": ORIGINAL_WORK_TITLE_SORT,
-#         "language": ORIGINAL_LANGUAGE,
-#     },
-#     "type": "",
-#     "language": "",
-#     "disambiguation": ORIGINAL_WORK_DISAMBIGUATION_COMMENT,
-#     "aliases": original_aliases,
-#     "identifiers": original_identifiers,
-#     "series": BOOKBRAINZ_ORIGINAL_WORK_SERIES,
-#     "relationships": [
-#         {
-#             "writer": BOOKBRAINZ_WRITER,
-#             "illustrator": BOOKBRAINZ_ILLUSTRATOR,
-#         }
-#     ],
-# }
 def bookbrainz_create_work(
     driver,
     work,
@@ -894,7 +774,6 @@ def bookbrainz_create_work(
 ):
     wait = WebDriverWait(driver, timeout=200)
 
-    # driver.close()
     driver.get(BOOKBRAINZ_CREATE_WORK_URL)
 
     wait.until(
@@ -931,15 +810,11 @@ def bookbrainz_create_work(
         index_number_format_map=index_number_format_map,
         sort_index_number_format_map=sort_index_number_format_map,
     )
-    # disambiguation_label = driver.find_element(by=By.XPATH, value="//label[@class='form-label' and span/starts-with(text(),'Disambiguation')]")
-    # disambiguation_text_box_locator = driver.find_element(by=By.XPATH, value=".row:nth-child(5) .form-control")
-    # disambiguation_text_box_locator = locate_with(By.ID, "react-select-language-input").below({By.XPATH: "//div[@class='form-group']/input[@class='form-control']"})
     # todo Make more accurate by relative to label
     disambiguation_text_box = driver.find_element(
         by=By.XPATH,
         value="(//div[@class='form-group']/input[@class='form-control'])[2]",
     )
-    # disambiguation_text_box = driver.find_element(disambiguation_text_box_locator)
     if "disambiguation" in work and work["disambiguation"]:
         disambiguation_text_box.send_keys(work["disambiguation"])
         wait.until(
@@ -1452,12 +1327,8 @@ def main():
     elif "range" in data and data["range"]:
         range_ = [str(i) for i in data["range"]]
 
-    # bookbrainz_original_work = None
     if "bookbrainz_work" in data["original"]:
-        # bookbrainz_original_work = data["original"]["bookbrainz_work"]
         if "bookbrainz_work" in data["translation"]:
-            # if "titles" not in data["translation"] or not data["translation"]["titles"]:
-            #     data["translation"]["titles"] = [data["original"]["titles"][1]]
             if (
                 "type" not in data["translation"]["bookbrainz_work"]
                 or not data["bookbrainz_work"]["translation"]["type"]
@@ -1582,10 +1453,6 @@ def main():
     options.set_preference("browser.cache.memory.capacity", 1_048_576)
 
     driver = webdriver.Firefox(options=options, service=service)
-
-    # FirefoxProfile
-    # profile = driver.profile
-    # profile.DEFAULT_PREFERENCES["frozen"]["browser.cache.memory.capacity"] = 2400
 
     wait = WebDriverWait(driver, timeout=200)
 
@@ -1815,21 +1682,6 @@ def main():
 
             if "titles" not in translation or not translation["titles"]:
                 translation["titles"] = []
-
-            # if (
-            #     "subtitles" in original
-            #     and original["subtitles"]
-            #     and i in original["subtitles"]
-            #     and original["subtitles"][i]
-            #     and "1" in original["subtitles"][i]
-            #     and original["subtitles"][i]["1"]
-            # ):
-            #     translation["subtitles"][i]["0"] = original["subtitles"][i]["1"]
-            # else:
-            #     if "subtitles" in translation and translation["subtitles"]:
-            #         translation["subtitles"] = [{}].append(translation["subtitles"])
-            #     else:
-            #         translation["subtitles"] = []
 
             titles = []
             for title_index, title in enumerate(translation["titles"]):
