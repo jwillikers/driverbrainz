@@ -123,10 +123,7 @@ TRANSLATED_MUSICBRAINZ_WORK_IDENTIFIERS = {}
 
 
 # https://stackoverflow.com/a/28777781/9835303
-def write_roman(num):
-    if not num.is_integer():
-        return num
-
+def write_roman(num: int) -> str:
     roman = OrderedDict()
     roman[1000] = "M"
     roman[900] = "CM"
@@ -253,20 +250,17 @@ STANDARD_JAPANESE_NUMERALS = {
 #
 # The requested type can be kanji, hiragana, hepburn, or formal_kanji.
 def convert_to_japanese_numeral(num: int, requested_type: str) -> str:
-    if not num.is_integer():
-        return num
-
     if requested_type not in ["kanji", "hiragana", "hepburn", "formal_kanji"]:
-        return None
+        return ""
 
     # I'm not worrying about numbers larger than 99,999 right now
     if (num // 10000) > 9:
-        return None
-    string = ""
-    number = num
+        return ""
+    string: str = ""
+    number: int = num
     for power in [4, 3, 2, 1, 0]:
-        power_of_ten = math.pow(10, power)
-        quotient = number // power_of_ten
+        power_of_ten: int = int(math.pow(10, power))
+        quotient: int = number // power_of_ten
         if quotient > 0:
             if power == 0:
                 string += STANDARD_JAPANESE_NUMERALS[quotient][requested_type]
@@ -287,9 +281,6 @@ def convert_to_japanese_numeral(num: int, requested_type: str) -> str:
 #
 # The requested format can be kanji, hiragana, hepburn, formal_kanji, numeral, or roman_numeral.
 def format_number(number: int, format: str) -> str:
-    if not number.is_integer():
-        return number
-
     if format not in [
         "kanji",
         "hiragana",
@@ -298,7 +289,7 @@ def format_number(number: int, format: str) -> str:
         "numeral",
         "roman_numeral",
     ]:
-        return None
+        return ""
 
     if format == "numeral":
         return f"{number}"
@@ -335,12 +326,11 @@ def format_index(index: str, title: dict, format_map: dict) -> str:
     format = format_map[title["language"]][title["script"]]
     if format == "numeral":
         return index
-    number = None
     if not index.isnumeric():
         return index
     number = float(index)
     if not number.is_integer():
-        return number
+        return str(number)
     number = int(number)
     return format_number(number, format)
 

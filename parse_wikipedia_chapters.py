@@ -260,39 +260,28 @@ def parse_chapter_from_item(item: str) -> dict:
     return chapter
 
 
-def parse_chapter_from_template(template, index: int = None) -> dict:
+def parse_chapter_from_template(template, index: int = -1) -> dict:
     chapter = {}
-    # prefix_part = item.split(template.string, 1)[0].strip().strip(".")
     chapter_type = "Chapter"
-    # if prefix_part.isdecimal():
-    #     index = float(prefix_part)
-    #     chapter_type = "Chapter"
-    #     if index.is_integer():
-    #         index = int(index)
-    # elif prefix_part:
-    #     chapter_type = prefix_part
-    # else:
-    #     # Assume it is a regular chapter
-    #     chapter_type = "Chapter"
     english = template.arguments[0].value
     if english.startswith('"') and english.endswith('"'):
         english = english.strip('"')
     english = use_unicode_punctuation(english)
     if len(template.arguments) == 1:
         chapter["type"] = chapter_type
-        chapter["index"] = index
+        chapter["index"] = index if index >= 0 else None
         chapter["english"] = english
         chapter["kanji"] = english
         chapter["hepburn"] = english
     elif len(template.arguments) == 2:
         chapter["type"] = chapter_type
-        chapter["index"] = index
+        chapter["index"] = index if index >= 0 else None
         chapter["english"] = english
         chapter["kanji"] = use_unicode_punctuation(template.arguments[1].value)
         chapter["hepburn"] = english
     else:
         chapter["type"] = chapter_type
-        chapter["index"] = index
+        chapter["index"] = index if index >= 0 else None
         chapter["english"] = english
         chapter["kanji"] = use_unicode_punctuation(template.arguments[1].value)
         chapter["hepburn"] = use_unicode_punctuation(template.arguments[2].value)
@@ -322,7 +311,7 @@ def parse_wikipedia_page(wikitext: str) -> list:
             )
             for index, template in enumerate(templates):
                 chapter = parse_chapter_from_template(
-                    template, 1 if len(chapters) == 0 else None
+                    template, 1 if len(chapters) == 0 else -1
                 )
                 # This assumes that chapter names are not repeated, which may not always be the case.
                 if chapter["kanji"] not in [
@@ -346,9 +335,13 @@ def parse_wikipedia_page(wikitext: str) -> list:
                 numbered_list.templates, ["Nihongo", "nihongo", "nihongo4"]
             )
             for template_index, template in enumerate(nihongo_templates):
-                index = None
+                index: int = -1
                 if start_index:
-                    index = start_index + template_index
+                    if not start_index.is_integer():
+                        logger.error(
+                            f"The start index {start_index} is a float, not an integer. Forcibly casting to an integer."
+                        )
+                    index = int(start_index) + template_index
                 chapter = parse_chapter_from_template(template, index)
                 chapters.append(chapter)
     # Assume the first chapter is chapter 1 if there is no explicit index.
