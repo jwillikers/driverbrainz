@@ -130,8 +130,10 @@ def remove_extra_spaces_hiragana(input: str) -> str:
 def fetch_wikipedia_section(
     page_title: str, section_number: int, language_code: str = "en"
 ) -> str:
+    user_agent_string = "parse_wikipedia_chapters/0.0.1 (https://github.com/jwillikers/driverbrainz;jordan@jwillikers.com)"
+    headers = {"User-Agent": user_agent_string}
     url = f"https://{language_code}.wikipedia.org/w/api.php?action=parse&page={page_title}&section={section_number}&contentmodel=wikitext&prop=wikitext&format=json"
-    response = requests.get(url, timeout=10)
+    response = requests.get(url, headers=headers, timeout=10)
     response.raise_for_status()
     data = response.json()
     if "parse" not in data:
