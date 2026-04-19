@@ -132,10 +132,15 @@ def fetch_wikipedia_section(
 ) -> str:
     user_agent_string = "parse_wikipedia_chapters/0.0.1 (https://github.com/jwillikers/driverbrainz;jordan@jwillikers.com)"
     headers = {"User-Agent": user_agent_string}
+    print(
+        f"Fetching Wikipedia page '{page_title}', section {section_number} with user agent '{user_agent_string}'..."
+    )
     url = f"https://{language_code}.wikipedia.org/w/api.php?action=parse&page={page_title}&section={section_number}&contentmodel=wikitext&prop=wikitext&format=json"
+    print(url)
     response = requests.get(url, headers=headers, timeout=10)
     response.raise_for_status()
     data = response.json()
+    print(data)
     if "parse" not in data:
         return ""
     return data["parse"]["wikitext"]["*"]
