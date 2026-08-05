@@ -626,13 +626,13 @@ def bookbrainz_set_work_type(driver, work_type):
         EC.visibility_of_element_located(
             (
                 By.XPATH,
-                f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@class,'react-select__option')]/div[text()='{work_type}']",
+                f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@id,'react-select-workType-option')]/div[text()='{work_type}']",
             )
         )
     )
     work_type_option = driver.find_element(
         by=By.XPATH,
-        value=f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@class,'react-select__option')]/div[text()='{work_type}']",
+        value=f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@id,'react-select-workType-option')]/div[text()='{work_type}']",
     )
     work_type_option.click()
     wait.until(
