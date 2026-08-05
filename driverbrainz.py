@@ -1274,6 +1274,8 @@ def bookbrainz_create_work(
 
 
 def main():
+    logger.addHandler(logging.StreamHandler())
+    logger.setLevel(logging.DEBUG)
     parser = argparse.ArgumentParser(
         prog="driverbrainz.py",
         description="Automate time-consuming tasks contributing metadata to BookBrainz and MusicBrainz",
