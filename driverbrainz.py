@@ -15,6 +15,7 @@ import platformdirs
 import logging
 import os
 import shutil
+import sys
 
 logger = logging.getLogger(__name__)
 
@@ -357,12 +358,12 @@ def sanitize_sort(sanitized_sort_title: str) -> str:
     return sanitized_sort_title
 
 
-def musicbrainz_log_in(driver, username):
-    username_text_box = driver.find_element(by=By.ID, value="id-username")
+def metabrainz_log_in(driver, username):
+    username_text_box = driver.find_element(by=By.ID, value="username")
     username_text_box.send_keys(username)
-    password_text_box = driver.find_element(by=By.ID, value="id-password")
+    password_text_box = driver.find_element(by=By.ID, value="password")
     password_text_box.send_keys(os.environ.get("MUSICBRAINZ_PASSWORD"))
-    submit_button = driver.find_element(by=By.CSS_SELECTOR, value="button:nth-child(1)")
+    submit_button = driver.find_element(by=By.XPATH, value="//button[@type='submit']")
     submit_button.click()
 
 
@@ -543,7 +544,7 @@ def bookbrainz_add_aliases(driver, aliases):
                 )
             )
         )
-        if alias["primary"]:
+        if alias.get("primary", False):
             primary_checkbox.click()
             wait.until(EC.element_to_be_selected(primary_checkbox))
         if index < len(aliases) - 1:
@@ -558,7 +559,14 @@ def bookbrainz_add_aliases(driver, aliases):
             )
         else:
             close_button.click()
-            wait.until(EC.visibility_of(add_aliases_button))
+            wait.until(
+                EC.invisibility_of_element_located(
+                    (
+                        By.XPATH,
+                        "//div[starts-with(@class,'modal-dialog')]",
+                    )
+                )
+            )
 
 
 # todo This almost certainly doesn't work.
@@ -600,7 +608,14 @@ def bookbrainz_add_identifiers(driver, identifiers):
             )
         else:
             close_button.click()
-            wait.until(EC.visibility_of_element_located(add_identifiers_button))
+            wait.until(
+                EC.invisibility_of_element_located(
+                    (
+                        By.XPATH,
+                        "//div[starts-with(@class,'modal-dialog')]",
+                    )
+                )
+            )
 
 
 def bookbrainz_set_work_type(driver, work_type):
@@ -611,13 +626,13 @@ def bookbrainz_set_work_type(driver, work_type):
         EC.visibility_of_element_located(
             (
                 By.XPATH,
-                f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@class,'react-select__option')]/div[text()='{work_type}']",
+                f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@id,'react-select-workType-option')]/div[text()='{work_type}']",
             )
         )
     )
     work_type_option = driver.find_element(
         by=By.XPATH,
-        value=f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@class,'react-select__option')]/div[text()='{work_type}']",
+        value=f"//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@id,'react-select-workType-option')]/div[text()='{work_type}']",
     )
     work_type_option.click()
     wait.until(
@@ -666,7 +681,7 @@ def bookbrainz_add_series(driver, series, index):
     react_select_option.click()
     wait.until(
         EC.visibility_of_element_located(
-            (By.XPATH, "//small[contains(.,'Indicates a Work is part of a Series')]")
+            (By.XPATH, "//small[contains(.,'Links a Work to a series it')]")
         )
     )
     wait.until(
@@ -772,8 +787,8 @@ def bookbrainz_create_work(
             or x.find_element(By.ID, ".logo > .logo")
         )
     )
-    if "https://musicbrainz.org/oauth2/authorize" in driver.current_url:
-        musicbrainz_log_in(driver, username)
+    if "https://metabrainz.org/login" in driver.current_url:
+        metabrainz_log_in(driver, username)
         wait.until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, ".card-header > div"))
         )
@@ -805,7 +820,7 @@ def bookbrainz_create_work(
         by=By.XPATH,
         value="(//div[@class='form-group']/input[@class='form-control'])[2]",
     )
-    if "disambiguation" in work and work["disambiguation"]:
+    if work.get("disambiguation"):
         disambiguation_text_box.send_keys(work["disambiguation"])
         wait.until(
             EC.visibility_of_element_located(
@@ -817,10 +832,10 @@ def bookbrainz_create_work(
         titles = []
         for a in work["titles"][1:]:
             subtitle = ""
-            if "subtitle" in a and a["subtitle"]:
+            if a.get("subtitle"):
                 subtitle = a["subtitle"]
             sort_subtitle = ""
-            if "sort_subtitle" in a and a["sort_subtitle"]:
+            if a.get("sort_subtitle"):
                 sort_subtitle = a["sort_subtitle"]
             else:
                 sort_subtitle = subtitle
@@ -840,11 +855,11 @@ def bookbrainz_create_work(
                         )
                     ),
                     "language": a["language"],
-                    "primary": a["primary"] if "primary" in a else False,
+                    "primary": a.get("primary", False),
                 }
             )
         bookbrainz_add_aliases(driver, titles)
-    if "identifiers" in work and work["identifiers"]:
+    if work.get("identifiers"):
         bookbrainz_add_identifiers(driver, work["identifiers"])
     bookbrainz_set_work_type(driver, work["type"])
 
@@ -874,10 +889,10 @@ def bookbrainz_create_work(
             )
         )
     )
-    if "series" in work and work["series"]:
+    if work.get("series"):
         for series in work["series"]:
-            if "id" in series and series["id"]:
-                if "offset" in series and series["offset"]:
+            if series.get("id"):
+                if series.get("offset"):
                     offset_index = float(index) + series["offset"]
                     if offset_index.is_integer():
                         offset_index = int(offset_index)
@@ -1260,6 +1275,8 @@ def bookbrainz_create_work(
 
 
 def main():
+    logger.addHandler(logging.StreamHandler())
+    logger.setLevel(logging.DEBUG)
     parser = argparse.ArgumentParser(
         prog="driverbrainz.py",
         description="Automate time-consuming tasks contributing metadata to BookBrainz and MusicBrainz",
@@ -1284,19 +1301,19 @@ def main():
         logger.error(
             'Missing MusicBrainz username. Please supply it with the "--username" flag or the "MUSICBRAINZ_USERNAME" environment variable.'
         )
-        exit(1)
+        sys.exit(1)
 
     if os.environ.get("MUSICBRAINZ_PASSWORD") is None:
         logger.error(
             'Missing MusicBrainz password. Please supply it through the "MUSICBRAINZ_PASSWORD" environment variable.'
         )
-        exit(1)
+        sys.exit(1)
 
     if args.range_start and not args.range_end:
         logger.error(
             'Given option "--range-start" but missing option "--range-end". Pleas supply the "--range-end" option.'
         )
-        exit(1)
+        sys.exit(1)
 
     data = {}
     try:
@@ -1304,7 +1321,7 @@ def main():
             data = json.load(f)
     except FileNotFoundError:
         logger.error(f"Failed to open the file {args.filename}")
-        exit(1)
+        sys.exit(1)
 
     range_start = args.range_start
     if not args.range_start and args.range_end:
@@ -1314,64 +1331,53 @@ def main():
     if args.range_start and args.range_end:
         # Convert the indices to a string.
         range_ = [str(i) for i in range(range_start, args.range_end + 1)]
-    elif "range" in data and data["range"]:
+    elif data.get("range"):
         range_ = [str(i) for i in data["range"]]
 
-    if "bookbrainz_work" in data["original"]:
-        if "bookbrainz_work" in data["translation"]:
-            if (
-                "type" not in data["translation"]["bookbrainz_work"]
-                or not data["bookbrainz_work"]["translation"]["type"]
-            ):
-                data["translation"]["bookbrainz_work"]["type"] = data["original"][
-                    "bookbrainz_work"
-                ]["type"]
-            for relationship in data["original"]["bookbrainz_work"]["relationships"]:
-                if relationship["id"]:
-                    if relationship["role"] in ["writer", "provided story for"]:
-                        if {
-                            "role": "provided story for",
-                            "id": relationship["id"],
-                        } not in data["translation"]["bookbrainz_work"][
-                            "relationships"
-                        ]:
-                            data["translation"]["bookbrainz_work"][
-                                "relationships"
-                            ].append(
-                                {"role": "provided story for", "id": relationship["id"]}
-                            )
-                    elif relationship["role"] in ["illustrator"]:
-                        if {
-                            "role": "illustrator",
-                            "id": relationship["id"],
-                        } not in data["translation"]["bookbrainz_work"][
-                            "relationships"
-                        ]:
-                            data["translation"]["bookbrainz_work"][
-                                "relationships"
-                            ].append({"role": "illustrator", "id": relationship["id"]})
-                    elif relationship["role"] in ["provided art for"]:
-                        if {
-                            "role": "provided art for",
-                            "id": relationship["id"],
-                        } not in data["translation"]["bookbrainz_work"][
-                            "relationships"
-                        ]:
-                            data["translation"]["bookbrainz_work"][
-                                "relationships"
-                            ].append(
-                                {"role": "provided art for", "id": relationship["id"]}
-                            )
-                    elif relationship["role"] in ["contributor"]:
-                        if {
-                            "role": "contributor",
-                            "id": relationship["id"],
-                        } not in data["translation"]["bookbrainz_work"][
-                            "relationships"
-                        ]:
-                            data["translation"]["bookbrainz_work"][
-                                "relationships"
-                            ].append({"role": "contributor", "id": relationship["id"]})
+    if data["original"].get("bookbrainz_work") and data["translation"].get(
+        "bookbrainz_work"
+    ):
+        if (
+            "type" not in data["translation"]["bookbrainz_work"]
+            or not data["bookbrainz_work"]["translation"]["type"]
+        ):
+            data["translation"]["bookbrainz_work"]["type"] = data["original"][
+                "bookbrainz_work"
+            ]["type"]
+        for relationship in data["original"]["bookbrainz_work"]["relationships"]:
+            if relationship["id"]:
+                if relationship["role"] in ["writer", "provided story for"]:
+                    if {
+                        "role": "provided story for",
+                        "id": relationship["id"],
+                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
+                        data["translation"]["bookbrainz_work"]["relationships"].append(
+                            {"role": "provided story for", "id": relationship["id"]}
+                        )
+                elif relationship["role"] in ["illustrator"]:
+                    if {
+                        "role": "illustrator",
+                        "id": relationship["id"],
+                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
+                        data["translation"]["bookbrainz_work"]["relationships"].append(
+                            {"role": "illustrator", "id": relationship["id"]}
+                        )
+                elif relationship["role"] in ["provided art for"]:
+                    if {
+                        "role": "provided art for",
+                        "id": relationship["id"],
+                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
+                        data["translation"]["bookbrainz_work"]["relationships"].append(
+                            {"role": "provided art for", "id": relationship["id"]}
+                        )
+                elif relationship["role"] in ["contributor"]:
+                    if {
+                        "role": "contributor",
+                        "id": relationship["id"],
+                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
+                        data["translation"]["bookbrainz_work"]["relationships"].append(
+                            {"role": "contributor", "id": relationship["id"]}
+                        )
 
     # To have a special title sort in MusicBrainz, it's necessary to add an alias.
     # aliases = []
@@ -1431,7 +1437,7 @@ def main():
     geckodriver = shutil.which("geckodriver")
     if geckodriver is None:
         logger.error("geckodriver not found in PATH!")
-        exit(1)
+        sys.exit(1)
     geckodriver = str(geckodriver)
     service = webdriver.FirefoxService(executable_path=geckodriver)
     options = FirefoxOptions()
