@@ -15,6 +15,7 @@ import platformdirs
 import logging
 import os
 import shutil
+import sys
 
 logger = logging.getLogger(__name__)
 
@@ -1300,19 +1301,19 @@ def main():
         logger.error(
             'Missing MusicBrainz username. Please supply it with the "--username" flag or the "MUSICBRAINZ_USERNAME" environment variable.'
         )
-        exit(1)
+        sys.exit(1)
 
     if os.environ.get("MUSICBRAINZ_PASSWORD") is None:
         logger.error(
             'Missing MusicBrainz password. Please supply it through the "MUSICBRAINZ_PASSWORD" environment variable.'
         )
-        exit(1)
+        sys.exit(1)
 
     if args.range_start and not args.range_end:
         logger.error(
             'Given option "--range-start" but missing option "--range-end". Pleas supply the "--range-end" option.'
         )
-        exit(1)
+        sys.exit(1)
 
     data = {}
     try:
@@ -1320,7 +1321,7 @@ def main():
             data = json.load(f)
     except FileNotFoundError:
         logger.error(f"Failed to open the file {args.filename}")
-        exit(1)
+        sys.exit(1)
 
     range_start = args.range_start
     if not args.range_start and args.range_end:
@@ -1447,7 +1448,7 @@ def main():
     geckodriver = shutil.which("geckodriver")
     if geckodriver is None:
         logger.error("geckodriver not found in PATH!")
-        exit(1)
+        sys.exit(1)
     geckodriver = str(geckodriver)
     service = webdriver.FirefoxService(executable_path=geckodriver)
     options = FirefoxOptions()
