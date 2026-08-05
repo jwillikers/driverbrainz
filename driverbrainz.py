@@ -558,7 +558,14 @@ def bookbrainz_add_aliases(driver, aliases):
             )
         else:
             close_button.click()
-            wait.until(EC.visibility_of(add_aliases_button))
+            wait.until(
+                EC.invisibility_of_element_located(
+                    (
+                        By.XPATH,
+                        "//div[starts-with(@class,'modal-dialog')]",
+                    )
+                )
+            )
 
 
 # todo This almost certainly doesn't work.
@@ -600,7 +607,14 @@ def bookbrainz_add_identifiers(driver, identifiers):
             )
         else:
             close_button.click()
-            wait.until(EC.visibility_of_element_located(add_identifiers_button))
+            wait.until(
+                EC.invisibility_of_element_located(
+                    (
+                        By.XPATH,
+                        "//div[starts-with(@class,'modal-dialog')]",
+                    )
+                )
+            )
 
 
 def bookbrainz_set_work_type(driver, work_type):
