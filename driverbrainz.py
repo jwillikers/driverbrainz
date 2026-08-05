@@ -357,12 +357,12 @@ def sanitize_sort(sanitized_sort_title: str) -> str:
     return sanitized_sort_title
 
 
-def musicbrainz_log_in(driver, username):
-    username_text_box = driver.find_element(by=By.ID, value="id-username")
+def metabrainz_log_in(driver, username):
+    username_text_box = driver.find_element(by=By.ID, value="username")
     username_text_box.send_keys(username)
-    password_text_box = driver.find_element(by=By.ID, value="id-password")
+    password_text_box = driver.find_element(by=By.ID, value="password")
     password_text_box.send_keys(os.environ.get("MUSICBRAINZ_PASSWORD"))
-    submit_button = driver.find_element(by=By.CSS_SELECTOR, value="button:nth-child(1)")
+    submit_button = driver.find_element(by=By.XPATH, value="//button[@type='submit']")
     submit_button.click()
 
 
@@ -772,8 +772,8 @@ def bookbrainz_create_work(
             or x.find_element(By.ID, ".logo > .logo")
         )
     )
-    if "https://musicbrainz.org/oauth2/authorize" in driver.current_url:
-        musicbrainz_log_in(driver, username)
+    if "https://metabrainz.org/login" in driver.current_url:
+        metabrainz_log_in(driver, username)
         wait.until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, ".card-header > div"))
         )
