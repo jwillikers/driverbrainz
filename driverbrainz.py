@@ -681,7 +681,7 @@ def bookbrainz_add_series(driver, series, index):
     react_select_option.click()
     wait.until(
         EC.visibility_of_element_located(
-            (By.XPATH, "//small[contains(.,'Indicates a Work is part of a Series')]")
+            (By.XPATH, "//small[contains(.,'Links a Work to a series it')]")
         )
     )
     wait.until(
