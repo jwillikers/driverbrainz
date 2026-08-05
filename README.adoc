@@ -120,6 +120,22 @@ direnv allow
 nix develop --command ./driverbrainz.py
 ----
 
+=== Tips
+
+Enter the following snippet into the Firefox console to pause a web page after 5 seconds.
+
+[,js]
+----
+setTimeout(() => { debugger; }, 5000)
+----
+
+Evaluate an XPATH as follows.
+
+[,js]
+----
+$x("//div[starts-with(@class,'react-select__menu-list')]/div[starts-with(@class,'react-select-workType-option')]/div[text()='Novel']")
+----
+
 == References
 
 * https://www.selenium.dev/documentation[Selenium Documentation]
