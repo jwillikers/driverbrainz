@@ -544,7 +544,7 @@ def bookbrainz_add_aliases(driver, aliases):
                 )
             )
         )
-        if alias["primary"]:
+        if alias.get("primary", False):
             primary_checkbox.click()
             wait.until(EC.element_to_be_selected(primary_checkbox))
         if index < len(aliases) - 1:
@@ -820,7 +820,7 @@ def bookbrainz_create_work(
         by=By.XPATH,
         value="(//div[@class='form-group']/input[@class='form-control'])[2]",
     )
-    if "disambiguation" in work and work["disambiguation"]:
+    if work.get("disambiguation"):
         disambiguation_text_box.send_keys(work["disambiguation"])
         wait.until(
             EC.visibility_of_element_located(
@@ -832,10 +832,10 @@ def bookbrainz_create_work(
         titles = []
         for a in work["titles"][1:]:
             subtitle = ""
-            if "subtitle" in a and a["subtitle"]:
+            if a.get("subtitle"):
                 subtitle = a["subtitle"]
             sort_subtitle = ""
-            if "sort_subtitle" in a and a["sort_subtitle"]:
+            if a.get("sort_subtitle"):
                 sort_subtitle = a["sort_subtitle"]
             else:
                 sort_subtitle = subtitle
@@ -855,11 +855,11 @@ def bookbrainz_create_work(
                         )
                     ),
                     "language": a["language"],
-                    "primary": a["primary"] if "primary" in a else False,
+                    "primary": a.get("primary", False),
                 }
             )
         bookbrainz_add_aliases(driver, titles)
-    if "identifiers" in work and work["identifiers"]:
+    if work.get("identifiers"):
         bookbrainz_add_identifiers(driver, work["identifiers"])
     bookbrainz_set_work_type(driver, work["type"])
 
@@ -889,10 +889,10 @@ def bookbrainz_create_work(
             )
         )
     )
-    if "series" in work and work["series"]:
+    if work.get("series"):
         for series in work["series"]:
-            if "id" in series and series["id"]:
-                if "offset" in series and series["offset"]:
+            if series.get("id"):
+                if series.get("offset"):
                     offset_index = float(index) + series["offset"]
                     if offset_index.is_integer():
                         offset_index = int(offset_index)
@@ -1331,64 +1331,53 @@ def main():
     if args.range_start and args.range_end:
         # Convert the indices to a string.
         range_ = [str(i) for i in range(range_start, args.range_end + 1)]
-    elif "range" in data and data["range"]:
+    elif data.get("range"):
         range_ = [str(i) for i in data["range"]]
 
-    if "bookbrainz_work" in data["original"]:
-        if "bookbrainz_work" in data["translation"]:
-            if (
-                "type" not in data["translation"]["bookbrainz_work"]
-                or not data["bookbrainz_work"]["translation"]["type"]
-            ):
-                data["translation"]["bookbrainz_work"]["type"] = data["original"][
-                    "bookbrainz_work"
-                ]["type"]
-            for relationship in data["original"]["bookbrainz_work"]["relationships"]:
-                if relationship["id"]:
-                    if relationship["role"] in ["writer", "provided story for"]:
-                        if {
-                            "role": "provided story for",
-                            "id": relationship["id"],
-                        } not in data["translation"]["bookbrainz_work"][
-                            "relationships"
-                        ]:
-                            data["translation"]["bookbrainz_work"][
-                                "relationships"
-                            ].append(
-                                {"role": "provided story for", "id": relationship["id"]}
-                            )
-                    elif relationship["role"] in ["illustrator"]:
-                        if {
-                            "role": "illustrator",
-                            "id": relationship["id"],
-                        } not in data["translation"]["bookbrainz_work"][
-                            "relationships"
-                        ]:
-                            data["translation"]["bookbrainz_work"][
-                                "relationships"
-                            ].append({"role": "illustrator", "id": relationship["id"]})
-                    elif relationship["role"] in ["provided art for"]:
-                        if {
-                            "role": "provided art for",
-                            "id": relationship["id"],
-                        } not in data["translation"]["bookbrainz_work"][
-                            "relationships"
-                        ]:
-                            data["translation"]["bookbrainz_work"][
-                                "relationships"
-                            ].append(
-                                {"role": "provided art for", "id": relationship["id"]}
-                            )
-                    elif relationship["role"] in ["contributor"]:
-                        if {
-                            "role": "contributor",
-                            "id": relationship["id"],
-                        } not in data["translation"]["bookbrainz_work"][
-                            "relationships"
-                        ]:
-                            data["translation"]["bookbrainz_work"][
-                                "relationships"
-                            ].append({"role": "contributor", "id": relationship["id"]})
+    if data["original"].get("bookbrainz_work") and data["translation"].get(
+        "bookbrainz_work"
+    ):
+        if (
+            "type" not in data["translation"]["bookbrainz_work"]
+            or not data["bookbrainz_work"]["translation"]["type"]
+        ):
+            data["translation"]["bookbrainz_work"]["type"] = data["original"][
+                "bookbrainz_work"
+            ]["type"]
+        for relationship in data["original"]["bookbrainz_work"]["relationships"]:
+            if relationship["id"]:
+                if relationship["role"] in ["writer", "provided story for"]:
+                    if {
+                        "role": "provided story for",
+                        "id": relationship["id"],
+                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
+                        data["translation"]["bookbrainz_work"]["relationships"].append(
+                            {"role": "provided story for", "id": relationship["id"]}
+                        )
+                elif relationship["role"] in ["illustrator"]:
+                    if {
+                        "role": "illustrator",
+                        "id": relationship["id"],
+                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
+                        data["translation"]["bookbrainz_work"]["relationships"].append(
+                            {"role": "illustrator", "id": relationship["id"]}
+                        )
+                elif relationship["role"] in ["provided art for"]:
+                    if {
+                        "role": "provided art for",
+                        "id": relationship["id"],
+                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
+                        data["translation"]["bookbrainz_work"]["relationships"].append(
+                            {"role": "provided art for", "id": relationship["id"]}
+                        )
+                elif relationship["role"] in ["contributor"]:
+                    if {
+                        "role": "contributor",
+                        "id": relationship["id"],
+                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
+                        data["translation"]["bookbrainz_work"]["relationships"].append(
+                            {"role": "contributor", "id": relationship["id"]}
+                        )
 
     # To have a special title sort in MusicBrainz, it's necessary to add an alias.
     # aliases = []
