@@ -1579,6 +1579,10 @@ def main():
 
             original_work["language"] = original["language"]
             original_work["disambiguation"] = original["disambiguation"]
+            if data.get("publication_years") and data["publication_years"].get(i):
+                original_work["disambiguation"] = original["disambiguation"].replace(
+                    "|publication_year|", data["publication_years"][i]
+                )
 
             if "identifiers" not in original_work:
                 original_work["identifiers"] = []
@@ -1636,6 +1640,10 @@ def main():
 
             translation_work["language"] = translation["language"]
             translation_work["disambiguation"] = translation["disambiguation"]
+            if data.get("publication_years") and data["publication_years"].get(i):
+                translation_work["disambiguation"] = translation[
+                    "disambiguation"
+                ].replace("|publication_year|", data["publication_years"][i])
 
             if "identifiers" not in translation_work:
                 translation_work["identifiers"] = []
