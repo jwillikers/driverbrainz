@@ -125,12 +125,12 @@ def remove_extra_spaces_hiragana(input: str) -> str:
             or character_in_unicode_range(character, 0x3000, 0x303F)
             or character_in_unicode_range(character, 0xFFE0, 0xFFEE)
         ):
-            if f" {character} " in input:
-                input = output.replace(f" {character} ", character)
-            elif f"{character} " in input:
-                input = output.replace(f"{character} ", character)
-            elif f" {character}" in input:
-                input = output.replace(f" {character}", character)
+            if f" {character} " in output:
+                output = output.replace(f" {character} ", character)
+            elif f"{character} " in output:
+                output = output.replace(f"{character} ", character)
+            elif f" {character}" in output:
+                output = output.replace(f" {character}", character)
     return output
 
 
@@ -184,7 +184,7 @@ def parse_chapter_from_template_and_item(template: wtp.Template, item: str) -> C
     chapter_type: str | None = None
     index: ChapterIndex | None = None
     # "Chapter 1:"
-    chapter_match = re.fullmatch(r"Chapter\s+(?P<index>.*)(:|\.){0,1}", prefix_part)
+    chapter_match = re.fullmatch(r"Chapter\s+(?P<index>.*?)(:|\.)?", prefix_part)
     # print(f"prefix_part: '{prefix_part}'")
     # print(f"chapter_match: '{chapter_match}'")
     if chapter_match:
@@ -237,15 +237,13 @@ def parse_chapter_from_template_and_item(template: wtp.Template, item: str) -> C
 
 def parse_chapter_from_item(item: str) -> Chapter:
     chapter: Chapter = {}
-    m = re.fullmatch(r'\s*(?P<prefix_part>.*)(:|\.){0,1}\s+"(?P<english>.*)"', item)
+    m = re.fullmatch(r'\s*(?P<prefix_part>.*?)(:|\.)?\s+"(?P<english>.*)"', item)
     if m:
         chapter_type: str | None = None
         index: ChapterIndex | None = None
         prefix_part = m.group("prefix_part")
         # "Chapter 1:"
-        chapter_match = re.fullmatch(
-            r"Chapter\s+(?P<index>.*)(:|\.){0,1}\s*", prefix_part
-        )
+        chapter_match = re.fullmatch(r"Chapter\s+(?P<index>.*?)(:|\.)?\s*", prefix_part)
         if chapter_match:
             chapter_type = "Chapter"
             index = float(chapter_match.group("index"))
@@ -554,7 +552,6 @@ def prefix_chapter_titles(
 ) -> list[Chapter]:
     prefixed_chapters: list[Chapter] = []
     for chapter in chapters:
-        unknown_prefix = True
         for key, prefix in CHAPTER_PREFIX_DICTIONARY.items():
             if (
                 (key == "chapter" and chapter["type"].lower() == "chapter")
@@ -589,30 +586,28 @@ def prefix_chapter_titles(
                             english_chapter_prefix="",
                         )
                     )
-                unknown_prefix = False
                 break
-            else:
-                # When the chapter type is unknown, use the type parameter as the prefix if possible
-                prefixed_chapter = chapter.copy()
-                if len(chapter["type"]) > 0:
-                    for language in [
-                        "english",
-                        "english_sort",
-                        "kanji",
-                        "kana",
-                        "hiragana",
-                        "hepburn",
-                        "hepburn_sort",
-                    ]:
-                        if language in chapter:
-                            prefixed_chapter[language] = (
-                                chapter["type"] + " " + chapter[language]
-                            )
-                prefixed_chapters.append(prefixed_chapter)
-        if unknown_prefix:
+        else:
+            # When the chapter type is unknown, use the type parameter as the prefix if possible
             logger.warning(
                 f"Unknown chapter type '{chapter['type']}' for chapter {chapter['index']}!"
             )
+            prefixed_chapter = chapter.copy()
+            if len(chapter["type"]) > 0:
+                for language in [
+                    "english",
+                    "english_sort",
+                    "kanji",
+                    "kana",
+                    "hiragana",
+                    "hepburn",
+                    "hepburn_sort",
+                ]:
+                    if language in chapter:
+                        prefixed_chapter[language] = (
+                            chapter["type"] + " " + chapter[language]
+                        )
+            prefixed_chapters.append(prefixed_chapter)
     return prefixed_chapters
 
 
