@@ -70,8 +70,8 @@
               python3Packages.types-requests
               python3Packages.wikitextparser
               treefmtEval.config.build.wrapper
-              (builtins.attrValues treefmtEval.config.build.programs)
             ]
+            ++ builtins.attrValues treefmtEval.config.build.programs
             ++ pre-commit.enabledPackages;
         };
         packages = {
