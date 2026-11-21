@@ -4,12 +4,12 @@ generate_hashes = true
 reuse_hashes = true
 upgrade = true
 
-# [tool.pyright]
-# ignore = ["**/typings"]
-# exclude = ["**/.*", "__*", "**/node_modules", "**/typings", "venv"]
+[tool.pyright]
+exclude = ["**/.*", "**/__pycache__", "typings", "venv"]
+pythonPlatform = "Linux"
+pythonVersion = "3.13"
+stubPath = "stubs"
+typeCheckingMode = "strict"
 
-# typeCheckingMode = "basic"
-# pythonPlatform = "Linux"
-
-# reportMissingModuleSource = "none"
-# reportUnnecessaryTypeIgnoreComment = "error"
+reportMissingModuleSource = "none"
+reportUnnecessaryTypeIgnoreComment = "error"
