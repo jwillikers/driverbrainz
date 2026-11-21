@@ -1339,45 +1339,30 @@ def main():
     ):
         if (
             "type" not in data["translation"]["bookbrainz_work"]
-            or not data["bookbrainz_work"]["translation"]["type"]
+            or not data["translation"]["bookbrainz_work"]["type"]
         ):
             data["translation"]["bookbrainz_work"]["type"] = data["original"][
                 "bookbrainz_work"
             ]["type"]
         for relationship in data["original"]["bookbrainz_work"]["relationships"]:
-            if relationship["id"]:
-                if relationship["role"] in ["writer", "provided story for"]:
-                    if {
-                        "role": "provided story for",
-                        "id": relationship["id"],
-                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
-                        data["translation"]["bookbrainz_work"]["relationships"].append(
-                            {"role": "provided story for", "id": relationship["id"]}
-                        )
-                elif relationship["role"] in ["illustrator"]:
-                    if {
-                        "role": "illustrator",
-                        "id": relationship["id"],
-                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
-                        data["translation"]["bookbrainz_work"]["relationships"].append(
-                            {"role": "illustrator", "id": relationship["id"]}
-                        )
-                elif relationship["role"] in ["provided art for"]:
-                    if {
-                        "role": "provided art for",
-                        "id": relationship["id"],
-                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
-                        data["translation"]["bookbrainz_work"]["relationships"].append(
-                            {"role": "provided art for", "id": relationship["id"]}
-                        )
-                elif relationship["role"] in ["contributor"]:
-                    if {
-                        "role": "contributor",
-                        "id": relationship["id"],
-                    } not in data["translation"]["bookbrainz_work"]["relationships"]:
-                        data["translation"]["bookbrainz_work"]["relationships"].append(
-                            {"role": "contributor", "id": relationship["id"]}
-                        )
+            if relationship["id"] and relationship["role"] in [
+                "writer",
+                "provided story for",
+                "illustrator",
+                "provided art for",
+                "contributor",
+            ]:
+                translated_relationship = {
+                    "role": relationship["role"],
+                    "id": relationship["id"],
+                }
+                if (
+                    translated_relationship
+                    not in data["translation"]["bookbrainz_work"]["relationships"]
+                ):
+                    data["translation"]["bookbrainz_work"]["relationships"].append(
+                        translated_relationship
+                    )
 
     # To have a special title sort in MusicBrainz, it's necessary to add an alias.
     # aliases = []
