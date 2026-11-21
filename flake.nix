@@ -60,7 +60,6 @@
               geckodriver
               just
               lychee
-              mypy
               nushell
               pyright
               python3Packages.platformdirs

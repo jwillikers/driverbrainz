@@ -5,7 +5,6 @@ alias c := check
 check: && format
     yamllint .
     ruff check --fix .
-    mypy
     pyright --warnings
     asciidoctor **/*.adoc
     lychee --cache **/*.html
