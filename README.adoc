@@ -19,6 +19,8 @@ endif::[]
 :nix-direnv: https://github.com/nix-community/nix-direnv[nix-direnv]
 :pip-tools: https://github.com/jazzband/pip-tools[pip-tools]
 :pre-commit: https://github.com/nix-community/nixpkgs-update[pre-commit]
+:pytest: https://docs.pytest.org/[pytest]
+:Pyright: https://github.com/microsoft/pyright[Pyright]
 :Python: https://www.python.org/[Python]
 :Selenium: https://www.selenium.dev/[Selenium]
 
@@ -120,6 +122,34 @@ direnv allow
 nix develop --command ./driverbrainz.py
 ----
 
+=== Testing
+
+The unit tests live in the `tests` directory and use {pytest}.
+They cover the functions that don't need a web browser, such as formatting numbers and parsing chapters from Wikipedia.
+
+. Run the unit tests with the `test` recipe.
++
+[,sh]
+----
+nix develop --command just test
+----
+
+. Pass any arguments for pytest to the `test` recipe, such as `-k` to run the tests matching an expression.
++
+[,sh]
+----
+nix develop --command just test -k sanitize_sort
+----
+
+. Run all of the checks, including linting, type checking with {Pyright}, and the unit tests, with the `check` recipe.
++
+[,sh]
+----
+nix develop --command just check
+----
+
+CI runs the unit tests for every pull request.
+
 === Tips
 
 Enter the following snippet into the Firefox console to pause a web page after 5 seconds.
@@ -157,6 +187,8 @@ Several of these projects are enumerated below.
 // * {pip-tools}
 * {Nix}
 * {pre-commit}
+* {Pyright}
+* {pytest}
 * {Python}
 * {Selenium}
 

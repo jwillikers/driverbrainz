@@ -64,6 +64,7 @@
               pyright
               python3Packages.platformdirs
               python3Packages.pykakasi
+              python3Packages.pytest
               python3Packages.python
               python3Packages.requests
               python3Packages.selenium

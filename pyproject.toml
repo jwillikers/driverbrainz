@@ -13,3 +13,8 @@ typeCheckingMode = "strict"
 
 reportMissingModuleSource = "none"
 reportUnnecessaryTypeIgnoreComment = "error"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+xfail_strict = true

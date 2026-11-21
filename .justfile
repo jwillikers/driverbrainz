@@ -6,6 +6,7 @@ check: && format
     yamllint .
     ruff check --fix .
     pyright --warnings
+    pytest
     asciidoctor **/*.adoc
     lychee --cache **/*.html
     nix flake check
@@ -19,6 +20,11 @@ format:
 run:
     #!/usr/bin/env nu
     ^python driverbrainz.py
+
+alias t := test
+
+test *args:
+    pytest {{ args }}
 
 alias u := update
 alias up := update
