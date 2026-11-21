@@ -34,3 +34,5 @@ jobs:
           path: .venv
       - name: Run unit tests
         run: nix develop --command just test
+      - name: Build the Nix package, which also runs the unit tests
+        run: nix build --print-build-logs

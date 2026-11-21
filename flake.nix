@@ -24,7 +24,6 @@
   };
   outputs =
     {
-      # deadnix: skip
       self,
       nix-update-scripts,
       nixpkgs,
@@ -76,6 +75,12 @@
             ++ pre-commit.enabledPackages;
         };
         packages = {
+          default = self.packages.${system}.driverbrainz;
+          driverbrainz = callPackage ./package.nix { };
+        };
+        # Building the package runs the unit tests.
+        checks = {
+          inherit (self.packages.${system}) driverbrainz;
         };
         formatter = treefmtEval.config.build.wrapper;
       }

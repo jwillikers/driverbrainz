@@ -11,6 +11,11 @@ check: && format
     lychee --cache **/*.html
     nix flake check
 
+alias b := build
+
+build:
+    nix build --print-build-logs
+
 alias f := format
 alias fmt := format
 

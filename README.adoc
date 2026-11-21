@@ -141,6 +141,13 @@ nix develop --command just test
 nix develop --command just test -k sanitize_sort
 ----
 
+. Building the Nix package also runs the unit tests.
++
+[,sh]
+----
+nix develop --command just build
+----
+
 . Run all of the checks, including linting, type checking with {Pyright}, and the unit tests, with the `check` recipe.
 +
 [,sh]
@@ -148,7 +155,7 @@ nix develop --command just test -k sanitize_sort
 nix develop --command just check
 ----
 
-CI runs the unit tests for every pull request.
+CI runs the unit tests and builds the Nix package for every pull request.
 
 === Tips
 
