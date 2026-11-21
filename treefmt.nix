@@ -4,7 +4,6 @@ _: {
       actionlint.enable = true;
       jsonfmt.enable = true;
       just.enable = true;
-      # mypy.enable = true;
       nixfmt.enable = true;
       ruff-check.enable = true;
       ruff-format.enable = true;

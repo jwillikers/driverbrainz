@@ -1,0 +1,38 @@
+name: Pytest
+"on":
+  pull_request:
+    branches: ["main"]
+    paths:
+      - '**.nix'
+      - '**.py'
+      - .github/workflows/pytest.yaml
+      - flake.lock
+      - .justfile
+      - pyproject.toml
+      - requirements-dev.txt
+  push:
+    branches: ["main"]
+    paths:
+      - '**.nix'
+      - '**.py'
+      - .github/workflows/pytest.yaml
+      - flake.lock
+      - .justfile
+      - pyproject.toml
+      - requirements-dev.txt
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: DeterminateSystems/nix-installer-action@v23
+      - name: Cache Python virtual environment
+        uses: actions/cache@v6
+        with:
+          key: venv-${{ runner.os }}-${{ hashFiles('flake.lock') }}-${{ hashFiles('requirements-dev.txt') }}
+          path: .venv
+      - name: Run unit tests
+        run: nix develop --command just test
+      - name: Build the Nix package, which also runs the unit tests
+        run: nix build --print-build-logs

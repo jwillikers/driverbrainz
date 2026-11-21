@@ -5,9 +5,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.relative_locator import locate_with
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.webdriver.remote.webdriver import WebDriver
 
 import argparse
 from collections import OrderedDict
+from collections.abc import Iterator
 import copy
 import json
 import math
@@ -16,8 +18,14 @@ import logging
 import os
 import shutil
 import sys
+from typing import Any, cast
 
 logger = logging.getLogger(__name__)
+
+# A JSON object loaded from the data file, such as a work, title, or relationship.
+JSONObject = dict[str, Any]
+# Maps a language and a script to a number format, i.e. {"Japanese": {"Kanji": "kanji"}}.
+FormatMap = dict[str, dict[str, str]]
 
 APP_NAME = "DriverBrainz"
 CACHE_DIR = platformdirs.user_cache_dir(
@@ -40,15 +48,15 @@ MUSICBRAINZ_ORIGINAL_WORK_SERIES = ""
 MUSICBRAINZ_TRANSLATED_WORK_SERIES = ""
 MUSICBRAINZ_TRANSLATOR = ""
 
-ORIGINAL_BOOKBRAINZ_WORK_IDENTIFIERS = {}
-TRANSLATED_BOOKBRAINZ_WORK_IDENTIFIERS = {}
+ORIGINAL_BOOKBRAINZ_WORK_IDENTIFIERS: dict[str, str] = {}
+TRANSLATED_BOOKBRAINZ_WORK_IDENTIFIERS: dict[str, str] = {}
 
 # Use the following snippet to format the items in a MusicBrainz series so that they can be copied and pasted here.
 # http get --headers [Accept "application/json"]  $"https://musicbrainz.org/ws/2/series/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?inc=work-rels" | get relations | select attribute-values.number work.id | rename number id | each {|w| $"    \"($w.number)\": \"https://beta.musicbrainz.org/work/($w.id)\"," } | print --raw
-ORIGINAL_MUSICBRAINZ_WORK_IDENTIFIERS = {}
+ORIGINAL_MUSICBRAINZ_WORK_IDENTIFIERS: dict[str, str] = {}
 
 # http get --headers [Accept "application/json"]  $"https://musicbrainz.org/ws/2/series/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx?inc=work-rels" | get relations | select attribute-values.number work.id | rename number id | each {|w| $"    \"($w.number)\": \"https://beta.musicbrainz.org/work/($w.id)\"," } | print --raw
-TRANSLATED_MUSICBRAINZ_WORK_IDENTIFIERS = {}
+TRANSLATED_MUSICBRAINZ_WORK_IDENTIFIERS: dict[str, str] = {}
 
 # ORIGINAL_MUSICBRAINZ_WORK = {
 #     "title": ORIGINAL_TITLE,
@@ -125,7 +133,7 @@ TRANSLATED_MUSICBRAINZ_WORK_IDENTIFIERS = {}
 
 # https://stackoverflow.com/a/28777781/9835303
 def write_roman(num: int) -> str:
-    roman = OrderedDict()
+    roman: OrderedDict[int, str] = OrderedDict()
     roman[1000] = "M"
     roman[900] = "CM"
     roman[500] = "D"
@@ -140,9 +148,9 @@ def write_roman(num: int) -> str:
     roman[4] = "IV"
     roman[1] = "I"
 
-    def roman_num(num):
+    def roman_num(num: int) -> Iterator[str]:
         for r in roman.keys():
-            x, y = divmod(num, r)
+            x, _ = divmod(num, r)
             yield roman[r] * x
             num -= r * x
             if num <= 0:
@@ -154,7 +162,7 @@ def write_roman(num: int) -> str:
 # https://en.wikipedia.org/wiki/Japanese_numerals
 # Note: The mapping to formal Kanji is currently only useful for Fire Force's specific choice of characters.
 # Tweak as necessary.
-STANDARD_JAPANESE_NUMERALS = {
+STANDARD_JAPANESE_NUMERALS: dict[int, dict[str, str]] = {
     0: {
         "kanji": "零",  # 〇
         "hiragana": "れい",
@@ -301,7 +309,7 @@ def format_number(number: int, format: str) -> str:
     return convert_to_japanese_numeral(number, format)
 
 
-DEFAULT_INDEX_NUMBER_FORMAT_MAP = {
+DEFAULT_INDEX_NUMBER_FORMAT_MAP: FormatMap = {
     "English": {
         "Latin": "numeral",
     },
@@ -311,7 +319,7 @@ DEFAULT_INDEX_NUMBER_FORMAT_MAP = {
     },
 }
 
-DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP = {
+DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP: FormatMap = {
     "English": {
         "Latin": "numeral",
     },
@@ -323,7 +331,7 @@ DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP = {
 
 
 # Insert an index using the necessary format
-def format_index(index: str, title: dict, format_map: dict) -> str:
+def format_index(index: str, title: JSONObject, format_map: FormatMap) -> str:
     format = format_map[title["language"]][title["script"]]
     if format == "numeral":
         return index
@@ -358,22 +366,91 @@ def sanitize_sort(sanitized_sort_title: str) -> str:
     return sanitized_sort_title
 
 
-def metabrainz_log_in(driver, username):
+# Replace the publication year placeholder in a disambiguation comment for the given index.
+def format_disambiguation(
+    disambiguation: str, publication_years: dict[str, str] | None, index: str
+) -> str:
+    if publication_years and publication_years.get(index):
+        return disambiguation.replace("|publication_year|", publication_years[index])
+    return disambiguation
+
+
+# Set the subtitle and sort subtitle of each title for the given index.
+#
+# The subtitles map an index to a map of title indices to a title and sort, i.e.
+# {"1": {"0": {"title": "映画に誘わせたい", "sort": "えいが に さそわ せたい"}}}.
+# The titles are updated in place.
+def apply_subtitles(
+    titles: list[JSONObject], subtitles: JSONObject, index: str
+) -> list[JSONObject]:
+    subtitles_for_index: JSONObject = subtitles.get(index) or {}
+    for title_index, title in enumerate(titles):
+        subtitle: JSONObject = subtitles_for_index.get(str(title_index)) or {}
+        title["subtitle"] = subtitle.get("title") or ""
+        title["sort_subtitle"] = subtitle.get("sort") or ""
+    return titles
+
+
+# Find the edition whose starting index is the closest one that is not greater than the given index.
+#
+# The editions map the starting index of the edition to the edition's identifier.
+def find_edition_id(editions: dict[str, str], index: str) -> str | None:
+    return next(
+        (
+            edition_id
+            for start_index, edition_id in reversed(
+                sorted(editions.items(), key=lambda pair: float(pair[0]))
+            )
+            if float(index) >= float(start_index)
+        ),
+        None,
+    )
+
+
+# Roles from the original work that also apply to the translated work.
+TRANSLATION_INHERITED_ROLES = [
+    "writer",
+    "provided story for",
+    "illustrator",
+    "provided art for",
+    "contributor",
+]
+
+
+# Copy the work type and relevant relationships from the original work to the translated work.
+#
+# The translated work is updated in place.
+def inherit_from_original_work(
+    original_work: JSONObject, translation_work: JSONObject
+) -> None:
+    if "type" not in translation_work or not translation_work["type"]:
+        translation_work["type"] = original_work["type"]
+    for relationship in original_work["relationships"]:
+        if relationship["id"] and relationship["role"] in TRANSLATION_INHERITED_ROLES:
+            translated_relationship = {
+                "role": relationship["role"],
+                "id": relationship["id"],
+            }
+            if translated_relationship not in translation_work["relationships"]:
+                translation_work["relationships"].append(translated_relationship)
+
+
+def metabrainz_log_in(driver: WebDriver, username: str) -> None:
     username_text_box = driver.find_element(by=By.ID, value="username")
     username_text_box.send_keys(username)
     password_text_box = driver.find_element(by=By.ID, value="password")
-    password_text_box.send_keys(os.environ.get("MUSICBRAINZ_PASSWORD"))
+    password_text_box.send_keys(os.environ.get("MUSICBRAINZ_PASSWORD", ""))
     submit_button = driver.find_element(by=By.XPATH, value="//button[@type='submit']")
     submit_button.click()
 
 
 def bookbrainz_set_title(
-    driver,
-    index,
-    title,
-    index_number_format_map: dict = DEFAULT_INDEX_NUMBER_FORMAT_MAP,
-    sort_index_number_format_map: dict = DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP,
-):
+    driver: WebDriver,
+    index: str,
+    title: JSONObject,
+    index_number_format_map: FormatMap = DEFAULT_INDEX_NUMBER_FORMAT_MAP,
+    sort_index_number_format_map: FormatMap = DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP,
+) -> None:
     wait = WebDriverWait(driver, timeout=200)
     # todo Make more accurate by relative to label
     name_text_box = driver.find_element(
@@ -458,7 +535,7 @@ def bookbrainz_set_title(
     )
 
 
-def bookbrainz_add_aliases(driver, aliases):
+def bookbrainz_add_aliases(driver: WebDriver, aliases: list[JSONObject]) -> None:
     wait = WebDriverWait(driver, timeout=200)
     add_aliases_button = driver.find_element(
         by=By.XPATH, value="//button[text()='Add aliases…']"
@@ -571,7 +648,7 @@ def bookbrainz_add_aliases(driver, aliases):
 
 # todo This almost certainly doesn't work.
 # Use XPATH.
-def bookbrainz_add_identifiers(driver, identifiers):
+def bookbrainz_add_identifiers(driver: WebDriver, identifiers: list[str]) -> None:
     wait = WebDriverWait(driver, timeout=200)
     add_identifiers_button = driver.find_element(by=By.CSS_SELECTOR, value=".wrap")
     add_identifiers_button.click()
@@ -618,7 +695,7 @@ def bookbrainz_add_identifiers(driver, identifiers):
             )
 
 
-def bookbrainz_set_work_type(driver, work_type):
+def bookbrainz_set_work_type(driver: WebDriver, work_type: str) -> None:
     wait = WebDriverWait(driver, timeout=200)
     work_type_text_box = driver.find_element(By.ID, "react-select-workType-input")
     work_type_text_box.send_keys(work_type)
@@ -645,7 +722,7 @@ def bookbrainz_set_work_type(driver, work_type):
     )
 
 
-def bookbrainz_add_series(driver, series, index):
+def bookbrainz_add_series(driver: WebDriver, series: str, index: str) -> None:
     wait = WebDriverWait(driver, timeout=200)
     add_relationships_button = driver.find_element(
         by=By.XPATH, value="//span[contains(.,' Add relationship')]"
@@ -696,7 +773,7 @@ def bookbrainz_add_series(driver, series, index):
     wait.until(EC.visibility_of(add_relationships_button))
 
 
-BOOKBRAINZ_RELATIONSHIP_VERB = {
+BOOKBRAINZ_RELATIONSHIP_VERB: dict[str, str] = {
     "adaptation": "is an adaptation of",
     "adapter": "adapted",
     "contributor": "contributed to",
@@ -712,7 +789,7 @@ BOOKBRAINZ_RELATIONSHIP_VERB = {
 }
 
 
-def bookbrainz_add_relationship(driver, relationship):
+def bookbrainz_add_relationship(driver: WebDriver, relationship: JSONObject) -> None:
     if (
         "id" not in relationship
         or not relationship["id"]
@@ -770,13 +847,13 @@ def bookbrainz_add_relationship(driver, relationship):
 
 
 def bookbrainz_create_work(
-    driver,
-    work,
-    index,
-    username=None,
-    index_number_format_map: dict = DEFAULT_INDEX_NUMBER_FORMAT_MAP,
-    sort_index_number_format_map: dict = DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP,
-):
+    driver: WebDriver,
+    work: JSONObject,
+    index: str,
+    username: str = "",
+    index_number_format_map: FormatMap = DEFAULT_INDEX_NUMBER_FORMAT_MAP,
+    sort_index_number_format_map: FormatMap = DEFAULT_SORT_INDEX_NUMBER_FORMAT_MAP,
+) -> None:
     wait = WebDriverWait(driver, timeout=200)
 
     driver.get(BOOKBRAINZ_CREATE_WORK_URL)
@@ -792,7 +869,7 @@ def bookbrainz_create_work(
         wait.until(
             EC.visibility_of_element_located((By.CSS_SELECTOR, ".card-header > div"))
         )
-        cookies = []
+        cookies: list[JSONObject] = []
         try:
             with open(COOKIES_CACHE_FILE) as f:
                 cookies = json.load(f)
@@ -805,7 +882,13 @@ def bookbrainz_create_work(
                 cookie["domain"] == "bookbrainz.org" and cookie["name"] == "connect.sid"
             )
         ]
-        cookies.append(driver.get_cookie("connect.sid"))
+        # Selenium doesn't annotate the types of cookies.
+        session_cookie = cast(
+            JSONObject | None,
+            driver.get_cookie("connect.sid"),  # pyright: ignore[reportUnknownMemberType]
+        )
+        if session_cookie is not None:
+            cookies.append(session_cookie)
         with open(COOKIES_CACHE_FILE, "w", encoding="utf-8") as f:
             json.dump(cookies, f, ensure_ascii=False, indent=4)
     bookbrainz_set_title(
@@ -829,7 +912,7 @@ def bookbrainz_create_work(
         )
 
     if "titles" in work and len(work["titles"]) > 1:
-        titles = []
+        titles: list[JSONObject] = []
         for a in work["titles"][1:]:
             subtitle = ""
             if a.get("subtitle"):
@@ -1274,7 +1357,7 @@ def bookbrainz_create_work(
 #     driver.implicitly_wait(15)
 
 
-def main():
+def main() -> None:
     logger.addHandler(logging.StreamHandler())
     logger.setLevel(logging.DEBUG)
     parser = argparse.ArgumentParser(
@@ -1315,7 +1398,7 @@ def main():
         )
         sys.exit(1)
 
-    data = {}
+    data: JSONObject = {}
     try:
         with open(args.filename) as f:
             data = json.load(f)
@@ -1327,7 +1410,7 @@ def main():
     if not args.range_start and args.range_end:
         range_start = 1
 
-    range_ = []
+    range_: list[str] = []
     if args.range_start and args.range_end:
         # Convert the indices to a string.
         range_ = [str(i) for i in range(range_start, args.range_end + 1)]
@@ -1337,32 +1420,9 @@ def main():
     if data["original"].get("bookbrainz_work") and data["translation"].get(
         "bookbrainz_work"
     ):
-        if (
-            "type" not in data["translation"]["bookbrainz_work"]
-            or not data["translation"]["bookbrainz_work"]["type"]
-        ):
-            data["translation"]["bookbrainz_work"]["type"] = data["original"][
-                "bookbrainz_work"
-            ]["type"]
-        for relationship in data["original"]["bookbrainz_work"]["relationships"]:
-            if relationship["id"] and relationship["role"] in [
-                "writer",
-                "provided story for",
-                "illustrator",
-                "provided art for",
-                "contributor",
-            ]:
-                translated_relationship = {
-                    "role": relationship["role"],
-                    "id": relationship["id"],
-                }
-                if (
-                    translated_relationship
-                    not in data["translation"]["bookbrainz_work"]["relationships"]
-                ):
-                    data["translation"]["bookbrainz_work"]["relationships"].append(
-                        translated_relationship
-                    )
+        inherit_from_original_work(
+            data["original"]["bookbrainz_work"], data["translation"]["bookbrainz_work"]
+        )
 
     # To have a special title sort in MusicBrainz, it's necessary to add an alias.
     # aliases = []
@@ -1454,7 +1514,8 @@ def main():
                 wait.until(
                     EC.visibility_of_element_located((By.CSS_SELECTOR, ".logo img"))
                 )
-                driver.add_cookie(bookbrainz_cookie)
+                # Selenium doesn't annotate the types of cookies.
+                driver.add_cookie(bookbrainz_cookie)  # pyright: ignore[reportUnknownMemberType]
     except FileNotFoundError:
         pass
 
@@ -1563,11 +1624,9 @@ def main():
             original_work = original["bookbrainz_work"]
 
             original_work["language"] = original["language"]
-            original_work["disambiguation"] = original["disambiguation"]
-            if data.get("publication_years") and data["publication_years"].get(i):
-                original_work["disambiguation"] = original["disambiguation"].replace(
-                    "|publication_year|", data["publication_years"][i]
-                )
+            original_work["disambiguation"] = format_disambiguation(
+                original["disambiguation"], data.get("publication_years"), i
+            )
 
             if "identifiers" not in original_work:
                 original_work["identifiers"] = []
@@ -1580,33 +1639,9 @@ def main():
                     copy.deepcopy(data["identifiers"][i])
                 )
 
-            titles = []
-            for title_index, title in enumerate(original["titles"]):
-                title_index = str(title_index)
-                title["subtitle"] = ""
-                title["sort_subtitle"] = ""
-                if (
-                    i in original["subtitles"]
-                    and original["subtitles"][i]
-                    and title_index in original["subtitles"][i]
-                    and original["subtitles"][i][title_index]
-                ):
-                    if (
-                        "title" in original["subtitles"][i][title_index]
-                        and original["subtitles"][i][title_index]["title"]
-                    ):
-                        title["subtitle"] = original["subtitles"][i][title_index][
-                            "title"
-                        ]
-                    if (
-                        "sort" in original["subtitles"][i][title_index]
-                        and original["subtitles"][i][title_index]["sort"]
-                    ):
-                        title["sort_subtitle"] = original["subtitles"][i][title_index][
-                            "sort"
-                        ]
-                titles.append(title)
-            original_work["titles"] = titles
+            original_work["titles"] = apply_subtitles(
+                original["titles"], original.get("subtitles", {}), i
+            )
 
             bookbrainz_create_work(
                 driver,
@@ -1624,11 +1659,9 @@ def main():
             translation_work = translation["bookbrainz_work"]
 
             translation_work["language"] = translation["language"]
-            translation_work["disambiguation"] = translation["disambiguation"]
-            if data.get("publication_years") and data["publication_years"].get(i):
-                translation_work["disambiguation"] = translation[
-                    "disambiguation"
-                ].replace("|publication_year|", data["publication_years"][i])
+            translation_work["disambiguation"] = format_disambiguation(
+                translation["disambiguation"], data.get("publication_years"), i
+            )
 
             if "identifiers" not in translation_work:
                 translation_work["identifiers"] = []
@@ -1641,19 +1674,7 @@ def main():
                     copy.deepcopy(data["identifiers"][i])
                 )
 
-            translated_edition_id = next(
-                (
-                    id
-                    for index, id in reversed(
-                        sorted(
-                            list(translation_work["editions"].items()),
-                            key=lambda pair: float(pair[0]),
-                        )
-                    )
-                    if float(i) >= float(index)
-                ),
-                None,
-            )
+            translated_edition_id = find_edition_id(translation_work["editions"], i)
             if translated_edition_id is not None:
                 translation_work["relationships"].append(
                     {
@@ -1672,33 +1693,9 @@ def main():
             if "titles" not in translation or not translation["titles"]:
                 translation["titles"] = []
 
-            titles = []
-            for title_index, title in enumerate(translation["titles"]):
-                title_index = str(title_index)
-                title["subtitle"] = ""
-                title["sort_subtitle"] = ""
-                if (
-                    "subtitles" in translation
-                    and i in translation["subtitles"]
-                    and translation["subtitles"][i]
-                    and title_index in translation["subtitles"][i]
-                    and translation["subtitles"][i][title_index]
-                ):
-                    if (
-                        "title" in translation["subtitles"][i][title_index]
-                        and translation["subtitles"][i][title_index]["title"]
-                    ):
-                        title["subtitle"] = translation["subtitles"][i][title_index][
-                            "title"
-                        ]
-                    if (
-                        "sort" in translation["subtitles"][i][title_index]
-                        and translation["subtitles"][i][title_index]["sort"]
-                    ):
-                        title["sort_subtitle"] = translation["subtitles"][i][
-                            title_index
-                        ]["sort"]
-                titles.append(title)
+            titles = apply_subtitles(
+                translation["titles"], translation.get("subtitles", {}), i
+            )
             translation_work["titles"] = [original_work["titles"][1]] + titles
 
             bookbrainz_create_work(

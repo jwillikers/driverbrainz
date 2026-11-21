@@ -8,6 +8,7 @@ name: Pyright
       - .github/workflows/pyright.yaml
       - flake.lock
       - pyproject.toml
+      - stubs/**
       - requirements-dev.txt
   push:
     branches: ["main"]
@@ -17,6 +18,7 @@ name: Pyright
       - .github/workflows/pyright.yaml
       - flake.lock
       - pyproject.toml
+      - stubs/**
       - requirements-dev.txt
 
 jobs:

@@ -24,7 +24,6 @@
   };
   outputs =
     {
-      # deadnix: skip
       self,
       nix-update-scripts,
       nixpkgs,
@@ -60,14 +59,15 @@
               geckodriver
               just
               lychee
-              mypy
               nushell
               pyright
               python3Packages.platformdirs
               python3Packages.pykakasi
+              python3Packages.pytest
               python3Packages.python
               python3Packages.requests
               python3Packages.selenium
+              python3Packages.types-requests
               python3Packages.wikitextparser
               treefmtEval.config.build.wrapper
               (builtins.attrValues treefmtEval.config.build.programs)
@@ -75,6 +75,12 @@
             ++ pre-commit.enabledPackages;
         };
         packages = {
+          default = self.packages.${system}.driverbrainz;
+          driverbrainz = callPackage ./package.nix { };
+        };
+        # Building the package runs the unit tests.
+        checks = {
+          inherit (self.packages.${system}) driverbrainz;
         };
         formatter = treefmtEval.config.build.wrapper;
       }

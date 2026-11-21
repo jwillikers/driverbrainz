@@ -5,11 +5,16 @@ alias c := check
 check: && format
     yamllint .
     ruff check --fix .
-    mypy
     pyright --warnings
+    pytest
     asciidoctor **/*.adoc
     lychee --cache **/*.html
     nix flake check
+
+alias b := build
+
+build:
+    nix build --print-build-logs
 
 alias f := format
 alias fmt := format
@@ -20,6 +25,11 @@ format:
 run:
     #!/usr/bin/env nu
     ^python driverbrainz.py
+
+alias t := test
+
+test *args:
+    pytest {{ args }}
 
 alias u := update
 alias up := update
